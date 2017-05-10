@@ -4,23 +4,7 @@
 
 <section class="area_video_banner">
 
-  <div class="container">
-
-    <div class="content">
-
-      <h2><?php wp_title(); ?></h2>
-
-        <p>We're a small team of highly skilled<br/> problem solvers specialized</p>
-
-    </div>
-
-    <div id="demo-scroll" class="demo">
-
-      <div><span></span><span></span><span></span></div>
-
-    </div>
-
-  </div>
+  
 
 <!-- vídeo -->
 
@@ -32,7 +16,7 @@
 
 <!--solicitar uma simulação-->
 
-<section class="simulacao" >
+<section class="simulacao" id="simulacao">
 
 	<div class="container">
 
@@ -78,7 +62,7 @@
 
 <!--nossos carros-->
 
-<section class="nossos-carros">
+<section class="nossos-carros" id="carros">
 
   <div class="containe-owl">
 
@@ -190,7 +174,7 @@
 
 <!--nossos planos-->
 
-<section class="nossos-planos">
+<section class="nossos-planos" id="planos">
 
   <div class="container"> 
 
@@ -258,10 +242,10 @@
 
 <!--metricas-->
 
-<section class="metricas">
+<section class="metricas" id="metricas">
 
   <div class="container-metricas">
-
+    
     <?php 
 
       $args = array( 'post_type' => 'metrica', 'posts_per_page' => 3, 'orderby' => 'menu_order', 'order' => 'ASC' );
@@ -283,11 +267,11 @@
     <div class="metricas__clientes">
 
       <div class="clientes-ativos wow zoomIn">
-
+        <div class="info__metricas">
         <i class="icon-<?php echo $classItem ; ?>"></i><h6><?php campo_customizado('wpcf-rotulo'); ?></h6>
 
         <span><?php campo_customizado('wpcf-valor'); ?></span>
-
+        </div>
       </div>
 
       <h4 class="title-clientes-ativos"><?php echo get_the_title(); ?></h4>
@@ -304,7 +288,7 @@
 
 <!--entenda o consórcio-->
 
-<section class="consorcio">
+<section class="consorcio" id="consorcio">
 
   <div class="containe-owl">
 
@@ -568,7 +552,7 @@
 
 <!--últimas do nosso blog-->
 
-<section class="ultimasblog">
+<section class="ultimasblog" id="blog">
 
   <div class="container"> 
 
@@ -634,17 +618,9 @@
 
 
 
-
-
-
-
-
-
-
-
 <!--opiniões dos nossos clientes -->
 
-<section class="nossos-carros">
+<section class="nossos-carros" id="depoimentos">
 
   <div class="containe-owl">
 
@@ -754,7 +730,7 @@
 
 <!--central de atendimento-->
 
-<section class="atendimento">
+<section class="atendimento" id="atendimento">
 
   <div class="container">
 
