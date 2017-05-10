@@ -1,0 +1,268 @@
+@media screen and (max-width:1203px){
+    .nossos-planos .bloco-planos li{ width: 325px;  margin: 0px 6px; }
+}
+@media screen and (max-width:1125px){
+    .nossos-planos .bloco-planos li{ width: 295px; margin: 0px 5px }
+    .nossos-planos .bloco-planos li div{ padding: 65px 32px; }
+}
+@media screen and (max-width:1029px){
+    .nossos-planos .bloco-planos li{     width: 290px; margin: 0px 1px; }
+    .nossos-planos .bloco-planos li div h5{ font-size:13px; }
+
+}
+@media screen and (max-width:1108px){
+    .navbar .menu ul li{ padding: 35px 18px; }
+    .ultimasblog .ultimasblog__blocoplanos li div{ padding: 30px 30px; }
+}
+@media screen and (max-width:1024px){
+    .navbar .menu ul li{ padding: 35px 10px; }
+    .newsletter h4{ width:155px; }
+    .newsletter .redes{ width:157px; }
+ 
+} 
+@media screen and (max-width:1023px){
+
+    .simulacao .title{ margin:25px 0; }  
+    .simulacao .title:after{ top:58px; }
+    .ultimasblog .ultimasblog__blocoplanos li div{ padding: 30px 20px; }
+}
+@media screen and (max-width:991px){
+    .footer .maps, .footer .central, .footer .end{ width:100%; max-width:100%; }
+    .nossos-planos .bloco-planos li{ width: 261px; }
+    .vantagens__top .vantagens__b .vantagens__blocos li,
+    .vantagens__bottom .vantagens__a .vantagens__blocos li{ width: 43%; }
+}
+@media screen and (max-width:966px){
+    .navbar .menu ul li{ padding: 35px 6px; }
+    .navbar .menu ul li a{ font-size: 19px; }
+}
+@media screen and (max-width:963px){
+    .nossos-planos .bloco-planos li div h5:before,
+    .nossos-planos .bloco-planos li div h5:after,
+    .nossos-planos .bloco-planos li div p{ display:none; }
+    .nossos-planos .bloco-planos li div{ padding:18px 0px; text-align: left; }
+    .nossos-planos .bloco-planos li div img{     margin: 2px 5px;  display: inline-block;  float: left; }
+    .nossos-planos .bloco-planos li div h5{ display: inline-block;  width: 174px; }
+}
+@media screen and (max-width:940px){
+    #owl-consorcio .item{ max-width:284px; }
+}
+@media screen and (max-width:936px){ 
+  .vantagens__top .vantagens__b .vantagens__blocos li div{ width:180px; }
+  .metricas .title-clientes-ativos{ margin-left: 0px!important; font-size: 14px; }
+}
+@media screen and (max-width:903px){
+   .metricas .metricas__clientes{ vertical-align: top; width: 31%;  }
+}
+@media screen and (max-width:902px){
+   .nossos-planos .bloco-planos li{ width: 24%; margin:0 4%; }
+   .nossos-planos .bloco-planos li div h5{ width:100px; }
+}
+@media screen and (max-width:892px){
+    #owl-consorcio .owl-nav .owl-prev, .owl-nav .owl-next{ height: 50px; position:relative; }
+    #owl-consorcio .owl-nav .owl-prev{ left:10px; }
+    #owl-consorcio .owl-nav .owl-next{ right:10px; }
+    #owl-consorcio .owl-nav{ position: relative; width: 100%; top: -94px!important; }
+    #owl-consorcio .owl-dots{ margin-top:30px!important; }
+    #owl-consorcio .owl-nav .owl-prev,
+    #owl-consorcio .owl-nav .owl-next{ font-size:0px!important; height:110px; width:45px; margin:0px!important; padding:0px!important;  }
+    #owl-consorcio .owl-nav .owl-prev{ float:left;  background:url(../images/prev.png)no-repeat center!important; background-color: #fff!important; } 
+    #owl-consorcio .owl-nav .owl-next{ float:right; background: url(../images/next.png)no-repeat center!important; background-color: #fff!important; }
+    #owl-consorcio .item .about .icon-pass1,
+    #owl-consorcio .item .about .icon-pass2,
+    #owl-consorcio .item .about .icon-pass3,
+    #owl-consorcio .item .about .icon-proximo{ display:none; }
+
+}
+@media screen and (max-width:889px){ 
+  .vantagens__top .vantagens__b .vantagens__blocos li div,
+  .vantagens__bottom .vantagens__a .vantagens__blocos li div{ width:180px; }
+  .vantagens__bottom .vantagens__a .vantagens__blocos{ margin:51px 5px; }
+  .vantagens__top .vantagens__b .vantagens__blocos li,
+  .vantagens__bottom .vantagens__a .vantagens__blocos li{ margin:9px;     vertical-align: top; }
+}
+@media screen and (max-width:872px){
+    .newsletter .icon-facebook, .newsletter .icon-instagram-1, .newsletter .icon-youtube-play{ font-size:24px; }
+    .newsletter h4{ width:135px; }
+}
+@media screen and (max-width:868px){
+    .simulacao .form_simulacao .medium{ width:100%!important; }
+}
+@media screen and (max-width:842px){
+    body{ padding-top: 111px; }
+    .container{ padding:0 22px; }
+    .navbar .tarja:before{ height:52px; }
+    .navbar .tarja{ padding: 16px 0px; }
+    .navbar .navbar-brand{     padding: 12px 0px; }
+    .navbar{ height:110px; }
+    .navbar .menu{ max-width: 100%; }
+    .navbar .form_pesquisa_mobile{     width: 92%; left: 8px; top: 7px; }
+    .navbar .busca { right: 0px; max-width: 100%; top: 171px; background-color: #fff; position: absolute; } 
+    .navbar .pesquisa{  top: 9px; right: -18px; font-size: 30px; }
+    .navbar .tarja span{ margin-left:0px; }
+    .navbar .form_pesquisa_mobile input{  color: #000;   background-color: #dad1d1; }
+    /* menu appearance - aparencia do menu */
+    .navbar .menu{ position:absolute; top:110px; color:#999; margin:0px; padding:0px; text-align:center; box-shadow:0 1px 8px rgba(0,0,0,0.05); 
+    /*just for this demo - apenas para esta demo*/ opacity:0; visibility:hidden; transition:opacity .4s; }
+    .navbar .menu li{  width:100%; background-color:#fff; padding:20px 0px; line-height: 10px; border-top: 1px solid #aaa;  }
+    .navbar .menu li a{ font-size:18px; border: transparent; vertical-align: middle; }
+    /* on activation - na ativacao" */
+    #toggle{ background-color: transparent; float: right; display: block!important; width:53px; height: 17px; margin:5px 11px;    padding: 24px 13px 24px;
+    border-radius: 7px; position:relative; z-index:999; } 
+    #toggle.on span{ background-color: transparent; }
+    #toggle.on{ background-color:#003793; }
+    #toggle.on span:before{ transform: rotate(45deg) translate(9px, 9px); background-color: #fff; }
+    #toggle.on span:after{ transform: rotate(-45deg) translate(7px, -8px); background-color: #fff; }
+    #toggle.on + .menu{ opacity: 1; visibility:visible; background: #fff; width:100%; height:auto; z-index: 1; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); }
+    
+    .area_video_banner .content{ top:45%; }
+    .area_video_banner .content .banner_subtitle{ display:none; }
+    .demo a{ display:none!important; }
+
+    .ultimasblog .ultimasblog__blocoplanos li{ width:100%; margin: 10px 0; }
+
+    .collapse{ display:block; }
+    .navbar #menu-menu{ width:100%; }
+    .nossos-carros .title-carousel span{ font-size:13px; }
+    .nossos-carros .title-carousel h2:after,
+    .nossos-planos h2:before,
+    .consorcio h2:before,
+    .atendimento h2:before{ top:40px; }
+    .nossos-carros .title-carousel h2,
+    .nossos-planos h2,
+    .consorcio h2,
+    .atendimento h2{ margin-top:30px; }
+    .nossos-carros .title-carousel h6{ margin:10px 0px; }
+    #owl-carros .item{ padding-top:138px; }
+    #owl-carros .owl-item:nth-child(even) .item:after,
+    #owl-carros .owl-item:nth-child(odd) .item:after{ top: 201px; }
+    #owl-carros .owl-item:nth-child(even) .item .info,
+    #owl-carros .owl-item:nth-child(odd) .item .info{ padding-bottom:100px; }
+    #owl-carros .owl-dots{     margin-top: -65px; }
+    #owl-carros .owl-nav{ display:none; }
+
+    .nossos-planos .bloco-planos{ padding:30px 0px; }
+    .consorcio h2{ font-size:22px; }
+    .consorcio span{ font-size:18px;  }
+    .consorcio p{ margin-top:10px!important; font-size:14px; max-width:100%; width:310px; padding:0 15px;}
+    #owl-consorcio{ margin:50px 0px 0px; }
+    #owl-consorcio .item .about h4{ font-size:14px; display:inline-block; float: right; }
+    #owl-consorcio .item{ width:100%; }
+    #owl-consorcio .owl-item img{ width:auto; display: inline-block; }
+    .atendimento .informacoes{ margin:40px auto 0px; }
+   .atendimento .form button{     height: 54px; margin-top: 6px; padding: 11px; } 
+   .atendimento .form{     margin: 20px 0px; padding:22px 0px; }
+   .atendimento .informacoes span{ font-size:16px; vertical-align:text-bottom; }
+    .atendimento .form button i{     margin-bottom: 4px; }
+    .newsletter{    margin-top: -1px; margin-bottom:0px; padding:25px 0px; }
+    .atendimento .form textarea{ height:115px;  }
+    .newsletter h4{ width:139px; }
+    .newsletter .mensage{ text-align: center; }
+    .newsletter .redes{ width:100%; text-align: center;}
+    .newsletter span{ margin-bottom:10px; }
+    .newsletter .input-radius{ margin-bottom:15px; }
+    .footer{ padding:0; }
+    .footer .servicos h4,
+    .footer .institucional h4,
+    .footer .blog h4,
+    .footer .comprar h4,
+    .footer .central h4{ border-bottom: 1px solid #aaa; padding-bottom:10px; }
+    .footer .maps{ width:100%; }
+    .footer .end{ max-width:100%; }
+    .footer .end i{ font-size: 26px; }
+    .footer .layer_gray .a,.footer .layer_gray .b{  padding:30px 0px;     height: 300px; }
+    .footer .layer_gray .a p,.footer .layer_gray .b p{ margin:10px 0px; }
+    .footer .layer_blue .copyright{ margin:0px;  }
+    .footer .layer_blue img{ float:initial!important; }
+
+}
+@media screen and (max-width:824px){
+    #owl-carros .owl-carousel .owl-item:nth-child(even) .item:after,
+    #owl-carros .owl-carousel .owl-item:nth-child(odd) .item:after{ top: 191px; }
+    #owl-carros .owl-carousel .item{ padding-top: 128px; }
+    #owl-carros{ padding:0px; }
+    .nossos-carros .title-carousel h2, .nossos-planos h2{ margin-top: 30px; font-size: 22px; }
+    .nossos-carros .title-carousel span, .nossos-planos h2 span{ margin-top: 30px; font-size: 13px; }
+    .nossos-carros .title-carousel h6{ font-size: 10px; }
+    .nossos-planos .bloco-planos{ padding: 25px 0px; }
+    .nossos-planos .bloco-planos li{     margin-bottom: 20px; }   
+    .nossos-planos .bloco-planos li div h5{ display:block; width:100%; margin: 27px 0px 6px; }
+    
+    #owl-consorcio .owl-dots.disabled, .owl-carousel .owl-nav.disabled{ display:block!important; }
+    .vantagens__top .vantagens__a:before,.vantagens__bottom .vantagens__b:before{ display: none; }
+
+}
+@media screen and (max-width:807px){
+   .metricas .clientes-ativos{ border:0; }
+   .container-metricas{ padding:0; }
+   .metricas .clientes-ativos:after{ display:none; }
+   .metricas .metricas__clientes span{ font-size:14px; }
+   .metricas .title-clientes-ativos{      text-align: center; margin: 12px auto; display: block!important; } 
+   .metricas .metricas__clientes{ margin:0; padding:0;     min-height: 176px; }
+   .metricas .clientes-ativos{ height:112px; font-size: 14px; position: relative; max-width: 100%; display: block; margin: 0 auto; width: 100px; } 
+   .metricas .clientes-ativos:before{ content: ""; border-top: 2px solid #fff; height: 10px; width:65px; display: block; position: absolute; right: 17px; bottom: -7px; }
+}
+@media screen and (max-width:783px){
+    .navbar .tarja .redes,.navbar .tarja .contato,.navbar .tarja .servico_cliente{ display:none; }
+    .newsletter .icon-facebook, .newsletter .icon-instagram-1, .newsletter .icon-youtube-play{ margin:0px 15px; font-size:23px; }
+    .vantagens__top .vantagens__b .vantagens__blocos li div,
+    .vantagens__bottom .vantagens__a .vantagens__blocos li div{ display: block; margin: 0px auto; }
+    .vantagens__top .vantagens__b .vantagens__blocos,
+    .vantagens__bottom .vantagens__a .vantagens__blocos{ margin:51px 0px; text-align:center; }
+}
+@media screen and (max-width:768px){
+    #owl-carros .item{ padding-top: 95px; }
+    #owl-carros .item h4{ margin: 10px 0px; }
+    #owl-carros .owl-item .item .info figure{     margin: 45px 0px 0px; }
+    #owl-carros .owl-item .item .info figure figcaption{ margin: 20px 0px; }
+    #owl-carros .owl-item:nth-child(even) .item:after, #owl-carros .owl-item:nth-child(odd) .item:after{     top: 118px; }
+    .vantagens__top .vantagens__a .vantagens__conteudo h2,
+    .vantagens__bottom .vantagens__b .vantagens__conteudo h2{ margin: 35px 0;  font-size: 22px; }
+    .vantagens__top .vantagens__a .vantagens__conteudo span,
+    .vantagens__bottom .vantagens__b .vantagens__conteudo span{ font-size: 14px; }
+   .vantagens__bottom .vantagens__a,.vantagens__top .vantagens__b,
+   .vantagens__top .vantagens__a,.vantagens__bottom .vantagens__b{ min-height: 370px; }
+   .vantagens__top .vantagens__a .vantagens__conteudo p,
+   .vantagens__bottom .vantagens__b .vantagens__conteudo p{ font-size: 16px; text-align: center; margin-bottom: 30px;}
+   .vantagens__top .vantagens__a .vantagens__conteudo button, .vantagens__bottom .vantagens__b .vantagens__conteudo button{ width: 177px; height: 70px; }
+   .vantagens__bottom .vantagens__a .vantagens__blocos li div h5,
+   .vantagens__top .vantagens__b .vantagens__blocos li div h5{ font-size:14px;  }
+   .ultimasblog .ultimasblog__blocoplanos{ padding:25px 0px; }
+    .ultimasblog .ultimasblog__blocoplanos li,
+   .ultimasblog .ultimasblog__blocoplanos li div h5{ margin:0; }
+   .ultimasblog .ultimasblog__blocoplanos li div{ border: 0px!important; padding:0px 20px; }
+   .ultimasblog .title__bloco h6,
+   .ultimasblog .title__bloco,
+   .ultimasblog .ultimasblog__blocoplanos li div p,
+   .ultimasblog .ultimasblog__blocoplanos .btn__nossoblog,
+   .nossos-carros .title-carousel h6{ display:none; }
+   .ultimasblog .ultimasblog__blocoplanos li div:hover{ box-shadow: 0px 0px 0px 0px #d0d0d0;  }
+    #owl-opinioes .owl-item:nth-child(even) .item,
+    #owl-opinioes .owl-item:nth-child(odd) .item{ padding-top: 82px;  }
+    #owl-opinioes .item img{ margin: 20px 0px; }
+    #owl-opinioes .owl-item .item  h6{ margin: 30px 0px 58px; }
+    #owl-opinioes .owl-item:nth-child(even) .item .info,
+    #owl-opinioes .owl-item:nth-child(odd) .item .info{ padding-bottom: 65px; }
+    #owl-opinioes .owl-dots{ margin-top: -45px; }
+    #owl-opinioes .owl-nav{ display:none; }
+    #owl-opinioes .owl-item .item .info figure figcaption{ margin: 20px 0px; position:relative; }
+    #owl-opinioes .owl-item .item .info figure figcaption .stars{ left:58px; }
+}   
+@media screen and (max-width:745px){
+    .nossos-planos .bloco-planos li{ width: 100%;  margin:0 0 10px; }
+    .nossos-planos .bloco-planos li div img{ margin:2px 15px; }
+    .nossos-planos .bloco-planos li div h5{ margin:13px 0px 6px; }
+}
+@media screen and (max-width:640px){
+    .line_blue{ height:auto; }
+    .line_blue .box_center{ font-size:15px; }
+    .line_blue .box_left, .line_blue .box_right{ margin: 15px 0px; }
+    .line_blue .box_center{     font-size: 18px;  margin: 23px auto; }
+    .line_blue .box_left, .line_blue .box_right{ padding:0px 19px; }
+    .line_blue .box_left h5, .line_blue .box_right h5{ font-size:10px; display: block; margin-top:10px; }
+
+}
+@media screen and (max-width:369px){
+    .vantagens__bottom .vantagens__a .vantagens__blocos li div h5,
+   .vantagens__top .vantagens__b .vantagens__blocos li div h5{ font-size:12px;  }
+}
