@@ -137,30 +137,30 @@ hr{ margin: 0px; }
 .body-top{ padding-top: 86px; } */
 
 
-
+/* 
 .hide-nav-bar,.pesquisa-top,.navbar-top,.menu-top,.logo-top,.form_pesquisa_mobile-top,.form-top,.body-top{ 
 
-	-ms-transition:    all 0.3s ease-out;
+    -ms-transition:    all 0.3s ease-out;
 
-    	-moz-transition:    all 0.3s ease-out;
+        -moz-transition:    all 0.3s ease-out;
 
-    		-webkit-transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
 
-    			-o-transition:   all 0.3s ease-out;
+                -o-transition:   all 0.3s ease-out;
 
-    				transition:  	all 0.3s ease-out; }
+                    transition:      all 0.3s ease-out; } */
 
 /*===CABECALHO===*/
 
+.scrollOn .navbar .navbar-brand{ padding: 17px 0px;}
 .scrollOn .navbar{ height: 70px; position: fixed; }
+.scrollOn .navbar .container{ position: fixed; top: 0px; left: 0; height: 70px;}
+.scrollOn .navbar .tarja{ height: 68px; }
+
 
 .navbar .container{ position: absolute; top: 86px; left: 0; z-index:99999999999; background:#FFF; height: 89px; }
 
-.scrollOn .navbar .container{ position: fixed; top: 0px; left: 0; height: 70px;}
-
 .navbar .tarja{ border-bottom:1px solid #e6e6e6; display:block; background: url(../images/bkg.png); width:100%; position:fixed; top:0; left:0; height:86px; max-width:100%; background-position:center; padding:28px 52px; }
-
-.scrollOn .navbar .tarja{ height: 68px; }
 
 .navbar .tarja .text_center{ max-width: 200px; display: inline-block; position: relative; left: 20%; }
 
@@ -178,8 +178,7 @@ hr{ margin: 0px; }
 
 .navbar .tarje .contato .ddd{ font-family: 'owd-light',sans-serif; }
 
-.navbar .tarja .redes{ position:relative; right:-147px; z-index:9999999999; text-align:right; width:7%; float:right; }
-
+.navbar .tarja .redes{     position: relative; right: 0px; z-index: 9999999999; text-align: right; width: 10%; float: right; max-width: 100%; display: inline-block; }
 .navbar .tarja .redes li a{ margin-right:20px; }
 
 .navbar .tarja .redes li a{ font-size:11px; font-family: 'owd-regular',sans-serif; text-transform:uppercase; color:#777; }
@@ -188,26 +187,23 @@ hr{ margin: 0px; }
 
 .navbar .tarja span img{ margin-right:10px; vertical-align:top; }
 
-.navbar .tarja .servico_cliente{ color:#777; top:-3px; z-index:9999999999; font-family: 'owd-regular',sans-serif; float:right; right:92px; }
+.navbar .servico_cliente{   color: #777; top: 26px; z-index: 9999999999; font-family: 'owd-regular',sans-serif; float: right; right: 137px; position: fixed; }
+.scrollOn .navbar .servico_cliente{opacity: 0;}
 
-.navbar .tarja .servico_cliente button{ background-color:transparent; text-transform:uppercase; font-size:11px; }
+.navbar .servico_cliente button{ background-color:transparent; text-transform:uppercase; font-size:11px; }
 
-.navbar .tarja .servico_cliente .btn-small{ border:1px solid #aaa; border-radius:4px; margin-top:4px; margin-left:3px; height:17px; padding:8px; line-height:0px; }
+.navbar .servico_cliente .btn-small{ border:1px solid #aaa; border-radius:4px; margin-top:4px; margin-left:3px; height:17px; padding:8px; line-height:0px; }
 
-.navbar .tarja .servico_cliente .btn-small .caret{ margin-right:-2px; }
-
+.navbar .servico_cliente .btn-small .caret{ margin-right:-2px; } 
 
 .navbar{ border:0px; border-radius:0px; box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3); top:0px; background-color:#fff; margin:0px; padding:0px; height:175px; position:absolute; z-index: 999999999999; width:100%; }
 
 .navbar .navbar-brand{ position: relative; top:-1%; z-index:9999999999; margin:0px!important; padding:27px 0px; height:auto; font-size:0px; }
 
-.scrollOn .navbar .navbar-brand{ padding: 17px 0px;}
-
 .navbar .menu{ margin: 0px!important; padding: 0px; width:100%; position: absolute; font-size: 0px; top:0%; left:0%; } 
 
 .navbar .menu ul li{ display:inline-block; padding:35px 25px;  }
-
-.scrollOn .menu ul li{  padding:25px 25px;  }
+.scrollOn .navbar .menu ul li{ padding:25px; }
 
 .navbar .menu ul a{ font-family: 'owd-light',sans-serif; color:#002460; font-size:18px; padding:0px; text-transform:uppercase;  }
 
@@ -217,20 +213,14 @@ hr{ margin: 0px; }
 
 .nav>li>a:focus, .nav>li>a:hover{ background-color: transparent; }
 
-.navbar .pesquisa{ cursor:pointer; position:absolute; right: 45px; top:35px; }
+.navbar .pesquisa{ cursor:pointer; position:absolute; z-index: 9999999999999; right: 52px; top:35px; }
+.scrollOn .navbar .pesquisa{ top: 23px; }
 
-.scrollOn .pesquisa {top:24px;}
-
-.navbar .form_pesquisa_mobile{ position:relative; top:-69%; width:91%; left:90px; border-radius:25px; padding:8px 0px!important; z-index:13; display:none; transition: all .2s; -webkit-transition: all .2s; -moz-transition: all .2s; -o-transition: all .2s; } 
-
+.navbar .form_pesquisa_mobile{     position: absolute; top: 21%; width: 70%; left: 17%; border-radius:25px; padding:8px 0px!important; z-index:13; display:none; transition: all .2s; -webkit-transition: all .2s; -moz-transition: all .2s; -o-transition: all .2s; }
 .navbar .form_pesquisa_mobile input{ background-color:#616161; color:#fff; width:100%; border:0px; border-radius:25px; height:32px; padding:13px }
 
 .navbar .icones-right .form_pesquisa_mobile input{ width:100%; height:32px; display:block; margin:0px auto; border:0px; padding:10px 9px; max-width:89%; }
-/* 
-.navbar .search { width: 185px; max-width: 100%; display: inline-block; margin: 20px auto; float: right; } 
-.navbar .search input{ padding-right: 35px; position:relative; border: 0px; background-color:#F8F8F8; height: 40px; border-radius: 110px; }
-.navbar .search .icon-search{ position: relative; right: -66px; top: -30px; cursor: pointer;} 
- */
+
 /*===MENU-TOGGLE===*/
 
 #toggle{ float:right; display:none; width:28px; height:30px; margin:42px 0px 22px; }
@@ -310,7 +300,9 @@ nks p { color: #333; font : normal 400 20px/1 'Josefin Sans', sans-serif; }
 .simulacao .form_simulacao .wpcf7-form-control-wrap{ vertical-align:top; display:inline; top:-20px; border-radius:0px; }
 
 .simulacao .form_simulacao .wpcf7-response-output, .wpcf7-validation-errors{ border: 2px solid #f70000!important; color: #fff; font-size: 20px; margin: 10px;}
+
 .simulacao .form_simulacao > .wpcf7-mail-sent-ok{ border:2px solid #398f14!important; }
+
 
  /*===BLUE LAYER===*/
 

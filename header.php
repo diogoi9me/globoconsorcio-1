@@ -39,33 +39,6 @@
     </div>
 
 
-    <div class="btn-group servico_cliente">
-
-          <button type="button" class="btn">Serviço ao Cliente</button>
-
-          <button type="button" class="btn btn-small dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-            <span class="caret"></span>
-
-            <span class="sr-only">Toggle Dropdown</span>
-
-          </button>
-
-          <ul class="dropdown-menu">
-
-            <li><a href="#">Acessar meu Consórcio</a></li>
-
-            <li><a href="#">2a via boleto</a></li>
-
-            <li><a href="#">Datas de assembleias</a></li>
-
-            <li><a href="#">Valores a devolver</a></li>
-
-            <li><a href="#">Dúvidas Frequêntes</a></li>
-
-          </ul>
-
-    </div>
 
 
 
@@ -130,6 +103,34 @@
           );
 
       ?>
+     
+    <div class="btn-group servico_cliente transition">
+
+          <button type="button" class="btn">Serviço ao Cliente</button>
+
+          <button type="button" class="btn btn-small dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            <span class="caret"></span>
+
+            <span class="sr-only">Toggle Dropdown</span>
+
+          </button>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="#">Acessar meu Consórcio</a></li>
+
+            <li><a href="#">2a via boleto</a></li>
+
+            <li><a href="#">Datas de assembleias</a></li>
+
+            <li><a href="#">Valores a devolver</a></li>
+
+            <li><a href="#">Dúvidas Frequêntes</a></li>
+
+          </ul>
+
+    </div>
 
     <i class="icon-search pesquisa transition" title="Pesquisar"></i>
       

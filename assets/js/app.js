@@ -9,87 +9,87 @@ jQuery(document).ready(function($) {
 
     //efeito do header quando ativar o scroll.
 
-    $('html').on('DOMMouseScroll mousewheel', function (e) {
+    //$('html').on('DOMMouseScroll mousewheel', function (e) {
 
-        if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) { 
+     //   if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) { 
 
 
 
             //scroll down
 
-            console.log('Down');
+         //   console.log('Down');
 
-            $( "#tarja-header" ).addClass( "hide-nav-bar" );
+         //   $( "#tarja-header" ).addClass( "hide-nav-bar" );
 
-            $( "#header-top" ).addClass( "navbar-top" );
+         //   $( "#header-top" ).addClass( "navbar-top" );
 
-            $( ".menu" ).addClass( "menu-top" );
+         //   $( ".menu" ).addClass( "menu-top" );
 
-            $( ".navbar-brand" ).addClass( "logo-top" );
+         //   $( ".navbar-brand" ).addClass( "logo-top" );
 
-            $( ".pesquisa" ).addClass( "pesquisa-top" );
+         //   $( ".pesquisa" ).addClass( "pesquisa-top" );
 
-            $( ".mobile_search" ).addClass( "form-top" );
+         //   $( ".mobile_search" ).addClass( "form-top" );
 
-            $( "#form_pesquisa" ).addClass( "form_pesquisa_mobile-top" );
+          //  $( "#form_pesquisa" ).addClass( "form_pesquisa_mobile-top" );
 
-            $( "body" ).addClass( "body-top" );
+         //   $( "body" ).addClass( "body-top" );
 
-        } else {
+      //  } else {
 
             //scroll up
 
-            console.log('Up');
+        //    console.log('Up');
 
-            $( "#tarja-header" ).removeClass( "hide-nav-bar" );
+      //      $( "#tarja-header" ).removeClass( "hide-nav-bar" );
 
-            $( "#header-top" ).removeClass( "navbar-top" );
+       //     $( "#header-top" ).removeClass( "navbar-top" );
 
-            $( ".menu" ).removeClass( "menu-top" );
+       //     $( ".menu" ).removeClass( "menu-top" );
 
-            $( ".navbar-brand" ).removeClass( "logo-top" );
+        //    $( ".navbar-brand" ).removeClass( "logo-top" );
 
-            $( ".pesquisa" ).removeClass( "pesquisa-top" );
+         //   $( ".pesquisa" ).removeClass( "pesquisa-top" );
 
-            $( ".mobile_search" ).removeClass( "form-top" );
+        //    $( ".mobile_search" ).removeClass( "form-top" );
 
-            $( "#form_pesquisa" ).removeClass( "form_pesquisa_mobile-top" );
+        //    $( "#form_pesquisa" ).removeClass( "form_pesquisa_mobile-top" );
 
-            $( "body" ).removeClass( "body-top" );
+        //    $( "body" ).removeClass( "body-top" );
 
-        }
+      //  }
 
-    });
+   // });
 
 
 
     //desabilita o efeito do header-scroll no mobile
 
-    $(window).scroll(function () {
+  //  $(window).scroll(function () {
 
-        var sc = $(window).width()
+    //    var sc = $(window).width()
 
-        if (sc < 842) {
+    //    if (sc < 842) {
 
-            $( "#tarja-header" ).removeClass( "hide-nav-bar" );
+    //        $( "#tarja-header" ).removeClass( "hide-nav-bar" );
 
-            $( "#header-top" ).removeClass( "navbar-top" );
+    //        $( "#header-top" ).removeClass( "navbar-top" );
 
-            $( ".menu" ).removeClass( "menu-top" );
+     //       $( ".menu" ).removeClass( "menu-top" );
 
-            $( ".navbar-brand" ).removeClass( "logo-top" );
+     //       $( ".navbar-brand" ).removeClass( "logo-top" );
 
-            $( ".pesquisa" ).removeClass( "pesquisa-top" );
+      //      $( ".pesquisa" ).removeClass( "pesquisa-top" );
 
-            $( ".mobile_search" ).removeClass( "form-top" );
+      //      $( ".mobile_search" ).removeClass( "form-top" );
 
-            $( "#form_pesquisa" ).removeClass( "form_pesquisa_mobile-top" );
+      //      $( "#form_pesquisa" ).removeClass( "form_pesquisa_mobile-top" );
 
-            $( "body" ).removeClass( "body-top" );
+       //     $( "body" ).removeClass( "body-top" );
 
-        }
+      //  }
 
-    });
+ //   });
 
 
 
@@ -275,26 +275,26 @@ jQuery(document).ready(function($) {
 
 //ScrollOn
   
-  jQuery(window).scroll(function (event) {
+    jQuery(window).scroll(function (event) {
     
     var scroll = jQuery(window).scrollTop();
     // Do something
     
     if ( scroll > 86 ) {
-      jQuery('body').addClass('scrollOn');
-    jQuery('body').removeClass('scrollOff');
+        jQuery('body').addClass('scrollOn');
+        jQuery('body').removeClass('scrollOff');
     //jQuery('.scrollOn header#header').addClass('fixed');
     } else {
-    jQuery('body').removeClass('scrollOn');
-    jQuery('body').addClass('scrollOff');
-  }
+        jQuery('body').removeClass('scrollOn');
+        jQuery('body').addClass('scrollOff');
+    }
   
   
-  });
+    });
 
   
  
-  
+    //ao clicar no item do menu, a o scroll vai até a section escolhidaespecifica
     $(".navbar .menu ul a").click(function(event){        
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top - 25}, 1000);
