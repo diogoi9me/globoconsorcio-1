@@ -43,12 +43,20 @@
     .scrollOn .navbar .menu ul li{ padding:25px 12px; }
 }
 @media screen and (max-width:991px){
+    .atendimento .form{ width:100%; padding-bottom:0!important;}
+    .atendimento .form .btn-enviar{ margin: 15px 0 0;  height: 65px; }
     .footer .maps, .footer .central, .footer .end{ width:100%; max-width:100%; }
     .nossos-planos .bloco-planos li{ width: 261px; }
     .vantagens__top .vantagens__b .vantagens__blocos li,
-    .vantagens__bottom .vantagens__a .vantagens__blocos li{ width: 43%; }
+    .vantagens__bottom .vantagens__a .vantagens__blocos li{ width: 42%; }
 }
 @media screen and (max-width:963px){
+
+    .nossos-planos .bloco-planos .btn__nossoplano{ width:70%; margin: 0px 29px!important; padding: 20px 5px; font-size: 12px;  }
+    .nossos-planos .bloco-planos li{ width: 29%;     margin: 0 5px; }
+    .nossos-planos .bloco-planos li .info{ margin:10px 0; display: block; text-align: center;  }
+    .nossos-planos .bloco-planos li div img{ float: inherit!important; }
+    .nossos-planos .bloco-planos li div h5{ width:100%!important; display: inherit; }
     .nossos-planos .bloco-planos li div h5:before,
     .nossos-planos .bloco-planos li div h5:after,
     .nossos-planos .bloco-planos li div p{ display:none; }
@@ -80,15 +88,16 @@
     .navbar .navbar-brand{ padding: 12px; }
     .navbar{ height:110px; }
     .navbar .menu{ max-width: 100%; }
-    .navbar .form_pesquisa_mobile{     width: 92%; left: 8px; top:3px; }
+    .navbar .form_pesquisa_mobile{/*  width: 71%; left: 190px; */ top:3px; }
+    .btn-close{     left: 152px; top: 14px; }
     .scrollOn .navbar .form_pesquisa_mobile{  top:3px; }
     .navbar .busca { right: 0px; max-width: 100%; top: 171px; background-color: #fff; position: absolute; } 
-    .navbar .pesquisa{ top: 8px; right: 83px; font-size: 30px; }
+    .navbar .pesquisa{ top: 17px; right: 83px; font-size: 30px; }
     .scrollOn .navbar .pesquisa{ top:16px; }
     .navbar .tarja{ padding:21px; }
     .navbar .container{    height: 59px;  top: 68px; }
     .navbar .tarja span{ margin-left:0px; }
-    .navbar .form_pesquisa_mobile input{  color: #000;   background-color: #dad1d1; }
+    .navbar .form_pesquisa_mobile input{  color: #000;   background-color: #fff; padding-right: 30px; }
     /* menu appearance - aparencia do menu */
     .navbar .menu{ position:absolute; top:60px; color:#999; margin:0px; padding:0px; text-align:center; box-shadow:0 1px 8px rgba(0,0,0,0.05); 
     /*just for this demo - apenas para esta demo*/ opacity:0; visibility:hidden; transition:opacity .4s; }
@@ -166,6 +175,13 @@
     .footer .layer_blue img{ float:initial!important; }
 
 }
+@media screen and (max-width:908px){
+    .busca-top{ top: 51px; }
+    .scrollOn .busca-top{ top: 65px; }
+    .scrollOn .btn-close{ top: 13px; }
+/*     .navbar .form_pesquisa_mobile{     width: 79%;   left: 13%; } */
+    .btn-close{ left:9%; }
+}
 @media screen and (max-width:892px){
     .navbar .servico_cliente{ display: none; }
     #owl-consorcio .owl-nav .owl-prev, .owl-nav .owl-next{ height: 50px; position:relative; }
@@ -227,7 +243,10 @@
    .metricas .clientes-ativos:before{ content: ""; border-top: 2px solid #fff; height: 10px; width:65px; display: block; position: absolute; right: 17px; bottom: -7px; }
 }
 @media screen and (max-width:783px){
+    .atendimento{ padding-bottom: 30px; }
     .navbar .tarja .text_center{ left:38%; }
+    .footer .layer_gray .b .logos{ margin-top: 5px; }
+    .footer .servicos a, .footer .institucional a, .footer .blog a, .footer .comprar a{ font-weight:normal;     font-family: 'owd-regular',sans-serif; }
     .navbar .tarja .redes,.navbar .tarja .contato,.navbar .tarja .servico_cliente{ display:none; }
     .newsletter .icon-facebook, .newsletter .icon-instagram-1, .newsletter .icon-youtube-play{ margin:0px 15px; font-size:23px; }
     .vantagens__top .vantagens__b .vantagens__blocos li div,
@@ -236,6 +255,14 @@
     .vantagens__bottom .vantagens__a .vantagens__blocos{ margin:51px 0px; text-align:center; }
 }
 @media screen and (max-width:768px){
+    .vantagens__bottom .mobile-a{ top:370px!important; }
+    .vantagens__bottom .mobile-b{ top:-370px!important; }
+    .footer .layer_gray .a, .footer .layer_gray .b{ height: auto; margin: 0; }
+    .footer .layer_blue{ padding: 30px 0; }
+    .footer .layer_blue a{ font-size:0; }
+    .footer .layer_blue img{ margin-bottom:20px; }
+    .footer .layer_blue .small-logo{ margin:20px 0 0; }
+    .footer .layer_menu{ margin: 30px 0; }
     #owl-carros .item{ padding-top: 95px; }
     #owl-carros .item h4{ margin: 10px 0px; }
     #owl-carros .owl-item .item .info figure{     margin: 45px 0px 0px; }
@@ -274,18 +301,29 @@
     #owl-opinioes .owl-item .item .info figure figcaption .stars{ left:58px; }
 }   
 @media screen and (max-width:745px){
+    .nossos-planos .bloco-planos li div{ text-align: center; }
+    .nossos-planos .bloco-planos li{ margin-bottom: 22px!important; }
     .nossos-planos .bloco-planos li{ width: 100%;  margin:0 0 10px; }
     .nossos-planos .bloco-planos li div img{ margin:2px 15px; }
     .nossos-planos .bloco-planos li div h5{ margin:13px 0px 6px; }
 }
 @media screen and (max-width:640px){
-    .line_blue{ height:auto; }
-    .line_blue .box_center{ font-size:15px; }
-    .line_blue .box_left, .line_blue .box_right{ margin: 15px 0px; }
-    .line_blue .box_center{     font-size: 18px;  margin: 23px auto; }
-    .line_blue .box_left, .line_blue .box_right{ padding:0px 19px; }
-    .line_blue .box_left h5, .line_blue .box_right h5{ font-size:10px; display: block; margin-top:10px; }
+    .icon-pesquisa-mobile{     right: 14px; }
+    .busca-top{ margin: 10px 5%; width: 90%; }
+    .navbar .container{ padding:0 5px; }
+    .navbar .pesquisa{      top: 19px; right: 62px;}
+    .form_pesquisa_mobile{ left:0%; }
+    .scrollOn .navbar .pesquisa{ top: 23px; }
 
+
+
+    .line_blue{ height:auto;     padding: 11px 0 0;}
+    .line_blue .box_center{ font-size:15px; }
+    .line_blue .box_left, .line_blue .box_right{ margin: 15px 0px; max-width: 40.99999%; }
+    .line_blue .box_center{     max-width: 56px; font-size: 18px;  margin: 23px auto; }
+    .line_blue .box_left, .line_blue .box_right{ padding:0px 5px; }
+    .line_blue .box_left i, .line_blue .box_right i{ float: left; }
+    .line_blue .box_left h5, .line_blue .box_right h5{     font-size: 16px; display: inline-block; margin:0px; text-align: left; width: 90px; vertical-align: top; }
 }
 @media screen and (max-width:413px){
      .navbar .tarja .text_center{ left:16%; }

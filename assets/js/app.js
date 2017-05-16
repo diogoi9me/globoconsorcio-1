@@ -97,9 +97,32 @@ jQuery(document).ready(function($) {
 
     $(".pesquisa").click(function() {
 
-        $(".form_pesquisa_mobile").slideToggle('slow');
-
+        $(".form_pesquisa_mobile").show();
+        $(".effect").toggleClass('on');
+        $(".busca-top").toggleClass('on');
+        $(this).toggleClass('on');
+        $(".btn-close").show();
     });
+    $(".btn-close").click(function(){
+      $(".form_pesquisa_mobile").hide();
+      $(".effect").toggleClass('on');
+      $(".btn-close").hide();
+    
+    });
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

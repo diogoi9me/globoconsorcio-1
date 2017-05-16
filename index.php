@@ -2,7 +2,7 @@
 
 <!--banner-->
 
-<section class="area_video_banner">
+<section class="area_video_banner effect">
 
   
 
@@ -16,7 +16,7 @@
 
 <!--solicitar uma simulação-->
 
-<section class="simulacao" id="simulacao">
+<section class="simulacao effect" id="simulacao">
 
 	<div class="container">
 
@@ -36,7 +36,7 @@
 
 <!--blue layer-->
 
-<div class="line_blue">
+<div class="line_blue effect">
 
 	<div class="box_left">
 
@@ -62,7 +62,7 @@
 
 <!--nossos carros-->
 
-<section class="nossos-carros" id="carros">
+<section class="nossos-carros effect" id="carros">
 
   <div class="containe-owl">
 
@@ -174,7 +174,7 @@
 
 <!--nossos planos-->
 
-<section class="nossos-planos" id="planos">
+<section class="nossos-planos effect" id="planos">
 
   <div class="container"> 
 
@@ -207,7 +207,7 @@
       <li class="wow slideInUp">
 
         <div class="hvr-grow">
-
+          <span class="info">
           <?php 
 
               imagem_destacada('full', 'wow pulse', get_the_title(), '')
@@ -217,7 +217,7 @@
           <h5><?php echo get_the_title(); ?></h5>
 
           <span><?php campo_customizado('wpcf-prazo'); ?></span>
-
+          </span>
           <div class="resumo">
 
           <?php  if (has_excerpt() ) { the_excerpt(); } ?>  
@@ -242,7 +242,7 @@
 
 <!--metricas-->
 
-<section class="metricas" id="metricas">
+<section class="metricas effect" id="metricas">
 
   <div class="container-metricas">
     
@@ -288,7 +288,7 @@
 
 <!--entenda o consórcio-->
 
-<section class="consorcio" id="consorcio">
+<section class="consorcio effect" id="consorcio">
 
   <div class="containe-owl">
 
@@ -364,7 +364,7 @@
 
 <!--vantagens do consórcio & sobre a globo consórcio -->
 
-<section class="vantagens__top"> 
+<section class="vantagens__top effect"> 
 
   <div class="col-md-6 col-sm-6 col-xs-12">
 
@@ -458,9 +458,9 @@
 
 </section>
 
-<section class="vantagens__bottom"> 
+<section class="vantagens__bottom effect"> 
 
-  <div class="col-md-6 col-sm-6">
+  <div class="col-md-6 col-sm-6 mobile-a">
 
     <div class="row">
 
@@ -524,7 +524,7 @@
 
   </div>
 
-  <div class="col-md-6 col-sm-6 col-xs-12">
+  <div class="col-md-6 col-sm-6 col-xs-12 mobile-b">
 
     <div class="row">
 
@@ -552,7 +552,7 @@
 
 <!--últimas do nosso blog-->
 
-<section class="ultimasblog" id="blog">
+<section class="ultimasblog effect" id="blog">
 
   <div class="container"> 
 
@@ -562,7 +562,8 @@
 
       <div class="title__bloco">
 
-        <input type="text" class="form-control" placeholder="Pesquise no Blog" ><i class="icon-search"></i>
+        <input type="text" class="form-control" placeholder="Pesquise no Blog" >
+        <input type="submit" class="icon-pesquisa">
 
         <h6>Blog Completo</h6>
 
@@ -620,7 +621,7 @@
 
 <!--opiniões dos nossos clientes -->
 
-<section class="nossos-carros" id="depoimentos">
+<section class="nossos-carros effect" id="depoimentos">
 
   <div class="containe-owl">
 
@@ -730,7 +731,7 @@
 
 <!--central de atendimento-->
 
-<section class="atendimento" id="atendimento">
+<section class="atendimento effect" id="atendimento">
 
   <div class="container">
 

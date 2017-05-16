@@ -21,11 +21,11 @@
 <body>
   
 
-  
-
+ 
+  <div id="layer-transparent" class="layer-searc" >
   <header class="navbar transition" id="header-top">
 
-    <div class="tarja transition" id="tarja-header">
+    <div class="tarja transition effect" id="tarja-header">
 
     <ul class="contato">
 
@@ -35,14 +35,14 @@
 
     </ul>
     <div class="text_center">
-      <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-fiat.png" alt="">Consórcio Nacional Chevrolet</span>
+      <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fiat.png" alt="">Consórcio Nacional Chevrolet</span>
     </div>
 
 
 
 
 
-    <ul class="redes">
+    <ul class="redes effect">
 
           <li>
 
@@ -104,7 +104,7 @@
 
       ?>
      
-    <div class="btn-group servico_cliente transition">
+    <div class="btn-group servico_cliente transition effect">
 
           <button type="button" class="btn">Serviço ao Cliente</button>
 
@@ -131,18 +131,20 @@
           </ul>
 
     </div>
+    
+        <span class="icon-pesquisa pesquisa transition" title="Pesquisar"></span>
+          
+        <div class="busca-top">
 
-    <i class="icon-search pesquisa transition" title="Pesquisar"></i>
-      
         <form role="search" method="get" id="form_pesquisa" class="form_pesquisa_mobile" action="">
+            <input type="text" class="transition mobile_search" name="texto_pesquisa" placeholder="Pesquise no Site" />
+            <button type="submit" class="icon-pesquisa-mobile"></button>
+        </form>
       
-          <input type="text" class="transition mobile_search" name="texto_pesquisa" placeholder="Pesquise no Site" />
-      
-         </form>
+</idv>
 
-       <!--   <div class="search">
-        <input type="text" class="form-control" placeholder="" ><i class="icon-search"></i> 
-       </div> -->
+
   </div>
 
   </header>
+      

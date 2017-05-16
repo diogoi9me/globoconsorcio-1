@@ -47,7 +47,7 @@
 <!--footer-->
 
 <footer class="footer">
-
+	<div class="layer_menu">
 	<div class="container">
 
 		<div class="row">
@@ -191,7 +191,7 @@
 			</div>
 
 		</div>
-
+	</div>
 	</div>
 
 
@@ -312,13 +312,13 @@
 
 					</div>
 
-				</div>
-
 			</div>
 
 		</div>
 
 	</div>
+
+
 
 	<div class="col-md-12">
 
@@ -367,7 +367,7 @@
 				</div>
 
 			</div>
-
+			
 		</div> 
 
     </div>
@@ -375,8 +375,7 @@
 </footer>
 
 
-
-
+</div>
 
 
 
@@ -387,5 +386,6 @@
 <?php wp_footer(); ?>
 
 </body>
+
 
 </html>
