@@ -2,7 +2,7 @@
 
 <!--banner-->
 
-<section class="area_video_banner effect">
+<section class="area_video_banner effect" id="home">
 
   
 
@@ -72,7 +72,7 @@
 
           <h2 class="title"><span>Nossos</span>Carros</h2>
 
-          <h6>Ver todos</h6>
+          <h6><a href="#" title="Ver todos">Ver todos</a></h6>
 
         </div>
 
@@ -380,7 +380,7 @@
 
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur debitis eaque iusto unde consequuntur repellat, sunt distinctio rem commodi incidunt rerum minima.</p>
 
-          <button class="wow zoomIn"><i class="icon-more"></i>Saiba mais</button>
+          <button class="wow zoomIn"><i class="glyphicon glyphicon-plus"></i>Saiba mais</button>
 
         
 
@@ -536,7 +536,7 @@
 
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur debitis eaque iusto unde consequuntur repellat, sunt distinctio rem commodi incidunt rerum minima.</p>
 
-          <button class="wow zoomIn"><i class="icon-more"></i>Saiba mais</button>
+          <button class="wow zoomIn"><i class="glyphicon glyphicon-plus"></i>Saiba mais</button>
 
         </div>
 
@@ -565,7 +565,7 @@
         <input type="text" class="form-control" placeholder="Pesquise no Blog" >
         <input type="submit" class="icon-pesquisa">
 
-        <h6>Blog Completo</h6>
+        <h6><a href="#" title="Blog Completo">Blog Completo</a></h6>
 
       </div>
 
@@ -631,7 +631,7 @@
 
           <h2 class="title"><span>Opniões dos</span>Nossos Clientes</h2>
 
-          <h6>Ver todos</h6>
+          <h6><a href="#" title="Ver Todos">Ver todos</a></h6>
 
         </div>
 

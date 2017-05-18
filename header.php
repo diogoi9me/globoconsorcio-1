@@ -62,7 +62,7 @@
       <div class="navbar-brand transition">
         
         <?php if( is_home() || is_front_page() ): ?>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a class="link-up" href="#home">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Globo Consórcio.">
           </a>
         <?php else: ?>
@@ -74,17 +74,19 @@
       </div>
     
 
-      <a href="#menu" id="toggle"><span></span></a>
+     
 
        <?php require_once('assets/includes/wp_bootstrap_navwalker.php'); ?>
-
-      <?php
+        
+        <div class="nav_mobile">
+            <a href="#menu" id="toggle"><span></span></a>
+             <?php
 
         wp_nav_menu( array(
 
-            'menu'              => 'Menu',
+            'menu'              => 'nav_mobile',
 
-            'theme_location'    => 'menu-header',
+            //'theme_location'    => 'menu-header',
 
             'depth'             => 2,
 
@@ -103,7 +105,35 @@
           );
 
       ?>
-     
+        </div>
+      
+    <div class="nav_main">
+      <?php
+
+        wp_nav_menu( array(
+
+            'menu'              => 'Menu',
+
+            //'theme_location'    => 'menu-header',
+
+            'depth'             => 2,
+
+            'container'         => 'div',
+
+            'container_class'   => 'menu collapse navbar-collapse',
+
+            'container_id'      => 'bs-example-navbar-collapse-1 menu-top',
+
+            'menu_class'        => 'nav navbar-nav',
+
+            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+
+            'walker'            => new wp_bootstrap_navwalker())
+
+          );
+
+      ?>
+     </div>
     <div class="btn-group servico_cliente transition effect">
 
           <button type="button" class="btn">Serviço ao Cliente</button>

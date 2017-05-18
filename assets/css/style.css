@@ -102,7 +102,7 @@ hr{ margin: 0px; }
 
 .icon-certificada{ width: 36px; background: url(../images/icons_about.png) -330px 4px; height: 30px; display: inline-block; margin-top: 15px;  }
 
-.icon-more{ width: 20px; background: url(../images/more.png)no-repeat; height: 20px; display: block; margin: 0px auto 10px; } 
+.glyphicon-plus{ font-size: 20px; display: block; margin: 0px auto 20px; } 
 
 .icon-clientes-ativos{     width: 34px; background: url(../images/icon-clientes-ativos.png)no-repeat; height: 30px; display: inline-block; margin-top: 25px; }
 
@@ -209,7 +209,7 @@ hr{ margin: 0px; }
 .navbar{ border:0px; border-radius:0px; box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3); top:0px; background-color:#fff; margin:0px; padding:0px; height:175px; position:absolute; z-index: 999999999999; width:100%; }
 
 .navbar .navbar-brand{ position: relative; top:-1%; z-index:9999999999; margin:0px!important; padding:27px 0px; height:auto; font-size:0px; }
-
+.navbar .nav_mobile{ display: none; }
 .navbar .menu{ margin: 0px!important; padding: 0px; width:100%; position: absolute; font-size: 0px; top:0%; left:0%; } 
 
 .navbar .menu ul li{ display:inline-block; padding:35px 25px;  }
@@ -535,7 +535,7 @@ nks p { color: #333; font : normal 400 20px/1 'Josefin Sans', sans-serif; }
 
 .vantagens__top .vantagens__b .vantagens__blocos li div,
 
-.vantagens__bottom .vantagens__a .vantagens__blocos li div{ border: 1px solid #aaa; width: 238px; height: 120px; text-align: center; color: #fff; max-width: 100%; }
+.vantagens__bottom .vantagens__a .vantagens__blocos li div{ border: 1px solid rgba(255, 255, 255, 0.2); width: 238px; height: 120px; text-align: center; color: #fff; max-width: 100%; }
 
 .vantagens__top .vantagens__b .vantagens__blocos li div h5,
 
@@ -548,7 +548,10 @@ nks p { color: #333; font : normal 400 20px/1 'Josefin Sans', sans-serif; }
 .vantagens__bottom .vantagens__b .vantagens__conteudo button,
 
 .vantagens__top .vantagens__a .vantagens__conteudo button{ background-color: transparent; border-radius: 0px; border: 2px solid #ccc; width: 220px; height: 99px; text-transform: uppercase; font-size: 13px; font-family: 'owd-bold',sans-serif; letter-spacing: 3px; color: #003996; }
-.vantagens__bottom .vantagens__b .vantagens__conteudo button, .vantagens__top .vantagens__a .vantagens__conteudo button:hover{     border: 2px solid #003996; }
+
+.vantagens__bottom .vantagens__b .vantagens__conteudo button:hover, 
+.vantagens__top .vantagens__a .vantagens__conteudo button:hover{ background-color: #003996; color: #fff; border: 2px solid #003996; }
+
 .vantagens__top .vantagens__b .vantagens__blocos,
 
 .vantagens__bottom .vantagens__a .vantagens__blocos{ margin:115px 23px; display: inline-block; max-width: 100%; } 
@@ -599,7 +602,7 @@ nks p { color: #333; font : normal 400 20px/1 'Josefin Sans', sans-serif; }
 
 #owl-carros .owl-item .item .info .btn__carros,  
 
-.nossos-planos .bloco-planos .btn__nossoplano{ padding: 22px; font-size: 13px; line-height: 100%; max-width:100%; color: #fff; width: 247px; height: 60px; border-radius: 0px; margin-top: 38px; text-transform: uppercase; font-family: 'owd-bold',sans-serif; letter-spacing:5px; }
+.nossos-planos .bloco-planos .btn__nossoplano{  padding: 0 22px; font-size: 13px;  line-height: 60px; max-width:100%; color: #fff; width: 247px; height: 60px; border-radius: 0px; margin-top: 38px; text-transform: uppercase; font-family: 'owd-bold',sans-serif; letter-spacing:5px; }
 
 #owl-carros .owl-item .item .info .btn__carros{ color:#003996; border: 2px solid #003996; }
 
@@ -789,7 +792,7 @@ nks p { color: #333; font : normal 400 20px/1 'Josefin Sans', sans-serif; }
 
 .footer .central h4{ font-size:16px; font-family: 'owd-bold',sans-serif; text-transform: uppercase; }
 
-.footer .central h4{ margin: 10px 0px 15px!important; color:#003793; text-align: left; margin:0px; }
+.footer .central h4{ margin: 10px 0px 15px!important; color:#333; text-align: left; margin:0px; }
 
 .footer .servicos a,
 
