@@ -3,96 +3,6 @@ jQuery(document).ready(function($) {
 
     new WOW().init();
 
-      
-
-
-
-    //efeito do header quando ativar o scroll.
-
-    //$('html').on('DOMMouseScroll mousewheel', function (e) {
-
-     //   if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) { 
-
-
-
-            //scroll down
-
-         //   console.log('Down');
-
-         //   $( "#tarja-header" ).addClass( "hide-nav-bar" );
-
-         //   $( "#header-top" ).addClass( "navbar-top" );
-
-         //   $( ".menu" ).addClass( "menu-top" );
-
-         //   $( ".navbar-brand" ).addClass( "logo-top" );
-
-         //   $( ".pesquisa" ).addClass( "pesquisa-top" );
-
-         //   $( ".mobile_search" ).addClass( "form-top" );
-
-          //  $( "#form_pesquisa" ).addClass( "form_pesquisa_mobile-top" );
-
-         //   $( "body" ).addClass( "body-top" );
-
-      //  } else {
-
-            //scroll up
-
-        //    console.log('Up');
-
-      //      $( "#tarja-header" ).removeClass( "hide-nav-bar" );
-
-       //     $( "#header-top" ).removeClass( "navbar-top" );
-
-       //     $( ".menu" ).removeClass( "menu-top" );
-
-        //    $( ".navbar-brand" ).removeClass( "logo-top" );
-
-         //   $( ".pesquisa" ).removeClass( "pesquisa-top" );
-
-        //    $( ".mobile_search" ).removeClass( "form-top" );
-
-        //    $( "#form_pesquisa" ).removeClass( "form_pesquisa_mobile-top" );
-
-        //    $( "body" ).removeClass( "body-top" );
-
-      //  }
-
-   // });
-
-
-
-    //desabilita o efeito do header-scroll no mobile
-
-  //  $(window).scroll(function () {
-
-    //    var sc = $(window).width()
-
-    //    if (sc < 842) {
-
-    //        $( "#tarja-header" ).removeClass( "hide-nav-bar" );
-
-    //        $( "#header-top" ).removeClass( "navbar-top" );
-
-     //       $( ".menu" ).removeClass( "menu-top" );
-
-     //       $( ".navbar-brand" ).removeClass( "logo-top" );
-
-      //      $( ".pesquisa" ).removeClass( "pesquisa-top" );
-
-      //      $( ".mobile_search" ).removeClass( "form-top" );
-
-      //      $( "#form_pesquisa" ).removeClass( "form_pesquisa_mobile-top" );
-
-       //     $( "body" ).removeClass( "body-top" );
-
-      //  }
-
- //   });
-
-
-
     //barra de pesquisa do header.
 
     $(".pesquisa").click(function() {
@@ -109,22 +19,6 @@ jQuery(document).ready(function($) {
       $(".btn-close").hide();
     
     });
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     //menu-toggle
 
@@ -149,13 +43,6 @@ jQuery(document).ready(function($) {
     });
 
 
-
-
-
-
-
-
-
     var alturaJanela = $(window).height();
 
     var alturaHeader= $('header .navbar .area_video_banner').height();
@@ -165,10 +52,6 @@ jQuery(document).ready(function($) {
 
 
     $('.area_video_banner').css({'height' : alturaTela+'px'}); 
-
-
-
-
 
     //carousel nossos carros.
 
@@ -318,7 +201,7 @@ jQuery(document).ready(function($) {
   
  
     //ao clicar no item do menu, a o scroll vai até a section escolhidaespecifica
-    $(".nav_main .menu ul a, .link-up").click(function(event){        
+    $(".nav_main .menu ul a, .link-up, .scroll-down").click(function(event){        
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top - 25}, 1000);
     

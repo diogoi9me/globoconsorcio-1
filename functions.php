@@ -361,7 +361,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 
     <div id="demo-scroll" class="demo">
 
-      <div><a href="' . $link . '"><span></span><span></span><span></span></a></div>
+      <div><a class="scroll-down" href="' . $link . '"><span></span><span></span><span></span></a></div>
 
     </div>
     <video autoplay loop id="video-background" poster="" muted>
