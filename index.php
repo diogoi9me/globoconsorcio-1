@@ -40,7 +40,7 @@
 
 	<div class="box_left">
 
-		<i class="icon-volume-control-phone"></i><h5>Nós Ligamos para você</h5>
+		<a class="chamada" href="#"><i class="icon-volume-control-phone"></i><h5>Nós Ligamos para você</h5></a>
 
 	</div>
 
@@ -52,7 +52,7 @@
 
 	<div class="box_right">
 
-		<i class="icon-handshake-o"></i><h5>Nós Vamos até você</h5>
+		<a class="chamada" href="#"><i class="icon-handshake-o"></i><h5>Nós Vamos até você</h5></a>
 
 	</div>
 
@@ -70,9 +70,9 @@
 
         <div class="title-carousel">
 
-          <h2 class="title"><span>Nossos</span>Carros</h2>
+          <h2 class="title"><span>Nossos</span>Veículos</h2>
 
-          <h6><a href="#" title="Ver todos">Ver todos</a></h6>
+           <h6><a href="<?php echo esc_url( home_url() ); ?>/veiculos" title="Ver todos">Ver todos</a></h6>
 
         </div>
 
