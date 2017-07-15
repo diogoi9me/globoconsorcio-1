@@ -1,3 +1,4 @@
+<?php /*Template Name: HOME */ ?>
 <?php get_header(); ?>
 
 <!--banner-->
