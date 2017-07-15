@@ -1037,3 +1037,12 @@
         font-size: 12px
     }
 }
+
+/*Aditivos DIOGO*/
+
+@media screen and (min-width:768px){
+    .line_blue .chamada{
+    position: relative;
+    padding: 15px;
+    }
+}
