@@ -1,10 +1,23 @@
-<?php /*Template Name: veiculos */ ?>
-<?php get_header(); ?>
+<?php 
+/**
+ * The template for displaying all single posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package WordPress
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
+ * @version 1.0
+ */
+
+
+get_header(); ?>
 
 <?php 
-global $page;
 
-$slug_page=$page->post_name;
+$term_object = get_queried_object();
+
+$slugTerm = $term_object->slug;
 
 //Busca dados no campo personalizado da Página
 $resumoPage = get_post_custom_values('wpcf-editor-html-texto');
@@ -19,12 +32,13 @@ $resumoPage = $resumoPage[0];
 		<div class="container">
 			
 				<h2 class="bloco-banner__title">
-
-				<?php the_title() ?>
+				
+				<?php echo single_term_title(); ?>
 					
 				</h2>
+					
 				<div class="bloco-banner__texto">
-					<?php echo $resumoPage; ?>
+					<?php echo term_description(); ?>
 				</div>
 			
 		</div>	
@@ -32,9 +46,9 @@ $resumoPage = $resumoPage[0];
 	
 	<div class="container">
 
-	<div class="col-md-2">
+	<div class="col-md-2 todos">
 			<div class="filtro filtro<?php if( !is_tax() ) { echo '__ativo'; } ?>">
-				<a href="#">
+				<a href="<?php echo esc_url( home_url() ); ?>/veiculos">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-all.png" alt="">
 					<span class="filtro__title ">Todos</span>
 				</a>
@@ -59,8 +73,8 @@ $termLink = esc_url( get_term_link( $term ) );
 		<div class="col-md-1">
 			<div class="bloco-opcoes__divisor"></div>
 		</div>
-		<div class="col-md-2">
-			<div class="filtro filtro">
+		<div class="col-md-2 <?php echo  $term->slug; ?>">
+			<div class="filtro filtro<?php if( $term->slug == $slugTerm ) { echo '__ativo'; } ?>">
 				<a href="<?php echo $termLink; ?>">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-all.png" alt="">
 					<span class="filtro__title "><?php echo $term->name; ?></span>
@@ -112,9 +126,9 @@ $termLink = esc_url( get_term_link( $term ) );
 
 	        <div class="title-carousel">
 
-	          <h2 class="title"><span>Nossos</span>Veículos</h2>
+	          <h2 class="title"><span>Nossos</span>Carros</h2>
 
-	          <p>Descrição do conteúdo a ser listado abaixo.</p>
+	          <h6><a href="#" title="Ver todos">Ver todos</a></h6>
 
 	        </div>
 
@@ -123,11 +137,88 @@ $termLink = esc_url( get_term_link( $term ) );
 	    <div id="owl-carros" class="owl-carousel owl-theme">
 
 
-		 <?php 
-        	//Include com listagem dos veículos
-        	get_template_part('template-parts/page/products-veiculos','list');
-      	?>
 
+	      <?php
+
+	        $args = array( 'post_type' => 'oferta', 'posts_per_page' => 8, 'order' => 'ASC' );
+
+	        $loop = new WP_Query( $args );
+
+
+
+	          while ( $loop->have_posts() ) : $loop->the_post();
+
+	    
+
+	          $slug = basename(get_permalink());
+
+	          $classItem = $slug;
+
+	    
+
+	            //Campos Personalizados
+
+	            $preco = get_post_custom_values('wpcf-preco');
+
+	            $preco = $preco[0];
+
+	            $preco = number_format($preco, 2, ',', '.');
+
+
+
+	            $parcelas = get_post_custom_values('wpcf-parcelas');
+
+	            $parcelas = $parcelas[0];
+
+
+
+	            $valorDaParcela = get_post_custom_values('wpcf-valor-da-parcela');
+
+	            $valorDaParcela = $valorDaParcela[0];
+
+	            $valorDaParcela = number_format($valorDaParcela, 2, ',', '.');
+
+	      ?> 
+
+
+
+	      <div class="item">
+
+	        <h4><?php echo the_title(); ?></h4>
+
+	        <a class="image" href="<?php echo get_permalink(); ?>" title="<?php echo the_title_attribute( 'echo=0' ); ?>" rel="bookmark">
+
+	          <div class="info">
+
+	            <figure class="hvr-grow wow zoomIn">
+
+	              <?php 
+
+	                imagem_destacada('full', 'wow pulse', get_the_title(), '')
+
+	              ?>
+
+	              <figcaption>
+
+	                <span><?php echo $preco ?></span>
+
+	                <strong><?php echo $parcelas . 'X de <strong>' . $valorDaParcela . '</strong>' ?></strong>
+
+	              </figcaption>
+
+	            </figure>
+
+
+
+	            <?php trackButton('link', 'productView_'. get_the_ID(), 'Clicado', get_the_title(), get_post_permalink(), get_the_title(), 'productView_'. get_the_ID(), 'btn btn__carros wow zoomIn hvr-hollow', 'Simule aqui'); ?>
+
+	          </div>
+
+	        </a>
+
+	      </div>
+
+	      <?php endwhile; ?>   
 
 	    </div>
 
