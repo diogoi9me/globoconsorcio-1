@@ -2,6 +2,7 @@
 <?php get_header(); ?>
 
 <article class="page-servico-cliente">
+
 	<div class="bloco-banner">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
 		<div class="container">
@@ -10,6 +11,7 @@
 
 		</div>	
 	</div>
+
 	<div class="bloco-opcoes">
 		<div class="container">
 			

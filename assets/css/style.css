@@ -2548,50 +2548,53 @@ nks p {
 
 
 
-
-
-
-
-
-/*======paginas========*/
-.page-veiculos,.page-planos,.page-desconto,.page-single-veiculos,.page-consorcio-chevrolet,
-.page-sobre,.page-atendimento,.page-faq,.page-servico-cliente,.page-plano-facil{
-    width: 100%;
-    display: inline-block;
-}
-
 .container-single{
     width: 997px;
     max-width: 100%;
     display: inline-block;
 }
-/*======banner das internas ======*/
-.bloco-banner{
-    position: relative;
+
+
+
+
+
+/*====== ARTICLE - PAGINAS ========*/
+.page-veiculos,.page-planos,
+.page-desconto,.page-single-veiculos,
+.page-consorcio-chevrolet,.page-sobre,
+.page-atendimento,.page-faq,
+.page-servico-cliente,.page-plano-facil{
+    display: inline-block;
     width: 100%;
+}
+/*==================================*/
+
+
+/*======BLOCO BANNER - INTERNAS ======*/
+.bloco-banner{
     height: 170px;
     margin-top: 12px;
+    position: relative;
+    width: 100%;
 }
 .bloco-banner img{
     width: 100%;
 }
-
 .bloco-banner__title,.bloco-banner__toptitle,.bloco-banner__texto{
     color: #fff;
     position: absolute;
     text-transform: uppercase;
 }
+.bloco-banner__title,.bloco-banner__title--chevrolet, .bloco-banner__title-single{
+    bottom: 248px;
+    font-family: 'owd-bold',sans-serif;
+    font-size: 40px;
+    margin: 0;
+}   
 .bloco-banner__toptitle{
     bottom: 280px;
     font-family: 'owd-light',sans-serif;
     font-size: 16px;
-}
-.bloco-banner__title,.bloco-banner__title--chevrolet, .bloco-banner__title-single{
-    bottom: 248px;
-    margin: 0;
-    font-family: 'owd-bold',sans-serif;
-    font-size: 40px;
-
 }
 .bloco-banner__title--chevrolet{
     bottom: 238px;
@@ -2603,53 +2606,58 @@ nks p {
     content: '';
     border-left: 1px solid #fff;
     display: inline-block;
-    position: absolute;
     height: 48px;
     left: -40px;
+    position: absolute;
     top: -5px;
 }
 .bloco-banner__texto,.bloco-banner__texto--veiculo,.bloco-banner__texto-right{
-    position: absolute;
+    bottom: 254px;
+    color: #fff;
     font-size: 14px;
     font-family: 'owd-light',sans-serif;
-    max-width: 400px;
-    color: #fff;
-    bottom: 254px;
     left: 30%;
+    max-width: 400px;
+    position: absolute;
     text-align: left;
 }
 .bloco-banner__texto--veiculo{
     left: 45%;
-    max-width: 155px;
     line-height: 23px;
+    max-width: 155px;
     top: -70%;
 }
 .bloco-banner__texto--veiculo:before{
-    content: '';
     border-right: 1px solid #fff;
     border-left: 0;
+    content: '';
     right: 0;
     top: 5px;
-  
 }
 .bloco-banner__texto-right{
+    font-size: 25px;
     left: 60%;
     max-width: 155px;
     top: -70%;
-    font-size: 25px;
 }
 .bloco-banner__texto-right strong{
     font-family: 'owd-bold',sans-serif;
 }
-
 .bloco-banner__veiculo{
-    width: 100%;
-    max-width: 206px;
-    display: inline-block;
-    position: absolute;
     bottom: 220px;
+    display: inline-block;
     left: 360px;
+    max-width: 206px;
+    position: absolute;
+    width: 100%;
 }
+/*=================================================*/
+
+
+
+
+
+
 
 .bloco-opcoes__title{
     font-size: 16px;
@@ -2712,6 +2720,7 @@ nks p {
     font-size: 12px;
     letter-spacing: 3px;
 }
+
 /*===================== BLOCO HEADER ===================================*/
 .bloco-header, .bloco-header--simulacao,.bloco-header--faq{
     padding: 90px 0;
@@ -3026,12 +3035,13 @@ nks p {
     background-repeat: no-repeat;
 }
 .sobre__info--conteudo{
-    max-width: 400px;
+    max-width: 600px;
     display: block;
-    margin:20px auto;
+    margin: 20px auto;
     color: #fff;
-    line-height: 20px;
-    font-family: 'owd-bold',sans-serif;
+    line-height: 31px;
+    font-family: 'owd-regular',sans-serif;
+    font-size: 22px;
 }
 .sobre__info--conteudo{
     margin-bottom: 0;
@@ -3041,6 +3051,9 @@ nks p {
     width: 100%;
     padding: 30px 0;
 }
+.cards__item{
+    border: 1px solid #ccc!important;
+}
 .cards__item, .cards__item--chevrolet{
     min-height: 327px;
     width: 48%;
@@ -3048,6 +3061,7 @@ nks p {
     padding: 20px;
     display: inline-block;
     margin: 10px;
+  
 }
 .cards__item--chevrolet{
     background: transparent;

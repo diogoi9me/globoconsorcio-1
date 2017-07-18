@@ -2,11 +2,12 @@
 <?php get_header(); ?>
 
 <article class="page-single-veiculos">
+
 	<div class="bloco-banner">
   		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
   		<div class="container">
   			<h4 class="bloco-banner__toptitle">Veículos</h4>
-  			<h2 class="bloco-banner__title bloco-banner__title-single"><?php the_title() ?></h2>
+  			<h2 class="bloco-banner__title bloco-banner__title--single"><?php the_title() ?></h2>
   			<div class="bloco-banner__veiculo">
   				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/veiculo.png" alt="">		
   			</div>

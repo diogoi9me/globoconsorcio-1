@@ -3,6 +3,7 @@
 
 
 <article class="page-atendimento">
+
 	<div class="bloco-banner">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
 		<div class="container">

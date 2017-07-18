@@ -2,16 +2,15 @@
 <?php get_header(); ?>
 
 <article class="page-veiculos">
+
 	<div class="bloco-banner">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
 		<div class="container">
-			
-				<h2 class="bloco-banner__title"><?php the_title() ?></h2>
-					
-				<div class="bloco-banner__texto">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				</div>
-			
+			<h2 class="bloco-banner__title"><?php the_title() ?></h2>
+				
+			<div class="bloco-banner__texto">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</div>
 		</div>	
 	</div>
 	
