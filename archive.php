@@ -14,9 +14,10 @@
 get_header(); ?>
 
 <?php 
-global $page;
 
-$slug_page=$page->post_name;
+$term_object = get_queried_object();
+
+$slugTerm = $term_object->slug;
 
 //Busca dados no campo personalizado da Página
 $resumoPage = get_post_custom_values('wpcf-editor-html-texto');
@@ -32,21 +33,12 @@ $resumoPage = $resumoPage[0];
 			
 				<h2 class="bloco-banner__title">
 				
-				<?php 
-
-					if ( is_category() ) {
-
-						echo "CAT: SIM";
-					}
-
-				 ?>
-
-				<?php the_title() ?>
+				<?php echo single_term_title(); ?>
 					
 				</h2>
 					
 				<div class="bloco-banner__texto">
-					<?php echo $resumoPage; ?>
+					<?php echo term_description(); ?>
 				</div>
 			
 		</div>	
@@ -54,9 +46,9 @@ $resumoPage = $resumoPage[0];
 	
 	<div class="container">
 
-	<div class="col-md-2">
-			<div class="filtro filtro__ativo">
-				<a href="#">
+	<div class="col-md-2 todos">
+			<div class="filtro filtro<?php if( !is_tax() ) { echo '__ativo'; } ?>">
+				<a href="<?php echo esc_url( home_url() ); ?>/veiculos">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-all.png" alt="">
 					<span class="filtro__title ">Todos</span>
 				</a>
@@ -81,8 +73,8 @@ $termLink = esc_url( get_term_link( $term ) );
 		<div class="col-md-1">
 			<div class="bloco-opcoes__divisor"></div>
 		</div>
-		<div class="col-md-2">
-			<div class="filtro filtro">
+		<div class="col-md-2 <?php echo  $term->slug; ?>">
+			<div class="filtro filtro<?php if( $term->slug == $slugTerm ) { echo '__ativo'; } ?>">
 				<a href="<?php echo $termLink; ?>">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-all.png" alt="">
 					<span class="filtro__title "><?php echo $term->name; ?></span>

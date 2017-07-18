@@ -1023,11 +1023,14 @@ nks p {
     display: block
 }
 
-#owl-carros .item {
+
+
+
+.list-products .item {
     padding-top: 232px
 }
 
-#owl-carros .item h4 {
+.list-products .item h4 {
     position: relative;
     font-family: owd-bold, sans-serif;
     text-transform: uppercase;
@@ -1035,12 +1038,12 @@ nks p {
     margin: 30px 0
 }
 
-#owl-carros .owl-item:nth-child(even) .item {
+.list-products .owl-item:nth-child(even) .item {
     position: relative;
     background: #fafafa
 }
 
-#owl-carros .owl-item:nth-child(even) .item:after {
+.list-products .owl-item:nth-child(even) .item:after {
     content: url(../images/before.png);
     position: absolute;
     top: 294px;
@@ -1049,12 +1052,12 @@ nks p {
     line-height: 100%
 }
 
-#owl-carros .owl-item:nth-child(odd) .item {
+.list-products .owl-item:nth-child(odd) .item {
     position: relative;
     background: #f2f2f2
 }
 
-#owl-carros .owl-item:nth-child(odd) .item:after {
+.list-products .owl-item:nth-child(odd) .item:after {
     content: url(../images/before2.png);
     position: absolute;
     top: 294px;
@@ -1063,42 +1066,42 @@ nks p {
     line-height: 100%
 }
 
-#owl-carros .owl-item:nth-child(even) .item .info {
+.list-products .owl-item:nth-child(even) .item .info {
     background: #f2f2f2;
     padding-bottom: 130px
 }
 
-#owl-carros .owl-item:nth-child(odd) .item .info {
+.list-products .owl-item:nth-child(odd) .item .info {
     background: #fafafa;
     padding-bottom: 130px
 }
 
-#owl-carros .owl-dots {
+.list-products .owl-dots {
     margin-top: -100px;
     position: absolute;
     width: 100%
 }
 
-#owl-carros .owl-dots .owl-dot.active span {
+.list-products .owl-dots .owl-dot.active span {
     background-color: #003996;
     width: 20px;
     height: 20px
 }
 
-#owl-carros .owl-dots .owl-dot span {
+.list-products .owl-dots .owl-dot span {
     width: 20px;
     height: 20px;
     background-color: #ababab
 }
 
-#owl-carros .owl-nav {
+.list-products .owl-nav {
     position: absolute;
     width: 100%;
     top: 245px
 }
 
-#owl-carros .owl-nav .owl-next,
-#owl-carros .owl-nav .owl-prev {
+.list-products .owl-nav .owl-next,
+.list-products .owl-nav .owl-prev {
     font-size: 0!important;
     height: 110px;
     width: 45px;
@@ -1106,31 +1109,31 @@ nks p {
     padding: 0!important
 }
 
-#owl-carros .owl-nav .owl-prev {
+.list-products .owl-nav .owl-prev {
     float: left;
     background: url(../images/prev.png) center no-repeat #fff!important
 }
 
-#owl-carros .owl-nav .owl-next {
+.list-products .owl-nav .owl-next {
     float: right;
     background: url(../images/next.png) center no-repeat #fff!important
 }
 
-#owl-carros .owl-item .item .info figure {
+.list-products .owl-item .item .info figure {
     display: inline-block;
     margin: 50px 0 0
 }
 
-#owl-carros .owl-item .item .info figure img {
+.list-products .owl-item .item .info figure img {
     width: 235px;
     height: 127px
 }
 
-#owl-carros .owl-item .item .info figure figcaption {
+.list-products .owl-item .item .info figure figcaption {
     margin: 40px 0
 }
 
-#owl-carros .owl-item .item .info figure figcaption span {
+.list-products .owl-item .item .info figure figcaption span {
     margin: 7px 0;
     font-family: owd-light, sans-serif;
     display: block;
@@ -1138,7 +1141,7 @@ nks p {
     font-size: 14px
 }
 
-#owl-carros .owl-item .item .info figure figcaption strong {
+.list-products .owl-item .item .info figure figcaption strong {
     font-family: owd-bold, sans-serif;
     font-weight: normal;
     display: block;
@@ -1146,7 +1149,7 @@ nks p {
     font-size: 14px
 }
 
-#owl-carros .owl-item .item .info button {
+.list-products .owl-item .item .info button {
     background-color: transparent;
     display: block;
     margin: 0 auto;
@@ -1161,6 +1164,18 @@ nks p {
     font-family: owd-bold, sans-serif;
     text-transform: uppercase
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nossos-planos {
     width: 100%;
@@ -1333,7 +1348,7 @@ nks p {
 
 .metricas .metricas__clientes span {
     display: block;
-    font-weight: bolder;
+    font-weight: normal;
     font-size: 16px;
     font-family: owd-bold, sans-serif;
     line-height: 100%;
@@ -1695,8 +1710,8 @@ nks p {
     box-shadow: 1px 1px 22px 6px #d0d0d0
 }
 
-#owl-carros .owl-item .item .info .hvr-hollow,
-#owl-carros .owl-item .item .info .hvr-hollow:hover {
+.list-products .owl-item .item .info .hvr-hollow,
+.list-products .owl-item .item .info .hvr-hollow:hover {
     box-shadow: inset 0 0 0 0 #e1e1e1, 0 0 1px transparent
 }
 
@@ -1728,7 +1743,7 @@ nks p {
     letter-spacing: 3px
 }
 
-#owl-carros .owl-item .item .info .btn__carros,
+.list-products .owl-item .item .info .btn__carros,
 .nossos-planos .bloco-planos .btn__nossoplano,
 .ultimasblog .ultimasblog__blocoplanos .btn__nossoblog {
     padding: 0 22px;
@@ -1745,12 +1760,12 @@ nks p {
     letter-spacing: 5px
 }
 
-#owl-carros .owl-item .item .info .btn__carros {
+.list-products .owl-item .item .info .btn__carros {
     color: #003996;
     border: 2px solid #003996
 }
 
-#owl-carros .owl-item .item .info .hvr-hollow:hover {
+.list-products .owl-item .item .info .hvr-hollow:hover {
     background-color: #003996;
     color: #fff
 }
@@ -2702,9 +2717,12 @@ nks p {
     padding: 22px 0;
 }
 
-
+.btn-carregar-mais:hover{
+    color: #fff;
+}
 .btn-carregar-mais{
     width: 231px;
+    color: #fff;
     background: #003996;
     height: 50px;
     display: block;

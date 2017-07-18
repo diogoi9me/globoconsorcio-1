@@ -356,21 +356,21 @@
     .nossos-carros .title-carousel h6 {
         margin: 10px 0
     }
-    #owl-carros .item {
+    .list-products .item {
         padding-top: 138px
     }
-    #owl-carros .owl-item:nth-child(even) .item:after,
-    #owl-carros .owl-item:nth-child(odd) .item:after {
+    .list-products .owl-item:nth-child(even) .item:after,
+    .list-products .owl-item:nth-child(odd) .item:after {
         top: 201px
     }
-    #owl-carros .owl-item:nth-child(even) .item .info,
-    #owl-carros .owl-item:nth-child(odd) .item .info {
+    .list-products .owl-item:nth-child(even) .item .info,
+    .list-products .owl-item:nth-child(odd) .item .info {
         padding-bottom: 100px
     }
-    #owl-carros .owl-dots {
+    .list-products .owl-dots {
         margin-top: -65px
     }
-    #owl-carros .owl-nav {
+    .list-products .owl-nav {
         display: none
     }
     .nossos-planos .bloco-planos {
@@ -573,14 +573,14 @@
 }
 
 @media screen and (max-width:824px) {
-    #owl-carros .owl-carousel .owl-item:nth-child(even) .item:after,
-    #owl-carros .owl-carousel .owl-item:nth-child(odd) .item:after {
+    .list-products .owl-carousel .owl-item:nth-child(even) .item:after,
+    .list-products .owl-carousel .owl-item:nth-child(odd) .item:after {
         top: 191px
     }
-    #owl-carros .owl-carousel .item {
+    .list-products .owl-carousel .item {
         padding-top: 128px
     }
-    #owl-carros {
+    .list-products {
         padding: 0
     }
     .nossos-carros .title-carousel h2,
@@ -864,20 +864,20 @@
     .footer .layer_menu {
         margin: 30px 0
     }
-    #owl-carros .item {
+    .list-products .item {
         padding-top: 95px
     }
-    #owl-carros .item h4 {
+    .list-products .item h4 {
         margin: 10px 0
     }
-    #owl-carros .owl-item .item .info figure {
+    .list-products .owl-item .item .info figure {
         margin: 45px 0 0
     }
-    #owl-carros .owl-item .item .info figure figcaption {
+    .list-products .owl-item .item .info figure figcaption {
         margin: 20px 0
     }
-    #owl-carros .owl-item:nth-child(even) .item:after,
-    #owl-carros .owl-item:nth-child(odd) .item:after {
+    .list-products .owl-item:nth-child(even) .item:after,
+    .list-products .owl-item:nth-child(odd) .item:after {
         top: 118px
     }
     .vantagens__bottom .vantagens__b .vantagens__conteudo h2,
@@ -1035,5 +1035,14 @@
     .vantagens__bottom .vantagens__a .vantagens__blocos li div h5,
     .vantagens__top .vantagens__b .vantagens__blocos li div h5 {
         font-size: 12px
+    }
+}
+
+/*Aditivos DIOGO*/
+
+@media screen and (min-width:768px){
+    .line_blue .chamada{
+    position: relative;
+    padding: 15px;
     }
 }
