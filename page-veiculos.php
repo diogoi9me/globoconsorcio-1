@@ -24,6 +24,7 @@ $resumoPage = $resumoPage[0];
 				<?php the_title() ?>
 					
 				</h2>
+				<?php get_template_part('template-parts/breadcrumb'); ?>
 				<div class="bloco-banner__texto">
 					<?php echo $resumoPage; ?>
 				</div>

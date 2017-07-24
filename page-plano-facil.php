@@ -8,7 +8,7 @@
 		<div class="container">
 			<h4 class="bloco-banner__toptitle">Nossos Planos</h4>
 			<h2 class="bloco-banner__title bloco-banner__title--facil"><?php the_title() ?></h2>
-				
+			<?php get_template_part('template-parts/breadcrumb'); ?>
 			<div class="bloco-banner__texto">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 			</div>

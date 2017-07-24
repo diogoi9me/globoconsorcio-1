@@ -8,7 +8,8 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
 		<div class="container">
 			<h4 class="bloco-banner__toptitle">Entenda o Consórcio</h4>
-			<h2 class="bloco-banner__title bloco-banner__title--sobre"><?php the_title() ?></h2>
+			<h2 class="bloco-banner__title bloco-banner__title--sobre"><?php the_title() ?></h2>	
+			<?php get_template_part('template-parts/breadcrumb'); ?>
 		</div>	
 	</div>
 

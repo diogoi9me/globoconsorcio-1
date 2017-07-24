@@ -8,7 +8,7 @@
 		<div class="container">
 		
 			<h2 class="bloco-banner__title bloco-banner__title--chevrolet"><?php the_title() ?></h2>
-
+			<?php get_template_part('template-parts/breadcrumb'); ?>
 		</div>	
 	</div>
 

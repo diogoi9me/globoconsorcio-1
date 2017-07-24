@@ -3343,3 +3343,12 @@ div.wpcf7-response-output{
     font-family: 'owd-light',sans-serif
 
 }
+
+
+/*breadcrumbs*/
+#breadcrumbs{
+    position: absolute;
+    top: -65px;
+    left: 50px;
+    color: #fff;
+}
