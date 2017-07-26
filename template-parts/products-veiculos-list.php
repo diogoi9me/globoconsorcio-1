@@ -1,3 +1,14 @@
+<?php if ( is_home() || is_front_page() ) {
+
+      $id_veiculos = 'owl-carros';
+
+
+      } else { 
+
+        $id_veiculos = 'veiculos';
+      }
+
+      ?>
 <section class="nossos-carros effect" id="carros">
   <div class="containe-owl">
     <div class="row">
@@ -6,7 +17,11 @@
           <h6><a href="<?php echo esc_url( home_url() ); ?>/veiculos" title="Ver todos">Ver todos</a></h6>
       </div>
     </div>
-    <div id="owl-carros" class="owl-carros owl-carousel owl-theme list-products">
+
+    
+    
+    <div id="<?php echo $id_veiculos; ?>" class="owl-carros owl-carousel owl-theme list-products">
+
       <?php
         $post_type_custom = 'veiculo';
           if( is_tax() ) {

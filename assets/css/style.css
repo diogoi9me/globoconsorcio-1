@@ -983,7 +983,9 @@ nks p {
 .nossos-carros {
     background-color: #fff
 }
-
+.page .nossos-carros .title-carousel{
+    position: inherit;
+}
 .nossos-carros .title-carousel {
     overflow: hidden;
     display: inline-block;
@@ -1026,6 +1028,8 @@ nks p {
     line-height: 100%;
 }
 
+
+
 .nossos-carros .title-carousel span {
     font-size: 18px;
     letter-spacing: 3px;
@@ -1036,6 +1040,16 @@ nks p {
 
 
 
+
+
+
+
+/*========CAROUSEL HOME=============*/
+
+
+#veiculos .item {
+    padding-top: 2px!important;
+}
 
 .list-products .item {
     padding-top: 232px;
@@ -1053,7 +1067,9 @@ nks p {
     position: relative;
     background: #fafafa;
 }
-
+#veiculos .owl-item:nth-child(even) .item:after{
+    display: none;
+}
 .list-products .owl-item:nth-child(even) .item:after {
     content: url(../images/before.png);
     position: absolute;
@@ -1067,7 +1083,9 @@ nks p {
     position: relative;
     background: #f2f2f2;
 }
-
+#veiculos .owl-item:nth-child(odd) .item:after{
+    display: none!important;  
+}
 .list-products .owl-item:nth-child(odd) .item:after {
     content: url(../images/before2.png);
     position: absolute;
@@ -1181,11 +1199,18 @@ nks p {
 
 
 
+#veiculos .owl-item:nth-child(odd) .item .info, #veiculos .owl-item:nth-child(even) .item .info {
+    background: transparent;
+    padding-bottom: 60px;
+}
 
+#veiculos .owl-item:nth-child(even) .item{
+      background: #f2f2f2;
+}
 
-
-
-
+.veiculos--interna .title-carousel{
+    position: inherit;
+}
 
 
 .nossos-planos {
@@ -1779,11 +1804,17 @@ nks p {
 .list-products .owl-item .item .info .btn__carros {
     color: #003996;
     border: 2px solid #003996;
+    display: block;
+    margin: 0 auto;
 }
 
 .list-products .owl-item .item .info .hvr-hollow:hover {
     background-color: #003996;
     color: #fff;
+}
+
+#veiculos .owl-item{
+    width: 33%!important;
 }
 
 .nossos-planos .bloco-planos .hvr-hollow,
@@ -3376,3 +3407,7 @@ nks p {
     color: #fff;
 }
 
+
+#veiculos{
+    display: block;
+}

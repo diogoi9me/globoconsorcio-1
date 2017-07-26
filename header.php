@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
   <div id="layer-transparent" class="layer-searc" >
     <header class="navbar transition" id="header-top">
       <div class="tarja transition effect" id="tarja-header">

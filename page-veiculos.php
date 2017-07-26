@@ -72,8 +72,7 @@ $resumoPage = $resumoPage[0];
 		
 		<?php } } ?>
 	</div>
-
-	
+		
 		 <?php 
         	//Include com listagem dos veículos
         	get_template_part('template-parts/products-veiculos','list');
