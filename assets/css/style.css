@@ -871,7 +871,7 @@ nks p {
 }
 
 .simulacao .form_simulacao .btn-simulacao {
-    top: 1px!important;
+    top: 0px!important;
     padding: 17.5px;
     width: 100%!important;
     display: inline-block;
@@ -897,12 +897,23 @@ nks p {
 
 .simulacao .form_simulacao .wpcf7-response-output,
 .wpcf7-validation-errors {
-    border: 2px solid #f70000!important;
+   
     color: #fff;
+    max-width: 1240px;
+    display: block!important;
     font-size: 20px;
-    margin: 10px
+    position: absolute;
+    margin: 0 auto;
+    height: 50px;
+    left: 0;
+    line-height: 44px;
+    right: 0;
+    bottom: 0;
+    top: 189px;
 }
-
+.wpcf7-validation-errors{
+     border: 2px solid #f70000!important;
+}
 .line_blue .box_left,
 .line_blue .box_right {
     margin: 29px 0;
@@ -1179,7 +1190,8 @@ nks p {
 
 .nossos-planos {
     width: 100%;
-    background-color: #fff
+    background-color: #fff;
+    margin-bottom: -20px;
 }
 
 .nossos-planos h2:before {
@@ -1284,11 +1296,15 @@ nks p {
 .nossos-planos .bloco-planos .btn__nossoplano {
     margin: 30px 0!important
 }
-
+.metricas,.consorcio,.vantagens__bottom, .vantagens__top {
+    margin-bottom: -20px;
+}
 .metricas {
     background: url(../images/bg_metricas.png) center no-repeat #fff;
     background-size: cover;
-    height: auto
+    height: auto;
+    width: 100%;
+    
 }
 
 .metricas .clientes-ativos {
@@ -2161,8 +2177,9 @@ nks p {
     font-size: 14px;
     color: #f10606;
     margin: 0;
-    padding: 8px 23px;
-    right: 12px
+    padding: 0px 23px;
+    right: 12px;
+    line-height: 34px;
 }
 
 .atendimento .form form .wpcf7-mail-sent-ok {
@@ -2184,7 +2201,8 @@ nks p {
     width: 100%;
     display: inline-block;
     min-height: 179px;
-    padding: 64px 0
+    padding: 64px 0;    
+    position: relative;
 }
 
 .newsletter h4 {
@@ -2292,7 +2310,8 @@ nks p {
     display: inline-block;
     max-width: 100%;
     padding: 0;
-    background-color: #fff
+    background-color: #fff;
+    position: relative;
 }
 
 .footer .layer_menu {
@@ -2905,7 +2924,7 @@ nks p {
     font-size: 14px;
     font-family: 'owd-bold',sans-serif;
     letter-spacing: 3px;
-    padding-top: 0!important;
+    line-height: 44px;
 }
 .btn-simulacao--single{
     width: 100%;
@@ -3234,13 +3253,14 @@ nks p {
 }
 
 
-div.wpcf7-response-output{
+/*div.wpcf7-response-output{
     margin: -10px 0!important;
-    padding: 40px 0!important;
+    padding: 10px 0!important;
     position: absolute;
     width: 100%;
     left: 0;
-}
+    top: 201px;
+}*/
 
 
 /*==================================*/

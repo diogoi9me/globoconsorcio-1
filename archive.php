@@ -38,7 +38,7 @@ $resumoPage = $resumoPage[0];
 				<?php echo single_term_title(); ?>
 					
 				</h2>
-					
+				<?php get_template_part('template-parts/breadcrumb'); ?>
 				<div class="bloco-banner__texto">
 					<?php echo term_description(); ?>
 				</div>

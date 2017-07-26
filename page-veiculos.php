@@ -36,7 +36,7 @@ $resumoPage = $resumoPage[0];
 
 	<div class="col-md-2">
 			<div class="filtro filtro<?php if( !is_tax() ) { echo '__ativo'; } ?>">
-				<a href="#">
+				<a href="<?php echo get_home_url(); ?>/veiculos">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-all.png" alt="">
 					<span class="filtro__title ">Todos</span>
 				</a>
