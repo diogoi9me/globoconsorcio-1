@@ -700,7 +700,9 @@
 }
 
 @media screen and (max-width:768px) {
-
+    #veiculos .owl-item{
+        width: 100%!important;
+    }
     .col-xs-mobile-separador{
          width: 8.3333%;
         padding: 0;
