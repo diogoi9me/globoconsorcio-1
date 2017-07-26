@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
 
     //carousel nossos carros.
 
-    $('#owl-carros').owlCarousel({
+    $('.list-products').owlCarousel({
 
         loop:true,
 
@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
 
     });
 
-
+   
 
     //carousel opiniões dos nossos clientes.
 

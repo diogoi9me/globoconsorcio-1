@@ -1,23 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 	<meta charset="UTF-8">
-
 	<title><?php wp_title(); ?></title>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
 	<?php wp_head(); ?>
-
 </head>
-
-
-
 <body>
   <div id="layer-transparent" class="layer-searc" >
     <header class="navbar transition" id="header-top">
@@ -31,8 +19,8 @@
         </div>
         <ul class="redes effect">
           <li>
-            <i class="icon-facebook" title="Facebook"></i>
-            <i class="icon-instagram-1" title="Instagram"></i>
+            <a href="https://www.facebook.com/globoconsorcio" title="Facebook"><i class="icon-facebook"></i></a>
+             <a href="https://www.instagram.com/sigagloboconsorcio/" title="Instagram"><i class="icon-instagram-1"></i></a>
             <i class="icon-youtube-play" title="Youtube"></i>
           </li>
         </ul>
