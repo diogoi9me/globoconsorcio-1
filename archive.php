@@ -26,6 +26,8 @@ $resumoPage = $resumoPage[0];
 
  ?>
 
+
+
 <article class="page-veiculos">
 	<div class="bloco-banner">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
@@ -45,7 +47,6 @@ $resumoPage = $resumoPage[0];
 	</div>
 	
 	<div class="container">
-
 	<div class="col-md-2 todos">
 			<div class="filtro filtro<?php if( !is_tax() ) { echo '__ativo'; } ?>">
 				<a href="<?php echo esc_url( home_url() ); ?>/veiculos">
