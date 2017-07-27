@@ -538,3 +538,19 @@ function imagem_destacada($size, $class_css, $title, $id){
 
 
 
+function is_current_content($type, $vector){
+    
+
+    if( $type == 'tax') {
+
+      $term_object = get_queried_object();
+      $slug_term =  $term_object->slug;
+
+        if( $slug_term == $vector ) {
+          echo' filtro__ativo';          
+        } 
+
+    }
+
+}
+

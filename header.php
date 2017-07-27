@@ -1,12 +1,26 @@
+<?php
+/**
+ * The header for our theme
+ * @package WordPress
+ * @subpackage Globo Consório
+ * @since 1.0
+ * @version 1.0
+ */
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
-	<meta charset="UTF-8">
-	<title><?php wp_title(); ?></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title><?php wp_title(); ?></title>
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+
+<body <?php body_class(); ?> >
+
   <div id="layer-transparent" class="layer-searc" >
     <header class="navbar transition" id="header-top">
       <div class="tarja transition effect" id="tarja-header">
@@ -88,25 +102,25 @@
                       <?php else: ?>
             
             <li class="menu-item itemNav first">
-              <a href="<?php echo get_home_url(); ?>/simulacao" class="linkNav scroll">SIMULAÇÃO</a>
+              <a href="<?php echo get_home_url(); ?>/simulacao" class="linkNav">SIMULAÇÃO</a>
             </li>
             <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/veiculos" class="linkNav scroll animate">VEÍCULOS</a>
+              <a href="<?php echo get_home_url(); ?>/veiculos" class="linkNav animate">VEÍCULOS</a>
             </li>
             <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/planos" class="linkNav scroll animate">PLANOS</a>
+              <a href="<?php echo get_home_url(); ?>/planos" class="linkNav animate">PLANOS</a>
             </li>
             <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/consorcio" class="linkNav scroll animate">CONSÓRCIO</a>
+              <a href="<?php echo get_home_url(); ?>/consorcio" class="linkNav animate">CONSÓRCIO</a>
             </li>
             <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/blog" class="linkNav scroll animate">BLOG</a>
+              <a href="<?php echo get_home_url(); ?>/blog" class="linkNav animate">BLOG</a>
             </li>
             <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/depoimentos" class="linkNav scroll animate">DEPOIMENTOS</a>
+              <a href="<?php echo get_home_url(); ?>/depoimentos" class="linkNav animate">DEPOIMENTOS</a>
             </li>
             <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/atendimento" class="linkNav scroll animate">ATENDIMENTO</a>
+              <a href="<?php echo get_home_url(); ?>/atendimento" class="linkNav animate">ATENDIMENTO</a>
             </li>
             
                       <?php endif; ?>
@@ -166,25 +180,25 @@
          <?php else: ?>
          
            <li class="menu-item itemNav first">
-             <a href="<?php echo get_home_url(); ?>/simulacao" class="linkNav scroll">SIMULAÇÃO</a>
+             <a href="<?php echo get_home_url(); ?>/simulacao" class="linkNav">SIMULAÇÃO</a>
            </li>
            <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/veiculos" class="linkNav scroll animate">VEÍCULOS</a>
+             <a href="<?php echo get_home_url(); ?>/veiculos" class="linkNav animate">VEÍCULOS</a>
            </li>
            <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/planos" class="linkNav scroll animate">PLANOS</a>
+             <a href="<?php echo get_home_url(); ?>/planos" class="linkNav animate">PLANOS</a>
            </li>
            <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/consorcio" class="linkNav scroll animate">CONSÓRCIO</a>
+             <a href="<?php echo get_home_url(); ?>/consorcio" class="linkNav animate">CONSÓRCIO</a>
            </li>
            <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/blog" class="linkNav scroll animate">BLOG</a>
+             <a href="<?php echo get_home_url(); ?>/blog" class="linkNav animate">BLOG</a>
            </li>
            <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/depoimentos" class="linkNav scroll animate">DEPOIMENTOS</a>
+             <a href="<?php echo get_home_url(); ?>/depoimentos" class="linkNav animate">DEPOIMENTOS</a>
            </li>
            <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/atendimento" class="linkNav scroll animate">ATENDIMENTO</a>
+             <a href="<?php echo get_home_url(); ?>/atendimento" class="linkNav animate">ATENDIMENTO</a>
            </li>
          
          <?php endif; ?>

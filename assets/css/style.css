@@ -981,7 +981,10 @@ nks p {
 }
 
 .nossos-carros {
-    background-color: #fff
+    background-color: #fff;
+}
+.page .nossos-carros {
+    background-color: #eee;
 }
 .page .nossos-carros .title-carousel{
     position: inherit;
