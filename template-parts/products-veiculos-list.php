@@ -16,12 +16,8 @@
         <h2 class="title"><span>Nossos</span>Veículos</h2>
           <h6><a href="<?php echo esc_url( home_url() ); ?>/veiculos" title="Ver todos">Ver todos</a></h6>
       </div>
-    </div>
-
-    
-    
+    </div>    
     <div id="<?php echo $id_veiculos; ?>" class="owl-carros owl-carousel owl-theme list-products">
-
       <?php
         $post_type_custom = 'veiculo';
           if( is_tax() ) {
@@ -50,7 +46,7 @@
             $valorDaParcela = $valorDaParcela[0];
             //$valorDaParcela = number_format($valorDaParcela, 2, ',', '.');
       ?> 
-            <?php if ( is_page( 'veiculos' ) ) {  echo '<div class="owl-item">'; } ?>
+            <?php if ( is_page( 'veiculos' ) || is_tax() ) {  echo '<div class="owl-item">'; } ?>
               <div class="item">
                 <h4><?php echo the_title(); ?></h4>
                   <a class="image" href="<?php echo get_permalink(); ?>" title="<?php echo the_title_attribute( 'echo=0' ); ?>" rel="bookmark">
@@ -66,7 +62,7 @@
                     </div>
                   </a>
               </div>
-            <?php if ( is_page( 'veiculos' ) ) { echo '</div>'; } ?>
+            <?php if ( is_page( 'veiculos' ) || is_tax() ) { echo '</div>'; } ?>
           <?php endwhile; ?>     
     </div>
   </div>

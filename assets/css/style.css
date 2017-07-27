@@ -981,7 +981,10 @@ nks p {
 }
 
 .nossos-carros {
-    background-color: #fff
+    background-color: #fff;
+}
+.page .nossos-carros {
+    background-color: #eee;
 }
 .page .nossos-carros .title-carousel{
     position: inherit;
@@ -1324,6 +1327,7 @@ nks p {
 .metricas,.consorcio,.vantagens__bottom, .vantagens__top {
     margin-bottom: -20px;
 }
+
 .metricas {
     background: url(../images/bg_metricas.png) center no-repeat #fff;
     background-size: cover;

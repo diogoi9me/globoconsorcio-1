@@ -1,12 +1,26 @@
+<?php
+/**
+ * The header for our theme
+ * @package WordPress
+ * @subpackage Globo Consório
+ * @since 1.0
+ * @version 1.0
+ */
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
-	<meta charset="UTF-8">
-	<title><?php wp_title(); ?></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title><?php wp_title(); ?></title>
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+
+<body <?php body_class(); ?> >
+
   <div id="layer-transparent" class="layer-searc" >
     <header class="navbar transition" id="header-top">
       <div class="tarja transition effect" id="tarja-header">
@@ -41,7 +55,9 @@
         <?php require_once('assets/includes/wp_bootstrap_navwalker.php'); ?>
         <div class="nav_mobile">
           <a href="#menu" id="toggle"><span></span></a>
-           <?php wp_nav_menu( 
+
+           <?php 
+          /* wp_nav_menu( 
               array(
                 'menu'              => 'nav_mobile',
                 //'theme_location'    => 'menu-header',
@@ -52,12 +68,73 @@
                 'menu_class'        => 'nav navbar-nav',
                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                 'walker'            => new wp_bootstrap_navwalker())
-              );
+              );*/
             ?>
+             
+          <div id="bs-example-navbar-collapse-1 menu-top" class="menu collapse navbar-collapse">
+            <ul id="menu-menu" class="nav navbar-nav">
+            
+             <?php if( is_home() && is_front_page() ): ?>
+                  
+                      <li class="menu-item itemNav first">
+            <a href="#simulacao" class="linkNav scroll">SIMULAÇÃO</a>
+                      </li>
+                      <li class="menu-item itemNav">
+            <a href="#carros" class="linkNav scroll animate">VEÍCULOS</a>
+                      </li>
+                      <li class="menu-item itemNav">
+            <a href="#planos" class="linkNav scroll animate">PLANOS</a>
+                      </li>
+                      <li class="menu-item itemNav">
+            <a href="#consorcio" class="linkNav scroll animate">CONSÓRCIO</a>
+                      </li>
+                      <li class="menu-item itemNav">
+            <a href="#blog" class="linkNav scroll animate">BLOG</a>
+                      </li>
+                      <li class="menu-item itemNav">
+            <a href="#depoimentos" class="linkNav scroll animate">DEPOIMENTOS</a>
+                      </li>
+                      <li class="menu-item itemNav">
+            <a href="#atendimento" class="linkNav scroll animate">ATENDIMENTO</a>
+                      </li> 
+                  
+            
+                      <?php else: ?>
+            
+            <li class="menu-item itemNav first">
+              <a href="<?php echo get_home_url(); ?>/simulacao" class="linkNav">SIMULAÇÃO</a>
+            </li>
+            <li class="menu-item itemNav">
+              <a href="<?php echo get_home_url(); ?>/veiculos" class="linkNav animate">VEÍCULOS</a>
+            </li>
+            <li class="menu-item itemNav">
+              <a href="<?php echo get_home_url(); ?>/planos" class="linkNav animate">PLANOS</a>
+            </li>
+            <li class="menu-item itemNav">
+              <a href="<?php echo get_home_url(); ?>/consorcio" class="linkNav animate">CONSÓRCIO</a>
+            </li>
+            <li class="menu-item itemNav">
+              <a href="<?php echo get_home_url(); ?>/blog" class="linkNav animate">BLOG</a>
+            </li>
+            <li class="menu-item itemNav">
+              <a href="<?php echo get_home_url(); ?>/depoimentos" class="linkNav animate">DEPOIMENTOS</a>
+            </li>
+            <li class="menu-item itemNav">
+              <a href="<?php echo get_home_url(); ?>/atendimento" class="linkNav animate">ATENDIMENTO</a>
+            </li>
+            
+                      <?php endif; ?>
+            
+          </ul>
+       </div>
         </div>
       
+
+      
         <div class="nav_main">
-          <?php  wp_nav_menu( 
+          <?php  
+          /*wp_nav_menu( 
+
               array(
                 'menu'              => 'Menu',
                 //'theme_location'    => 'menu-header',
@@ -68,9 +145,71 @@
                 'menu_class'        => 'nav navbar-nav',
                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                 'walker'            => new wp_bootstrap_navwalker())
-              );
+              );*/
+              
           ?>
+         
+        <div id="bs-example-navbar-collapse-1 menu-top" class="menu collapse navbar-collapse">
+           <ul id="menu-menu" class="nav navbar-nav">
+         
+         <?php if( is_home() && is_front_page() ): ?>
+               
+           <li class="menu-item itemNav first">
+             <a href="#simulacao" class="linkNav scroll">SIMULAÇÃO</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="#carros" class="linkNav scroll animate">VEÍCULOS</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="#planos" class="linkNav scroll animate">PLANOS</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="#consorcio" class="linkNav scroll animate">CONSÓRCIO</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="#blog" class="linkNav scroll animate">BLOG</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="#depoimentos" class="linkNav scroll animate">DEPOIMENTOS</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="#atendimento" class="linkNav scroll animate">ATENDIMENTO</a>
+           </li>
+               
+         
+         <?php else: ?>
+         
+           <li class="menu-item itemNav first">
+             <a href="<?php echo get_home_url(); ?>/simulacao" class="linkNav">SIMULAÇÃO</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="<?php echo get_home_url(); ?>/veiculos" class="linkNav animate">VEÍCULOS</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="<?php echo get_home_url(); ?>/planos" class="linkNav animate">PLANOS</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="<?php echo get_home_url(); ?>/consorcio" class="linkNav animate">CONSÓRCIO</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="<?php echo get_home_url(); ?>/blog" class="linkNav animate">BLOG</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="<?php echo get_home_url(); ?>/depoimentos" class="linkNav animate">DEPOIMENTOS</a>
+           </li>
+           <li class="menu-item itemNav">
+             <a href="<?php echo get_home_url(); ?>/atendimento" class="linkNav animate">ATENDIMENTO</a>
+           </li>
+         
+         <?php endif; ?>
+         
+             </ul> 
+            </div>
+
         </div>
+
+        </div>
+
         <div class="btn-group servico_cliente transition effect">
           <button type="button" class="btn">Serviço ao Cliente</button>
           <button type="button" class="btn btn-small dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
