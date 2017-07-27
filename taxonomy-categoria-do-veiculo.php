@@ -19,8 +19,8 @@ $resumoPage = $resumoPage[0];
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
 		<div class="container">
 			
+				<span class="bloco-banner__titletopo">Veículo</span>
 				<h2 class="bloco-banner__title">
-
 				<?php the_title() ?>
 					
 				</h2>

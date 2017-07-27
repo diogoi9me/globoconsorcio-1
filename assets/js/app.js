@@ -201,7 +201,7 @@ jQuery(document).ready(function($) {
   
  
     //ao clicar no item do menu, a o scroll vai até a section escolhidaespecifica
-    $(".nav_main .menu ul a.scroll, .link-up, .scroll-down").click(function(event){        
+    $(".nav_main .menu ul a.scroll, .link-up").click(function(event){        
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top - 25}, 1000);
     

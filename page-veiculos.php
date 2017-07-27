@@ -41,8 +41,13 @@ $resumoPage = $resumoPage[0];
         	//Include com listagem dos veículos
         	get_template_part('template-parts/products-veiculos','list');
       	?>
+	<div class="carregar-mais">
+		
+			<div class="btn btn-carregar">
+				<a href="#">Carregar Mais</a>
+			</div>
 
-
+	</div>
 	    
 </article>
 

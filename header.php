@@ -40,6 +40,13 @@
         </ul>
       </div>
       <div class="container transition">
+        <span class="icon-pesquisa pesquisa transition" title="Pesquisar"></span>  
+        <div class="busca-top">
+          <form role="search" method="get" id="form_pesquisa" class="form_pesquisa_mobile" action="">
+            <input type="text" class="transition mobile_search" name="texto_pesquisa" placeholder="Pesquise no Site" />
+            <button type="submit" class="icon-pesquisa-mobile"></button>
+          </form>
+        </div>
         <div class="navbar-brand transition">
           <?php if( is_home() || is_front_page() ): ?>
             <a class="link-up" href="#home">
@@ -224,13 +231,7 @@
             <li><a href="#">Dúvidas Frequêntes</a></li>
           </ul>
         </div> 
-        <span class="icon-pesquisa pesquisa transition" title="Pesquisar"></span>  
-        <div class="busca-top">
-          <form role="search" method="get" id="form_pesquisa" class="form_pesquisa_mobile" action="">
-            <input type="text" class="transition mobile_search" name="texto_pesquisa" placeholder="Pesquise no Site" />
-            <button type="submit" class="icon-pesquisa-mobile"></button>
-          </form>
-        </div>
+
     </div>
 </header>
       
