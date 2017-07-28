@@ -29,7 +29,8 @@ a:hover {
 }
 
 body {
-    padding-top: 164px
+    padding-top: 164px;
+    font-family: 'Oswald',sans-serif;
 }
 
 * {
@@ -127,7 +128,8 @@ button a:hover {
 .icon-facebook,
 .icon-instagram-1,
 .icon-phone,
-.icon-youtube-play {
+.icon-youtube-play,
+.icon--youtube-play {
     cursor: pointer;
     border-radius: 26px;
     color: #777;
@@ -137,7 +139,9 @@ button a:hover {
     height: 20px;
     display: inline-block;
 }
-
+.icon--youtube-play{
+    vertical-align: middle;
+}
 .icon-phone,
 .icon-phone-1,
 .icon-phone:hover {
@@ -250,7 +254,14 @@ button a:hover {
     display: inline-block;
     font-size: 0
 }
-
+.pesquisa--mobile{
+    position: absolute;
+    right: 11px;
+    top: 13px;
+    background: transparent;
+    border: 0;
+    font-size: 21px;
+}
 .icon-pesquisa-mobile {
     width: 27px!important;
     height: 26px!important;
@@ -543,7 +554,8 @@ button a:hover {
     position: absolute;
     z-index: 9999999999999;
     right: 52px;
-    top: 36px
+    top: 30px;
+    font-size: 28px;
 }
 
 .scrollOn .pesquisa {
@@ -576,7 +588,7 @@ button a:hover {
     width: 100%;
     border-radius: 25px;
     height: 32px;
-    padding: 13px
+    padding: 6px 10px;
 }
 
 #toggle {
@@ -865,9 +877,10 @@ nks p {
 .line_blue .box_left h5,
 .line_blue .box_right h5,
 .nossos-carros .title-carousel h6,
+.nossos-planos h6,
 .simulacao .form_simulacao .btn-simulacao {
     font-family: owd-bold, sans-serif;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .simulacao .form_simulacao .btn-simulacao {
@@ -1000,7 +1013,7 @@ nks p {
     z-index: 999
 }
 
-.nossos-carros .title-carousel h6:after {
+.nossos-carros .title-carousel h6:after,.nossos-planos h6:after {
     content: url(../images/baar.png);
     position: absolute;
     top: 24px;
@@ -1008,7 +1021,7 @@ nks p {
     line-height: 100%
 }
 
-.nossos-carros .title-carousel h6 {
+.nossos-carros .title-carousel h6,.nossos-planos h6  {
     position: relative;
     font-size: 13px;
     color: #003792;
@@ -1086,6 +1099,8 @@ nks p {
     position: relative;
     background: #f2f2f2;
 }
+
+
 #veiculos .owl-item:nth-child(odd) .item:after{
     display: none!important;  
 }
@@ -1214,7 +1229,9 @@ nks p {
 .veiculos--interna .title-carousel{
     position: inherit;
 }
-
+#veiculos .owl-item:nth-child(odd) .item{
+    background: #fafafa;
+}
 
 .nossos-planos {
     width: 100%;
@@ -1793,7 +1810,7 @@ nks p {
 .ultimasblog .ultimasblog__blocoplanos .btn__nossoblog {
     padding: 0 22px;
     font-size: 13px;
-    line-height: 60px;
+    line-height: 56px;
     max-width: 100%;
     color: #fff;
     width: 247px;
@@ -1801,7 +1818,7 @@ nks p {
     border-radius: 0;
     margin-top: 38px;
     text-transform: uppercase;
-    font-family: owd-bold, sans-serif;
+    font-weight: 800;
     letter-spacing: 5px;
 }
 
@@ -1818,7 +1835,7 @@ nks p {
 }
 
 #veiculos .owl-item{
-    width: 33%!important;
+    width: 33.333%!important;
 }
 
 .nossos-planos .bloco-planos .hvr-hollow,
@@ -2099,6 +2116,8 @@ nks p {
     margin: 0 8px;
     background-color: transparent;
     font-size: 15px;
+    height: 26px;
+    width: 26px;
     border-radius: 20px;
     color: #003793;
     border: 2px solid #003793;
@@ -2115,7 +2134,10 @@ nks p {
 .atendimento .icon-mail,
 .atendimento .icon-mail:hover {
     margin-left: 16px;
-    padding: 3px 1px;
+    padding: 1px 2px;
+    height: 28px;
+    width: 28px;
+    display: block;
     background-color: transparent;
     font-size: 15px;
     border-radius: 20px;
@@ -2186,7 +2208,7 @@ nks p {
 .atendimento .form h4,
 .newsletter h4,
 .newsletter span {
-    font-family: owd-regular, sans-serif
+    font-weight: 400;
 }
 
 .atendimento .form .btn-enviar i {
@@ -2329,9 +2351,10 @@ nks p {
     font-size: 23px;
     margin: 0 5px;
     border-radius: 30px;
-    padding: 4px 1px;
+    padding: 1px;
     color: #fff;
     border: 2px solid #fff;
+    height: 38px;
 }
 
 .newsletter .icon-facebook:hover,
@@ -2382,7 +2405,7 @@ nks p {
 .footer .institucional a,
 .footer .servicos a {
     font-size: 13px;
-    font-family: owd-bold, sans-serif;
+    font-weight: bold;
     color: #003792;
 }
 
@@ -2446,7 +2469,7 @@ nks p {
     color: #545454;
     font-size: 16px;
     vertical-align: middle;
-    font-family: owd-regular, sans-serif
+    font-weight: 400;
 }
 
 .footer .central span {
@@ -2569,22 +2592,22 @@ nks p {
 
 .footer .layer_gray .b .logos .logo-a {
     width: 115px;
-    background: url(../images/sprites.png) -199px 82px
+    background: url(../images/sprites.png) 596px 200px
 }
 
 .footer .layer_gray .b .logos .logo-b {
     width: 115px;
-    background: url(../images/sprites.png) -337px 80px
+    background: url(../images/sprites.png) 1249px 200px;
 }
 
 .footer .layer_gray .b .logos .logo-c {
     width: 115px;
-    background: url(../images/sprites.png) -494px 80px
+    background: url(../images/sprites.png) -494px 200px;
 }
 
 .footer .layer_gray .b .logos .logo-d {
     width: 115px;
-    background: url(../images/sprites.png) -647px 80px
+    background: url(../images/sprites.png) -647px 200px;
 }
 
 .footer .layer_blue {
@@ -2797,7 +2820,7 @@ nks p {
 }
 .btn-carregar-mais a{
     color: #fff;
-     font-family: 'owd-bold',sans-serif;
+    font-weight: 600;
     font-size: 12px;
     letter-spacing: 3px;
 }
@@ -2953,10 +2976,15 @@ nks p {
 }
 .simulacao__input-group input{
     height: 50px;
-    padding-top: 15px;
+    padding: 0 10px;
     border-radius: 0;
-    border: 0;
+    border: 1px solid #ccc;
     line-height: 4;
+    font-size: 19px;
+}
+.simulacao__input-group input[type=submit]{
+    font-size: 16px;
+    line-height: 55px;
 }
 .btn-simulacao,.btn-simulacao--single{
     background: #238c00;
@@ -3520,12 +3548,38 @@ nks p {
 .carregar-mais{
     width: 100%;
     display: inline-block;
+    margin:30px 0;
 }
+
 .btn-carregar{
     display: block;
     margin: 10px auto;
+    width: 240px;
+    border: 2px solid #003996;
+    border-radius: 0;
+    padding: 15px;
+    height: 50px;
+    color: #003996!important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'owd-bold', sans-serif;
+}
+.btn-carregar:hover{
+    color: #fff!important;
+    background: #003996;
+    transition: all .25s;
 }
 .btn-carregar a{
-    background: #000;    
+    background: transparent;
+    text-transform: uppercase;
+    border: 2px solid #003996;    
     padding: 20px;
+}
+#breadcrumbs a, #breadcrumbs span{ 
+    font-family: 'owd-light';
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.template-parts{
+    width: 100%;
 }

@@ -35,16 +35,16 @@
           <li>
             <a href="https://www.facebook.com/globoconsorcio" title="Facebook"><i class="icon-facebook"></i></a>
              <a href="https://www.instagram.com/sigagloboconsorcio/" title="Instagram"><i class="icon-instagram-1"></i></a>
-            <i class="icon-youtube-play" title="Youtube"></i>
+            <i class="icon-youtube-play icon--youtube-play" title="Youtube"></i>
           </li>
         </ul>
       </div>
       <div class="container transition">
-        <span class="icon-pesquisa pesquisa transition" title="Pesquisar"></span>  
+        <span class="glyphicon glyphicon-search pesquisa transition" title="Pesquisar"></span>  
         <div class="busca-top">
           <form role="search" method="get" id="form_pesquisa" class="form_pesquisa_mobile" action="">
             <input type="text" class="transition mobile_search" name="texto_pesquisa" placeholder="Pesquise no Site" />
-            <button type="submit" class="icon-pesquisa-mobile"></button>
+            <button type="submit" class="glyphicon glyphicon-search pesquisa--mobile"></button>
           </form>
         </div>
         <div class="navbar-brand transition">

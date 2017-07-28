@@ -2,6 +2,7 @@
 <section class="nossos-planos effect" id="planos">
   <div class="container"> 
     <h2 class="title"><span>Nossos</span>Planos</h2>
+    <h6><a href="<?php echo esc_url( home_url() ); ?>/nossos-planos" title="Ver todos">Ver todos</a></h6>
     <ul class="bloco-planos">
 
       <?php 

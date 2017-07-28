@@ -47,7 +47,8 @@
 			<div class="col-md-4 col-sm-12 hidden-xs hidden-sm">
 		    	<div class="row">
 		      		<div class="col-xs-12 col-sm-12 facebook">
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgloboconsorcio%2F%3Ffref%3Dts&tabs=timeline&width=387&height=290&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="390" height="290" style="border:none;overflow:hidden; max-width:100%;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+		      		<?php echo do_shortcode('[efb_likebox fanpage_url="https://www.facebook.com/globoconsorcio/" fb_appid="" box_width="390" box_height=200"" responsive="1" show_faces="1" show_stream="0" hide_cover="0" small_header="1" hide_cta="1" locale="pt_BR"]'); ?>
 					</div>
 				</div>
 			</div>

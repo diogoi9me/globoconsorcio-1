@@ -36,18 +36,18 @@ $resumoPage = $resumoPage[0];
 		<?php get_template_part('template-parts/category-products', 'list'); ?>
 
 	</div>
-		
-		 <?php 
-        	//Include com listagem dos veículos
-        	get_template_part('template-parts/products-veiculos','list');
-      	?>
-	<div class="carregar-mais">
-		
-			<div class="btn btn-carregar">
-				<a href="#">Carregar Mais</a>
-			</div>
-
+	<div class="template-parts">
+		<?php 
+    	//Include com listagem dos veículos
+    	get_template_part('template-parts/products-veiculos','list');
+  		?>
 	</div>
+		
+  	<div class="carregar-mais">
+			<a href="#" class="btn btn-carregar">Carregar Mais</a>
+		
+	</div>
+	
 	    
 </article>
 
