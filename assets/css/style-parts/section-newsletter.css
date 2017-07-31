@@ -1,0 +1,117 @@
+@charset "utf-8";
+.newsletter .mensage,
+.newsletter h4 {
+    text-align: left;
+    display: inline-block;
+}
+
+.newsletter {
+    background-color: #003793;
+    width: 100%;
+    display: inline-block;
+    min-height: 179px;
+    padding: 64px 0;    
+    position: relative;
+}
+
+.newsletter h4 {
+    width: 229px;
+    letter-spacing: 6px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.newsletter span {
+    margin-left: 3px;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+}
+
+.newsletter .mensage {
+    max-width: 100%;
+    width: 100%;
+}
+
+.newsletter .icon-mail {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.newsletter .redes {
+    width: 157px;
+    display: inline-block;
+    max-width: 100%;
+    padding: 14px 0;
+    text-align: right;
+}
+
+.newsletter .mc4wp-form {
+    padding: 6px 0;
+}
+
+.newsletter .form-control {
+    position: relative;
+}
+
+.newsletter .mc4wp-form .mc4wp-form-fields input[type=email] {
+    position: relative;
+    width: 100%;
+    border-radius: 40px;
+    padding: 15px;
+    border: 0;
+}
+
+.newsletter .mc4wp-form .mc4wp-form-fields label {
+    display: none;
+}
+
+.newsletter .mc4wp-form .mc4wp-form-fields input[type=submit] {
+    border-radius: 20px;
+    font-size: 0;
+    width: 22px;
+    background: url(../../images/spritesA.png) no-repeat 84.5% 0%;
+    height: 25px;
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    right: 31px;
+    bottom: 19px;
+}
+
+.newsletter #mc4wp-form-1 .mc4wp-response .mc4wp-error {
+    color: #fff!important;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 13px;
+    margin-top: 10px;
+}
+
+.newsletter #mc4wp-form-1 .mc4wp-form-fields p {
+    border: 0;
+}
+
+.newsletter .mc4wp-response .mc4wp-form-error>.mc4wp-error>p {
+    color: #fff!important;
+}
+
+.newsletter .icon-facebook,
+.newsletter .icon-instagram-1,
+.newsletter .icon-youtube-play {
+    font-size: 23px;
+    margin: 0 5px;
+    border-radius: 30px;
+    padding: 1px;
+    color: #fff;
+    border: 2px solid #fff;
+    height: 38px;
+}
+
+.newsletter .icon-facebook:hover,
+.newsletter .icon-instagram-1:hover,
+.newsletter .icon-youtube-play:hover {
+    border: 2px solid #3CE1FF;
+    color: #3CE1FF
+}

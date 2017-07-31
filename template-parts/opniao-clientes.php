@@ -22,7 +22,7 @@
             $prazo = $prazo[0];
       ?> 
       <div class="item">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aspas.png" alt="">
+        <i class="icon-aspas"></i>
        <p><?php echo get_the_content(); ?></p>
         <h6><?php echo get_the_title(); ?><span><?php echo $atividade; ?></span></h6>
         <div class="info">

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.footer .layer_blue {
+    margin-bottom: -10px;
+    background-color: #002666!important;
+    color: #fff;
+    height: auto;
+    display: block;
+    width: 100%;
+    padding: 47px 0
+}
+
+.footer .layer_blue .copyright,
+.footer .layer_blue img {
+    color: #fff;
+    font-family: owd-regular, sans-serif;
+    text-align: left;
+    letter-spacing: 0
+}
+
+.footer .layer_blue .copyright {
+    margin: 0 0 0 30px;
+    font-size: 13px;
+    line-height: 19px
+}
+
+.footer .layer_blue .copyright span {
+    text-transform: none;
+}
+

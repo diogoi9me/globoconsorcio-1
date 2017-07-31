@@ -1,0 +1,190 @@
+@charset "utf-8";
+.atendimento {
+    background: url(../../images/atendimento.png) center no-repeat #fff;
+    background-size: cover;
+    padding-bottom: 90px;
+}
+
+.atendimento h2:before {
+    content: url(../../images/bar-title.png);
+    position: absolute;
+    top: 55px;
+    right: -2px;
+    width: 100%;
+    line-height: 100%;
+}
+
+.atendimento h2 {
+    color: #000;
+    margin-bottom: 22px;
+}
+
+.atendimento h2 span {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-family: owd-regular, sans-serif;
+    display: block;
+}
+
+.atendimento .informacoes h6,
+.atendimento .informacoes span {
+    font-size: 20px;
+    font-family: owd-regular, sans-serif;
+}
+
+.atendimento .informacoes {
+    display: block;
+    text-align: left;
+    margin: 44px auto 20px;
+    max-width: 344px;
+}
+
+.atendimento .informacoes h6 {
+    color: #525252;
+    display: inline-block;
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.atendimento .informacoes span {
+    color: #000;
+}
+
+.atendimento .icon-phone,
+.atendimento .icon-phone:hover {
+    margin: 0 8px;
+    background-color: transparent;
+    font-size: 15px;
+    height: 26px;
+    width: 26px;
+    border-radius: 20px;
+    color: #003793;
+    border: 2px solid #003793;
+}
+
+.atendimento .icon-whatsapp,
+.atendimento .icon-whatsapp:hover {
+    margin: 0;
+    background-color: transparent;
+    font-size: 30px;
+    color: #003793;
+}
+
+.atendimento .icon-mail,
+.atendimento .icon-mail:hover {
+    margin-left: 16px;
+    padding: 1px 2px;
+    height: 28px;
+    width: 28px;
+    display: block;
+    background-color: transparent;
+    font-size: 15px;
+    border-radius: 20px;
+    color: #003793;
+    border: 2px solid #003793;
+}
+
+.atendimento .form {
+    box-shadow: 1px 1px 14px -4px #777;
+    text-align: left;
+    max-width: 913px;
+    display: inline-block;
+    background-color: #fff;
+    margin: 29px 0 0;
+    padding: 22px 7px 0;
+}
+
+.atendimento .form form {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.atendimento .form form label {
+    font-weight: normal;
+    color: #777;
+    font-family: owd-regular, sans-serif;
+    position: absolute;
+    z-index: 999;
+    font-size: 12px;
+    margin: 0;
+    padding: 7px 0;
+}
+
+.atendimento .form form input {
+    margin: 10px 0 0;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #eee;
+}
+
+.atendimento .form textarea {
+    height: 235px;
+    width: 100%;
+    border: 1px solid #eee;
+    margin: 10px 0 0;
+    padding: 21px 10px;
+}
+
+.atendimento .form .btn-enviar {
+    margin: 30px 0 0;
+    height: 235px;
+    width: 100%;
+    background-color: #06A7C7;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 0;
+    border: 0;
+    font-family: owd-bold, sans-serif;
+    letter-spacing: 3px;
+}
+
+.atendimento .form h4,
+.newsletter h4,
+.newsletter span {
+    font-weight: 400;
+}
+
+.atendimento .form .btn-enviar i {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.atendimento .form h4 {
+    text-transform: uppercase;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    font-size: 18px;
+    color: #000;
+}
+
+.atendimento .form .wpcf7-validation-errors {
+    display: block;
+    height: 39px;
+    width: 56%;
+    float: right;
+    position: relative;
+    top: -332px;
+    font-size: 14px;
+    color: #f10606;
+    margin: 0;
+    padding: 0px 23px;
+    right: 12px;
+    line-height: 34px;
+}
+
+.atendimento .form form .wpcf7-mail-sent-ok {
+    height: 33px!important;
+    display: inline-block!important;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}

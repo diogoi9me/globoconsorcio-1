@@ -1,0 +1,38 @@
+@charset "utf-8";
+#toggle {
+    float: right;
+    display: none;
+    width: 28px;
+    height: 30px;
+    margin: 42px 0 22px
+}
+
+#toggle span:after,
+#toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -12px
+}
+
+#toggle span:after {
+    top: 12px
+}
+
+#toggle span {
+    position: relative;
+    display: block;
+    left: -1px;
+    top: -3px
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+    width: 31px;
+    height: 6px;
+    background-color: #003793;
+    border-radius: 1px;
+    transition: all .3s;
+    backface-visibility: hidden
+}

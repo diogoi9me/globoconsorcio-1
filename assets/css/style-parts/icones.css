@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+.icon-logo,.icon-logo-footer{
+    background: url(../../images/spritesA.png)no-repeat 53% 0%;
+    height: 41px;
+    width: 93px;
+    display: inline-block;
+}
+.icon-logo-footer{
+    background: url(../../images/spritesA.png)no-repeat 81% 0%;
+}
+.icon-inoveme{
+    background: url(../../images/spritesA.png)no-repeat 35% 0%;
+    display: inline-block;
+    width: 46px;
+    height: 40px;
+}
+.icon-aspas{
+    background: url(../../images/spritesA.png)no-repeat 59.4% 0%;
+    display: inline-block;
+    width: 38px;
+    height: 40px;
+}
+.icon-fiat{
+    background: url(../../images/spritesA.png)no-repeat 64.3% 0%;
+    width: 53px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3%;
+}
+.icon-calculadora,
+.icon-security {
+    width: 21px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 15px
+}
+.icon-facebook,
+.icon-instagram-1,
+.icon-phone,
+.icon-youtube-play,
+.icon--youtube-play {
+    cursor: pointer;
+    border-radius: 26px;
+    color: #777;
+    border: 2px solid #777;
+    font-size: 12px;
+    margin-right: 1px;
+    height: 20px;
+    display: inline-block;
+}
+.icon--youtube-play{
+    vertical-align: middle;
+}
+.icon-phone,
+.icon-phone-1,
+.icon-phone:hover {
+    padding: 0;
+}
+
+.icon-volume-control-phone {
+    font-size: 15px
+}
+
+.icon-facebook:hover,
+.icon-instagram-1:hover,
+.icon-phone:hover,
+.icon-youtube-play:hover {
+    background-color: #003996;
+    color: #fff;
+    border: 2px solid #003996
+}
+
+.icon-security {
+    background: url(../../images/icons_about.png) 188px -49px
+}
+
+.icon-calculadora {
+    background: url(../../images/icons_about.png) 87px -49px
+}
+
+.icon-porcento {
+    width: 24px;
+    background: url(../../images/icons_about.png) -50px -50px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 15px
+}
+
+.icon-atendimento,
+.icon-certificada,
+.icon-colaboradores,
+.icon-desconto,
+.icon-tempo {
+    width: 36px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 15px
+}
+
+.icon-desconto {
+    background: url(../../images/icons_about.png) -150px -51px
+}
+
+.icon-tempo {
+    background: url(../../images/icons_about.png) -175px 4px
+}
+
+.icon-colaboradores {
+    background: url(../../images/icons_about.png) -232px 4px
+}
+
+.icon-atendimento {
+    background: url(../../images/icons_about.png) -282px 4px
+}
+
+.icon-certificada {
+    background: url(../../images/icons_about.png) -330px 4px
+}
+.icon-search-light{ width: 30px; height: 20px; display: inline-block; background: url(../../images/icon-search-light.png)no-repeat; vertical-align: middle; }
+
+.glyphicon-plus {
+    font-size: 20px;
+    display: block;
+    margin: 0 auto 20px
+}
+.icon{
+    height: 83px;
+    width: 95px;
+    display: inline-block;
+}
+.icon-passos-1{
+    background: url(../../images/spritesA.png) 0% 0%;
+   
+}
+.icon-passos-2{
+    background: url(../../images/spritesA.png) 11% 0%;
+    width: 85px;
+}
+.icon-passos-3{
+    background: url(../../images/spritesA.png) 21% 0%;
+    width: 142px;
+}
+.icon-clientes-ativos,
+.icon-clientes-contemplados,
+.icon-consorcio-chevrolet {
+    height: 30px;
+    display: inline-block;
+    margin-top: 25px
+}
+
+.icon-clientes-ativos {
+    width: 34px;
+    background: url(../../images/icon-clientes-ativos.png) no-repeat
+}
+
+.icon-clientes-contemplados {
+    width: 47px;
+    background: url(../../images/icon-contemplados.png) no-repeat
+}
+
+.icon-consorcio-chevrolet {
+    width: 58px;
+    background: url(../../images/icon-consorcio.png) no-repeat
+}
+
+.icon-send {
+    width: 22px;
+    background: url(../../images/icon-send.png) no-repeat;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 33px
+}
+
+.icon-pesquisa,
+.icon-pesquisa-mobile {
+    background: url(../../images/icon-search.png) no-repeat;
+    display: inline-block;
+    font-size: 0
+}
+.icon-pesquisa-mobile {
+    width: 27px!important;
+    height: 26px!important;
+    position: relative;
+    top: -26px;
+    float: right;
+    border: 0;
+    right: 10px;
+    z-index: 999;
+    border-radius: 0!important;
+}
+
+.icon-pesquisa {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top: -29px;
+    right: -69px
+}
+
+.on.icon-pesquisa {
+    background: url(../../images/icon-close.png) no-repeat
+}
+
+.icon-pesquisa[type=submit] {
+    font-size: 0;
+    background-color: transparent!important
+}

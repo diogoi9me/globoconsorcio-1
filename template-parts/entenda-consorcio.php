@@ -10,7 +10,7 @@
         <h4>Formação do grupo</h4>
         <div class="about">
           <figure class="wow zoomIn">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/passos1.png" alt="">
+            <i class="icon icon-passos-1"></i>
           </figure>
           <i class="icon-proximo"></i>
         </div>
@@ -20,7 +20,7 @@
         <h4>Assembleia / Lance</h4>
         <div class="about">
           <figure class="wow zoomIn">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/passos2.png" alt="">
+            <i class="icon icon-passos-2"></i>
           </figure>
           <i class="icon-proximo"></i>
         </div>
@@ -30,7 +30,7 @@
         <h4>Contemplação</h4>
         <div class="about">
           <figure class="wow zoomIn">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/passos3.png" alt="">
+            <i class="icon icon-passos-3"></i>
           </figure>
         </div>
       </div>

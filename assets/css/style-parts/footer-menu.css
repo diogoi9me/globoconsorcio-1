@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+.footer {
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.footer .layer_menu {
+    margin: 90px 0;
+}
+
+.footer .blog,
+.footer .comprar,
+.footer .institucional,
+.footer .servicos {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.footer .blog h4,
+.footer .central h4,
+.footer .comprar h4,
+.footer .institucional h4,
+.footer .servicos h4 {
+    font-size: 16px;
+    font-family: owd-bold, sans-serif;
+    text-transform: uppercase;
+}
+
+.footer .central h4 {
+    margin: 10px 0 15px!important;
+    color: #333;
+    text-align: left;
+}
+
+.footer .blog a,
+.footer .comprar a,
+.footer .institucional a,
+.footer .servicos a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #003792;
+}
+
+.footer .maps {
+    float: right
+}
+
+.footer .facebook {
+    padding-right: 0;
+    padding-left: 3px;
+    position: relative;
+    display: inline-block;
+}
+
+.footer .end {
+    margin-top: 15px!important;
+}
+
+.footer .central,
+.footer .end {
+    float: right;
+    display: inline-block;
+    text-align: left;
+    max-width: 306px;
+    width: 100%;
+}
+
+.footer .end i,
+.footer .end span {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.footer .central,
+.footer .end i {
+    color: #003793;
+    font-size: 30px;
+}
+.footer .central .icon-phone{
+    height: 25px;
+    padding: 0px;
+}
+.footer .central .icon-phone,
+.footer .central .icon-phone:hover {
+    margin: 0 8px;
+    background-color: transparent;
+    font-size: 15px;
+    border-radius: 20px;
+    color: #003793;
+    border: 2px solid #003793;
+}
+
+.footer .end span {
+    font-size: 14px;
+    font-family: owd-light, sans-serif;
+}
+
+.footer .central p,
+.footer .central span {
+    display: inline-block;
+    color: #545454;
+    font-size: 16px;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+.footer .central span {
+    margin-left: 10px
+}

@@ -1,4 +1,4 @@
-  <div class="col-md-2">
+  <div class="col-md-2 col-xs-mobile mobile-separador-border">
       <div class="filtro filtro<?php if( !is_tax() ) { echo '__ativo'; } ?> todos">
         <a href="<?php echo get_home_url(); ?>/veiculos">
           <span class="filtro__title ">Todos</span>
@@ -21,10 +21,10 @@
       $termLink = esc_url( get_term_link( $term ) );
 
     ?>
-    <div class="col-md-1">
+    <div class="col-md-1 mobile-separador-none">
       <div class="bloco-opcoes__divisor"></div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-xs-mobile mobile-separador-border">
       <div class="filtro <?php echo $term->slug; ?><?php is_current_content('tax', $term->slug); ?>">
         <a href="<?php echo $termLink; ?>">
         

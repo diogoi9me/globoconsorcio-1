@@ -33,7 +33,7 @@
 
   	<div class="container-single">
 	  	<div class="container">
-			<div class="col-md-2">
+			<div class="col-md-2 col-xs-mobile">
 				<div class="filtro filtro__ativo">
 					<a href="#" class="filtro__link">
 						<span class="filtro__valor">100%</span>
@@ -41,10 +41,10 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-1">
+			<div class="col-md-1 col-xs-mobile-separador">
 				<div class="bloco-opcoes__divisor"></div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-xs-mobile">
 				<div class="filtro">
 					<a href="#" class="filtro__link">
 						<span class="filtro__valor">100%</span>

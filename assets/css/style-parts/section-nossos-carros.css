@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+.nossos-carros {
+    background-color: #fff;
+}
+.page .nossos-carros {
+    background-color: #eee;
+}
+.page .nossos-carros .title-carousel{
+    position: inherit;
+}
+.nossos-carros .title-carousel {
+    overflow: hidden;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 0;
+    z-index: 999
+}
+
+.nossos-carros .title-carousel h6:after,.nossos-planos h6:after {
+    content: url(../../images/baar.png);
+    position: absolute;
+    top: 24px;
+    right: 5px;
+    line-height: 100%
+}
+
+.nossos-carros .title-carousel h6,.nossos-planos h6  {
+    position: relative;
+    font-size: 13px;
+    color: #003792;
+    letter-spacing: 4px;
+    margin: 20px 0;
+    display: inline-block
+}
+
+.nossos-carros .title-carousel h2 {
+    color: #000;
+    margin-bottom: 22px
+}
+
+.nossos-carros .title-carousel h2:after {
+    content: url(../../images/bar-title.png);
+    position: absolute;
+    top: 55px;
+    right: -2px;
+    width: 100%;
+    line-height: 100%;
+}
+
+
+
+.nossos-carros .title-carousel span {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-family: owd-regular, sans-serif;
+    display: block;
+}
+
+#owl-opinioes .item {
+    padding-top: 232px;
+}
+
+#owl-opinioes .item img {
+    width: 37px;
+    height: 40px;
+    display: inline-block;
+    margin: 57px 0 36px;
+}
+
+#owl-opinioes .item p {
+    color: #545454;
+    font-size: 16px;
+    font-family: owd-regular, sans-serif;
+    width: 277px;
+    max-width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+#owl-opinioes .owl-item:nth-child(even) .item {
+    position: relative;
+    background: #fafafa;
+}
+
+#owl-opinioes .owl-item:nth-child(odd) .item {
+    position: relative;
+    background: #f2f2f2;
+}
+
+#owl-opinioes .owl-item:nth-child(even) .item .info {
+    background: #f2f2f2;
+    padding-bottom: 130px;
+}
+
+#owl-opinioes .owl-item:nth-child(odd) .item .info {
+    background: #fafafa;
+    padding-bottom: 130px;
+}
+
+#owl-opinioes .owl-dots {
+    margin-top: -100px;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    display: block;
+}
+
+#owl-opinioes .owl-dots .owl-dot.active span {
+    background-color: #003996;
+    width: 20px;
+    height: 20px;
+}
+
+#owl-opinioes .owl-dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+    background-color: #ababab
+}
+
+#owl-opinioes .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 245px;
+}
+
+#owl-opinioes .owl-nav .owl-next,
+#owl-opinioes .owl-nav .owl-prev {
+    font-size: 0!important;
+    height: 110px;
+    width: 45px;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+#owl-opinioes .owl-nav .owl-prev {
+    float: left;
+    background: url(../../images/prev.png) center no-repeat #fff!important;
+}
+
+#owl-opinioes .owl-nav .owl-next {
+    float: right;
+    background: url(../../images/next.png) center no-repeat #fff!important;
+}
+
+#owl-opinioes .owl-item .item h6 {
+    position: relative;
+    font-family: owd-bold, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 30px 0 70px;
+}
+
+#owl-opinioes .owl-item .item span {
+    margin: 7px 0;
+    font-family: owd-light, sans-serif;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#owl-opinioes .owl-item .item .info figure {
+    display: inline-block;
+    margin: -50px 0;
+    width: 100%
+}
+
+#owl-opinioes .owl-item .item .info figure img {
+    width: 96px;
+    height: 96px;
+    margin: 0;
+}
+
+#owl-opinioes .owl-item .item .info figure figcaption {
+    margin: 40px 0;
+    position: relative;
+}
+
+#owl-opinioes .owl-item .item .info figure figcaption span {
+    margin: 7px 0;
+    font-family: owd-light, sans-serif;
+    display: block;
+    text-transform: none!important;
+    font-size: 14px;
+}
+
+#owl-opinioes .owl-item .item .info figure figcaption .stars {
+    position: absolute;
+    top: 23px;
+    left: 79px;
+    display: inline-block;
+    height: 19px;
+    background: url(../../images/spritesA.png) no-repeat 46.5% -2%;
+    width: 19px;
+    float: left;
+    vertical-align: top;
+}
+
+#owl-opinioes .owl-item .item .info figure figcaption h6 {
+    font-family: owd-bold, sans-serif;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#owl-opinioes .owl-item .item .info button {
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+    border: 2px solid #003996;
+    font-size: 13px;
+    color: #003996;
+    letter-spacing: 3px;
+    width: 190px;
+    height: 50px;
+    line-height: 38px;
+    font-family: owd-bold, sans-serif;
+    text-transform: uppercase;
+}
+
+

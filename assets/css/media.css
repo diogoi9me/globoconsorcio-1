@@ -704,7 +704,7 @@
         width: 100%!important;
     }
     .col-xs-mobile-separador{
-         width: 8.3333%;
+        width: 8.3333%;
         padding: 0;
         position: relative;
         float: left;
@@ -715,8 +715,49 @@
         position: relative;
         float: left;
     }
-
-
+    .mobile-separador-none{
+        display: none!important;
+    }
+    .mobile-separador-border{
+        border: 1px solid #aaa;
+        border-radius: 6px;
+        margin-bottom: 1px;
+        padding: 15px 0;
+        width: 50%;
+    }
+    .filtro,.filtro__ativo{
+        padding: 0;
+    }
+    .page-veiculos .todos a{
+        padding-left: 15px;
+    }
+    .page-veiculos .carros a{
+        padding-left: 31px;
+    }
+    .page-veiculos .suvs a{
+        padding-left: 32px;
+    }
+    .page-veiculos .picapes a{
+        padding-left: 38px;
+    }
+    .bloco-banner__titletopo{
+        left: 22px;
+        top: -100px;
+    }
+    .bloco-banner__title, .bloco-banner__title--chevrolet, .bloco-banner__title-single,
+    .bloco-banner__title--chevrolet, .bloco-banner__title--sobre,.bloco-banner__title--facil{
+        bottom: 50px!important;
+        left: 27px;
+        font-size:16px;
+        margin: 7px 0;
+    }
+    .filtro__ativo:before{
+        display: none;
+    }
+    #breadcrumbs{
+        top: -45px;
+        left: 26px;
+    }
     .simulacao .form_simulacao .wpcf7-response-output, .wpcf7-validation-errors{
         display: none!important;
     }
@@ -730,12 +771,14 @@
     }
     .bloco-banner__toptitle{
         bottom: 80px;
+        left: 27px;
     }
-    .bloco-banner__title--chevrolet,.bloco-banner__title--sobre{
+
+   /* .bloco-banner__title--chevrolet,.bloco-banner__title--sobre{
         bottom: 34px;
         font-size: 20px;
         text-align: left;
-    }
+    }*/
     .bloco-banner__title--sobre{
         bottom: 64px;
     }
@@ -816,7 +859,7 @@
         display: inline-block;
    }
     .cards__item, .cards__item--chevrolet{
-        width: 49%;
+        width: 100%;
         margin:0;
         padding:0;
     }

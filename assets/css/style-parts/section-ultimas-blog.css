@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+.ultimasblog {
+    width: 100%;
+    background-color: #fff;
+}
+
+.ultimasblog h2:before {
+    content: url(../../images/bar-title.png);
+    position: absolute;
+    top: 55px;
+    right: -2px;
+    width: 100%;
+    line-height: 100%;
+}
+
+.ultimasblog h2 {
+    color: #000;
+    margin-bottom: 22px;
+}
+
+.ultimasblog h2 span {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-family: owd-regular, sans-serif;
+    display: block;
+}
+
+.ultimasblog .ultimasblog__blocoplanos {
+    display: inline-block;
+    width: 100%;
+    padding: 70px 0;
+}
+
+.ultimasblog .ultimasblog__blocoplanos li {
+    display: inline-block;
+    width: 30%;
+    max-width: 100%;
+    margin: 5px 10px;
+}
+
+.ultimasblog .ultimasblog__blocoplanos li div {
+    width: 100%;
+    display: inline-block;
+    padding: 30px 50px;
+    border: 1px solid #ccc;
+}
+
+.ultimasblog .ultimasblog__blocoplanos li div:hover {
+    box-shadow: 1px 1px 22px 6px #d0d0d0;
+}
+
+.ultimasblog .ultimasblog__blocoplanos li div img {
+    margin-bottom: 25px;
+}
+
+.ultimasblog .ultimasblog__blocoplanos li div h5 {
+    position: relative;
+    color: #003996;
+    font-family: owd-bold, sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+.ultimasblog .ultimasblog__blocoplanos li div p {
+    margin: 16px 0 0;
+    color: #535353;
+    text-align: left;
+    font-family: owd-light, sans-serif;
+    font-size: 14px;
+}
+
+.ultimasblog .ultimasblog__blocoplanos li div span {
+    color: #06A6C6;
+    text-transform: uppercase;
+    font-family: owd-regular, sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+}

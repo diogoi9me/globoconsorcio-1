@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+.nossos-planos {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: -20px;
+}
+
+.nossos-planos h2:before {
+    content: url(../../images/bar-title.png);
+    position: absolute;
+    top: 55px;
+    right: -2px;
+    width: 100%;
+    line-height: 100%;
+}
+
+.nossos-planos h2 {
+    color: #000;
+    margin-bottom: 22px;
+}
+
+.nossos-planos h2 span {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-family: owd-regular, sans-serif;
+    display: block;
+}
+
+.nossos-planos .bloco-planos {
+    display: inline-block;
+    width: 100%;
+    padding: 70px 0;
+}
+
+.nossos-planos .bloco-planos li {
+    background-color: #fff;
+    display: inline-block;
+    width: 395px;
+    max-width: 100%;
+    margin: 0 10px;
+}
+
+.nossos-planos .bloco-planos li div {
+    width: 100%;
+    display: inline-block;
+    padding: 0 37px;
+    border: 1px solid #ccc;
+}
+
+.nossos-planos .bloco-planos li div:hover {
+    box-shadow: 1px 1px 22px 6px #d0d0d0
+}
+
+.nossos-planos .bloco-planos li div .resumo {
+    box-shadow: 0 0 0 0 #fff;
+    border: 0;
+}
+
+.nossos-planos .bloco-planos li div img {
+    margin: 25px 0;
+}
+
+.nossos-planos .bloco-planos li div h5:before {
+    content: url(../../images/bar-left.png);
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    width: auto;
+    line-height: 100%;
+}
+
+.nossos-planos .bloco-planos li div h5 {
+    position: relative;
+    color: #003996;
+    text-transform: uppercase;
+    font-family: owd-bold, sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.nossos-planos .bloco-planos li div h5:after {
+    content: url(../../images/bar-left.png);
+    position: absolute;
+    top: -10px;
+    left: -12px;
+    width: auto;
+    line-height: 100%;
+}
+
+.nossos-planos .bloco-planos li div p {
+    margin: 27px 0 0;
+    color: #535353;
+    text-align: left;
+    font-family: owd-light, sans-serif;
+    font-size: 14px;
+}
+
+.nossos-planos .bloco-planos li div span {
+    color: #06A6C6;
+    text-transform: uppercase;
+    font-family: owd-regular, sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.nossos-planos .bloco-planos .btn__nossoplano {
+    margin: 30px 0!important;
+}

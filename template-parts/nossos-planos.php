@@ -14,7 +14,7 @@
           $classItem = $slug;
       ?>
 
-      <li class="wow slideInUp">
+      <li class="wow zoomIn">
         <div class="hvr-grow">
           <span class="info">
           <?php imagem_destacada('full', 'wow pulse', get_the_title(), '') ?>

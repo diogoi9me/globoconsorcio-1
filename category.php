@@ -54,7 +54,7 @@ $resumoPage = $resumoPage[0];
 	
 	<div class="container">
 
-	<div class="col-md-2">
+	<div class="col-md-2 col-xs-mobile">
 			<div class="filtro filtro__ativo">
 				<a href="#">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-all.png" alt="">
@@ -78,10 +78,10 @@ foreach ( $terms as $term ) {
 $termLink = esc_url( get_term_link( $term ) );
 
 	 ?>
-		<div class="col-md-1">
+		<div class="col-md-1 col-xs-mobile-separador">
 			<div class="bloco-opcoes__divisor"></div>
 		</div>
-		<div class="col-md-2">
+		<div class="col-md-2 col-xs-mobile">
 			<div class="filtro filtro">
 				<a href="<?php echo $termLink; ?>">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-all.png" alt="">

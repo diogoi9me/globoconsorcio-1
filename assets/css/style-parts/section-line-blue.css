@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.line_blue .box_left,
+.line_blue .box_right {
+    margin: 29px 0;
+    display: inline-block;
+    width: 100%
+}
+.line_blue {
+    background: url(../../images/letter.png);
+    background-repeat: round;
+    height: 80px;
+    width: 100%;
+    max-width: 100%;
+    display: inline-block
+}
+
+.line_blue .box_center,
+.line_blue .box_left,
+.line_blue .box_right {
+    text-align: center
+}
+
+.line_blue .box_left {
+    max-width: 40%;
+    float: left
+}
+
+.line_blue .box_center {
+    max-width: 20%;
+    display: inline-block;
+    width: 100%
+}
+
+.line_blue .box_right {
+    max-width: 40%;
+    float: right
+}
+
+.line_blue .box_left h5,
+.line_blue .box_right h5 {
+    margin: 0;
+    color: #003996;
+    font-size: 13px;
+    display: inline-block
+}
+
+.line_blue .box_left i,
+.line_blue .box_right i {
+    margin-right: 10px;
+    color: #003996
+}
+
+.line_blue .box_center {
+    color: #003996;
+    font-size: 21px;
+    margin: 25px 0
+}
+
+.line_blue .box_center span {
+    transform: rotate(7deg);
+    display: inline-block
+}

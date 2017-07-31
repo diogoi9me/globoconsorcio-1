@@ -106,7 +106,9 @@ function load_tema_styles() {
 
    //estilo
 
-   wp_register_style( 'tema-site', get_template_directory_uri() . '/assets/css/style.css' );
+   //wp_register_style( 'tema-site', get_template_directory_uri() . '/assets/css/style.css' );
+
+   wp_register_style( 'tema-site2', get_template_directory_uri() . '/assets/css/main.css' );
 
    wp_register_style( 'tema-media', get_template_directory_uri() . '/assets/css/media.css' );
 
@@ -133,6 +135,8 @@ function load_tema_styles() {
    wp_enqueue_style( 'tema-hover');
 
    wp_enqueue_style( 'tema-site');
+
+   wp_enqueue_style( 'tema-site2');
 
    wp_enqueue_style( 'tema-media');
 

@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+.consorcio {
+    background-color: #fff;
+    padding-bottom: 70px;
+}
+
+.consorcio h2:before {
+    content: url(../../images/bar-title.png);
+    position: absolute;
+    top: 55px;
+    right: -2px;
+    width: 100%;
+    line-height: 100%;
+}
+
+.consorcio h2 {
+    color: #000;
+    margin-bottom: 22px;
+}
+
+.consorcio span {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-family: owd-regular, sans-serif;
+    display: block;
+}
+
+.consorcio p:before {
+    content: url(../../images/bar-paragrafo.png);
+    position: absolute;
+    top: 76px;
+    right: 140px;
+    z-index: 999;
+}
+
+.consorcio p {
+    position: relative;
+    display: inline-block;
+    width: 360px;
+    text-align: left;
+    margin-top: 30px;
+    font-family: owd-light, sans-serif;
+    font-size: 16px;
+}
+
+#owl-consorcio .item .icon-pass1,
+#owl-consorcio .item .icon-pass2,
+#owl-consorcio .item .icon-pass3,
+#owl-consorcio .item .icon-proximo {
+    margin-right: 5px;
+    vertical-align: middle;
+    height: 41px;
+    width: 40px;
+    display: inline-block;
+}
+
+#owl-consorcio .item .icon-pass1 {
+    background: url(../../images/spritesA.png) no-repeat 89.5% 0%;
+}
+
+#owl-consorcio .item .icon-pass2 {
+    background: url(../../images/spritesA.png) no-repeat 94.2% 0%;
+}
+
+#owl-consorcio .item .icon-pass3 {
+    background: url(../../images/spritesA.png) no-repeat 99% 0%;
+}
+
+#owl-consorcio .item .icon-proximo {
+    background: url(../../images/proximo.png) no-repeat;
+    float: right;
+    position: relative;
+    top: 41px;
+}
+
+#owl-consorcio {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+#owl-consorcio .item {
+    background-color: #fff;
+    padding-top: 0;
+    display: inline-block!important;
+    max-width: 33%;
+    position: relative;
+}
+
+#owl-consorcio .item:after {
+    content: "";
+}
+
+#owl-consorcio .item h4 {
+    display: inline-block;
+    font-family: owd-bold, sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px;
+    margin: 10px 0;
+    vertical-align: -webkit-baseline-middle;
+}
+
+#owl-consorcio .item .about {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+#owl-consorcio .item .about figure {
+    display: inline-block;
+}
+
+#owl-consorcio .owl-dots {
+    margin-top: -100px;
+    position: absolute;
+    width: 100%;
+}
+
+#owl-consorcio .owl-dots .owl-dot.active span {
+    background-color: #003996;
+    width: 20px;
+    height: 20px;
+}
+
+#owl-consorcio .owl-dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+    background-color: #ababab;
+}
+
+#owl-consorcio .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 245px;
+}

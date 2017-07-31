@@ -29,7 +29,7 @@
           <li><a href="#"><i class="icon-volume-control-phone"></i>Nós ligamos para você</a></li>
         </ul>
         <div class="text_center">
-          <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fiat.png" alt="">Consórcio Nacional Chevrolet</span>
+          <i class="icon-fiat"></i><span>Consórcio Nacional Chevrolet</span>
         </div>
         <ul class="redes effect">
           <li>
@@ -50,12 +50,12 @@
         <div class="navbar-brand transition">
           <?php if( is_home() || is_front_page() ): ?>
             <a class="link-up" href="#home">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Globo Consórcio.">
+              <i class="icon-logo"></i>
             </a>
           <?php else: ?>
           
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Globo Consórcio.">
+               <i class="icon-logo"></i>
             </a>
           <?php endif; ?>
         </div>

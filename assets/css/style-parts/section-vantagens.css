@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+.vantagens__top {
+    position: relative;
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.vantagens__bottom,
+.vantagens__top {
+    overflow: hidden;
+    margin-bottom: -10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.vantagens__bottom .vantagens__b .vantagens__conteudo,
+.vantagens__top .vantagens__a .vantagens__conteudo {
+    position: relative;
+    max-width: 100%;
+    padding: 0 15px;
+    display: block;
+    margin: 0 auto;
+    width: 510px;
+    text-align: center;
+}
+
+.vantagens__bottom .vantagens__b:before,
+.vantagens__top .vantagens__a:before {
+    content: url(../../images/before2.png);
+    top: 245px;
+    width: auto;
+    position: absolute;
+    line-height: 100%;
+}
+
+.vantagens__top .vantagens__a:before {
+    right: -15px;
+    z-index: 999;
+}
+
+.vantagens__bottom .vantagens__b:before {
+    left: -15px;
+}
+
+.vantagens__bottom .vantagens__b .vantagens__conteudo span,
+.vantagens__top .vantagens__a .vantagens__conteudo span {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-family: owd-regular, sans-serif;
+    display: block;
+}
+
+.vantagens__bottom .vantagens__b .vantagens__conteudo h2:before,
+.vantagens__top .vantagens__a .vantagens__conteudo h2:before {
+    content: url(../../images/bar-title.png);
+    position: absolute;
+    top: 44px;
+    right: -2px;
+    width: 100%;
+    line-height: 100%;
+}
+
+.vantagens__bottom .vantagens__b .vantagens__conteudo h2,
+.vantagens__top .vantagens__a .vantagens__conteudo h2 {
+    color: #000;
+    margin: 70px 0;
+    font-size: 30px;
+}
+
+.vantagens__bottom .vantagens__a .vantagens__blocos li,
+.vantagens__top .vantagens__b .vantagens__blocos li {
+    display: inline-block;
+    margin: 12px;
+    max-width: 100%;
+    width: 39%;
+}
+
+.vantagens__bottom .vantagens__a .vantagens__blocos li div,
+.vantagens__top .vantagens__b .vantagens__blocos li div {
+    border: 1px solid rgba(255, 255, 255, .2);
+    width: 238px;
+    height: 120px;
+    text-align: center;
+    color: #fff;
+    max-width: 100%;
+}
+
+.vantagens__bottom .vantagens__a .vantagens__blocos li div h5,
+.vantagens__top .vantagens__b .vantagens__blocos li div h5 {
+    font-size: 16px;
+    font-family: owd-regular, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.vantagens__bottom .vantagens__b .vantagens__conteudo p,
+.vantagens__top .vantagens__a .vantagens__conteudo p {
+    font-size: 16px;
+    text-align: left;
+    font-family: owd-light, sans-serif;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.vantagens__bottom .vantagens__b .vantagens__conteudo button,
+.vantagens__top .vantagens__a .vantagens__conteudo button {
+    background-color: transparent;
+    border-radius: 0;
+    border: 2px solid #ccc;
+    width: 220px;
+    height: 99px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: owd-bold, sans-serif;
+    letter-spacing: 3px;
+    color: #003996;
+}
+
+.vantagens__bottom .vantagens__b .vantagens__conteudo button:hover,
+.vantagens__top .vantagens__a .vantagens__conteudo button:hover {
+    background-color: #003996;
+    color: #fff;
+    border: 2px solid #003996;
+}
+
+.vantagens__bottom .vantagens__a .vantagens__blocos,
+.vantagens__top .vantagens__b .vantagens__blocos {
+    margin: 115px 23px;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.vantagens__bottom .vantagens__a .vantagens__blocos {
+    text-align: right;
+    height: 248px;
+}
+
+.vantagens__bottom .vantagens__a {
+    background: url(../../images/bg_about_globo.png) no-repeat
+}
+
+.vantagens__top .vantagens__b {
+    background: url(../../images/bg_about_gm.png) no-repeat
+}
+
+.vantagens__bottom .vantagens__a,
+.vantagens__top .vantagens__b {
+    background-position: center;
+    background-size: cover;
+    min-height: 551px;
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.vantagens__bottom .vantagens__b,
+.vantagens__top .vantagens__a {
+    background-color: #f2f2f2;
+    padding: 17.6px 0;
+    position: relative;
+    min-height: 551px;
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}

@@ -46,7 +46,7 @@
 					<li class="area-info__prazos-item">Prazo</li>
 					<li class="area-info__prazos-item">Prazo</li>
 				</ul>
-				<div class="area-info__info">
+				<div class=" area-info__info--interna">
 					<p>* para grupo com taxa de administração contratada de 16% e 20%, respectivamente.<br/>
 ** para grupos especiais com taxa de administração contratada de 14%.</p>
 					<br/>
@@ -73,7 +73,7 @@
 		</div>
 	</div>
 	<div class="outros-planos">
-		<h2>Conheça outros <strong>Planos</strong></h2>
+		<h2 class="outros-planos__title">Conheça outros <strong>Planos</strong></h2>
 
 		  <!--nossos planos-->
 

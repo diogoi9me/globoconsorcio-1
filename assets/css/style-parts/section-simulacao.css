@@ -1,0 +1,110 @@
+@charset "utf-8";
+.simulacao {
+    background-color: #013A96;
+    width: 100%;
+    min-height: 384px;
+    max-width: 100%;
+    display: inline-block
+}
+
+.simulacao .title:after {
+    content: url(../../images/bar-title.png);
+    position: absolute;
+    top: 67px;
+    right: -2px;
+    width: 100%;
+    line-height: 100%
+}
+
+.simulacao .title span {
+    display: block;
+    font-size: 18px;
+    font-family: owd-regular, sans-serif;
+    line-height: 37px
+}
+
+.simulacao .form_simulacao {
+    display: inline-block;
+    width: 100%
+}
+
+.simulacao .form_simulacao .medium {
+    vertical-align: top;
+    width: 19%;
+    display: inline-block;
+    text-align: left
+}
+
+.simulacao .form_simulacao .medium input {
+    position: relative;
+    height: 55px;
+    border-radius: 0!important;
+    padding: 8px;
+    border: 0;
+    top: -20px
+}
+
+.simulacao .form_simulacao .medium label {
+    color: #013A96;
+    font-weight: normal;
+    font-family: owd-regular, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute!important;
+    border: 0;
+    top: 4px;
+    left: 10px;
+    margin-bottom: 0;
+    z-index: 99
+}
+.simulacao .form_simulacao .btn-simulacao {
+    top: 0px!important;
+    padding: 17.5px;
+    width: 100%!important;
+    display: inline-block;
+    border-radius: 0;
+    background-color: #06A7C7;
+    font-size: 13px;
+    color: #fff
+}
+
+.simulacao .form_simulacao .wpcf7-select {
+    height: 55px;
+    position: relative;
+    top: -20px;
+    border-radius: 0
+}
+
+.simulacao .form_simulacao .wpcf7-form-control-wrap {
+    vertical-align: top;
+    display: inline;
+    top: -20px;
+    border-radius: 0
+}
+
+.simulacao .form_simulacao .wpcf7-response-output,
+.wpcf7-validation-errors {
+   
+    color: #fff;
+    max-width: 1240px;
+    display: block!important;
+    font-size: 20px;
+    position: absolute;
+    margin: 0 auto;
+    height: 50px;
+    left: 0;
+    line-height: 44px;
+    right: 0;
+    bottom: 0;
+    top: 189px;
+}
+.wpcf7-validation-errors{
+     border: 2px solid #f70000!important;
+}
+
+
+
+
+.simulacao .form_simulacao>.wpcf7-mail-sent-ok {
+    border: 2px solid #398f14!important
+}
