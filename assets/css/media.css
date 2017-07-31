@@ -700,6 +700,19 @@
 }
 
 @media screen and (max-width:768px) {
+    .area-info img{
+        max-width: 100%;
+    }
+    .area-info__planos, .area-info__prazos{
+        width: 100%;
+    }
+    .area-info__prazos-item{
+        margin-left: 0;
+    }
+    .area-info__info--interna{
+        width: 100%;
+        margin-left: 0;
+    }
     #veiculos .owl-item{
         width: 100%!important;
     }
