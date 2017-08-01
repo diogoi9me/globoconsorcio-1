@@ -539,6 +539,7 @@ button a:hover {
     width: 997px;
     max-width: 100%;
     display: inline-block;
+   
 }
 
 
@@ -559,13 +560,14 @@ button a:hover {
 
 /*======BLOCO BANNER - INTERNAS ======*/
 .bloco-banner{
-    height: 170px;
+    height: 243px;
     margin-top: 12px;
     position: relative;
     width: 100%;
 }
 .bloco-banner img{
     width: 100%;
+    min-height:245px;
 }
 .bloco-banner__title,.bloco-banner__toptitle,.bloco-banner__texto{
     color: #fff;
@@ -573,11 +575,21 @@ button a:hover {
     text-transform: uppercase;
 }
 .bloco-banner__title,.bloco-banner__title--chevrolet, .bloco-banner__title-single{
-    bottom: 248px;
+    bottom: 355px;
     font-family: 'owd-bold',sans-serif;
     font-size: 40px;
     margin: 0;
-}   
+}
+
+.bloco-banner__title:after,.bloco-banner__title--chevrolet:after, .bloco-banner__title-single:after{
+    content: '';
+    border-left: 1px solid #fff;
+    display: inline-block;
+    height: 48px;
+    right: -40px;
+    position: absolute;
+    top: -5px;
+}
 .bloco-banner__toptitle{
     bottom: 280px;
     font-family: 'owd-light',sans-serif;
@@ -585,17 +597,17 @@ button a:hover {
 }
 .bloco-banner__titletopo{
     position: absolute;
-    top: -146px;
+    top: -202px;
     color: #fff;
     left: 48px;
 }
-.bloco-banner__title--chevrolet,.bloco-banner__title--sobre,.bloco-banner__title--single{
+/*.bloco-banner__title--chevrolet,.bloco-banner__title--sobre,.bloco-banner__title--single{
     bottom: 238px;
-}
+}*/
 .bloco-banner__title-single{
     bottom: 230px;
 }
-.bloco-banner__texto:before,.bloco-banner__texto--veiculo:before{
+/*.bloco-banner__texto:before,.bloco-banner__texto--veiculo:before{
     content: '';
     border-left: 1px solid #fff;
     display: inline-block;
@@ -603,7 +615,7 @@ button a:hover {
     left: -40px;
     position: absolute;
     top: -5px;
-}
+}*/
 .bloco-banner__texto,.bloco-banner__texto--veiculo,.bloco-banner__texto-right{
     bottom: 254px;
     color: #fff;
@@ -637,12 +649,15 @@ button a:hover {
     font-family: 'owd-bold',sans-serif;
 }
 .bloco-banner__veiculo{
-    bottom: 220px;
+    bottom: 320px;
     display: inline-block;
-    left: 360px;
+    left: 25%;
     max-width: 206px;
     position: absolute;
     width: 100%;
+}
+.bloco-banner__veiculo img{
+       min-height: 0;
 }
 /*=================================================*/
 
@@ -1366,8 +1381,7 @@ button a:hover {
 /*breadcrumbs*/
 #breadcrumbs{
     position: absolute;
-    top: -65px;
-    left: 50px;
+    top: -95px;
     color: #fff;
 }
 

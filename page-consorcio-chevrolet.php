@@ -26,7 +26,7 @@
 			<div class="col-md-5 col-xs-mobile">
  
 				<div class="bloco-opcoes__opcao-sobre">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-inativo.png" alt="">
+					<i class="icon-globo"></i>
 					<h5 class="bloco-opcoes__title">Sobre a Globo <br/> Consorcio</h5>
 				</div>
 
@@ -47,7 +47,7 @@
 
 	<div class="sobre__info sobre__info--consorcio">
 		<div class="container">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/aspas-white.png" alt="">
+			<i class="icon-aspas-white"></i>
 			<p class="sobre__info--conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam asperiores, accusamus voluptatem amet quo. Sed fugit ipsum aliquam, veniam nam tempore cumque? Dolores nemo, error quae temporibus ipsum eius!</p>
 		</div>
 	</div>

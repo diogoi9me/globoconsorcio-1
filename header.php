@@ -81,59 +81,55 @@
           <div id="bs-example-navbar-collapse-1 menu-top" class="menu collapse navbar-collapse">
             <ul id="menu-menu" class="nav navbar-nav">
             
-             <?php if( is_home() && is_front_page() ): ?>
-                  
-                      <li class="menu-item itemNav first">
-            <a href="#simulacao" class="linkNav scroll">SIMULAÇÃO</a>
-                      </li>
-                      <li class="menu-item itemNav">
-            <a href="#carros" class="linkNav scroll animate">VEÍCULOS</a>
-                      </li>
-                      <li class="menu-item itemNav">
-            <a href="#planos" class="linkNav scroll animate">PLANOS</a>
-                      </li>
-                      <li class="menu-item itemNav">
-            <a href="#consorcio" class="linkNav scroll animate">CONSÓRCIO</a>
-                      </li>
-                      <li class="menu-item itemNav">
-            <a href="#blog" class="linkNav scroll animate">BLOG</a>
-                      </li>
-                      <li class="menu-item itemNav">
-            <a href="#depoimentos" class="linkNav scroll animate">DEPOIMENTOS</a>
-                      </li>
-                      <li class="menu-item itemNav">
-            <a href="#atendimento" class="linkNav scroll animate">ATENDIMENTO</a>
-                      </li> 
-                  
+              <?php if( is_home() && is_front_page() ): ?>
+                    
+                <li class="menu-item itemNav first">
+                  <a href="#simulacao" class="linkNav scroll">SIMULAÇÃO</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="#carros" class="linkNav scroll animate">VEÍCULOS</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="#planos" class="linkNav scroll animate">PLANOS</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="#consorcio" class="linkNav scroll animate">CONSÓRCIO</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="#blog" class="linkNav scroll animate">BLOG</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="#depoimentos" class="linkNav scroll animate">DEPOIMENTOS</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="#atendimento" class="linkNav scroll animate">ATENDIMENTO</a>
+                </li> 
+              <?php else: ?>
             
-                      <?php else: ?>
-            
-            <li class="menu-item itemNav first">
-              <a href="<?php echo get_home_url(); ?>/simulacao" class="linkNav">SIMULAÇÃO</a>
-            </li>
-            <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/veiculos" class="linkNav animate">VEÍCULOS</a>
-            </li>
-            <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/planos" class="linkNav animate">PLANOS</a>
-            </li>
-            <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/consorcio" class="linkNav animate">CONSÓRCIO</a>
-            </li>
-            <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/blog" class="linkNav animate">BLOG</a>
-            </li>
-            <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/depoimentos" class="linkNav animate">DEPOIMENTOS</a>
-            </li>
-            <li class="menu-item itemNav">
-              <a href="<?php echo get_home_url(); ?>/atendimento" class="linkNav animate">ATENDIMENTO</a>
-            </li>
-            
-                      <?php endif; ?>
-            
-          </ul>
-       </div>
+                <li class="menu-item itemNav first">
+                  <a href="<?php echo get_home_url(); ?>/simulacao" class="linkNav">SIMULAÇÃO</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="<?php echo get_home_url(); ?>/veiculos" class="linkNav animate">VEÍCULOS</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="<?php echo get_home_url(); ?>/planos" class="linkNav animate">PLANOS</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="<?php echo get_home_url(); ?>/consorcio" class="linkNav animate">CONSÓRCIO</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="<?php echo get_home_url(); ?>/blog" class="linkNav animate">BLOG</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="<?php echo get_home_url(); ?>/depoimentos" class="linkNav animate">DEPOIMENTOS</a>
+                </li>
+                <li class="menu-item itemNav">
+                  <a href="<?php echo get_home_url(); ?>/atendimento/contatos" class="linkNav animate">ATENDIMENTO</a>
+                </li>
+              <?php endif; ?>  
+            </ul>
+          </div>
         </div>
       
 
@@ -157,80 +153,73 @@
           ?>
          
         <div id="bs-example-navbar-collapse-1 menu-top" class="menu collapse navbar-collapse">
-           <ul id="menu-menu" class="nav navbar-nav">
+          <ul id="menu-menu" class="nav navbar-nav">
          
-         <?php if( is_home() && is_front_page() ): ?>
+            <?php if( is_home() && is_front_page() ): ?>
                
-           <li class="menu-item itemNav first">
-             <a href="#simulacao" class="linkNav scroll">SIMULAÇÃO</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="#carros" class="linkNav scroll animate">VEÍCULOS</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="#planos" class="linkNav scroll animate">PLANOS</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="#consorcio" class="linkNav scroll animate">CONSÓRCIO</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="#blog" class="linkNav scroll animate">BLOG</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="#depoimentos" class="linkNav scroll animate">DEPOIMENTOS</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="#atendimento" class="linkNav scroll animate">ATENDIMENTO</a>
-           </li>
-               
-         
-         <?php else: ?>
-         
-           <li class="menu-item itemNav first">
-             <a href="<?php echo get_home_url(); ?>/simulacao" class="linkNav">SIMULAÇÃO</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/veiculos" class="linkNav animate">VEÍCULOS</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/planos" class="linkNav animate">PLANOS</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/consorcio" class="linkNav animate">CONSÓRCIO</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/blog" class="linkNav animate">BLOG</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/depoimentos" class="linkNav animate">DEPOIMENTOS</a>
-           </li>
-           <li class="menu-item itemNav">
-             <a href="<?php echo get_home_url(); ?>/atendimento" class="linkNav animate">ATENDIMENTO</a>
-           </li>
-         
-         <?php endif; ?>
-         
-             </ul> 
-            </div>
-
+              <li class="menu-item itemNav first">
+                <a href="#simulacao" class="linkNav scroll">SIMULAÇÃO</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="#carros" class="linkNav scroll animate">VEÍCULOS</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="#planos" class="linkNav scroll animate">PLANOS</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="#consorcio" class="linkNav scroll animate">CONSÓRCIO</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="#blog" class="linkNav scroll animate">BLOG</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="#depoimentos" class="linkNav scroll animate">DEPOIMENTOS</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="#atendimento" class="linkNav scroll animate">ATENDIMENTO</a>
+              </li>
+            <?php else: ?>
+              <li class="menu-item itemNav first">
+                <a href="<?php echo get_home_url(); ?>/simulacao" class="linkNav">SIMULAÇÃO</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="<?php echo get_home_url(); ?>/veiculos" class="linkNav animate">VEÍCULOS</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="<?php echo get_home_url(); ?>/planos" class="linkNav animate">PLANOS</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="<?php echo get_home_url(); ?>/consorcio" class="linkNav animate">CONSÓRCIO</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="<?php echo get_home_url(); ?>/blog" class="linkNav animate">BLOG</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="<?php echo get_home_url(); ?>/depoimentos" class="linkNav animate">DEPOIMENTOS</a>
+              </li>
+              <li class="menu-item itemNav">
+                <a href="<?php echo get_home_url(); ?>/atendimento/contatos" class="linkNav animate">ATENDIMENTO</a>
+              </li>
+            <?php endif; ?>
+          </ul> 
         </div>
+      </div>
+    </div>
 
-        </div>
-
-        <div class="btn-group servico_cliente transition effect">
-          <button type="button" class="btn">Serviço ao Cliente</button>
-          <button type="button" class="btn btn-small dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="caret"></span>
-            <span class="sr-only">Toggle Dropdown</span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Acessar meu Consórcio</a></li>
-            <li><a href="#">2a via boleto</a></li>
-            <li><a href="#">Datas de assembleias</a></li>
-            <li><a href="#">Valores a devolver</a></li>
-            <li><a href="#">Dúvidas Frequêntes</a></li>
-          </ul>
-        </div> 
+      <div class="btn-group servico_cliente transition effect">
+        <button type="button" class="btn">Serviço ao Cliente</button>
+        <button type="button" class="btn btn-small dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Acessar meu Consórcio</a></li>
+          <li><a href="#">2a via boleto</a></li>
+          <li><a href="#">Datas de assembleias</a></li>
+          <li><a href="#">Valores a devolver</a></li>
+          <li><a href="#">Dúvidas Frequêntes</a></li>
+        </ul>
+      </div> 
 
     </div>
 </header>

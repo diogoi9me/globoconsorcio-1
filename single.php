@@ -6,7 +6,7 @@
 	<div class="bloco-banner">
   		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
   		<div class="container">
-  			<h4 class="bloco-banner__toptitle">Veículos</h4>
+  			<h4 class="bloco-banner__titletopo">Veículos</h4>
   			<h2 class="bloco-banner__title bloco-banner__title--single"><?php the_title() ?></h2>
   			<?php get_template_part('template-parts/breadcrumb'); ?>
   			<div class="bloco-banner__veiculo">
@@ -33,7 +33,7 @@
 
   	<div class="container-single">
 	  	<div class="container">
-			<div class="col-md-2 col-xs-mobile">
+			<div class="col-md-2 col-xs-mobile mobile-separador-border">
 				<div class="filtro filtro__ativo">
 					<a href="#" class="filtro__link">
 						<span class="filtro__valor">100%</span>
@@ -41,10 +41,10 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-1 col-xs-mobile-separador">
+			<div class="col-md-1 mobile-separador-none">
 				<div class="bloco-opcoes__divisor"></div>
 			</div>
-			<div class="col-md-2 col-xs-mobile">
+			<div class="col-md-2 col-xs-mobile mobile-separador-border">
 				<div class="filtro">
 					<a href="#" class="filtro__link">
 						<span class="filtro__valor">100%</span>
@@ -52,10 +52,10 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-1">
+			<div class="col-md-1 mobile-separador-none">
 				<div class="bloco-opcoes__divisor"></div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-xs-mobile mobile-separador-border">
 				<div class="filtro">
 					<a href="#" class="filtro__link">
 						<span class="filtro__valor">100%</span>
@@ -63,10 +63,10 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-1">
+			<div class="col-md-1 mobile-separador-none">
 				<div class="bloco-opcoes__divisor"></div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-xs-mobile mobile-separador-border">
 				<div class="filtro">
 					<a href="#" class="filtro__link">
 						<span class="filtro__valor">100%</span>

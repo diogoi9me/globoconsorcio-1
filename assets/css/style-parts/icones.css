@@ -1,134 +1,92 @@
 @charset "utf-8";
+.icon{
+    height: 83px;
+    width: 95px;
+}
+.icon-logo,.icon-logo-footer,.icon-globo,.icon-logo-footer,.icon-inoveme,.icon-aspas,.icon-aspas-white,
+.icon-fiat,.icon-calculadora,.icon-security,.icon-facebook,.icon-instagram-1,.icon-phone,.icon-youtube-play,
+.icon--youtube-play,.icon-porcento,.icon-atendimento,.icon-certificada,.icon-colaboradores,.icon-desconto,
+.icon-tempo,.icon,.icon-clientes-ativos,.icon-clientes-contemplados,.icon-consorcio-chevrolet,.icon-pesquisa,
+.icon-pesquisa-mobile,.icon-send, .icon-search-light{
+    display: inline-block;
+}
 
 .icon-logo,.icon-logo-footer{
     background: url(../../images/spritesA.png)no-repeat 53% 0%;
     height: 41px;
     width: 93px;
-    display: inline-block;
+   }
+.icon-globo{
+    background: url(../../images/icon-globo.png)no-repeat;
+    width: 70px;
+    height: 40px;
 }
 .icon-logo-footer{
     background: url(../../images/spritesA.png)no-repeat 81% 0%;
 }
 .icon-inoveme{
     background: url(../../images/spritesA.png)no-repeat 35% 0%;
-    display: inline-block;
     width: 46px;
     height: 40px;
 }
 .icon-aspas{
     background: url(../../images/spritesA.png)no-repeat 59.4% 0%;
-    display: inline-block;
     width: 38px;
     height: 40px;
+}
+.icon-aspas-white{
+    background: url(../../images/spritesA.png)no-repeat 71% 0%;
+    width: 62px;
+    height: 53px;
 }
 .icon-fiat{
     background: url(../../images/spritesA.png)no-repeat 64.3% 0%;
     width: 53px;
     height: 15px;
-    display: inline-block;
     vertical-align: middle;
     margin-right: 3%;
 }
-.icon-calculadora,
+.on.icon-pesquisa {
+    background: url(../../images/icon-close.png) no-repeat
+}
 .icon-security {
-    width: 21px;
-    height: 30px;
-    display: inline-block;
-    margin-top: 15px
-}
-.icon-facebook,
-.icon-instagram-1,
-.icon-phone,
-.icon-youtube-play,
-.icon--youtube-play {
-    cursor: pointer;
-    border-radius: 26px;
-    color: #777;
-    border: 2px solid #777;
-    font-size: 12px;
-    margin-right: 1px;
-    height: 20px;
-    display: inline-block;
-}
-.icon--youtube-play{
-    vertical-align: middle;
-}
-.icon-phone,
-.icon-phone-1,
-.icon-phone:hover {
-    padding: 0;
-}
-
-.icon-volume-control-phone {
-    font-size: 15px
-}
-
-.icon-facebook:hover,
-.icon-instagram-1:hover,
-.icon-phone:hover,
-.icon-youtube-play:hover {
-    background-color: #003996;
-    color: #fff;
-    border: 2px solid #003996
-}
-
-.icon-security {
-    background: url(../../images/icons_about.png) 188px -49px
+    background: url(../../images/icons_about.png) 188px -49px;
 }
 
 .icon-calculadora {
-    background: url(../../images/icons_about.png) 87px -49px
+    background: url(../../images/icons_about.png) 87px -49px;
 }
 
 .icon-porcento {
     width: 24px;
     background: url(../../images/icons_about.png) -50px -50px;
     height: 30px;
-    display: inline-block;
-    margin-top: 15px
+    margin-top: 15px;
 }
-
-.icon-atendimento,
-.icon-certificada,
-.icon-colaboradores,
-.icon-desconto,
-.icon-tempo {
-    width: 36px;
-    height: 30px;
-    display: inline-block;
-    margin-top: 15px
-}
-
 .icon-desconto {
-    background: url(../../images/icons_about.png) -150px -51px
+    background: url(../../images/icons_about.png) -150px -51px;
 }
 
 .icon-tempo {
-    background: url(../../images/icons_about.png) -175px 4px
+    background: url(../../images/icons_about.png) -175px 4px;
 }
 
 .icon-colaboradores {
-    background: url(../../images/icons_about.png) -232px 4px
+    background: url(../../images/icons_about.png) -232px 4px;
 }
 
 .icon-atendimento {
-    background: url(../../images/icons_about.png) -282px 4px
+    background: url(../../images/icons_about.png) -282px 4px;
 }
 
 .icon-certificada {
-    background: url(../../images/icons_about.png) -330px 4px
+    background: url(../../images/icons_about.png) -330px 4px;
 }
-.icon-search-light{ width: 30px; height: 20px; display: inline-block; background: url(../../images/icon-search-light.png)no-repeat; vertical-align: middle; }
-
-.glyphicon-plus {
-    font-size: 20px;
-    display: block;
-    margin: 0 auto 20px
-}
-.icon{
-    height: 83px;
-    width: 95px;
-    display: inline-block;
+.icon-search-light{ 
+    width: 30px; 
+    height: 20px; 
+    background: url(../../images/icon-search-light.png)no-repeat; 
+    vertical-align: middle; 
 }
 .icon-passos-1{
     background: url(../../images/spritesA.png) 0% 0%;
@@ -142,14 +100,6 @@
     background: url(../../images/spritesA.png) 21% 0%;
     width: 142px;
 }
-.icon-clientes-ativos,
-.icon-clientes-contemplados,
-.icon-consorcio-chevrolet {
-    height: 30px;
-    display: inline-block;
-    margin-top: 25px
-}
-
 .icon-clientes-ativos {
     width: 34px;
     background: url(../../images/icon-clientes-ativos.png) no-repeat
@@ -169,7 +119,6 @@
     width: 22px;
     background: url(../../images/icon-send.png) no-repeat;
     height: 25px;
-    display: inline-block;
     position: absolute;
     top: 18px;
     right: 33px
@@ -178,9 +127,84 @@
 .icon-pesquisa,
 .icon-pesquisa-mobile {
     background: url(../../images/icon-search.png) no-repeat;
-    display: inline-block;
     font-size: 0
 }
+
+.icon-calculadora,
+.icon-security {
+    width: 21px;
+    height: 30px;
+    margin-top: 15px;
+}
+.icon-facebook,
+.icon-instagram-1,
+.icon-phone,
+.icon-youtube-play,
+.icon--youtube-play {
+    cursor: pointer;
+    border-radius: 26px;
+    color: #777;
+    border: 2px solid #777;
+    font-size: 12px;
+    margin-right: 1px;
+    height: 20px;
+   }
+.icon--youtube-play{
+    vertical-align: middle;
+    vertical-align: middle;
+    font-size: 11px;
+    height: 22px;
+    width: 22px;
+    padding: 1px;
+}
+.icon-phone,
+.icon-phone-1,
+.icon-phone:hover {
+    padding: 0;
+}
+
+.icon-volume-control-phone {
+    font-size: 15px;
+}
+
+.icon-facebook:hover,
+.icon-instagram-1:hover,
+.icon-phone:hover,
+.icon-youtube-play:hover {
+    background-color: #003996;
+    color: #fff;
+    border: 2px solid #003996
+}
+
+
+
+.icon-atendimento,
+.icon-certificada,
+.icon-colaboradores,
+.icon-desconto,
+.icon-tempo {
+    width: 36px;
+    height: 30px;
+       margin-top: 15px
+}
+
+
+
+.glyphicon-plus {
+    font-size: 20px;
+    display: block;
+    margin: 0 auto 20px
+}
+
+
+.icon-clientes-ativos,
+.icon-clientes-contemplados,
+.icon-consorcio-chevrolet {
+    height: 30px;
+    margin-top: 25px
+}
+
+
 .icon-pesquisa-mobile {
     width: 27px!important;
     height: 26px!important;
@@ -201,9 +225,7 @@
     right: -69px
 }
 
-.on.icon-pesquisa {
-    background: url(../../images/icon-close.png) no-repeat
-}
+
 
 .icon-pesquisa[type=submit] {
     font-size: 0;

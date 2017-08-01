@@ -1,4 +1,4 @@
-<?php /*Template Name: atendimento */ ?>
+<?php /*Template Name: Página de Atendimento */ ?>
 <?php get_header(); ?>
 
 
@@ -7,7 +7,7 @@
 	<div class="bloco-banner">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
 		<div class="container">
-			<h4 class="bloco-banner__toptitle">Central de Atendimento</h4>
+			<h4 class="bloco-banner__titletopo">Central de Atendimento</h4>
 			<h2 class="bloco-banner__title bloco-banner__title--chevrolet"><?php the_title() ?></h2>	
 			<?php get_template_part('template-parts/breadcrumb'); ?>
 		</div>	
@@ -29,7 +29,7 @@
 			<div class="col-md-5 col-xs-mobile">
 
 				<div class="bloco-opcoes__opcao-sobre">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-inativo.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icone-duvidas.png" alt="">
 					<h5 class="bloco-opcoes__title">Dúvidas Frequentes(FAQ)</h5>
 				</div>
 
