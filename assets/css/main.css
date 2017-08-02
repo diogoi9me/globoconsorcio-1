@@ -564,6 +564,9 @@ button a:hover {
     margin-top: 12px;
     position: relative;
     width: 100%;
+    background: url(../images/bkg-banner.png)no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .bloco-banner img{
     width: 100%;
@@ -571,14 +574,15 @@ button a:hover {
 }
 .bloco-banner__title,.bloco-banner__toptitle,.bloco-banner__texto{
     color: #fff;
-    position: absolute;
+   
     text-transform: uppercase;
 }
 .bloco-banner__title,.bloco-banner__title--chevrolet, .bloco-banner__title-single{
-    bottom: 355px;
+   
     font-family: 'owd-bold',sans-serif;
     font-size: 40px;
     margin: 0;
+    display:    inline-block;
 }
 
 .bloco-banner__title:after,.bloco-banner__title--chevrolet:after, .bloco-banner__title-single:after{
@@ -586,9 +590,9 @@ button a:hover {
     border-left: 1px solid #fff;
     display: inline-block;
     height: 48px;
-    right: -40px;
+    left: 290px;
     position: absolute;
-    top: -5px;
+    top: 30px;
 }
 .bloco-banner__toptitle{
     bottom: 280px;
@@ -596,16 +600,22 @@ button a:hover {
     font-size: 16px;
 }
 .bloco-banner__titletopo{
-    position: absolute;
-    top: -202px;
+    width: 100%;
+    display: inline-block;
     color: #fff;
-    left: 48px;
+    
 }
 /*.bloco-banner__title--chevrolet,.bloco-banner__title--sobre,.bloco-banner__title--single{
     bottom: 238px;
 }*/
 .bloco-banner__title-single{
     bottom: 230px;
+}
+.bloco__title-banner{
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+
 }
 /*.bloco-banner__texto:before,.bloco-banner__texto--veiculo:before{
     content: '';
@@ -617,13 +627,11 @@ button a:hover {
     top: -5px;
 }*/
 .bloco-banner__texto,.bloco-banner__texto--veiculo,.bloco-banner__texto-right{
-    bottom: 254px;
+    
     color: #fff;
     font-size: 14px;
     font-family: 'owd-light',sans-serif;
-    left: 30%;
-    max-width: 400px;
-    position: absolute;
+   display:     inline-block;
     text-align: left;
 }
 .bloco-banner__texto--veiculo{
@@ -691,15 +699,21 @@ button a:hover {
     padding: 20px 0;
     position: relative;
 }
-.bloco-opcoes__opcao-sobre:before{
+/*.bloco-opcoes__opcao-sobre:before{
     content: '';
-    background: url(../images/before-ativo.png);
-    width: 26px;
+    background: url(../../images/icon-duvidas-hover.png)no-repeat;
+    height: 20px;
+    width: 19px;
     display: inline-block;
     position: absolute;
     top: -12px;
-    height: 13px;
+  
 }
+.bloco-opcoes__opcao-sobre a{
+    background: url(../images/icon-duvidas.png)no-repeat;
+    height: 20px;
+    width: 19px;
+}*/
 .bloco-opcoes__divisor:after{
     content: '';
     border-right: 1px solid #aaa;
@@ -736,6 +750,7 @@ button a:hover {
 .bloco-header, .bloco-header--simulacao,.bloco-header--faq{
     padding: 90px 0;
     width: 100%;
+    text-align: center;
     
 }
 .bloco-header--faq{
@@ -775,10 +790,6 @@ button a:hover {
 }
 .bloco-header__title--simulacao strong{
     font-family: 'owd-bold',sans-serif;
-}
-.bloco-banner__title--facil, .bloco-banner__title--planos{
-    bottom: 65px!important;
-    font-size: 20px;
 }
 .simulacao__input-group input{
     width: 100%;
@@ -1380,8 +1391,7 @@ button a:hover {
 
 /*breadcrumbs*/
 #breadcrumbs{
-    position: absolute;
-    top: -95px;
+    text-align: left;
     color: #fff;
 }
 
@@ -1393,14 +1403,83 @@ button a:hover {
     display: none;
 }
 
-.page-veiculos .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title {
-    color: #06A8C8;
+
+/*===filtros===  OBS OTIMIZAR ESSAS CLASSES DEPOIS*/
+.bloco__filter{
+    width: 100%;
+    display: inline-block;
 }
 
 
-.page-veiculos .todos a{
+.page-veiculos .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title {
+    color: #06A8C8;
+}
+.page-faq .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title{
+    color: #06A8C8;
+}
+.page-desconto .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title{
+    color: #06A8C8;
+}
+.page-sobre .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title{
+    color: #06A8C8;
+}
+.page-atendimento .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title{
+    color: #06A8C8;
+}
+.page-consorcio-chevrolet .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title{
+    color: #06A8C8;
+}
+
+.page-veiculos .todos a,.page-faq .duvidas a, .page-desconto .vantagem a, .page-sobre .vantagem a, .page-atendimento .contato a, .page-consorcio-chevrolet .vantagem a{
     position: relative;
     padding-left: 33px;
+}
+.page-veiculos .carros a{
+    position: relative;
+    padding-left: 52px;
+}
+.page-veiculos .picapes a{
+    position: relative;
+    padding-left: 52px;
+}
+.page-veiculos .suvs a{
+    position: relative;
+    padding-left: 52px;
+}
+
+
+
+
+.page-desconto .vantagem a:before,.page-sobre .vantagem a:before, .page-consorcio-chevrolet .vantagem a:before{
+    content: '';
+    position: absolute;
+    background: url(../images/icon-atendimento.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 19px;
+    display: block;
+    left: 0px;
+}
+.page-atendimento .contato a:before{
+    content: '';
+    position: absolute;
+    background: url(../images/icon-atendimento.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 19px;
+    display: block;
+    left: 0px;
+}
+.page-faq .atendimentos a:before{
+    content: '';
+    position: absolute;
+    background: url(../images/icon-atendimento.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 19px;
+    display: block;
+    left: 0px;
+    
 }
 .page-veiculos .todos a:before{
     content: '';
@@ -1412,14 +1491,16 @@ button a:hover {
     display: block;
     left: 0;
 }
-
-.page-veiculos .todos a:hover:before{
-    background: url(../images/sprites_hover.png)0px 0px;
-}
-
-.page-veiculos .carros a{
-    position: relative;
-    padding-left: 52px;
+.page-faq .duvidas a:before{
+    content: '';
+    position: absolute;
+    background: url(../images/icone-duvidas.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 19px;
+    display: block;
+    left: 0px;
+    
 }
 .page-veiculos .carros a:before{
     content: '';
@@ -1431,14 +1512,6 @@ button a:hover {
     display: block;
     left: 0;
 }
-.page-veiculos .carros a:hover:before{
-    background: url(../images/sprites_hover.png)-28px 0px;
-}
-
-.page-veiculos .picapes a{
-    position: relative;
-    padding-left: 52px;
-}
 .page-veiculos .picapes a:before{
      content: '';
     position: absolute;
@@ -1448,13 +1521,6 @@ button a:hover {
     width: 51px;
     display: block;
     left: 0;
-}
-.page-veiculos .picapes a:hover:before{
-    background: url(../images/sprites_hover.png) -78px 0px;
-}
-.page-veiculos .suvs a{
-    position: relative;
-    padding-left: 52px;
 }
 .page-veiculos .suvs a:before{
     content: '';
@@ -1466,14 +1532,73 @@ button a:hover {
     display: block;
     left: 0;
 }
+
+
+
+.page-desconto .vantagem a:hover:before, .page-sobre .vantagem a:hover:before, .page-consorcio-chevrolet .vantagem a:hover:before{
+    background: url(../images/icone-duvidas-hover.png);
+}
+.page-faq .atendimentos a:hover:before{
+    background: url(../images/icone-duvidas-hover.png);
+}
+.page-atendimento .contato a:hover:before{
+    background: url(../images/icone-duvidas-hover.png);
+}
+.page-faq .duvidas a:hover:before{
+    background: url(../images/icone-duvidas-hover.png);
+}
+ 
+
+.page-veiculos .todos a:hover:before{
+    background: url(../images/sprites_hover.png)0px 0px;
+}
+.page-veiculos .carros a:hover:before{
+    background: url(../images/sprites_hover.png)-28px 0px;
+}
+.page-veiculos .picapes a:hover:before{
+    background: url(../images/sprites_hover.png) -78px 0px;
+}
 .page-veiculos .suvs a:hover:before{
     background: url(../images/sprites_hover.png) -139px 0px;
 }
+
+
+
 
 .page-veiculos .filtro__ativo a:before{
     background-image: url(../images/sprites_hover.png);
     background-position-y:0;
 }
+.page-faq .filtro__ativo a:before{
+    background-image: url(../images/icone-duvidas-hover.png);
+    background-position-y:0;
+}
+.page-desconto .filtro__ativo a:before{
+    background-image: url(../images/icone-duvidas-hover.png);
+    background-position-y:0;
+}
+.page-sobre .filtro__ativo a:before{
+    background-image: url(../images/icone-duvidas-hover.png);
+    background-position-y:0;
+}
+.page-atendimento .filtro__ativo a:before{
+    background-image: url(../images/icone-duvidas-hover.png);
+    background-position-y:0;
+}
+.page-consorcio-chevrolet .filtro__ativo a:before{
+    background-image: url(../images/icone-duvidas-hover.png);
+    background-position-y:0;
+}
+
+
+
+/*===================================================================*/
+
+
+
+
+
+
 .carregar-mais{
     width: 100%;
     display: inline-block;

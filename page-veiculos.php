@@ -30,12 +30,9 @@ $resumoPage = $resumoPage[0];
 			
 		</div>	
 	</div>
-	
-	<div class="container">
 
-		<?php get_template_part('template-parts/category-products', 'list'); ?>
+	<?php get_template_part('template-parts/category-products', 'list'); ?>
 
-	</div>
 	<div class="template-parts">
 		<?php 
     	//Include com listagem dos veículos

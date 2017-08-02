@@ -1,10 +1,12 @@
-  <div class="col-md-2 col-xs-mobile mobile-separador-border">
+<div class="bloco__filter">
+  <div class="container">
+    <div class="col-md-2 col-xs-mobile mobile-separador-border">
       <div class="filtro filtro<?php if( !is_tax() ) { echo '__ativo'; } ?> todos">
         <a href="<?php echo get_home_url(); ?>/veiculos">
           <span class="filtro__title ">Todos</span>
         </a>
       </div>
-  </div>
+    </div>
 
     <?php 
     
@@ -32,5 +34,6 @@
         </a>
       </div>
     </div>
-    
-    <?php } } ?>
+  <?php } } ?>
+  </div>
+</div>

@@ -10,7 +10,7 @@
 			<h2 class="bloco-banner__title bloco-banner__title--planos"><?php the_title() ?></h2>	  
       <?php get_template_part('template-parts/breadcrumb'); ?>
 			<div class="bloco-banner__texto">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
   		
   	</div>	  

@@ -13,39 +13,39 @@
 		</div>	
 	</div>
 
-	<div class="bloco-opcoes">
+	<div class="bloco__filter">
 		<div class="container">
-			<div class="col-md-5 col-xs-mobile">
-
-				<div class="bloco-opcoes__opcao-vantagem">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-ativo.png" alt="">
-					<h5 class="bloco-opcoes__title bloco-opcoes__title-ativo">Contatos</h5>
-				</div>
-
+		<div class="col-md-5 col-xs-mobile">
+			<div class="filtro contato ">
+				<a href="#">
+					<span class="filtro__title ">Contatos</span>
+				</a>
 			</div>
-			<div class="col-md-2 col-xs-mobile-separador">
-				<div class="bloco-opcoes__divisor"></div>
-			</div>
-			<div class="col-md-5 col-xs-mobile">
+		</div>
+		<div class="col-md-2 col-xs-mobile-separador">
+			<div class="bloco-opcoes__divisor"></div>
+		</div>
+		<div class="col-md-5 col-xs-mobile">
 
-				<div class="bloco-opcoes__opcao-sobre">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icone-duvidas.png" alt="">
-					<h5 class="bloco-opcoes__title">Dúvidas Frequentes(FAQ)</h5>
-				</div>
-
-			</div>
-			<div class="col-md-12">
-
-				<div class="bloco-header">
-					<h4 class="bloco-header__toptitle">Nossos</h4>
-					<h2 class="bloco-header__title">Contatos</h2>
-				</div>
-
+			<div class="filtro contato filtro__ativo">
+				<a href="#">
+					<span class="filtro__title ">Dúvidas Frequentes(FAQ)</span>
+				</a>
 			</div>
 
-			
+		</div>
 		</div>
 	</div>
+			
+	<div class="col-md-12">
+
+		<div class="bloco-header">
+			<h4 class="bloco-header__toptitle">Nossos</h4>
+			<h2 class="bloco-header__title">Contatos</h2>
+		</div>
+
+	</div>
+		
 
 	<!--central de atendimento-->
 

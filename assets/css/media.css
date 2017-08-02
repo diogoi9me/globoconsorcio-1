@@ -799,10 +799,10 @@
     }
 
     
-    .bloco-banner{
+    /*.bloco-banner{
         height: auto;
     }
-    .bloco-banner img{
+*/    .bloco-banner img{
         min-height: 140px;
     }
     .bloco-banner__toptitle{

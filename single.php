@@ -32,46 +32,48 @@
 		</div>
 
   	<div class="container-single">
-	  	<div class="container">
-			<div class="col-md-2 col-xs-mobile mobile-separador-border">
-				<div class="filtro filtro__ativo">
-					<a href="#" class="filtro__link">
-						<span class="filtro__valor">100%</span>
-						<span class="filtro__title filtro__title--single">Do valor do cargo</span>
-					</a>
+  		<div class="bloco__filter">
+		  	<div class="container">
+				<div class="col-md-2 col-xs-mobile mobile-separador-border">
+					<div class="filtro filtro__ativo">
+						<a href="#" class="filtro__link">
+							<span class="filtro__valor">100%</span>
+							<span class="filtro__title filtro__title--single">Do valor do cargo</span>
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-1 mobile-separador-none">
-				<div class="bloco-opcoes__divisor"></div>
-			</div>
-			<div class="col-md-2 col-xs-mobile mobile-separador-border">
-				<div class="filtro">
-					<a href="#" class="filtro__link">
-						<span class="filtro__valor">100%</span>
-						<span class="filtro__title filtro__title--single">Do valor do cargo</span>
-					</a>
+				<div class="col-md-1 mobile-separador-none">
+					<div class="bloco-opcoes__divisor"></div>
 				</div>
-			</div>
-			<div class="col-md-1 mobile-separador-none">
-				<div class="bloco-opcoes__divisor"></div>
-			</div>
-			<div class="col-md-2 col-xs-mobile mobile-separador-border">
-				<div class="filtro">
-					<a href="#" class="filtro__link">
-						<span class="filtro__valor">100%</span>
-						<span class="filtro__title filtro__title--single">Do valor do cargo</span>
-					</a>
+				<div class="col-md-2 col-xs-mobile mobile-separador-border">
+					<div class="filtro">
+						<a href="#" class="filtro__link">
+							<span class="filtro__valor">100%</span>
+							<span class="filtro__title filtro__title--single">Do valor do cargo</span>
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-1 mobile-separador-none">
-				<div class="bloco-opcoes__divisor"></div>
-			</div>
-			<div class="col-md-2 col-xs-mobile mobile-separador-border">
-				<div class="filtro">
-					<a href="#" class="filtro__link">
-						<span class="filtro__valor">100%</span>
-						<span class="filtro__title filtro__title--single">Do valor do cargo</span>
-					</a>
+				<div class="col-md-1 mobile-separador-none">
+					<div class="bloco-opcoes__divisor"></div>
+				</div>
+				<div class="col-md-2 col-xs-mobile mobile-separador-border">
+					<div class="filtro">
+						<a href="#" class="filtro__link">
+							<span class="filtro__valor">100%</span>
+							<span class="filtro__title filtro__title--single">Do valor do cargo</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-1 mobile-separador-none">
+					<div class="bloco-opcoes__divisor"></div>
+				</div>
+				<div class="col-md-2 col-xs-mobile mobile-separador-border">
+					<div class="filtro">
+						<a href="#" class="filtro__link">
+							<span class="filtro__valor">100%</span>
+							<span class="filtro__title filtro__title--single">Do valor do cargo</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

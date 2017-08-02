@@ -12,39 +12,39 @@
 		</div>	
 	</div>
 	
-	<div class="bloco-opcoes">
-		<div class="container">
+	<div class="bloco__filter">
+  		<div class="container">
 			<div class="col-md-5 col-xs-mobile">
-
-				<div class="bloco-opcoes__opcao-vantagem">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-atendimento.png" alt="">
-					<h5 class="bloco-opcoes__title ">Atendimento</h5>
+				<div class="filtro atendimentos ">
+					<a href="#">
+						<span class="filtro__title ">Atendimento</span>
+					</a>
 				</div>
-
 			</div>
 			<div class="col-md-2 col-xs-mobile-separador">
 				<div class="bloco-opcoes__divisor"></div>
 			</div>
 			<div class="col-md-5 col-xs-mobile">
-
-				<div class="bloco-opcoes__opcao-sobre">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-duvidas.png" alt="">
-					<h5 class="bloco-opcoes__title bloco-opcoes__title-ativo">Dúvidas Frequentes (FAQ)</h5>
+				<div class="filtro duvidas filtro__ativo">
+					<a href="#">
+						<span class="filtro__title ">Dúvidas Frequentes (FAQ)</span>
+					</a>
 				</div>
-
-			</div>
-			<div class="col-md-12">
-
-				<div class="bloco-header bloco-header--faq">
-					<h4 class="bloco-header__toptitle">O QUE VOCÊ ESTÁ</h4>
-					<h2 class="bloco-header__title">PROCURANDO?</h2>
-
-     				<p class="bloco-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in magni veniam fugiat, at eum aliquam assumenda hic doloribus, perferendis quo velit eius, ipsum blanditiis ratione possimus qui!</p>
-				</div>
-
 			</div>
 		</div>
 	</div>
+	<div class="col-md-12">
+
+		<div class="bloco-header bloco-header--faq">
+			<h4 class="bloco-header__toptitle">O QUE VOCÊ ESTÁ</h4>
+			<h2 class="bloco-header__title">PROCURANDO?</h2>
+
+				<p class="bloco-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in magni veniam fugiat, at eum aliquam assumenda hic doloribus, perferendis quo velit eius, ipsum blanditiis ratione possimus qui!</p>
+		</div>
+
+	</div>
+		
+	
 	<div class="tarja-blue">
 		<div class="container">
 			<div class="tarja-blue__bloco">
