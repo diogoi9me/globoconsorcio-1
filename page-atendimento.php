@@ -3,11 +3,11 @@
 
 
 <article class="page-atendimento">
-	<div class="bloco-banner">
+	<div class="bloco-banner animated fadeIn">
 		<div class="container">
 			<div class="bloco__title-banner">
 				<h4 class="bloco-banner__titletopo">Central de Atendimento</h4>
-				<h2 class="bloco-banner__title bloco-banner__title--chevrolet"><?php the_title() ?></h2>
+				<h2 class="bloco-banner__title bloco-banner__title--chevrolet animated fadeIn"><?php the_title() ?></h2>
 				<?php get_template_part('template-parts/breadcrumb'); ?>
 			</div>
 		</div>	

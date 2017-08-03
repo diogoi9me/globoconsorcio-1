@@ -2,11 +2,11 @@
 <?php get_header(); ?>
 
 <article class="page-consorcio-chevrolet">
-	<div class="bloco-banner">
+	<div class="bloco-banner animated fadeIn">
 	    <div class="container">
 	      <div class="bloco__title-banner">
 	      	<h4 class="bloco-banner__titletopo">Entenda o Consórcio</h4>
-	        <h2 class="bloco-banner__title bloco-banner__title--facil"><?php the_title() ?></h2>
+	        <h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php the_title() ?></h2>
 	        <?php get_template_part('template-parts/breadcrumb'); ?>
 	      </div>
 	    </div>  

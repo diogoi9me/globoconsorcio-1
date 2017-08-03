@@ -14,12 +14,12 @@ $resumoPage = $resumoPage[0];
  ?>
 
 <article class="page-veiculos">
-	<div class="bloco-banner">
+	<div class="bloco-banner animated fadeIn">
 	    <div class="container">
 	      <div class="bloco__title-banner">
 	        <h4 class="bloco-banner__titletopo">Veículo</h4>
-	        <h2 class="bloco-banner__title bloco-banner__title--facil"><?php the_title() ?></h2>
-	        <div class="bloco-banner__texto">
+	        <h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php the_title() ?></h2>
+	        <div class="bloco-banner__texto animated fadeIn">
 	          <?php echo $resumoPage; ?>
 	        </div>
 	        <?php get_template_part('template-parts/breadcrumb'); ?>

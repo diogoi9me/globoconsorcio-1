@@ -2,18 +2,18 @@
 <?php get_header(); ?>
 
 <article class="page-single-veiculos">
-	<div class="bloco-banner">
+	<div class="bloco-banner animated fadeIn">
 	    <div class="container">
 	      <div class="bloco__title-banner">
 	        <h4 class="bloco-banner__titletopo">Veículos</h4>
-	        <h2 class="bloco-banner__title bloco-banner__title--veiculo"><?php the_title() ?></h2>
-	        <div class="bloco-banner__veiculo">
+	        <h2 class="bloco-banner__title bloco-banner__title--veiculo animated fadeIn"><?php the_title() ?></h2>
+	        <div class="bloco-banner__veiculo animated fadeIn">
   				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/veiculo.png" alt="">		
   			</div>
-	        <div class="bloco-banner__texto bloco-banner__texto--veiculo">
+	        <div class="bloco-banner__texto bloco-banner__texto--veiculo animated fadeIn">
 	          <p>CARTA DE CRÉDITO EQUIVALENTE A 65% DO VALOR DO VEÍCULO.</p>
 	        </div>
-	        <div class="bloco-banner__texto-right">
+	        <div class="bloco-banner__texto-right animated fadeIn">
   				<p>R$ <strong>25.734,00</strong></p>
   				<p>84 X R$ <strong>392,00</strong></p>
   			</div>	
@@ -23,7 +23,7 @@
   	</div>
 	
 
-  	<div class="bloco__simulacao bloco__simulacao--single">
+  	<div class="bloco__simulacao bloco__simulacao--single animated fadeInUp">
 			<div class="bloco-header bloco-header--simulacao bloco-header--simulacao-single">
 				<h2 class="bloco-header__title bloco-header__title--simulacao bloco-header__title--single">SOLICITE UMA SIMULAÇÃO JÁ!</h2>
 			</div>

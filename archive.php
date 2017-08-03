@@ -29,25 +29,19 @@ $resumoPage = $resumoPage[0];
 
 
 <article class="page-veiculos">
-	<div class="bloco-banner">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
+	<div class="bloco-banner animated fadeIn">
 		<div class="container">
-			
-				<h2 class="bloco-banner__title">
-				
-				<?php echo single_term_title(); ?>
-					
-				</h2>
-				<?php get_template_part('template-parts/breadcrumb'); ?>
-				<div class="bloco-banner__texto">
+			<div class="bloco__title-banner">
+				<h2 class="bloco-banner__title bloco-banner__title--chevrolet animated fadeIn"><?php echo single_term_title(); ?></h2>
+				<div class="bloco-banner__texto animated fadeIn">
 					<?php echo term_description(); ?>
 				</div>
-			
+				<?php get_template_part('template-parts/breadcrumb'); ?>
+			</div>
 		</div>	
 	</div>
-	
 	<div class="container">
-	<div class="col-md-2 todos">
+		<div class="col-md-2 todos">
 			<div class="filtro filtro<?php if( !is_tax() ) { echo '__ativo'; } ?>">
 				<a href="<?php echo esc_url( home_url() ); ?>/veiculos">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-all.png" alt="">
