@@ -2,15 +2,14 @@
 <?php get_header(); ?>
 
 <article class="page-servico-cliente">
-
 	<div class="bloco-banner">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
-		<div class="container">
-		
-			<h2 class="bloco-banner__title bloco-banner__title--chevrolet"><?php the_title() ?></h2>
-			<?php get_template_part('template-parts/breadcrumb'); ?>
-		</div>	
-	</div>
+	    <div class="container">
+	      <div class="bloco__title-banner">
+	        <h2 class="bloco-banner__title bloco-banner__title--facil"><?php the_title() ?></h2>
+	        <?php get_template_part('template-parts/breadcrumb'); ?>
+	      </div>
+	    </div>  
+  	</div>
 
 	<div class="bloco-opcoes">
 		<div class="container">

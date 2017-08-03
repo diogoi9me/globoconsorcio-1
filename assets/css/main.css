@@ -577,22 +577,41 @@ button a:hover {
    
     text-transform: uppercase;
 }
-.bloco-banner__title,.bloco-banner__title--chevrolet, .bloco-banner__title-single{
+
+.bloco-banner__title,.bloco-banner__title--chevrolet, .bloco-banner__title-single, .bloco-banner__texto--veiculo{
    
     font-family: 'owd-bold',sans-serif;
     font-size: 40px;
-    margin: 0;
-    display:    inline-block;
+    margin: 10px 0;
+    display:inline-block;
+    position: relative;
 }
-
+.bloco-banner__title--veiculo{
+    position: relative;
+    top: -16px;
+}
 .bloco-banner__title:after,.bloco-banner__title--chevrolet:after, .bloco-banner__title-single:after{
     content: '';
     border-left: 1px solid #fff;
     display: inline-block;
     height: 48px;
-    left: 290px;
     position: absolute;
-    top: 30px;
+    right: -59px;
+    top: -6px;
+    margin-left: 30%;
+}
+.bloco-banner__texto--veiculo:after{
+    left: 150px;
+    content: '';
+    border-left: 1px solid #fff;
+    display: inline-block;
+    height: 48px;
+    position: absolute;
+    top: 5px;
+ 
+}
+.bloco-banner__title--veiculo:after{
+    display: none;
 }
 .bloco-banner__toptitle{
     bottom: 280px;
@@ -608,13 +627,14 @@ button a:hover {
 /*.bloco-banner__title--chevrolet,.bloco-banner__title--sobre,.bloco-banner__title--single{
     bottom: 238px;
 }*/
-.bloco-banner__title-single{
+/*.bloco-banner__title-single{
     bottom: 230px;
-}
+}*/
 .bloco__title-banner{
-    width: 100%;
-    display: inline-block;
-    text-align: left;
+   text-align: left;
+    position: relative;
+    height: 100%;
+    padding: 55px 0;
 
 }
 /*.bloco-banner__texto:before,.bloco-banner__texto--veiculo:before{
@@ -631,38 +651,46 @@ button a:hover {
     color: #fff;
     font-size: 14px;
     font-family: 'owd-light',sans-serif;
-   display:     inline-block;
-    text-align: left;
+    display: inline-block;
+    position: relative;
+    left: 130px;
 }
 .bloco-banner__texto--veiculo{
-    left: 45%;
+    left: 80px;
+    margin:0;
     line-height: 23px;
     max-width: 155px;
     top: -70%;
 }
-.bloco-banner__texto--veiculo:before{
+
+/*.bloco-banner__texto--veiculo:before{
     border-right: 1px solid #fff;
     border-left: 0;
     content: '';
     right: 0;
     top: 5px;
-}
+}*/
 .bloco-banner__texto-right{
     font-size: 25px;
     left: 60%;
     max-width: 155px;
     top: -70%;
 }
+.bloco-banner__texto-right{
+    font-size: 25px;
+    max-width: 155px;
+    position: inherit;
+    left: 110px;
+}
 .bloco-banner__texto-right strong{
     font-family: 'owd-bold',sans-serif;
 }
 .bloco-banner__veiculo{
-    bottom: 320px;
     display: inline-block;
-    left: 25%;
+    left: 42px;
     max-width: 206px;
-    position: absolute;
-    width: 100%;
+    position: relative;
+    top: -35px;
 }
 .bloco-banner__veiculo img{
        min-height: 0;
@@ -1350,8 +1378,9 @@ button a:hover {
 .area-info__listas, .area-info__simulacao{
     padding-top: 60px;
     width: 100%;
-    display: inline-block;
+    display: block;
     max-width: 890px;
+    margin: 0 auto;
 }
 .area-info__planos,.area-info__prazos{
     width: 25%;
@@ -1393,8 +1422,12 @@ button a:hover {
 #breadcrumbs{
     text-align: left;
     color: #fff;
+    margin:10px 0;
 }
-
+.page-single-veiculos #breadcrumbs{
+    position: relative;
+    top: -46px;
+}
 
 #veiculos{
     display: block;
@@ -1430,7 +1463,7 @@ button a:hover {
     color: #06A8C8;
 }
 
-.page-veiculos .todos a,.page-faq .duvidas a, .page-desconto .vantagem a, .page-sobre .vantagem a, .page-atendimento .contato a, .page-consorcio-chevrolet .vantagem a{
+.page-veiculos .todos a,.page-faq .duvidas a, .page-faq .atendimentos a, .page-desconto .vantagem a, .page-sobre .vantagem a, .page-atendimento .contato a, .page-consorcio-chevrolet .vantagem a{
     position: relative;
     padding-left: 33px;
 }

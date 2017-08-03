@@ -4,18 +4,17 @@
 <article class="page-planos">
 
   <div class="bloco-banner">
-  	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
-  	<div class="container">
-  		
-			<h2 class="bloco-banner__title bloco-banner__title--planos"><?php the_title() ?></h2>	  
-      <?php get_template_part('template-parts/breadcrumb'); ?>
-			<div class="bloco-banner__texto">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-  		
-  	</div>	  
+    <div class="container">
+      <div class="bloco__title-banner">
+        <h4 class="bloco-banner__titletopo">Nossos Planos</h4>
+        <h2 class="bloco-banner__title bloco-banner__title--facil"><?php the_title() ?></h2>
+        <div class="bloco-banner__texto">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <?php get_template_part('template-parts/breadcrumb'); ?>
+      </div>
+    </div>  
   </div>
-
 
 
 
