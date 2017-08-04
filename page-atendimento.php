@@ -26,7 +26,7 @@
 		</div>
 		<div class="col-md-5 col-xs-mobile">
 
-			<div class="filtro contato filtro__ativo">
+			<div class="filtro duvida filtro__ativo">
 				<a href="#">
 					<span class="filtro__title ">Dúvidas Frequentes(FAQ)</span>
 				</a>

@@ -1402,75 +1402,86 @@ button a:hover {
 }
 
 
-.page-veiculos .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title {
+.page-veiculos .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title,
+.page-faq .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title,
+.page-desconto .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title,
+.page-sobre .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title,
+.page-atendimento .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title,
+.page-consorcio-chevrolet .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title
+{
     color: #06A8C8;
+    text-align: left;
+    display: block;
 }
-.page-faq .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title{
-    color: #06A8C8;
-}
-.page-desconto .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title{
-    color: #06A8C8;
-}
-.page-sobre .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title{
-    color: #06A8C8;
-}
-.page-atendimento .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title{
-    color: #06A8C8;
-}
-.page-consorcio-chevrolet .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title{
-    color: #06A8C8;
-}
-
-.page-veiculos .todos a,.page-faq .duvidas a, .page-faq .atendimentos a, .page-desconto .vantagem a, .page-sobre .vantagem a, .page-atendimento .contato a, .page-consorcio-chevrolet .vantagem a{
+.page-veiculos .suvs a .page-veiculos .picapes a, .page-veiculos .carros a,.page-veiculos .todos a,.page-faq .duvidas a, 
+.page-faq .contato a, .page-desconto .vantagem a, .page-sobre .vantagem a, .page-atendimento .contato a, 
+.page-consorcio-chevrolet .vantagem a{
     position: relative;
     padding-left: 33px;
 }
-.page-veiculos .carros a{
-    position: relative;
-    padding-left: 52px;
+
+.page-consorcio-chevrolet .vantagem a:hover:before, .page-sobre .vantagem a:hover:before,.page-desconto .vantagem a:hover:before{
+    background: url(../images/sprites_hover.png)-120px -73px;
+
 }
-.page-veiculos .picapes a{
-    position: relative;
-    padding-left: 52px;
+.page-atendimento .contato a:hover:before, .page-faq .contato a:hover:before{
+     background: url(../images/sprites_hover.png)-196px -80px;
 }
-.page-veiculos .suvs a{
-    position: relative;
-    padding-left: 52px;
-}
-
-
-
-
-.page-desconto .vantagem a:before,.page-sobre .vantagem a:before, .page-consorcio-chevrolet .vantagem a:before{
+.page-consorcio-chevrolet .vantagem a:before, .page-sobre .vantagem a:before, .page-desconto .vantagem a:before{
     content: '';
     position: absolute;
-    background: url(../images/icon-atendimento.png);
+    background: url(../images/sprites.png)-120px -173px;
     background-repeat: no-repeat;
-    height: 20px;
-    width: 19px;
+    height: 38px;
+    width: 59px;
     display: block;
-    left: 0px;
+    left: -20px;
 }
-.page-atendimento .contato a:before{
+.page-atendimento .contato a:before, .page-faq .contato a:before{
     content: '';
     position: absolute;
-    background: url(../images/icon-atendimento.png);
+    background: url(../images/sprites.png)-196px -180px;
     background-repeat: no-repeat;
-    height: 20px;
-    width: 19px;
+    height: 29px;
+    width: 59px;
     display: block;
-    left: 0px;
+    left: -12px;
+    top: -6px;
 }
-.page-faq .atendimentos a:before{
+.page-atendimento .filtro__ativo a:before, .page-faq .filtro__ativo a:before{
     content: '';
-    position: absolute;
-    background: url(../images/icon-atendimento.png);
-    background-repeat: no-repeat;
-    height: 20px;
-    width: 19px;
+    background-image: url(../images/sprites_hover.png);
+    background-position-y: -80px;
+    background-position-x: -282px;
+    height: 30px;
+    width: 54px;
     display: block;
-    left: 0px;
-    
+    position: absolute;
+    left: 113px;
+    top: 26px;
+}
+.page-consorcio-chevrolet .filtro__ativo a:before, .page-sobre .filtro__ativo a:before, .page-desconto .filtro__ativo a:before{
+    content: '';
+    background-image: url(../images/sprites_hover.png);
+    background-position-y: -73px;
+    background-position-x: 1px;
+    height: 46px;
+    width: 84px;
+    display: block;
+    position: absolute;
+    left: 124px;
+
+}
+.page-consorcio-chevrolet .vantagem .filtro__title, .page-sobre .vantagem .filtro__title, 
+.page-desconto .vantagem .filtro__title,.page-atendimento .contato .filtro__title, .page-faq .contato .filtro__title,
+.page-veiculos .filtro__title {
+    display: block;
+    text-align: left;
+}
+.page-consorcio-chevrolet .vantagem .filtro__title span, .page-sobre .vantagem .filtro__title span, 
+.page-desconto .vantagem .filtro__title span, .page-atendimento .contato .filtro__title span, .page-faq .contato .filtro__title span,
+.page-veiculos .filtro__title span {
+    display: block;
 }
 .page-veiculos .todos a:before{
     content: '';
@@ -1481,107 +1492,55 @@ button a:hover {
     width: 28px;
     display: block;
     left: 0;
-}
-.page-faq .duvidas a:before{
-    content: '';
-    position: absolute;
-    background: url(../images/icone-duvidas.png);
-    background-repeat: no-repeat;
-    height: 20px;
-    width: 19px;
-    display: block;
-    left: 0px;
-    
+    top: -5px;
 }
 .page-veiculos .carros a:before{
     content: '';
     position: absolute;
-    background: url(../images/sprites.png)-28px -150px;
+    background: url(../images/sprites.png)-28px -138px;
     background-repeat: no-repeat;
     height: 28px;
     width: 51px;
     display: block;
-    left: 0;
+    left: -5px;
 }
 .page-veiculos .picapes a:before{
      content: '';
     position: absolute;
-    background: url(../images/sprites.png)-78px -150px;
+    background: url(../images/sprites.png)-78px -138px;
     background-repeat: no-repeat;
     height: 28px;
     width: 51px;
     display: block;
-    left: 0;
+    left: 30px;
 }
 .page-veiculos .suvs a:before{
     content: '';
     position: absolute;
-    background: url(../images/sprites.png)-139px -150px;
+    background: url(../images/sprites.png)-139px -140px;
     background-repeat: no-repeat;
     height: 28px;
     width: 47px;
     display: block;
-    left: 0;
+    left: 40px;
 }
-
-
-
-.page-desconto .vantagem a:hover:before, .page-sobre .vantagem a:hover:before, .page-consorcio-chevrolet .vantagem a:hover:before{
-    background: url(../images/icone-duvidas-hover.png);
-}
-.page-faq .atendimentos a:hover:before{
-    background: url(../images/icone-duvidas-hover.png);
-}
-.page-atendimento .contato a:hover:before{
-    background: url(../images/icone-duvidas-hover.png);
-}
-.page-faq .duvidas a:hover:before{
-    background: url(../images/icone-duvidas-hover.png);
-}
- 
 
 .page-veiculos .todos a:hover:before{
     background: url(../images/sprites_hover.png)0px 0px;
 }
 .page-veiculos .carros a:hover:before{
-    background: url(../images/sprites_hover.png)-28px 0px;
+    background: url(../images/sprites_hover.png)-28px 2px;
 }
 .page-veiculos .picapes a:hover:before{
-    background: url(../images/sprites_hover.png) -78px 0px;
+    background: url(../images/sprites_hover.png)-78px 2px;
 }
 .page-veiculos .suvs a:hover:before{
     background: url(../images/sprites_hover.png) -139px 0px;
 }
-
-
-
-
 .page-veiculos .filtro__ativo a:before{
     background-image: url(../images/sprites_hover.png);
     background-position-y:0;
 }
-.page-faq .filtro__ativo a:before{
-    background-image: url(../images/icone-duvidas-hover.png);
-    background-position-y:0;
-}
-.page-desconto .filtro__ativo a:before{
-    background-image: url(../images/icone-duvidas-hover.png);
-    background-position-y:0;
-}
-.page-sobre .filtro__ativo a:before{
-    background-image: url(../images/icone-duvidas-hover.png);
-    background-position-y:0;
-}
-.page-atendimento .filtro__ativo a:before{
-    background-image: url(../images/icone-duvidas-hover.png);
-    background-position-y:0;
-}
-.page-consorcio-chevrolet .filtro__ativo a:before{
-    background-image: url(../images/icone-duvidas-hover.png);
-    background-position-y:0;
-}
-
-
 
 /*===================================================================*/
 

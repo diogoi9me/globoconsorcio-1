@@ -25,7 +25,7 @@
 			</div>
 			<div class="col-md-5 col-xs-mobile">
  
-				<div class="filtro vantagem filtro__ativo">
+				<div class="filtro sobre filtro__ativo">
 					<a href="#">
 						<span class="filtro__title ">Sobre a Globo <br/> Consorcio</span>
 					</a>

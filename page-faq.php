@@ -18,7 +18,7 @@
 	<div class="bloco__filter">
   		<div class="container">
 			<div class="col-md-5 col-xs-mobile">
-				<div class="filtro atendimentos ">
+				<div class="filtro contato">
 					<a href="#">
 						<span class="filtro__title ">Atendimento</span>
 					</a>
@@ -28,7 +28,7 @@
 				<div class="bloco-opcoes__divisor"></div>
 			</div>
 			<div class="col-md-5 col-xs-mobile">
-				<div class="filtro duvidas filtro__ativo">
+				<div class="filtro duvida filtro__ativo">
 					<a href="#">
 						<span class="filtro__title ">Dúvidas Frequentes (FAQ)</span>
 					</a>
