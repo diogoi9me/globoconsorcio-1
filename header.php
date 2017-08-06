@@ -40,11 +40,11 @@
         </ul>
       </div>
       <div class="container transition">
-        <span class="glyphicon glyphicon-search pesquisa transition" title="Pesquisar"></span>  
+        <span class="icon-pesquisa pesquisa transition" title="Pesquisar"></span>  
         <div class="busca-top">
           <form role="search" method="get" id="form_pesquisa" class="form_pesquisa_mobile" action="">
             <input type="text" class="transition mobile_search" name="texto_pesquisa" placeholder="Pesquise no Site" />
-            <button type="submit" class="glyphicon glyphicon-search pesquisa--mobile"></button>
+            <button type="submit" class="icon-pesquisa pesquisa--mobile"></button>
           </form>
         </div>
         <div class="navbar-brand transition">

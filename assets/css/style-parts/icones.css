@@ -48,7 +48,7 @@
     margin-right: 3%;
 }
 .on.icon-pesquisa {
-    background: url(../../images/icon-close.png) no-repeat
+    background: url(../../images/icon-close.png) no-repeat;
 }
 .icon-security {
     background: url(../../images/icons_about.png) 188px -49px;
@@ -128,7 +128,9 @@
 .icon-pesquisa,
 .icon-pesquisa-mobile {
     background: url(../../images/icon-search.png) no-repeat;
-    font-size: 0
+    background-size: 100%;
+    font-size: 0;
+    display: inline-block;
 }
 
 .icon-calculadora,

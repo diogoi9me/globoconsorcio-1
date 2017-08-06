@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
 
     //barra de pesquisa do header.
 
-    $(".glyphicon-search").click(function() {
+    $(".pesquisa").click(function() {
 
         $(".form_pesquisa_mobile").show();
         $(".effect").toggleClass('on');
