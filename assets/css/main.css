@@ -144,7 +144,7 @@ button a:hover {
 
 .navbar .tarja .contato li:first-child a,
 .title {
-    /*font-family: owd-bold, sans-serif*/
+    
     font-weight: bold;
 }
 
@@ -490,14 +490,22 @@ button a:hover {
     display: block;
     margin: 30px auto;
 }
-
-.ultimasblog .title__bloco input {
+.ultimasblog .title__bloco input  {
     padding-right: 35px;
     position: relative;
     border: 0;
     background-color: #F8F8F8;
     height: 40px;
     border-radius: 110px;
+}
+
+.ultimasblog .title__bloco input[type=submit]  {
+    padding: 0px;
+    position: relative;
+    border: 0;
+    background-color: #F8F8F8;
+    height: 40px;
+    border-radius:0px;
 }
 
 .ultimasblog .title__bloco .icon-search {

@@ -139,21 +139,31 @@
     height: 30px;
     margin-top: 15px;
 }
+.icon-phone{
+    cursor: pointer;
+    border-radius: 26px;
+    color: #777;
+    border: 2px solid #777;
+    font-size: 11px;
+    margin-right: 1px;
+     padding: 1px;
+}
 .icon-facebook,
 .icon-instagram-1,
-.icon-phone,
 .icon-youtube-play,
 .icon--youtube-play {
     cursor: pointer;
     border-radius: 26px;
     color: #777;
     border: 2px solid #777;
-    font-size: 12px;
+    font-size: 11px;
     margin-right: 1px;
-    height: 20px;
+    height: 22px;
+    width: 22px;
+    padding: 1px;
    }
 .icon--youtube-play{
-    vertical-align: middle;
+    
     vertical-align: middle;
     font-size: 11px;
     height: 22px;

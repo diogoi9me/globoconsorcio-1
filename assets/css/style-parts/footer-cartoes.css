@@ -110,20 +110,20 @@
 
 .footer .layer_gray .b .logos .logo-a {
     width: 115px;
-    background: url(../../images/sprites.png) 596px 200px
+    background: url(../../images/sprites.png) 593px 374px;
 }
 
 .footer .layer_gray .b .logos .logo-b {
     width: 115px;
-    background: url(../../images/sprites.png) 1249px 200px;
+    background: url(../../images/sprites.png) -329px -73px;
 }
 
 .footer .layer_gray .b .logos .logo-c {
     width: 115px;
-    background: url(../../images/sprites.png) -494px 200px;
+    background: url(../../images/sprites.png) -494px 151px;
 }
 
 .footer .layer_gray .b .logos .logo-d {
     width: 115px;
-    background: url(../../images/sprites.png) -647px 200px;
+    background: url(../../images/sprites.png) -647px 150px;
 }

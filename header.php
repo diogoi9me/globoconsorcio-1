@@ -34,8 +34,8 @@
         <ul class="redes effect">
           <li>
             <a href="https://www.facebook.com/globoconsorcio" title="Facebook"><i class="icon-facebook"></i></a>
-             <a href="https://www.instagram.com/sigagloboconsorcio/" title="Instagram"><i class="icon-instagram-1"></i></a>
-            <i class="icon-youtube-play icon--youtube-play" title="Youtube"></i>
+            <a href="https://www.instagram.com/sigagloboconsorcio/" title="Instagram"><i class="icon-instagram-1"></i></a>
+            <a href="#" title="Youtube"><i class="icon-youtube-play icon--youtube-play" title="Youtube"></i></a>
           </li>
         </ul>
       </div>
