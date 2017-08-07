@@ -49,7 +49,7 @@
 		
 	<div class="sobre__info">
 		<div class="container">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/aspas-white.png" alt="">
+			<i class="icon-aspas-white"></i>
 			<p class="sobre__info--conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam asperiores, accusamus voluptatem amet quo. Sed fugit ipsum aliquam, veniam nam tempore cumque? Dolores nemo, error quae temporibus ipsum eius!</p>
 		</div>
 	</div>
@@ -169,7 +169,7 @@
 
       <div class="item">
 
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aspas.png" alt="">
+       <i class="icon-aspas"></i>
 
        <p><?php echo get_the_content(); ?></p>
 

@@ -1609,7 +1609,9 @@ button a:hover {
 
 
 
-
+.wpcf7-validation-errors{
+    display: none!important;
+}
 
 
 
