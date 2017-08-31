@@ -1,4 +1,4 @@
-<?php /*Template Name: veiculos */ ?>
+<?php /*Template Name: SIMULAÇÃO */ ?>
 <?php get_header(); ?>
 
 <?php 
@@ -10,7 +10,7 @@
 	$resumoPage = $resumoPage[0];
 ?>
 
-<article class="page-veiculos">
+<article class="page-simulacao light">
 	<div class="bloco-banner animated fadeIn">
 	    <div class="container">
 	      <div class="bloco__title-banner">
@@ -28,18 +28,15 @@
 	      </div>
 	    </div>  
   	</div>
-	
-
-	<?php get_template_part('template-parts/category-products', 'list'); ?>
-
+  		<?php get_template_part('template-parts/solicitar-simulacao'); ?>
 	<div class="template-parts">
 		<?php 
     	//Include com listagem dos veículos
     	get_template_part('template-parts/products-veiculos','list');
   		?>
 	</div>
-		
-  	<!-- <div class="carregar-mais">
+	<!-- 	
+  	<div class="carregar-mais">
 			<a href="#" class="btn btn-carregar">Carregar Mais</a>
 		
 	</div> -->

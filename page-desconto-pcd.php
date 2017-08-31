@@ -3,39 +3,46 @@
 
 
 <article class="page-desconto">
+	
 	<div class="bloco-banner animated fadeIn">
-		<div class="container">
-			<div class="bloco__title-banner">
-				<h4 class="bloco-banner__titletopo">Entenda o Consórcio</h4>
-				<h2 class="bloco-banner__title bloco-banner__title--chevrolet animated fadeIn"><?php the_title() ?></h2>
-				<div class="bloco-banner__texto animated fadeIn">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-				<?php get_template_part('template-parts/breadcrumb'); ?>
-			</div>
-		</div>	
-	</div>
+	    <div class="container">
+	      <div class="bloco__title-banner">
+	      	<h4 class="bloco-banner__titletopo">Entenda o Consórcio</h4>
+	        <h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php the_title() ?></h2>
+	        <?php get_template_part('template-parts/breadcrumb'); ?>
+	      </div>
+	    </div>  
+  	</div>
+
 		<div class="bloco-opcoes">
 			<div class="container">
-				<div class="col-md-5 col-xs-mobile">
-					<div class="filtro vantagem ">
-						<a href="#">
-							<span class="filtro__title ">Vantagens do <br/> Consórcio Chevrolet</span>
-						</a>
-					</div>
-					
+				
+				
+	<div class="bloco__filter v2">
+	  <div class="container colls colls-2 separator">
+	   
+	      <div class="filtro coll vantagem filtro__ativo">
+	        <a href="<?php echo get_home_url(); ?>/consorcio-chevrolet/">
+	          <span class="filtro__title ">Vantagens do <br/> Consórcio Chevrolet</span>
+	        </a>
+	      </div>
+	    
 
-				</div>
-				<div class="col-md-2 col-xs-mobile-separador">
-					<div class="bloco-opcoes__divisor"></div>
-				</div>
-				<div class="col-md-5 col-xs-mobile">
-					<div class="filtro sobre filtro__ativo">
-						<a href="#">
-							<span class="filtro__title ">Sobre a Globo <br/> Consorcio</span>
-						</a>
-					</div>
-				</div>
+
+		
+	      <div class="filtro coll sobre">
+	        <a href="<?php echo get_home_url(); ?>/sobre-a-globo-consorcio/">
+	          <span class="filtro__title ">Sobre a Globo <br/> Consorcio</span>
+	        </a>
+	      </div>
+	   
+	   
+	 
+	  </div>
+	</div>
+
+				
+
 				<div class="col-md-12">
 
 					<div class="bloco-header">

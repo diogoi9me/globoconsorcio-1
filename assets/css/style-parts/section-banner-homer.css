@@ -25,7 +25,6 @@
 
 .area_video_banner .content h2 {
     font-size: 35px;
-    font-family: owd-bold, sans-serif;
     text-transform: uppercase;
     color: #fff;
     display: block;
@@ -38,12 +37,11 @@
     letter-spacing: 3px;
     max-width: 1200px;
     margin: 0 auto;
-    font-family: owd-light, sans-serif
 }
 
 .area_video_banner .content p span,
 .area_video_banner .content p strong {
-    font-family: owd-bold, sans-serif
+    
 }
 
 .area_video_banner .content p strong {

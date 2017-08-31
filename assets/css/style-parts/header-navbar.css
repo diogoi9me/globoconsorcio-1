@@ -69,8 +69,9 @@
     margin-right: 20px
 }
 
-.navbar .tarja .contato li a {
-    color: #777
+.navbar .tarja .contato li .value {
+    color: #777;
+    font-weight: bold;
 }
 
 .navbar .tarja .contato li a span {
@@ -88,15 +89,53 @@
     font-weight: 300;
 }
 
+.navbar .servicos{
+    position: relative;
+    display: block;
+    float: right;
+    margin: 0 15px 0 0;
+    height: 23px;
+}
+
+.navbar .servicos a{
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+    height: 100%;
+    line-height: 100%;
+    padding: 0 0 0 28px;
+}
+
+.navbar .servicos a:before{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    content: "";
+    background: url('../../images/sprites.png') -430px -180px;
+}
+
+.navbar .servicos a:hover{
+    color: #06A7C7;
+}
+.navbar .servicos a:hover:before{
+    background: url('../../images/sprites_hover.png') -430px -180px;
+}
+
 .navbar .tarja .redes {
     right: 0;
     z-index: 9999999999;
     text-align: right;
-    width: 10%;
+    width: auto;
     float: right;
     max-width: 100%
 }
-
+.navbar .tarja .redes li{
+    position: relative;
+    display: inline-block;
+}
 .navbar .tarja .redes li a {
     color: #777;
     display: inline-block;
@@ -144,12 +183,14 @@
 
 .busca-top {
     display: none;
-    width: calc(80% - 60px);
+    width: calc(95% - 50px);
     position: absolute;
-    top: 1px;
+    top: 0;
     left: 0;
     z-index: 999999999999999;
-    height: 100px;
+    height: 100%;
+    background: #FFF;
+    padding-left: 5%;
 }
 
 .on.busca-top {
@@ -177,7 +218,7 @@
 .navbar .navbar-brand {
     position: relative;
     top: -1%;
-    z-index: 9999999999;
+    z-index: 9999;
     margin: 0!important;
     padding: 27px 0;
     height: auto;
@@ -208,7 +249,6 @@
 }
 
 .navbar .menu ul a {
-    font-family: owd-light, sans-serif;
     color: #002460;
     font-size: 18px;
     padding: 0;
@@ -233,9 +273,10 @@
     cursor: pointer;
     position: absolute;
     z-index: 9999999999999;
-    right: 52px;
-    top: 30px;
+    right: 5%;
     font-size: 28px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .on.glyphicon-search{
     height: 10px;
@@ -243,35 +284,36 @@
     display: block;
     background: url(../images/icon-close.png)no-repeat;
 }
-.scrollOn .pesquisa {
-    top: 23px;
-}
+
 
 .form_pesquisa_mobile {
-    position: absolute;
-    top: 21%;
+    
+    position: relative;
     width: 100%;
-    left: 17%;
-    border-radius: 25px;
-    padding: 8px 0!important;
-    z-index: 13;
+    border-radius: 50px;
     display: none;
-    transition: all .2s;
+    height: 65%;
+    margin-top: 15px;
+
+
+    
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
     -o-transition: all .2s;
+    transition: all .2s;
 }
 
 .scrollOn .form_pesquisa_mobile {
-    top: 11%;
+    margin-top: 12px;
 }
 
+
 .form_pesquisa_mobile input {
-    border: 1px solid #aaa!important;
+    border: 1px solid #BBB!important;
     background-color: #fff;
     color: #000;
     width: 100%;
+    height: 100%;
     border-radius: 25px;
-    height: 32px;
-    padding: 6px 10px;
+    padding: 0 30px 0 15px;
 }

@@ -13,7 +13,7 @@
 			<div class="animated zoomIn redes">
 				<a href="https://www.facebook.com/globoconsorcio" title="Facebook"><i class="icon-facebook"></i></a>
 	            <a href="https://www.instagram.com/sigagloboconsorcio/" title="Instagram"><i class="icon-instagram-1"></i></a>
-	            <i class="icon-youtube-play" title="Youtube"></i>
+	            <a href="#" title="youtube"><i class="icon-youtube-play" title="Youtube"></i></a>
 	        </div>
 		</div>
 	</div>

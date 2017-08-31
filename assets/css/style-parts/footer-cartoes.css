@@ -25,7 +25,6 @@
 
 .footer .layer_gray .a p,
 .footer .layer_gray .b p {
-    font-family: owd-light, sans-serif;
     letter-spacing: 1px;
     display: inline-block;
     font-size: 14px;
@@ -110,20 +109,20 @@
 
 .footer .layer_gray .b .logos .logo-a {
     width: 115px;
-    background: url(../../images/sprites.png) 593px 374px;
+    background: url(../../images/sprites.png) 593px -80px;
 }
 
 .footer .layer_gray .b .logos .logo-b {
     width: 115px;
-    background: url(../../images/sprites.png) -329px -73px;
+    background: url(../../images/sprites.png) -329px -80px;
 }
 
 .footer .layer_gray .b .logos .logo-c {
     width: 115px;
-    background: url(../../images/sprites.png) -494px 151px;
+    background: url(../../images/sprites.png) -494px -80px;
 }
 
 .footer .layer_gray .b .logos .logo-d {
     width: 115px;
-    background: url(../../images/sprites.png) -647px 150px;
+    background: url(../../images/sprites.png) -647px -80px;
 }

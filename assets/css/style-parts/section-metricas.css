@@ -28,7 +28,6 @@
 
 .metricas .clientes-ativos h6 {
     font-size: 16px;
-    font-family: owd-light, sans-serif;
     margin: 0 0 5px;
     text-transform: uppercase;
     display: block;
@@ -41,7 +40,6 @@
     position: relative;
     top: -15px;
     color: #fff;
-    font-family: owd-regular, sans-serif;
     text-transform: uppercase;
     font-size: 16px;
     text-align: left;
@@ -67,7 +65,6 @@
     display: block;
     font-weight: normal;
     font-size: 16px;
-    font-family: owd-bold, sans-serif;
     line-height: 100%;
     color: #fff;
 }

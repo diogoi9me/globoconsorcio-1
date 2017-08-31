@@ -23,7 +23,6 @@
     font-size: 18px;
     letter-spacing: 3px;
     margin-bottom: 5px;
-    font-family: owd-regular, sans-serif;
     display: block;
 }
 
@@ -58,7 +57,6 @@
 .ultimasblog .ultimasblog__blocoplanos li div h5 {
     position: relative;
     color: #003996;
-    font-family: owd-bold, sans-serif;
     font-size: 16px;
     text-align: left;
 }
@@ -67,14 +65,12 @@
     margin: 16px 0 0;
     color: #535353;
     text-align: left;
-    font-family: owd-light, sans-serif;
     font-size: 14px;
 }
 
 .ultimasblog .ultimasblog__blocoplanos li div span {
     color: #06A6C6;
     text-transform: uppercase;
-    font-family: owd-regular, sans-serif;
     font-size: 16px;
     letter-spacing: 3px;
 }

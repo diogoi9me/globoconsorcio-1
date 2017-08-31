@@ -24,7 +24,6 @@
     font-size: 18px;
     letter-spacing: 3px;
     margin-bottom: 5px;
-    font-family: owd-regular, sans-serif;
     display: block;
 }
 
@@ -37,36 +36,54 @@
 .nossos-planos .bloco-planos li {
     background-color: #fff;
     display: inline-block;
-    width: 395px;
+    width: calc(33.33% - 23px);
     max-width: 100%;
     margin: 0 10px;
 }
 
-.nossos-planos .bloco-planos li div {
+.nossos-planos .bloco-planos li div.hvr-grow {
     width: 100%;
     display: inline-block;
-    padding: 0 37px;
     border: 1px solid #ccc;
 }
 
-.nossos-planos .bloco-planos li div:hover {
-    box-shadow: 1px 1px 22px 6px #d0d0d0
+.nossos-planos .bloco-planos li div.hvr-grow:hover {
+    box-shadow: 1px 1px 22px 6px #d0d0d0;
 }
 
-.nossos-planos .bloco-planos li div .resumo {
-    box-shadow: 0 0 0 0 #fff;
+.nossos-planos .bloco-planos li div.hvr-grow .resumo {
+    
     border: 0;
 }
 
-.nossos-planos .bloco-planos li div img {
+.nossos-planos .bloco-planos li div.hvr-grow .img {
+    position: relative;
+    display: inline-block;
     margin: 25px 0;
+    width: 57px;
+    height: 57px;
+    background: #06A7C7;
+    border: none;
+    border-radius: 57px;
+    margin: 25px 0;
+    padding: 0;
+}
+
+.nossos-planos .bloco-planos li div.hvr-grow .img img {
+    position: absolute;
+    display: block;
+    width: 41px;
+    height: 38px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .nossos-planos .bloco-planos li div h5:before {
     content: url(../../images/bar-left.png);
     position: absolute;
     top: -10px;
-    right: -12px;
+    right: 0;
     width: auto;
     line-height: 100%;
 }
@@ -75,7 +92,6 @@
     position: relative;
     color: #003996;
     text-transform: uppercase;
-    font-family: owd-bold, sans-serif;
     font-size: 16px;
     letter-spacing: 3px;
 }
@@ -84,7 +100,7 @@
     content: url(../../images/bar-left.png);
     position: absolute;
     top: -10px;
-    left: -12px;
+    left: 0;
     width: auto;
     line-height: 100%;
 }
@@ -93,18 +109,13 @@
     margin: 27px 0 0;
     color: #535353;
     text-align: left;
-    font-family: owd-light, sans-serif;
     font-size: 14px;
 }
 
 .nossos-planos .bloco-planos li div span {
     color: #06A6C6;
     text-transform: uppercase;
-    font-family: owd-regular, sans-serif;
     font-size: 16px;
     letter-spacing: 3px;
 }
 
-.nossos-planos .bloco-planos .btn__nossoplano {
-    margin: 30px 0!important;
-}

@@ -72,6 +72,10 @@ function load_tema_styles() {
 
 
 
+
+
+
+
    //bootstrap
 
    wp_register_style( 'tema-bootstrap', get_template_directory_uri() . '/assets/bower_components/bootstrap/dist/css/bootstrap.min.css' );
@@ -101,10 +105,15 @@ function load_tema_styles() {
    
 
     
-
+ 
  
 
    //estilo
+
+    //Fontes
+   wp_register_style( 'font-roboto-condesed', get_template_directory_uri() . 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i' );
+
+   wp_register_style( 'font-oswald', get_template_directory_uri() . 'https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700' );
 
    //wp_register_style( 'tema-site', get_template_directory_uri() . '/assets/css/style.css' );
 
@@ -112,7 +121,7 @@ function load_tema_styles() {
 
    wp_register_style( 'tema-media', get_template_directory_uri() . '/assets/css/media.css' );
 
-   wp_register_style( 'fonts-site', get_template_directory_uri() . '/assets/css/fonts/fonts.css' );
+   //wp_register_style( 'fonts-site', get_template_directory_uri() . '/assets/css/fonts/fonts.css' );
 
    wp_register_style( 'fontello', get_template_directory_uri() . '/assets/css/font/fontello.css' );
 
@@ -142,7 +151,12 @@ function load_tema_styles() {
 
    wp_enqueue_style( 'fontello');
 
-   wp_enqueue_style( 'fonts-site');
+   wp_enqueue_style( 'font-roboto-condesed' );
+
+   wp_enqueue_style( 'font-oswald' );
+   
+
+   //wp_enqueue_style( 'fonts-site');
 
    wp_enqueue_style( 'video');
 
@@ -355,7 +369,7 @@ if ( function_exists( 'add_theme_support' ) ) {
               case '1':
 
                echo '<div class="container">
-    <div class="content">
+    <div class="content vPadding">
 
      <h2>' . get_the_title() . '</h2>
 
@@ -365,7 +379,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 
     <div id="demo-scroll" class="demo">
 
-      <div><a class="scroll-down" href="' . $link . '"><span></span><span></span><span></span></a></div>
+      <div><a class="scroll-down scroll" href="' . $link . '"><span></span><span></span><span></span></a></div>
 
     </div>
     <video autoplay loop id="video-background" poster="" muted>
@@ -558,3 +572,23 @@ function is_current_content($type, $vector){
 
 }
 
+/*
+function theme_url_shortcode( $attrs = array (), $content = '' ) {
+     
+    $theme = ( is_child_theme() ? get_stylesheet_directory_uri() : get_template_directory_uri() );
+ 
+    return $theme;
+     
+}
+add_shortcode('theme', 'theme_url_shortcode' );*/
+
+
+//[foobar]
+
+
+function theme_path_sc(){
+  
+  echo get_template_directory_uri();
+
+}
+add_shortcode( 'theme_path', 'theme_path_sc' );

@@ -1,14 +1,25 @@
+<?php if ( is_home() || is_front_page() ) {
+
+      $id_container = 'owl-opinioes';
+      $class_container = '';
+
+      } else { 
+
+        $id_container = 'depoimentos-list';
+        $class_container = 'grid-carousel';
+      }
+?>
 <section class="nossos-carros effect" id="depoimentos">
   <div class="containe-owl">
     <div class="row">
         <div class="title-carousel">
           <h2 class="title"><span>Opniões dos</span>Nossos Clientes</h2>
-          <h6><a href="<?php echo esc_url( home_url() ); ?>/depoimentos" title="Ver Todos">Ver todos</a></h6>
+          <h6><a href="<?php echo esc_url( home_url() ); ?>/depoimentos/" title="Ver Todos">Ver todos</a></h6>
         </div>
     </div>
-    <div id="owl-opinioes" class="owl-carousel owl-theme depoimentos-list">
+    <div id="<?php echo $id_container; ?>" class="owl-carousel owl-theme <?php echo $class_container; ?> depoimentos-list">
       <?php
-        $args = array( 'post_type' => 'depoimento', 'posts_per_page' => 8, 'order' => 'ASC' );
+        $args = array( 'post_type' => 'depoimento', 'posts_per_page' => 20, 'order' => 'ASC' );
         $loop = new WP_Query( $args );
           while ( $loop->have_posts() ) : $loop->the_post();
           $slug = basename(get_permalink());
@@ -20,7 +31,20 @@
             $carro = $carro[0];
             $prazo = get_post_custom_values('wpcf-prazo-de-contemplacao');
             $prazo = $prazo[0];
+
+            $count = $loop->post_count;
+            if( $count <= 1 ) {
+              $classColls = 'colls-1';
+            } elseif( $count == 2 ) {
+              $classColls = 'colls-2';
+            } elseif( $count >= 3 ) {
+              $classColls = 'colls-3';
+            }
       ?> 
+
+      
+      <?php if ( is_page( 'depoimentos' ) || is_archive('depoimento') ) {  echo '<div class="owl-item ' . $classColls . '">'; } ?>
+
       <div class="item">
         <i class="icon-aspas"></i>
        <p><?php echo get_the_content(); ?></p>
@@ -35,6 +59,7 @@
           </figure>
         </div>
       </div>
+       <?php if ( is_page( 'depoimentos' ) || is_archive('depoimento') ) {  echo '</div>'; } ?>
       <?php endwhile; ?>  
     </div>
   </div>

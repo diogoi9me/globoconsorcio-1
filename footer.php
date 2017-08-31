@@ -22,8 +22,8 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-3">
-						<div class="row">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="small-logo pull-right icon-inoveme"></i>
+						<div class="row logo-i9me">
+							<a class="link-i9me" href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="small-logo pull-right icon-inoveme"></i></a>
 						</div>
 					</div>
 				</div>

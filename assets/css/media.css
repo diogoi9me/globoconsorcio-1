@@ -85,7 +85,7 @@
     }
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:991px) { /*TABLET*/
     .col-xs-mobile-separador{
         width: 8.3333%;
         padding: 0;
@@ -93,20 +93,17 @@
         float: left;
     }
     .col-xs-mobile{
-        width: 45%;
+        width: 25%;
         padding: 0;
         position: relative;
+        display: block;
         float: left;
     }
     .mobile-separador-none{
         display: none!important;
     }
     .mobile-separador-border{
-        border: 1px solid #aaa;
-        border-radius: 6px;
-        margin-bottom: 1px;
-        padding: 15px 0;
-        width: 50%;
+      
     }
     .atendimento .form {
         width: 100%;
@@ -218,11 +215,17 @@
         max-width: 100%
     }
     body {
-        padding-top: 111px
+        padding-top: 0px;
     }
+
     .container {
-        padding: 0 22px
+        padding: 0 5%;
     }
+
+    .bloco-banner .container{
+        padding: 22px 5% 0 5%; 
+    }
+
     .navbar .tarja {
         height: 68px
     }
@@ -233,7 +236,7 @@
         padding: 12px
     }
     .navbar {
-        height: 110px
+        height: 140px
     }
     .navbar .nav_mobile {
         display: block
@@ -241,9 +244,7 @@
     .navbar .nav_mobile .navbar-nav {
         float: inherit
     }
-    .navbar .form_pesquisa_mobile {
-        top: 3px
-    }
+
     .btn-close {
         left: 152px;
         top: 14px
@@ -257,13 +258,12 @@
         background-color: #fff
     }
     .navbar .pesquisa {
-        top: 17px;
-        right: 83px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 93px;
         font-size: 30px
     }
-    .scrollOn .navbar .pesquisa {
-        top: 16px
-    }
+   
     .navbar .tarja {
         padding: 29px 21px 11px!important
     }
@@ -274,6 +274,11 @@
     .navbar .tarja span {
         margin-left: 0
     }
+
+    .form_pesquisa_mobile {
+        margin-top: 11px;
+    }
+
     .navbar .form_pesquisa_mobile input {
         color: #000;
         background-color: #fff;
@@ -317,7 +322,7 @@
         padding: 24px 13px;
         border-radius: 7px;
         position: relative;
-        z-index: 999
+        z-index: 999;
     }
     .scrollOn #toggle {
         margin: 11px 0
@@ -360,6 +365,10 @@
     }
     .navbar #menu-menu {
         width: 100%
+    }
+
+    .bloco-banner{
+        margin-top: 140px;
     }
     .nossos-carros .title-carousel span {
         font-size: 13px
@@ -502,10 +511,17 @@
 }
 
 @media screen and (max-width:908px) {
-    .busca-top {
-        top: 51px
+        .busca-top {
+        width: calc(100% - 135px);
+        margin: 0;
+        top: 0px;
+        left: 0;
+        padding-left: 5%;
+        height: 58px;
+        background: #FFF;
     }
-    .scrollOn .busca-top {
+
+   /*  .scrollOn .busca-top {
         top: 65px
     }
     .scrollOn .btn-close {
@@ -513,7 +529,7 @@
     }
     .btn-close {
         left: 9%
-    }
+    } */
 }
 
 @media screen and (max-width:892px) {
@@ -590,9 +606,9 @@
 }
 
 @media screen and (max-width:845px) {
-    .navbar .tarja .redes {
-        width: 20%
-    }
+.navbar .servicos{
+    display: none;
+}
 }
 
 @media screen and (max-width:824px) {
@@ -697,7 +713,7 @@
     .footer .institucional a,
     .footer .servicos a {
         font-weight: 400;
-        font-family: owd-regular, sans-serif
+      
     }
     .navbar .tarja .contato,
     .navbar .tarja .redes,
@@ -722,7 +738,668 @@
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:768px)  and (max-width:939px) {
+    .bloco__simulacao--single {
+        position: absolute;
+        display: block;
+        top: 80px;
+        right: 5%;
+        float: none;
+        margin-top: inherit;
+        margin-right: inherit;
+    }
+
+
+section#home {
+    margin-top: 115px;
+}
+
+
+    
+/*=================================================================================
+MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPadding
+==================================================================================*/
+
+/*----------------------
+ Size 1 
+----------------------*/
+
+/*Valores Horizontais*/
+.hMargin{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.hPadding{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/*Valores Verticais*/
+.vMargin{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.vPadding{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*Valores para o topo*/
+.topMargin{
+    margin-top: 60px;
+}
+
+.topPadding{
+    padding-top: 60px;
+}
+
+/*Valores para o rodapé*/
+.bottomMargin{
+    margin-bottom: 60px;
+}
+
+.bottomPadding{
+    padding-bottom: 60px;
+}
+
+/*Valores para esqueda*/
+.leftMargin{
+    margin-left: 5%;
+}
+
+.leftPadding{
+    padding-left: 5%;
+}
+
+/*Valores para direita*/
+.rightMargin{
+    margin-right: 5%;
+}
+
+.rightPadding{
+    padding-right: 5%;
+}
+
+/*----------------------
+ Size 2 
+----------------------*/
+
+
+/*Valores Horizontais*/
+.hMargin_2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hPadding_2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*Valores Verticais*/
+.vMargin_2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.vPadding_2{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*Valores para o topo*/
+.topMargin_2{
+    margin-top: 30px;
+}
+
+.topPadding_2{
+    padding-top: 30px;
+}
+
+/*Valores para o rodapé*/
+.bottomMargin_2{
+    margin-bottom: 30px;
+}
+
+.bottomPadding_2{
+    padding-bottom: 30px;
+}
+
+/*Valores para esqueda*/
+.leftMargin_2{
+    margin-left: 5%;
+}
+
+.leftPadding{
+    padding-left: 5%;
+}
+
+/*Valores para direita*/
+.rightMargin_2{
+    margin-right: 5%;
+}
+
+.rightPadding_2{
+    padding-right: 5%;
+}
+
+/*----------------------
+ END 
+----------------------*/
+
+ }   
+
+@media screen and (max-width:767px) {
+
+
+.internas.page-atendimento.faq .faqList .item .title{
+    font-size: 18px;
+}
+
+
+.footer .logo-i9me{
+    text-align: center;
+}
+.link-i9me{
+    position: relative;
+    display: inline-block;
+}
+
+
+section#home {
+    margin-top: 115px;
+}
+
+
+/*===================
+Novas Customizações Internas
+====================*/
+
+.intraColls .coll-side{
+    margin-left: 0;
+}
+
+
+.internas .contacts .contact .value{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 50px;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.internas .horario{
+    font-size: 13px;
+}
+
+.internas.page-atendimento .block.map{
+    position: relative;
+    height: 300px;
+}
+
+.internas.page-atendimento .block.formMail{
+    float: none;
+}
+
+.internas .block form .buttonSend{
+    height: 58px;
+
+}
+.internas .colls-2.grid.border .item{
+    width: 100%;
+}
+
+.internas .colls-2.grid.border .item:nth-child(2n){
+    margin-left: 0;
+}
+
+.internas .formStyle.colls .coll{
+    width: calc(50% - 5px);
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.internas .formStyle.colls .coll.margin{
+    margin-right: 0;
+}
+
+.internas .formStyle.colls .coll.margin:nth-child(2),
+.internas .formStyle.colls .coll.margin:nth-child(4){
+    margin-right: 10px;
+}
+.internas .formStyle.colls-4 .coll.margin{
+    width: calc(50% - 5px);
+}
+
+.page-servicos.internas .helpLogin a{
+    font-size: 13px;
+}
+
+
+.internas.page-atendimento.faq .searchFaq{
+    width: 100%;
+    margin: 0;
+}
+
+/*END*/
+
+
+.colls.colls-2 .coll{
+    float: none;
+    width: 100%;
+}
+
+
+
+
+   
+/*=================================================================================
+MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPadding
+==================================================================================*/
+
+/*----------------------
+ Size 1 
+----------------------*/
+
+/*Valores Horizontais*/
+.hMargin{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hPadding{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*Valores Verticais*/
+.vMargin{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.vPadding{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*Valores para o topo*/
+.topMargin{
+    margin-top: 30px;
+}
+
+.topPadding{
+    padding-top: 30px;
+}
+
+/*Valores para o rodapé*/
+.bottomMargin{
+    margin-bottom: 30px;
+}
+
+.bottomPadding{
+    padding-bottom: 30px;
+}
+
+/*Valores para esqueda*/
+.leftMargin{
+    margin-left: 5%;
+}
+
+.leftPadding{
+    padding-left: 5%;
+}
+
+/*Valores para direita*/
+.rightMargin{
+    margin-right: 5%;
+}
+
+.rightPadding{
+    padding-right: 5%;
+}
+
+/*----------------------
+ Size 2 
+----------------------*/
+
+
+/*Valores Horizontais*/
+.hMargin_2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.hPadding_2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*Valores Verticais*/
+.vMargin_2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.vPadding_2{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*Valores para o topo*/
+.topMargin_2{
+    margin-top: 15px;
+}
+
+.topPadding_2{
+    padding-top: 15px;
+}
+
+/*Valores para o rodapé*/
+.bottomMargin_2{
+    margin-bottom: 15px;
+}
+
+.bottomPadding_2{
+    padding-bottom: 15px;
+}
+
+/*Valores para esqueda*/
+.leftMargin_2{
+    margin-left: 5%;
+}
+
+.leftPadding{
+    padding-left: 5%;
+}
+
+/*Valores para direita*/
+.rightMargin_2{
+    margin-right: 5%;
+}
+
+.rightPadding_2{
+    padding-right: 5%;
+}
+
+
+
+/*----------------------
+ Espaçamentos internos 
+----------------------*/
+
+.intraPadding{
+    padding: 20px;
+}
+
+.intraPadding_2{
+    padding: 15px;
+}
+
+.intraPadding_3{
+    padding: 10px;
+}
+
+.intraPadding_4{
+    padding: 5px;
+}
+
+/*Top*/
+.intraPadding-top{
+    padding-top: 20px;
+}
+
+.intraPadding_2-top{
+    padding-top: 15px;
+}
+
+.intraPadding_3-top{
+    padding-top: 10px;
+}
+
+.intraPadding_4-top{
+    padding-top: 5px;
+}
+
+/*Right*/
+.intraPadding-right{
+    padding-right: 20px;
+}
+
+.intraPadding_2-right{
+    padding-right: 15px;
+}
+
+.intraPadding_3-right{
+    padding-right: 10px;
+}
+
+.intraPadding_4-right{
+    padding-right: 5px;
+}
+
+
+/*Bottom*/
+.intraPadding-bottom{
+    padding-bottom: 20px;
+}
+
+.intraPadding_2-bottom{
+    padding-bottom: 15px;
+}
+
+.intraPadding_3-bottom{
+    padding-bottom: 10px;
+}
+
+.intraPadding_4-bottom{
+    padding-bottom: 5px;
+}
+
+
+/*Left*/
+.intraPadding-left{
+    padding-bottom: 20px;
+}
+
+.intraPadding_2-left{
+    padding-bottom: 15px;
+}
+
+.intraPadding_3-left{
+    padding-bottom: 10px;
+}
+
+.intraPadding_4-left{
+    padding-bottom: 5px;
+}
+
+
+
+/*----------------------
+ Espaçamentos entre elementos 
+----------------------*/
+
+.intraMargin{
+    margin: 20px;
+}
+
+.intraMargin_2{
+    margin: 15px;
+}
+
+.intraMargin_3{
+    margin: 10px;
+}
+
+.intraMargin_4{
+    margin: 5px;
+}
+
+/*Top*/
+.intraMargin-top{
+    margin-top: 20px;
+}
+
+.intraMargin_2-top{
+    margin-top: 15px;
+}
+
+.intraMargin_3-top{
+    margin-top: 10px;
+}
+
+.intraMargin_4-top{
+    margin-top: 5px;
+}
+
+/*Right*/
+.intraMargin-right{
+    margin-right: 20px;
+}
+
+.intraMargin_2-right{
+    margin-right: 15px;
+}
+
+.intraMargin_3-right{
+    margin-right: 10px;
+}
+
+.intraMargin_4-right{
+    margin-right: 5px;
+}
+
+
+/*Bottom*/
+.intraMargin-bottom{
+    margin-bottom: 20px;
+}
+
+.intraMargin_2-bottom{
+    margin-bottom: 15px;
+}
+
+.intraMargin_3-bottom{
+    margin-bottom: 10px;
+}
+
+.intraMargin_4-bottom{
+    margin-bottom: 5px;
+}
+
+
+/*Left*/
+.intraMargin-left{
+    margin-bottom: 20px;
+}
+
+.intraMargin_2-left{
+    margin-bottom: 15px;
+}
+
+.intraMargin_3-left{
+    margin-bottom: 10px;
+}
+
+.intraMargin_4-left{
+    margin-bottom: 5px;
+}
+
+/*----------------------
+ END 
+----------------------*/
+
+
+.single-plano .area-info .table{
+    width: 100%;
+}
+
+.table.style-1 .coll.description{
+    background: #EEE;
+}
+
+.table.style-1:after{
+    display: none;
+}
+
+
+    .single-veiculo .bloco__title-banner{
+        width: 100%;
+    }
+    .bloco__title-banner .currentTitle.side{
+        width: 35%;
+    }
+    .bloco-banner__veiculo{
+        width: 65%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bloco-banner__texto--veiculo{
+        width: 50%;
+        margin: 10px 0 0 0;
+        padding: 0 2.5% 0 0;
+        border: none;
+        letter-spacing: normal;
+        text-align: right;
+        border-right: 1px solid #FFF;
+    }
+
+    .bloco-banner__texto--veiculo:after{
+        display: none;
+    }
+
+    .bloco__title-banner .price{
+        width: 45%;
+        margin: 10px 0 0 2.5%;
+        padding: 0;
+        font-size: 16px;
+        border: none;
+    }
+
+  
+    .bloco__title-banner{
+        padding: 0;
+    }
+    .bloco-banner__title, .bloco-banner__title--chevrolet, .bloco-banner__title-single,
+    .bloco-banner__title--chevrolet, .bloco-banner__title--sobre,.bloco-banner__title--facil{
+        position: relative;
+        display: block;
+        font-size:20px;
+        letter-spacing: 2px;
+        float: left;
+        text-align: left;
+        padding: 0;
+        margin: 5px 0 0 0;
+        top: inherit;
+        left: inherit;
+        line-height: 120%;
+    }
+    .bloco-banner__titletopo{
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bloco-banner__title::after, .bloco-banner__title--chevrolet::after, .bloco-banner__title-single:after{
+        display: none;
+    }
+
+.bloco-banner .description{
+    color: #06a8c8;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+    
+    #breadcrumbs{
+        display: none;
+    }
+
+
     .area-info img{
         max-width: 100%;
     }
@@ -736,7 +1413,7 @@
         width: 100%;
         margin-left: 0;
     }
-    #veiculos .owl-item{
+    .grid-carousel .owl-item{
         width: 100%!important;
     }
     .col-xs-mobile-separador{
@@ -755,38 +1432,56 @@
         display: none!important;
     }
     .mobile-separador-border{
-        border: 1px solid #aaa;
-        border-radius: 6px;
-        margin-bottom: 1px;
-        padding: 15px 0;
-        width: 50%;
+        border: none;
+        padding:0;
+        width: 25%;
     }
+
+    .page-veiculos .bloco__filter .container{
+       margin-top: 22px;
+    }
+
+    .page-veiculos .filtro{
+         margin: 0 0 15px 0;
+        padding: 0 0 15px 0;
+        border-bottom: 1px solid #DDD;
+    }
+    .page-veiculos .filtro__ativo{
+        border-color: #06A8C8;
+    }
+
+
     .filtro,.filtro__ativo{
-        padding: 0;
     }
     .page-veiculos .todos a{
-        padding-left: 15px;
+        padding: 31px 0 0 0;
     }
     .page-veiculos .carros a{
-        padding-left: 31px;
+        padding: 31px 0 0 0;
     }
     .page-veiculos .suvs a{
-        padding-left: 32px;
+        padding: 31px 0 0 0;
     }
     .page-veiculos .picapes a{
-        padding-left: 38px;
+        padding: 31px 0 0 0;
     }
-    .bloco-banner__titletopo{
-        left: 22px;
-        top: -100px;
+
+    .page-veiculos .filtro a:before{
+        left: 50%;
+        transform: translateX(-50%);
     }
-    .bloco-banner__title, .bloco-banner__title--chevrolet, .bloco-banner__title-single,
-    .bloco-banner__title--chevrolet, .bloco-banner__title--sobre,.bloco-banner__title--facil{
-        bottom: 50px!important;
-        left: 27px;
-        font-size:16px;
-        margin: 7px 0;
+
+    .page-veiculos .filtro a .filtro__title {
+        font-size: 13px;
     }
+
+    .bloco-banner{
+        height: auto;
+        padding-bottom: 22px;
+        min-height: auto;
+        margin-top: 128px;
+    }
+
     .filtro__ativo:before{
         display: none;
     }
@@ -802,9 +1497,7 @@
     /*.bloco-banner{
         height: auto;
     }
-*/    .bloco-banner img{
-        min-height: 140px;
-    }
+*/    
     .bloco-banner__toptitle{
         bottom: 80px;
         left: 27px;
@@ -847,7 +1540,7 @@
     }
     .bloco-header, .bloco-header--simulacao, .bloco-header--faq{
         display: inline-block;
-        padding: 30px 0;
+        padding-top: 30px;
     }
     .bloco-header__toptitle{
         font-size: 16px;
@@ -873,11 +1566,13 @@
         padding: 0;
    }
     .bloco__simulacao--single{
-        max-width: 298px;
-        float: inherit;
         position: relative;
-        margin: 30px auto!important;
-        display: block!important;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        float: none;
+        margin-top: 0;
    }
    .bloco__post-card{
         flex-direction: column;
@@ -887,11 +1582,13 @@
         padding: 0;
         margin: 30px 0;
    }
-   .bloco__post{
-        text-align: center;
+   .bloco__post img{
+        width: auto;
+        max-width: 100%;
+        height: auto;
    }
    .bloco__simulacao, .bloco__simulacao--single{
-        padding: 0 0px 45px;;
+        padding: 0 0 10px 0;
    }
    .bloco-header__title, .bloco-header__title--simulacao span{
         display: block;
@@ -914,24 +1611,26 @@
    }
     .cards__item, .cards__item--chevrolet{
         width: 100%;
-        margin:0;
-        padding:0;
+        margin:10px 0;
+        padding:15px;
+        height: auto;
+        min-height: auto;
     }
     .cards__item-title{
         margin: 8px 0;
-        text-align: center;
+        text-align: left;
         font-size: 14px;
         line-height: 20px;
+        padding-left: 5px;
     }
     .bloco-cards-info__conteudo{
         margin:0;
-        margin-bottom: 30px;
         font-size: 12px;
 
     }
     
 
-    #owl-opinioes .owl-nav,
+    .depoimentos-list .owl-nav,
     .nossos-carros .title-carousel h6,
     .ultimasblog .title__bloco,
     .ultimasblog .title__bloco h6,
@@ -1025,28 +1724,28 @@
     .ultimasblog .ultimasblog__blocoplanos li div:hover {
         box-shadow: 0 0 0 0 #d0d0d0
     }
-    #owl-opinioes .owl-item:nth-child(even) .item,
-    #owl-opinioes .owl-item:nth-child(odd) .item {
+    .depoimentos-list .owl-item:nth-child(even) .item,
+    .depoimentos-list .owl-item:nth-child(odd) .item {
         padding-top: 82px
     }
-    #owl-opinioes .item img {
+    .depoimentos-list .item img {
         margin: 20px 0
     }
-    #owl-opinioes .owl-item .item h6 {
+    .depoimentos-list .owl-item .item h6 {
         margin: 30px 0 58px
     }
-    #owl-opinioes .owl-item:nth-child(even) .item .info,
-    #owl-opinioes .owl-item:nth-child(odd) .item .info {
+    .depoimentos-list .owl-item:nth-child(even) .item .info,
+    .depoimentos-list .owl-item:nth-child(odd) .item .info {
         padding-bottom: 65px
     }
-    #owl-opinioes .owl-dots {
+    .depoimentos-list .owl-dots {
         margin-top: -45px
     }
-    #owl-opinioes .owl-item .item .info figure figcaption {
+    .depoimentos-list .owl-item .item .info figure figcaption {
         margin: 20px 0;
         position: relative
     }
-    #owl-opinioes .owl-item .item .info figure figcaption .stars {
+    .depoimentos-list .owl-item .item .info figure figcaption .stars {
         left: 58px
     }
 }
@@ -1056,7 +1755,7 @@
         text-align: center
     }
     .nossos-planos .bloco-planos li {
-        margin-bottom: 22px!important;
+        margin-bottom: 5% !important;
         width: 100%;
         margin: 0 0 10px
     }
@@ -1069,6 +1768,70 @@
 }
 
 @media screen and (max-width:640px) {
+
+
+    
+    .bloco__filter .colls.colls-2.separator .coll:first-child{
+        padding-right: 5%;
+        text-align: right;
+    }
+    
+    .bloco__filter .colls.colls-2.separator .coll a{
+        text-align: inherit;
+    }
+
+    .bloco__filter .colls.colls-2.separator .coll:first-child a:before{
+        right: 0;
+        left: inherit !important;
+        transform: none;
+    }
+    .bloco__filter .colls.colls-2.separator .coll:last-child{
+         padding-left: 5%;
+         text-align: left;
+    }
+
+    .bloco__filter .filtro.vantagem a{
+        padding: 45px 0 0 0px;
+    }
+
+    .bloco__filter .filtro.sobre a{
+        padding: 45px 0 0 0px;
+    }
+    
+    .bloco__filter .filtro.contato a{
+        padding: 35px 0 0 0px;
+    }
+
+    .bloco__filter .filtro.duvida a{
+        padding: 35px 0 0 0px;
+    }
+
+    
+
+    .bloco__filter .filtro a:before{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .bloco__filter .filtro.duvida a:before{
+        left: 5%;
+    }
+
+    .bloco__filter .colls.colls-2.separator .coll{
+        margin: 15px 0;
+    }
+
+     .filtro{
+        font-size: 13px;
+        text-align: inherit;
+    }
+
+    .filtro .filtro__title{
+        text-align: inherit !important;
+    }
+
+
     .icon-pesquisa-mobile {
         right: 14px
     }
@@ -1079,23 +1842,15 @@
     .glyphicon-plus {
         margin: 0 auto 10px
     }
-    .busca-top {
-        margin: 10px 5%;
-        width: 90%
+    .navbar .servicos{
+        display: none;
     }
-    .navbar .container {
-        padding: 0 5px
-    }
-    .navbar .pesquisa {
-        top: 19px;
-        right: 62px
-    }
-    .form_pesquisa_mobile {
-        left: 0
-    }
-    .scrollOn .navbar .pesquisa {
-        top: 23px
-    }
+
+
+
+    
+
+
     .line_blue {
         height: auto;
         padding: 11px 0 0
@@ -1124,6 +1879,53 @@
         width: 90px;
         vertical-align: top
     }
+}
+
+
+@media screen and (min-width:480px) and (max-width:959px){
+    
+    .bloco-banner{
+        min-height: auto;
+    }
+    .bloco__title-banner .currentTitle.side {
+        width: 40%;
+    }
+
+    .bloco-banner__texto, 
+    .bloco-banner__texto-right{
+        width: 60%;
+    }
+
+    .single-veiculo .bloco__title-banner .currentTitle.side {
+        width: 45%;
+        min-height: 130px;
+    }
+
+    .bloco-banner__veiculo {
+        margin: 0 0 0 2.5%;
+        width: 52.5%;
+        min-height: 130px;
+    }
+
+    .bloco-banner__texto--veiculo {
+        width: 50%;
+        text-align: right;
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+    .bloco__title-banner .price {
+        width: calc(50% - 25px);
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+    .page-single-veiculos{
+        position: relative;
+    }
+
+
+
+
+
 }
 
 @media screen and (max-width:413px) {

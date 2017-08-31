@@ -23,7 +23,6 @@
     font-size: 18px;
     letter-spacing: 3px;
     margin-bottom: 5px;
-    font-family: owd-regular, sans-serif;
     display: block;
 }
 
@@ -41,7 +40,6 @@
     width: 360px;
     text-align: left;
     margin-top: 30px;
-    font-family: owd-light, sans-serif;
     font-size: 16px;
 }
 
@@ -94,7 +92,6 @@
 
 #owl-consorcio .item h4 {
     display: inline-block;
-    font-family: owd-bold, sans-serif;
     text-transform: uppercase;
     color: #000;
     font-size: 16px;

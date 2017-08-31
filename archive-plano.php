@@ -1,15 +1,4 @@
-<?php /*Template Name: planos */ ?>
 <?php get_header(); ?>
-
-<?php 
-  global $page;
-  $slug_page=$page->post_name;
-
-  //Busca dados no campo personalizado da Página
-  $resumoPage = get_post_custom_values('wpcf-editor-html-texto');
-  $resumoPage = $resumoPage[0];
-?>
-
 <article class="page-planos">
 
   <div class="bloco-banner animated fadeIn">
@@ -17,10 +6,10 @@
         <div class="bloco__title-banner">
           <div class="line line-1">
               <div class="currentTitle side">
-                <h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php the_title() ?></h2>
+                <h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn">NOSSOS PLANOS</h2>
               </div>
               <div class="bloco-banner__texto description animated fadeIn">
-                <?php echo $resumoPage; ?>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, consectetur adipisicing ipsum dolor sit amet. 
               </div>
             </div>
             <div class="line line-2">

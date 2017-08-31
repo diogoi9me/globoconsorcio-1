@@ -4,17 +4,22 @@
 <article class="page-plano-facil">
 
 	<div class="bloco-banner animated fadeIn">
-		<div class="container">
-			<div class="bloco__title-banner">
-				<h4 class="bloco-banner__titletopo">Nossos Planos</h4>
-				<h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php the_title() ?></h2>
-				<div class="bloco-banner__texto animated fadeIn">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-				<?php get_template_part('template-parts/breadcrumb'); ?>
-			</div>
-		</div>	
-	</div>
+      <div class="container">
+        <div class="bloco__title-banner">
+          <div class="line line-1">
+              <div class="currentTitle">
+                <h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php the_title() ?></h2>
+              </div>
+              <div class="bloco-banner__texto description animated fadeIn">
+                <?php //echo the_excerpt(); ?> Lorem ipsum dolor sit amet, consectetur adipisicing elit, consectetur adipisicing ipsum dolor sit amet. 
+              </div>
+            </div>
+            <div class="line line-2">
+              <?php get_template_part('template-parts/breadcrumb'); ?>
+            </div>
+        </div>
+      </div>  
+    </div>
 
 	<div class="col-md-12">
 		<div class="container">
@@ -29,6 +34,50 @@
 	<div class="area-info">
 		<div class="container">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/carros.png" alt="">
+
+			<div class="colls colls-2 table style-1">
+				<div class="coll attributes">
+					<table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td class="tLabel">PRAZO</td>
+							<td class="value">VALUE</td>
+						</tr>
+						<tr>
+							<td class="tLabel">PARCELAS</td>
+							<td class="value">VALUE</td>
+						</tr>
+						<tr>
+							<td class="tLabel">PARTICIPANTES</td>
+							<td class="value">VALUE</td>
+						</tr>
+						<tr>
+							<td class="tLabel">TAXA DE ADESÃO</td>
+							<td class="value">VALUE</td>
+						</tr>
+						<tr>
+							<td class="tLabel">TAXA DE ADMINISTRAÇÃO</td>
+							<td class="value">VALUE</td>
+						</tr>
+						<tr>
+							<td class="tLabel">SEGURO DE VIDA</td>
+							<td class="value">VALUE</td>
+						</tr>
+					</table>
+				</div>
+				<div class="coll description">
+
+					<p>* para grupo com taxa de administração contratada de 16% e 20%, respectivamente.<br/>
+** para grupos especiais com taxa de administração contratada de 14%.</p>
+					<br/>
+					<p>* para grupo com taxa de administração contratada de 16% e 20%, respectivamente.<br/>
+** para grupos especiais com taxa de administração contratada de 14%.</p>
+					<br/>
+					<p>Benefício e vantagem da Parcela Integral:
+						• Benefício: Direito a 100% do valor do crédito.
+						• Vantagem: Compra planejada, sem juros e sem entrada</p>
+
+				</div>
+			</div>
 			
 			<div class="area-info__listas">
 				<ul class="area-info__planos">

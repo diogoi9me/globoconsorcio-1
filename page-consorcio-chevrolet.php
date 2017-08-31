@@ -11,29 +11,32 @@
 	      </div>
 	    </div>  
   	</div>
-	<div class="bloco__filter">
-  		<div class="container">
-			<div class="col-md-5 col-xs-mobile">
-				<div class="filtro vantagem ">
-					<a href="#">
-						<span class="filtro__title ">Vantagens do <span> Consórcio Chevrolet</span></span>
-					</a>
-				</div>
-			</div>
-			<div class="col-md-2 col-xs-mobile-separador">
-				<div class="bloco-opcoes__divisor"></div>
-			</div>
-			<div class="col-md-5 col-xs-mobile">
- 
-				<div class="filtro sobre filtro__ativo">
-					<a href="#">
-						<span class="filtro__title ">Sobre a Globo <br/> Consorcio</span>
-					</a>
-				</div>
+	
 
-			</div>
-		</div>
+	<div class="bloco__filter v2">
+	  <div class="container colls colls-2 separator">
+	   
+	      <div class="filtro coll vantagem filtro__ativo">
+	        <a href="<?php echo get_home_url(); ?>/consorcio-chevroler/">
+	          <span class="filtro__title ">Vantagens do <br/> Consórcio Chevrolet</span>
+	        </a>
+	      </div>
+	    
+
+
+		
+	      <div class="filtro coll sobre">
+	        <a href="<?php echo get_home_url(); ?>/sobre-a-globo-consorcio/">
+	          <span class="filtro__title ">Sobre a Globo <br/> Consorcio</span>
+	        </a>
+	      </div>
+	   
+	   
+	 
+	  </div>
 	</div>
+
+
 	<div class="col-md-12">
 
 		<div class="bloco-header">

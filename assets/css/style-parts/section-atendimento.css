@@ -23,14 +23,12 @@
     font-size: 18px;
     letter-spacing: 3px;
     margin-bottom: 5px;
-    font-family: owd-regular, sans-serif;
     display: block;
 }
 
 .atendimento .informacoes h6,
 .atendimento .informacoes span {
     font-size: 20px;
-    font-family: owd-regular, sans-serif;
 }
 
 .atendimento .informacoes {
@@ -106,7 +104,6 @@
 .atendimento .form form label {
     font-weight: normal;
     color: #777;
-    font-family: owd-regular, sans-serif;
     position: absolute;
     z-index: 999;
     font-size: 12px;
@@ -143,7 +140,6 @@
     font-size: 13px;
     border-radius: 0;
     border: 0;
-    font-family: owd-bold, sans-serif;
     letter-spacing: 3px;
 }
 

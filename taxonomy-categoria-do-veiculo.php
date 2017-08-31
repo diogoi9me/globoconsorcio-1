@@ -17,12 +17,18 @@ $resumoPage = $resumoPage[0];
 	<div class="bloco-banner animated fadeIn">
 	    <div class="container">
 	      <div class="bloco__title-banner">
-	        <h4 class="bloco-banner__titletopo">Veículo</h4>
-	        <h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php the_title() ?></h2>
-	        <div class="bloco-banner__texto animated fadeIn">
-	          <?php echo $resumoPage; ?>
+	        <div class="line line-1">
+		        <div class="currentTitle side">
+			        <h4 class="bloco-banner__titletopo">VEÍCULOS</h4>
+			        <h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php single_term_title(); ?></h2>
+			    </div>
+		        <div class="bloco-banner__texto description animated fadeIn">
+		          <?php echo term_description(); ?>
+		        </div>
 	        </div>
-	        <?php get_template_part('template-parts/breadcrumb'); ?>
+	        <div class="line line-2">
+	        	<?php get_template_part('template-parts/breadcrumb'); ?>
+	      	</div>
 	      </div>
 	    </div>  
     </div>

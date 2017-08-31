@@ -9,7 +9,7 @@
   <?php get_template_part('template-parts/vantagens-consorcio'); ?>
   <?php get_template_part('template-parts/sobre-aglobo'); ?>
   <?php get_template_part('template-parts/ultimas-blog'); ?>
-  <?php get_template_part('template-parts/opniao-clientes'); ?> 
+  <?php get_template_part('template-parts/depoimentos-list'); ?> 
   <?php get_template_part('template-parts/central-atendimento'); ?> 
   <?php get_template_part('template-parts/newsletter'); ?> 
 <?php get_footer(); ?>

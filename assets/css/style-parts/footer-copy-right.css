@@ -13,7 +13,6 @@
 .footer .layer_blue .copyright,
 .footer .layer_blue img {
     color: #fff;
-    font-family: owd-regular, sans-serif;
     text-align: left;
     letter-spacing: 0
 }
@@ -21,10 +20,19 @@
 .footer .layer_blue .copyright {
     margin: 0 0 0 30px;
     font-size: 13px;
-    line-height: 19px
+    line-height: 19px;
+    font-weight: lighter;
 }
 
 .footer .layer_blue .copyright span {
     text-transform: none;
+}
+
+.footer .logo-i9me{
+    text-align: right;
+}
+.link-i9me{
+    position: relative;
+    display: inline-block;
 }
 

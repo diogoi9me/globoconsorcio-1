@@ -56,7 +56,7 @@ a:hover {
 }
 
 body {
-    padding-top: 164px;
+    /* font-family: 'Roboto Condensed',sans-serif; */
     font-family: 'Oswald',sans-serif;
 }
 
@@ -117,31 +117,6 @@ button a:hover {
     vertical-align: middle
 }
 
-
-/*.owd-regular {
-    font-family: owd-regular
-}
-
-.owd-exlight {
-    font-family: owd-extralight
-}
-
-.owd-medium {
-    font-family: owd-medium
-}
-
-.owd-smbold {
-    font-family: owd-semibold
-}
-
-.owd-light {
-    font-family: owd-light
-}
-
-.owd-bold {
-    font-family: owd-bold
-}*/
-
 .navbar .tarja .contato li:first-child a,
 .title {
     
@@ -160,15 +135,26 @@ button a:hover {
 
 
 
-
 .title {
     position: relative;
     font-size: 30px;
     text-transform: uppercase;
     margin: 90px 0;
     display: block;
-    color: #fff
+    color: #555;
 }
+
+.shadow section .title,
+section.shadow .title {
+    color: #FFF;
+}
+
+
+.light section .title,
+section.light .title {
+    color: #000;
+}
+
 
 .effect.on:not(.busca-top) {
     -webkit-filter: contrast(35%);
@@ -207,7 +193,6 @@ button a:hover {
 .nossos-carros .title-carousel h6,
 .nossos-planos h6,
 .simulacao .form_simulacao .btn-simulacao {
-    font-family: owd-bold, sans-serif;
     text-transform: uppercase;
 }
 
@@ -216,14 +201,30 @@ button a:hover {
 
 
 
+.maskEffect{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    -moz-transition: all 0.75s;
+    -webkit-transition: all 0.75s;
+    transition: all 0.75s;
+}
 
+.maskEffect.on{
+   display: block;
+   -moz-transition: all 0.75s;
+    -webkit-transition: all 0.75s;
+    transition: all 0.75s;
+}
 
 
 
 /*========CAROUSEL HOME=============*/
 
 
-#veiculos .item {
+.grid-carousel .item {
     padding-top: 2px!important;
 }
 
@@ -233,7 +234,6 @@ button a:hover {
 
 .list-products .item h4 {
     position: relative;
-    font-family: owd-bold, sans-serif;
     text-transform: uppercase;
     font-size: 16px;
     margin: 30px 0;
@@ -243,7 +243,7 @@ button a:hover {
     position: relative;
     background: #fafafa;
 }
-#veiculos .owl-item:nth-child(even) .item:after{
+.grid-carousel .owl-item:nth-child(even) .item:after{
     display: none;
 }
 .list-products .owl-item:nth-child(even) .item:after {
@@ -261,7 +261,7 @@ button a:hover {
 }
 
 
-#veiculos .owl-item:nth-child(odd) .item:after{
+.grid-carousel .owl-item:nth-child(odd) .item:after{
     display: none!important;  
 }
 .list-products .owl-item:nth-child(odd) .item:after {
@@ -342,14 +342,12 @@ button a:hover {
 
 .list-products .owl-item .item .info figure figcaption span {
     margin: 7px 0;
-    font-family: owd-light, sans-serif;
     display: block;
     text-transform: uppercase;
     font-size: 14px;
 }
 
 .list-products .owl-item .item .info figure figcaption strong {
-    font-family: owd-bold, sans-serif;
     font-weight: normal;
     display: block;
     text-transform: uppercase;
@@ -368,7 +366,6 @@ button a:hover {
     width: 190px;
     height: 50px;
     line-height: 38px;
-    font-family: owd-bold, sans-serif;
     text-transform: uppercase;
 }
 
@@ -377,19 +374,19 @@ button a:hover {
 
 
 
-#veiculos .owl-item:nth-child(odd) .item .info, #veiculos .owl-item:nth-child(even) .item .info {
+.grid-carousel .owl-item:nth-child(odd) .item .info, .grid-carousel .owl-item:nth-child(even) .item .info {
     background: transparent;
     padding-bottom: 60px;
 }
 
-#veiculos .owl-item:nth-child(even) .item{
+.grid-carousel .owl-item:nth-child(even) .item{
       background: #f2f2f2;
 }
 
 .veiculos--interna .title-carousel{
     position: inherit;
 }
-#veiculos .owl-item:nth-child(odd) .item{
+.grid-carousel .owl-item:nth-child(odd) .item{
     background: #fafafa;
 }
 
@@ -449,8 +446,15 @@ button a:hover {
     color: #fff;
 }
 
-#veiculos .owl-item{
+.grid-carousel .owl-item{
     width: 33.333%!important;
+}
+
+.grid-carousel .owl-item.colls-1{
+    width: 100%!important;
+}
+.grid-carousel .owl-item.colls-2{
+    width: 50%!important;
 }
 
 .nossos-planos .bloco-planos .hvr-hollow,
@@ -478,7 +482,6 @@ button a:hover {
 .ultimasblog .title__bloco h6 {
     position: relative;
     font-size: 13px;
-    font-family: owd-bold, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #003792;
@@ -519,30 +522,6 @@ button a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container-single{
     width: 997px;
     max-width: 100%;
@@ -565,77 +544,82 @@ button a:hover {
 }
 /*==================================*/
 
+section#home{
+    margin-top: 174px;
+}
 
 /*======BLOCO BANNER - INTERNAS ======*/
 .bloco-banner{
-    height: 243px;
-    margin-top: 12px;
+    min-height: 243px;
+    height: auto;
+    margin-top: 174px;
     position: relative;
     width: 100%;
     background: url(../images/bkg-banner.png)no-repeat;
     background-position: center;
     background-size: cover;
 }
-.bloco-banner img{
-    width: 100%;
-    min-height:245px;
-}
+
 .bloco-banner__title,.bloco-banner__toptitle,.bloco-banner__texto{
     color: #fff;
    
     text-transform: uppercase;
 }
-
-.bloco-banner__title,.bloco-banner__title--chevrolet, .bloco-banner__title-single, .bloco-banner__texto--veiculo{
-   
-    /*font-family: 'owd-bold',sans-serif;*/
+.bloco-banner__titletopo{
+    color: #FFF;
+    margin: 0 0 10px 0;
+}
+.bloco-banner__title,
+.bloco-banner__title--chevrolet,
+.bloco-banner__title-single,
+.bloco-banner__texto--veiculo{
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 3px;
-    margin: 10px 0;
-    display:inline-block;
-    position: relative;
+    margin: 0;
+    padding: 0;
 }
-.bloco-banner__title--veiculo{
-    position: relative;
-    top: -45px;
-}
-.bloco-banner__title:after,.bloco-banner__title--chevrolet:after, .bloco-banner__title-single:after{
-    content: '';
-    border-left: 1px solid #fff;
-    display: inline-block;
-    height: 48px;
-    position: absolute;
-    right: -59px;
-    top: -6px;
-    margin-left: 30%;
-}
-.bloco-banner__texto--veiculo:after{
-    left: 174px;
-    content: '';
-    border-left: 1px solid #fff;
-    display: inline-block;
-    height: 48px;
-    position: absolute;
-    top: 5px;
- 
-}
-.bloco-banner__title--veiculo:after{
-    display: none;
-}
-.bloco-banner__toptitle{
-    bottom: 280px;
-    font-family: 'owd-light',sans-serif;
-    font-size: 16px;
-}
-.bloco-banner__titletopo{
+
+
+
+/*
+DIOGO
+ .archive .bloco-banner__title,
+.archive .bloco-banner__title--chevrolet,
+.archive .bloco-banner__title-single,
+.archive .bloco-banner__texto--veiculo{
     width: 100%;
-    display: inline-block;
-    color: #fff;
-    font-weight: 300;
-    font-size: 16px;
-    
 }
+.archive .bloco-banner__texto, 
+.archive .bloco-banner__texto--veiculo,
+.archive .bloco-banner__texto-right{
+    display: none;
+} */
+
+.bloco-banner__title--veiculo{
+   
+}
+
+.bloco__title-banner .line{
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+.bloco__title-banner .currentTitle {
+    position: relative;
+    display: block;
+}
+
+.bloco__title-banner .currentTitle.side {
+    width: 30%;
+    float: left;
+}
+
+.single-veiculo .bloco__title-banner{
+    width: calc(95% - 298px);
+}
+
 .bloco__title-banner{
    text-align: left;
     position: relative;
@@ -643,51 +627,72 @@ button a:hover {
     padding: 55px 0;
 
 }
-.bloco-banner__texto,.bloco-banner__texto--veiculo,.bloco-banner__texto-right{
+
+
+.bloco__title-banner .price{
+    position: relative;
+    display: block;
+    float: left;
+    width: calc(25% - 25px);
+    font-size: 25px;
+    color: #fff;
+    border-left: 1px solid #FFF;
+    font-weight: 300;
+    padding: 0 0 0 25px;
+    margin: 0 0 0 25px;
+}
+
+.bloco-banner__texto,
+.bloco-banner__texto-right{
+    position: relative;
+    display: block;
+    float: left;
+    width: 65%;
+    padding-left: 5%;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.bloco-banner__texto-right{
+    font-size: 25px;
+    color:  #fff;
+    font-size: 25px;
+    position: inherit;
+}
+
+
+.bloco-banner__texto-right strong{
+}
+
+
+.bloco-banner .description{
+    color: #06a8c8;
     font-size: 25px;
     font-weight: 300;
-    display: inline-block;
-    position: relative;
-    left: 130px;
-    top: 0px;
-    max-width: 580px;
-    color: #06a8c8;
 }
+
+
+.bloco-banner__veiculo{
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 2.5% 0 0;
+    width: 25%;
+}
+
+.bloco-banner__veiculo img{
+      width: 100%;
+      height: auto;
+}
+
 .bloco-banner__texto--veiculo{
-    left: 68px;
+    position: relative;
+    display: block;
+    float: left;
     margin: 0;
-    line-height: 23px;
-    max-width: 155px;
-    top: -10px;
+    width: 17.5%;
     font-size: 14px;
     color: #fff;
-}
-.bloco-banner__texto-right{
-    font-size: 25px;
-    left: 60%;
-    color: #06a8c8;
-    max-width: 155px;
-    top: -33px;
-    color:  #fff;
-}
-.bloco-banner__texto-right{
-    font-size: 25px;
-    max-width: 155px;
-    position: inherit;
-    left: 110px;
-}
-.bloco-banner__texto-right strong{
-    font-family: 'owd-bold',sans-serif;
-}
-.bloco-banner__veiculo{
-    display: inline-block;
-    left: 42px;
-    max-width: 206px;
-    position: relative;
-    top: -35px;
-}
-.bloco-banner__veiculo img{
-       min-height: 0;
+    font-weight: 300;
 }
 /*=================================================*/
 
@@ -699,7 +704,6 @@ button a:hover {
 
 .bloco-opcoes__title{
     font-size: 16px;
-    font-family: 'owd-regular',sans-serif;
     line-height: 20px;
     margin-left: 15px;
     margin-bottom: 0;
@@ -770,7 +774,7 @@ button a:hover {
 
 /*===================== BLOCO HEADER ===================================*/
 .bloco-header, .bloco-header--simulacao,.bloco-header--faq{
-    padding: 90px 0;
+    padding: 45px 0 45px 0;
     width: 100%;
     text-align: center;
     
@@ -788,7 +792,6 @@ button a:hover {
 }
 .bloco-header__toptitle{
     font-size: 18px;
-    font-family: 'owd-regular',sans-serif;
     margin: 0;
 }
 
@@ -802,16 +805,13 @@ button a:hover {
 }
 .bloco-header__title,.bloco-header__title--simulacao{
     font-size: 30px;
-    font-family: 'owd-bold',sans-serif;
     margin: 10px 0 0;
     position: relative;
 }
 .bloco-header__title--simulacao{
-    font-family: 'owd-light',sans-serif;
     text-transform: inherit;
 }
 .bloco-header__title--simulacao strong{
-    font-family: 'owd-bold',sans-serif;
 }
 .simulacao__input-group input{
     width: 100%;
@@ -830,7 +830,6 @@ button a:hover {
     display: none;
 }
 .bloco-header__title--single{
-    font-family: 'owd-bold',sans-serif;
     font-size: 16px;
     letter-spacing: 0;
     margin: 0;
@@ -845,7 +844,6 @@ button a:hover {
 
 }
 .bloco-header__subtitle{
-    font-family: 'owd-light',sans-serif;
     font-size: 16px;
     color: #525252;
     display: block;
@@ -863,7 +861,6 @@ button a:hover {
 
 .bloco-left__title, .bloco-right__title{
     font-size: 16px;
-    font-family: 'owd-bold',sans-serif;
     text-align: left;
     margin: 30px 0;
     display: inline-block;
@@ -899,8 +896,7 @@ button a:hover {
 }
 .simulacao__input-group{
     margin: 10px 0;
-    font-size: 12px;
-    font-family: 'owd-light',sans-serif;    
+    font-size: 12px;  
     text-transform: uppercase;
     width: 100%;
     position: relative;
@@ -910,21 +906,25 @@ button a:hover {
     top: 5px;
     z-index: 9;
     padding: 0 5px;
-    color: #ccc;
+    color: #BBB;
     line-height: 1;
     margin: 0;
+    color: #555;
+    font-weight: normal;
 }
 .simulacao__input-group input{
     height: 50px;
-    padding: 0 10px;
+    padding: 15px 10px 0 10px;
     border-radius: 0;
     border: 1px solid #ccc;
     line-height: 4;
-    font-size: 19px;
+    font-size: 16px;
 }
 .simulacao__input-group input[type=submit]{
     font-size: 16px;
     line-height: 55px;
+    padding: 0 10px;
+    line-height: 100%;
 }
 .btn-simulacao,.btn-simulacao--single{
     background: #238c00;
@@ -934,9 +934,11 @@ button a:hover {
     height: 50px;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'owd-bold',sans-serif;
     letter-spacing: 3px;
     line-height: 44px;
+}
+.btn-simulacao,.btn-simulacao--single:hover{
+    background: #1d6206;
 }
 .btn-simulacao--single{
     width: 100%;
@@ -956,6 +958,14 @@ button a:hover {
     margin-right: 4%;
     padding: 0 22px;
 }
+.single-plano .bloco__simulacao--single{
+    float: none;
+    margin-top: inherit;
+    position: absolute;
+    margin-right: inherit;
+    top: 220px;
+    right: 5%;
+}
 .wpcf7-validation-errors{
     color: red;
 }
@@ -966,8 +976,7 @@ button a:hover {
     text-align: center;
     padding: 30px 0;
     text-transform: uppercase;
-    font-size: 16px;
-    font-family: 'owd-regular',sans-serif;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -975,7 +984,6 @@ button a:hover {
 .filtro__title,.filtro__title--single{
     vertical-align: middle;
     color: #000;
-    margin-left: 20px;
 }
 .filtro__title--single{
     width: 64px;
@@ -989,12 +997,17 @@ button a:hover {
     position: absolute;
     top: -12px;
     height: 13px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .filtro__ativo{
-    color: #06a8c8;
     position: relative;
-   
 }
+.filtro__ativo a,
+.filtro__ativo a:hover{
+    color: #06a8c8;
+}
+
 .filtro__valor:before{
     content: '';
     height: 56px;
@@ -1009,7 +1022,6 @@ button a:hover {
 .filtro__valor{
     position: relative;
     font-size: 14px;
-    font-family: 'owd-semibold',sans-serif;
     line-height: 16px;
 }
 .filtro__valor:after{
@@ -1035,10 +1047,8 @@ button a:hover {
 }
 .bloco__post-title{
     text-transform: uppercase;
-    font-family: 'owd-semibold',sans-serif;
 }
 .bloco__post-subtitle{
-    font-family: 'owd-light',sans-serif;
     font-size: 18px;
 
 }
@@ -1056,16 +1066,13 @@ button a:hover {
 .bloco__post-card-info-title{
     margin: 0;
     font-size: 23px;
-    font-family: 'owd-bold',sans-serif;
     text-transform: uppercase;
 }
 .bloco__post-card-info-subtitle{
     color: #aaa;
     font-size: 18px;
-    font-family: 'owd-light',sans-serif;
 }
 .bloco__post-card-info-content{
-    font-family: 'owd-light',sans-serif;
     font-size: 16px;   
 }
 
@@ -1090,7 +1097,6 @@ button a:hover {
     margin: 20px auto;
     color: #fff;
     line-height: 31px;
-    font-family: 'owd-regular',sans-serif;
     font-size: 22px;
 }
 .sobre__info--conteudo{
@@ -1122,7 +1128,6 @@ button a:hover {
 .cards__item-title{
     display: inline-block;
     font-size: 16px;
-    font-family: 'owd-bold',sans-serif;
     color: #000;
     text-transform: uppercase;
     text-align: left;
@@ -1184,7 +1189,6 @@ button a:hover {
     position: absolute;
     top: 13px;
     right: 31px;
-    font-family: 'owd-light',sans-serif;
     letter-spacing: 3px;
 
 }
@@ -1203,7 +1207,6 @@ button a:hover {
 .tarja-blue__cpf label,.tarja-blue__senha label{
     position: absolute;
     font-size: 12px;
-    font-family: 'owd-light',sans-serif;
     top: 0px;
     z-index: 9;
     color: #003793;
@@ -1224,7 +1227,6 @@ button a:hover {
     text-transform: uppercase;
     color: #fff;
     font-size: 13px;
-    font-family: 'owd-bold',sans-serif;
     padding: 15px 0;
 
 }
@@ -1239,7 +1241,6 @@ button a:hover {
 }
 .tarja-blue__titles-left{
     text-transform: uppercase;
-    font-family: 'owd-light',sans-serif;
     width: 50%;
     float: right;
    
@@ -1252,7 +1253,6 @@ button a:hover {
     display: inline-block;
 }
 .tarja-blue__titles-right{
-    font-family: 'owd-bold',sans-serif;
     width: 100%;
     float: left;
 
@@ -1261,7 +1261,6 @@ button a:hover {
 .tarja-blue__titles-left h3{
     margin: 0;
     font-size: 23px;
-    font-family: 'owd-bold',sans-serif;
     margin-top: 10px;
 }
 
@@ -1282,7 +1281,6 @@ button a:hover {
 }
 .cards-info__title{
     font-size: 16px;
-    font-family: 'owd-bold',sans-serif;
 
 }
 
@@ -1308,8 +1306,6 @@ button a:hover {
 
 
 
-
-
 .outros-planos{
     width: 100%;
     display: inline-block;
@@ -1318,34 +1314,27 @@ button a:hover {
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
-    font-family: 'owd-light',sans-serif;
     letter-spacing: 3px;
     margin: 60px 0 0;
     position: relative;
 }
-/*.outros-planos__title:after{
-    content: '';
-    border-bottom: 2px solid #ddd;
-    height: 10px;
-    width: 420px;
-    display: inline-block;
-    position: absolute;
-    right: 61px;
-}*/
+
 .outros-planos strong{
-    font-family: 'owd-bold',sans-serif;
+    font-weight: bold;
 }
+
 .area-info{
     width: 100%;
     display: inline-block;
-    padding-bottom: 90px;
 }
 .area-info__listas, .area-info__simulacao{
-    padding-top: 60px;
     width: 100%;
     display: block;
     max-width: 890px;
     margin: 0 auto;
+}
+.area-info__listas{
+    padding-top: 60px;
 }
 .area-info__planos,.area-info__prazos{
     width: 25%;
@@ -1361,7 +1350,6 @@ button a:hover {
     margin-bottom: 5px;
     background: #ddd;
     font-size: 14px;
-    font-family: 'owd-regular',sans-serif;
     letter-spacing: 1px;
 
 }
@@ -1385,20 +1373,27 @@ button a:hover {
 
 /*breadcrumbs*/
 #breadcrumbs{
+    position: relative;
+    display: block;
+    width: 100%;
     text-align: left;
     color: #fff;
     margin:10px 0;
-}
-.page-single-veiculos #breadcrumbs{
-    position: relative;
-    top: -79px;
+    
 }
 
-#veiculos{
-    display: block;
+.single-veiculo {}
+
+#breadcrumbs{
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    text-align: center;
+    margin: 22px 0 0 0;
 }
-.page-veiculos .title-carousel{
-    display: none;
+
+.grid-carousel{
+    display: block;
 }
 
 
@@ -1406,6 +1401,13 @@ button a:hover {
 .bloco__filter{
     width: 100%;
     display: inline-block;
+}
+
+.bloco__filter .filtro a:before{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
 }
 
 
@@ -1417,8 +1419,6 @@ button a:hover {
 .page-consorcio-chevrolet .filtro a:hover .filtro__title, .filtro__ativo a .filtro__title
 {
     color: #06A8C8;
-    text-align: left;
-    display: block;
 }
 .page-veiculos .suvs a .page-veiculos .picapes a, .page-veiculos .carros a,.page-veiculos .todos a,.page-faq .duvidas a, 
 .page-faq .contato a, .page-desconto .vantagem a, .page-sobre .vantagem a, .page-atendimento .contato a, 
@@ -1427,58 +1427,66 @@ button a:hover {
     padding-left: 33px;
 }
 
-.page-consorcio-chevrolet .vantagem a:hover:before, .page-sobre .vantagem a:hover:before,.page-desconto .vantagem a:hover:before{
-    background: url(../images/sprites_hover.png)-120px -73px;
-
-}
-.page-atendimento .contato a:hover:before, .page-faq .contato a:hover:before{
+.page-atendimento .contato a:hover:before, 
+.page-faq .contato a:hover:before{
      background: url(../images/sprites_hover.png)-196px -80px;
 }
-.page-consorcio-chevrolet .vantagem a:before, .page-sobre .vantagem a:before, .page-desconto .vantagem a:before{
-    content: '';
-    position: absolute;
-    background: url(../images/sprites.png)-120px -173px;
-    background-repeat: no-repeat;
-    height: 38px;
-    width: 59px;
-    display: block;
-    left: -20px;
-}
-.page-atendimento .contato a:before, .page-faq .contato a:before{
-    content: '';
-    position: absolute;
-    background: url(../images/sprites.png)-196px -180px;
-    background-repeat: no-repeat;
-    height: 29px;
-    width: 59px;
-    display: block;
-    left: -12px;
-    top: -6px;
-}
-.page-atendimento .filtro__ativo a:before, .page-faq .filtro__ativo a:before{
-    content: '';
-    background-image: url(../images/sprites_hover.png);
-    background-position-y: -80px;
-    background-position-x: -282px;
-    height: 30px;
-    width: 54px;
-    display: block;
-    position: absolute;
-    left: 113px;
-    top: 26px;
-}
-.page-consorcio-chevrolet .filtro__ativo a:before, .page-sobre .filtro__ativo a:before, .page-desconto .filtro__ativo a:before{
-    content: '';
-    background-image: url(../images/sprites_hover.png);
-    background-position-y: -73px;
-    background-position-x: 1px;
-    height: 46px;
-    width: 84px;
-    display: block;
-    position: absolute;
-    left: 124px;
 
+
+.bloco__filter .vantagem a:before{
+    background: url(../images/sprites.png) -120px -180px;
+    width: 58px;
+    height: 22px;
 }
+
+.bloco__filter .vantagem a:hover:before,
+.bloco__filter .vantagem.filtro__ativo a:before{
+    background: url(../images/sprites_hover.png) -120px -80px;
+}
+
+.bloco__filter .sobre a:before{
+    background: url(../images/sprites.png) 0px -180px;
+    width: 71px;
+    height: 31px;
+}
+
+
+.bloco__filter .sobre a:hover:before,
+.bloco__filter .sobre.filtro__ativo a:before{
+    background: url(../images/sprites_hover.png) 0px -80px;
+}
+
+
+.bloco__filter .contato a{
+    padding-left: 35px;
+}
+
+.bloco__filter .contato a:before{
+    background: url(../images/sprites.png) -221px -180px;
+    width: 29px;
+    height: 29px;
+}
+
+.bloco__filter .contato a:hover:before,
+.bloco__filter .contato.filtro__ativo a:before{
+    background: url(../images/sprites_hover.png) -221px -80px;
+}
+
+.bloco__filter .duvida a{
+    padding-left: 35px;
+}
+
+.bloco__filter .duvida a:before{
+    background: url(../images/sprites.png) -300px -180px;
+    width: 29px;
+    height: 29px;
+}
+
+.bloco__filter .duvida a:hover:before,
+.bloco__filter .duvida.filtro__ativo a:before{
+    background: url(../images/sprites_hover.png) -300px -80px;
+}
+
 .page-consorcio-chevrolet .vantagem .filtro__title, .page-sobre .vantagem .filtro__title, 
 .page-desconto .vantagem .filtro__title,.page-atendimento .contato .filtro__title, .page-faq .contato .filtro__title,
 .page-veiculos .filtro__title {
@@ -1490,46 +1498,64 @@ button a:hover {
 .page-veiculos .filtro__title span {
     display: block;
 }
+
+.page-veiculos .filtro a{
+    position: relative;
+    display: inline-block;
+}
+.page-veiculos .filtro a:before{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.page-veiculos .todos a{
+    padding-left: 38px;
+}
 .page-veiculos .todos a:before{
     content: '';
-    position: absolute;
-    background: url(../images/sprites.png)0px -150px;
+    background: url(../images/sprites.png)0px -140px;
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
-    display: block;
     left: 0;
     top: -5px;
 }
+
+
+.page-veiculos .carros a{
+    padding-left: 61px;
+}
+
 .page-veiculos .carros a:before{
     content: '';
-    position: absolute;
     background: url(../images/sprites.png)-28px -138px;
     background-repeat: no-repeat;
     height: 28px;
     width: 51px;
-    display: block;
-    left: -5px;
+    left: 0;
+}
+.page-veiculos .picapes a{
+    padding-left: 61px;
 }
 .page-veiculos .picapes a:before{
      content: '';
-    position: absolute;
     background: url(../images/sprites.png)-78px -138px;
     background-repeat: no-repeat;
     height: 28px;
     width: 51px;
-    display: block;
-    left: 30px;
+    left: 0;
+}
+.page-veiculos .suvs a{
+    padding-left: 57px;
 }
 .page-veiculos .suvs a:before{
     content: '';
-    position: absolute;
     background: url(../images/sprites.png)-139px -140px;
     background-repeat: no-repeat;
     height: 28px;
     width: 47px;
-    display: block;
-    left: 40px;
 }
 
 .page-veiculos .todos a:hover:before{
@@ -1546,7 +1572,7 @@ button a:hover {
 }
 .page-veiculos .filtro__ativo a:before{
     background-image: url(../images/sprites_hover.png);
-    background-position-y:0;
+    background-position-y:2px;
 }
 
 /*===================================================================*/
@@ -1589,20 +1615,27 @@ button a:hover {
     padding: 20px;
 }
 #breadcrumbs a, #breadcrumbs span{ 
-  font-size: 16px;
+    font-size: 11px;
     font-weight: 300;
-    vertical-align: text-top;
-    margin: 4px 0;
+    margin: 0;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
-#breadcrumbs a{
-    background: url(../images/home.png)no-repeat;
-    height: 15px;
-    width: 15px;
+#breadcrumbs a{ 
+    color: #FFF;
+    font-weight: bold;
+}
+#breadcrumbs a:hover{ 
+    color: #99B2FF;
+    text-decoration: underline;
+}
+/* #breadcrumbs a:first-child{
+    background: red;
+    height: 12px;
+    width: 12px;
     font-size: 0;
     display: inline-block;
-    vertical-align: text-top;
-}
+} */
 .template-parts{
     width: 100%;
 }
@@ -1614,12 +1647,948 @@ button a:hover {
 }
 
 
+/*COLLS colunas*/
+
+
+.colls.colls-full >.coll{
+    position: relative;
+    display: block;
+    float: none;
+    width: 100%;
+}
+
+.colls.colls-2 > .coll{
+    position: relative;
+    display: block;
+    float: left;
+    width: 50%;
+}
+.colls.colls-4  .coll{
+    position: relative;
+    display: block;
+    float: left;
+    width: 25%;
+}
+/* 
+.colls.colls-4  .coll.margin{
+    width: calc(25% - 10px);
+} */
+
+/**/
+
+
+.light section,
+section.light{
+    background: #FFF;
+}
+
+
+/*=================================================================================
+MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPadding
+==================================================================================*/
+
+/*----------------------
+ Size 1 
+----------------------*/
+
+/*Valores Horizontais*/
+.hMargin{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.hPadding{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/*Valores Verticais*/
+.vMargin{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.vPadding{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*Valores para o topo*/
+.topMargin{
+    margin-top: 90px;
+}
+
+.topPadding{
+    padding-top: 90px;
+}
+
+/*Valores para o rodapé*/
+.bottomMargin{
+    margin-bottom: 90px;
+}
+
+.bottomPadding{
+    padding-bottom: 90px;
+}
+
+/*Valores para esqueda*/
+.leftMargin{
+    margin-left: 5%;
+}
+
+.leftPadding{
+    padding-left: 5%;
+}
+
+/*Valores para direita*/
+.rightMargin{
+    margin-right: 5%;
+}
+
+.rightPadding{
+    padding-right: 5%;
+}
+
+/*----------------------
+ Size 2 
+----------------------*/
+
+
+/*Valores Horizontais*/
+.hMargin_2{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.hPadding_2{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+/*Valores Verticais*/
+.vMargin_2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.vPadding_2{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*Valores para o topo*/
+.topMargin_2{
+    margin-top: 45px;
+}
+
+.topPadding_2{
+    padding-top: 45px;
+}
+
+/*Valores para o rodapé*/
+.bottomMargin_2{
+    margin-bottom: 45px;
+}
+
+.bottomPadding_2{
+    padding-bottom: 45px;
+}
+
+/*Valores para esqueda*/
+.leftMargin_2{
+    margin-left: 5%;
+}
+
+.leftPadding{
+    padding-left: 5%;
+}
+
+/*Valores para direita*/
+.rightMargin_2{
+    margin-right: 5%;
+}
+
+.rightPadding_2{
+    padding-right: 5%;
+}
+
+/*----------------------
+ Espaçamentos internos 
+----------------------*/
+
+.intraPadding{
+    padding: 45px;
+}
+
+.intraPadding_2{
+    padding: 30px;
+}
+
+.intraPadding_3{
+    padding: 15px;
+}
+
+.intraPadding_4{
+    padding: 5px;
+}
+
+/*Top*/
+.intraPadding-top{
+    padding-top: 45px;
+}
+
+.intraPadding_2-top{
+    padding-top: 30px;
+}
+
+.intraPadding_3-top{
+    padding-top: 15px;
+}
+
+.intraPadding_4-top{
+    padding-top: 5px;
+}
+
+/*Right*/
+.intraPadding-right{
+    padding-right: 45px;
+}
+
+.intraPadding_2-right{
+    padding-right: 30px;
+}
+
+.intraPadding_3-right{
+    padding-right: 15px;
+}
+
+.intraPadding_4-right{
+    padding-right: 5px;
+}
+
+
+/*Bottom*/
+.intraPadding-bottom{
+    padding-bottom: 45px;
+}
+
+.intraPadding_2-bottom{
+    padding-bottom: 30px;
+}
+
+.intraPadding_3-bottom{
+    padding-bottom: 15px;
+}
+
+.intraPadding_4-bottom{
+    padding-bottom: 5px;
+}
+
+
+/*Left*/
+.intraPadding-left{
+    padding-bottom: 45px;
+}
+
+.intraPadding_2-left{
+    padding-bottom: 30px;
+}
+
+.intraPadding_3-left{
+    padding-bottom: 15px;
+}
+
+.intraPadding_4-left{
+    padding-bottom: 5px;
+}
+
+
+
+/*----------------------
+ Espaçamentos entre elementos 
+----------------------*/
+
+.intraMargin{
+    margin: 45px;
+}
+
+.intraMargin_2{
+    margin: 30px;
+}
+
+.intraMargin_3{
+    margin: 15px;
+}
+
+.intraMargin_4{
+    margin: 5px;
+}
+
+/*Top*/
+.intraMargin-top{
+    margin-top: 45px;
+}
+
+.intraMargin_2-top{
+    margin-top: 30px;
+}
+
+.intraMargin_3-top{
+    margin-top: 15px;
+}
+
+.intraMargin_4-top{
+    margin-top: 5px;
+}
+
+/*Right*/
+.intraMargin-right{
+    margin-right: 45px;
+}
+
+.intraMargin_2-right{
+    margin-right: 30px;
+}
+
+.intraMargin_3-right{
+    margin-right: 15px;
+}
+
+.intraMargin_4-right{
+    margin-right: 5px;
+}
+
+
+/*Bottom*/
+.intraMargin-bottom{
+    margin-bottom: 45px;
+}
+
+.intraMargin_2-bottom{
+    margin-bottom: 30px;
+}
+
+.intraMargin_3-bottom{
+    margin-bottom: 15px;
+}
+
+.intraMargin_4-bottom{
+    margin-bottom: 5px;
+}
+
+
+/*Left*/
+.intraMargin-left{
+    margin-bottom: 45px;
+}
+
+.intraMargin_2-left{
+    margin-bottom: 30px;
+}
+
+.intraMargin_3-left{
+    margin-bottom: 15px;
+}
+
+.intraMargin_4-left{
+    margin-bottom: 5px;
+}
+
+/*----------------------
+ END 
+----------------------*/
+
+
+.table .colls{
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+
+
+.table.style-1{
+    position: relative;
+}
+
+.table.style-1 .coll.attributes tr{
+    position: relative;
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.table.style-1 .coll.attributes td{
+    position: relative;
+    display: block;
+    width: calc(50% - 4px);
+    padding: 8px;
+    margin: 2px;
+    float: left;
+    text-align: left;
+}
+
+.table.style-1 .coll.attributes .tLabel{
+    background: #CCC;
+}
+.table.style-1 .coll.attributes .value{
+    background: #DDD;
+}
+
+.table.style-1 .coll.description{
+    text-align: left;
+    padding: 20px;
+}
+
+.table.style-1:after{
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    content: "";
+    background: #EEE;
+    z-index: -1;
+    border: 2px solid #FFF;
+}
+
+
+.single-plano .area-info .table{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.area-info .img{
+    position: relative;
+}
+
+.area-info .img.full{
+    display: block;
+    width: 100%;
+}
+
+.area-info .img.full img{
+    width: 100%;
+    height: auto;
+}
+/*FILTER*/
+.bloco__filter .colls{ 
+    position: relative; 
+    display: block; 
+    text-align: center; 
+}
+.bloco__filter .colls.colls-2{}
+.bloco__filter .colls.colls-2 .coll{
+    position: relative;
+    float: left;
+}
+
+.bloco__filter .colls.colls-2.separator .coll{
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    margin: 22px 0;
+}
+.bloco__filter .colls.colls-2.separator .coll a{
+    text-align: left;
+}
+
+.bloco__filter .colls.colls-2.separator .coll:first-child{
+   /*  padding-right: 2.5%;
+   margin-right: 2.5%; */
+    width: calc(50% - 1px);
+    border-right: 1px solid #DDD;
+}
+.bloco__filter .filtro a{
+    position: relative;
+    display: inline-block;
+}
+.bloco__filter .filtro.vantagem a{
+    padding: 0 10px 0 70px;
+}
+
+.bloco__filter .filtro.sobre a{
+    padding: 0 10px 0 85px;
+}
+
+
+.bloco__filter .filtro a:before{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bloco__filter.v2 .filtro__ativo:before{
+    top: -35px;
+}
+
+/*===================
+Novas Customizações Internas
+====================*/
+
+/*Colunas Internas*/
+.intraColls{
+    position: relative;
+    display: table;
+    width: 100%;
+}
+.intraColls .coll-full{
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+}
+.intraColls .coll-main{
+    position: relative;
+    display: block;
+    width: 70%;
+    float: left;
+}
+.intraColls .coll-side{
+    position: relative;
+    display: block;
+    width: calc(30% - 10px);
+    float: left;
+    margin-left: 10px;
+}
+/*End*/
+
+
+
+.internas .barra.blue{
+    background: #003793;
+}
+
+.internas .barra.greyscale{
+    background: #EEE;
+}
+
+.internas .colls{
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+.internas .contacts{
+    position: relative;
+    display: block;
+}
+.internas .contacts .contact{
+    position: relative;
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.internas .contacts .contact .value{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 50px;
+    line-height: 40px;
+    font-size: 35px;
+    color: #FFF;
+}
+
+.internas .contacts .contact .value:before{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    content: "";
+}
+
+.internas .contacts .contact.phone .value:before{
+    background: url(../images/sprites.png) 0px -240px;
+}
+
+.internas .contacts .contact.wpp .value:before{
+    background: url(../images/sprites.png) -50px -240px;
+}
+
+.internas .horario{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+.internas .iFrameResponsive{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 480px;
+}
+
+.internas .iFrameResponsive iframe{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+.internas.page-atendimento .blocks{}
+
+.internas.page-atendimento .block.map{
+    position: absolute;
+    height: 100%;
+}
+
+.internas.page-atendimento .block.map .iFrameResponsive{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.internas.page-atendimento .block.formMail{
+    position: relative;
+    display: table;
+    height: auto;
+    float: right;
+    min-height: 300px;
+}
 
 
 
 
+.internas .block.formMail .coll{
+    margin-bottom: 10px;
+}
+
+.internas .block.formMail legend{
+    position: relative;
+    display: block;
+    margin: 0 0 20px 0;
+    text-align: left;
+    font-size: 18px;
+    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    font-weight: 500;
+    border: none;
+}
+.internas .block.formMail legend span{
+    position: relative;
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    padding: 0 0 0 37px;
+}
+.internas .block.formMail legend span:before{
+    position: relative;
+    display: inline-block;
+    line-height: 27px;
+    width: 27px;
+    height: 27px;
+    content: "";
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/sprites.png) -345px -180px;
+}
+
+.internas .formStyle.colls .coll.margin{
+    margin-right: 10px;
+}
+.internas .formStyle.colls-4 .coll.margin{
+    width: calc(25% - 10px);
+}
+
+.page-servicos.internas .formStyle.colls-4 .coll.margin{
+ 
+}
 
 
 
+.page-servicos.internas .formStyle.colls-4 legend{
+    position: relative;
+    display: block;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.page-servicos.internas .formStyle.colls-4 legend span:before{
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    height: 25px;
+    padding: 0;
+    margin: 0 7px 0 0;
+    content: '';
+    background: url('../images/sprites.png') -400px -180px;
+}
+
+.internas .helpLogin a{
+    position: relative;
+    display: block;
+}
+
+.page-servicos.internas .helpLogin a{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 29px;
+}
+
+.page-servicos.internas .helpLogin a:hover{
+    text-decoration: underline;
+}
+
+/* .page-servicos.internas .formStyle.colls-4 legend{
+    position: relative;
+    display: block;
+    float: left;
+    width: calc(20% - 7.5px);
+    border: none;
+} */
 
 
+.internas form.formStyle input[type=text],
+.internas form.formStyle input[type=email],
+.internas form.formStyle input[type=tel]{
+    position: relative;
+    display: block;
+    width: calc(100% - 2px);
+    height: 58px;
+    padding: 17px 5px 0 5px;
+}
+
+.internas form.formStyle input[type=text],
+.internas form.formStyle input[type=email],
+.internas form.formStyle input[type=tel]{
+    background: #FFF;
+    border: 1px solid #DDD;
+}
+
+.internas .block form textarea{
+    display: block;
+    width: calc(100% - 2px);
+    height: 98px;
+    padding: 17px 5px 0 5px;
+}
+
+.internas .block.formMail form textarea{
+    background: #FFF;
+    border: 1px solid #DDD;
+}
+
+
+.internas form.formStyle label{
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.internas .block form .buttonSend{
+    display: block;
+    width: 100%;
+    height: 98px;
+    padding: 0;
+}
+
+.internas .block.formMail .buttonSend{
+    background: #003793;
+    text-align: center;
+    line-height: 100%;
+    color: #FFF;
+    border: none;
+}
+
+
+.internas .grid.border .item{
+    border: 1px solid #DDD;
+}
+.internas .colls-2.grid.border .item{
+    width: 47.5%;
+}
+
+.internas .colls-2.grid.border .item:nth-child(2n){
+    margin-left: calc(5% - 4px);
+}
+
+.internas .shadowHover .item:hover{
+    -moz-box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.12);
+}
+
+.internas .grid .item a{
+    position: relative;
+    display: block;
+}
+
+.internas .grid .item .title{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.internas .grid .item.headerYes .title{
+   font-size: 16px;
+   font-weight: bold;
+   text-align: left;
+}
+
+.internas .grid .item.headerYes .resume{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.internas .grid .item.headerYes a .title{
+    color: #000;
+}
+
+.internas .grid .item.headerYes a:hover .title{
+    color: #06A8C8;
+}
+
+.internas .grid .item.headerYes a .resume{
+    color: #777;
+}
+
+.internas .grid .item.headerYes a:hover .resume{
+    color: #000;
+}
+
+.internas .grid .item.headerYes .title,
+.internas .grid .item.headerYes .resume{
+    padding-left: 72px;
+}
+
+
+.internas .grid .item.headerYes .title:before{
+    position: absolute;
+    display: block;
+    width: 62px;
+    height: 45px;
+    left: 0;
+    top: 0;
+    content: "";
+}
+
+.internas .grid .item.headerYes.boleto .title:before{
+     background: url('../images/sprites.png') -120px -240px;
+}
+.internas .grid .item.headerYes.assembleias .title:before{
+     background: url('../images/sprites.png') -190px -240px;
+}
+.internas .grid .item.headerYes.lances .title:before{
+     background: url('../images/sprites.png') -260px -240px;
+}
+.internas .grid .item.headerYes.valores .title:before{
+     background: url('../images/sprites.png') -330px -240px;
+}
+
+.internas .grid .item.headerYes a:hover .title:before{
+    background-image: url('../images/sprites_hover.png')
+}
+
+.internas.page-atendimento.faq .faqList .item .title{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 120%;
+}
+
+.internas.page-atendimento.faq .faqList .item a .title{
+    color: #06A8C8;
+}
+
+.internas.page-atendimento.faq .faqList .item a:hover .title{
+    color: #003793;
+}
+
+.internas.page-atendimento.faq .searchFaq{
+    position: relative;
+    display: block;
+    background: #FFF;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.internas.page-atendimento.faq .searchFaq input[type=text]{
+    border: none;
+}
+
+.animate,
+.animate a,
+a.animate,
+.animate a:before,
+a.animate:before,
+.animate a:after,
+a.animate:after,
+.animate .title,
+.animate .title:before,
+.animate:hover .title:before{
+
+    -moz-transition: all 0.35s;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.internas .call2action .buttonSend{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 58px;
+    background: #06A8C8;
+    color: #FFF;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.internas.page-atendimento.faq .searchFaq .buttonSend{
+   
+}
+
+.internas .call2action .buttonSend:hover{
+    background: #3392A5;
+}
+
+.newsletter .redes a{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.newsletter .redes a i{
+    position: relative;
+    display: inline-block;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+.newsletter .redes a i:before{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    padding: 0;
+
+}

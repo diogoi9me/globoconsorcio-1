@@ -8,15 +8,17 @@ jQuery(document).ready(function($) {
     $(".pesquisa").click(function() {
 
         $(".form_pesquisa_mobile").show();
-        $(".effect").toggleClass('on');
+        $(".maskEffect").toggleClass('on');
         $(".busca-top").toggleClass('on');
         $(this).toggleClass('on');
         $(".btn-close").show();
+        //$(".btn-group.servico_cliente .btn").hide();
     });
     $(".btn-close").click(function(){
       $(".form_pesquisa_mobile").hide();
-      $(".effect").toggleClass('on');
+      $(".maskEffect").toggleClass('on');
       $(".btn-close").hide();
+      $(".btn-group.servico_cliente .btn").show();
     
     });
 
@@ -201,7 +203,7 @@ jQuery(document).ready(function($) {
   
  
     //ao clicar no item do menu, a o scroll vai até a section escolhidaespecifica
-    $(".nav_main .menu ul a.scroll, .link-up").click(function(event){        
+    $(".nav_main .menu ul a.scroll, .link-up, .scroll.scroll-down").click(function(event){        
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top - 25}, 1000);
     

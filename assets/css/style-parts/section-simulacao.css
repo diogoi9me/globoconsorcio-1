@@ -2,10 +2,10 @@
 .simulacao {
     background-color: #013A96;
     width: 100%;
-    min-height: 384px;
     max-width: 100%;
     display: inline-block
 }
+
 
 .simulacao .title:after {
     content: url(../../images/bar-title.png);
@@ -19,7 +19,6 @@
 .simulacao .title span {
     display: block;
     font-size: 18px;
-    font-family: owd-regular, sans-serif;
     line-height: 37px
 }
 
@@ -35,19 +34,34 @@
     text-align: left
 }
 
+.light .simulacao .form_simulacao .medium,
+section.light .form_simulacao .medium{
+    width: calc(9% - 2px;);
+}
+
 .simulacao .form_simulacao .medium input {
     position: relative;
     height: 55px;
     border-radius: 0!important;
     padding: 8px;
     border: 0;
-    top: -20px
+    top: -20px;
+    line-height: 100%;
 }
+
+.light .simulacao .form_simulacao .medium input:not([type=submit]),
+section.light .form_simulacao .medium input:not([type=submit]),
+.light .simulacao .form_simulacao .wpcf7-select,
+section.light .form_simulacao .wpcf7-select {
+   border: 1px solid #BBB;
+   background: #F6F3F3;
+}
+
+
 
 .simulacao .form_simulacao .medium label {
     color: #013A96;
     font-weight: normal;
-    font-family: owd-regular, sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     position: absolute!important;

@@ -1,23 +1,29 @@
 <?php if ( is_home() || is_front_page() ) {
 
       $id_veiculos = 'owl-carros';
-
+       $class_veiculos = '';
+       $headerSection = '<div class="row">
+      
+      <div class="title-carousel">
+        <h2 class="title"><span>Nossos</span>Veículos</h2>
+          <h6><a href="' . esc_url( home_url() ) . '/veiculos" title="Ver todos">Ver todos</a></h6>
+      </div>
+    </div>';
 
       } else { 
 
         $id_veiculos = 'veiculos';
+        $class_veiculos = 'grid-carousel';
+        $headerSection = '';
       }
+
 
       ?>
 <section class="nossos-carros effect" id="carros">
   <div class="containe-owl">
-    <div class="row">
-      <div class="title-carousel">
-        <h2 class="title"><span>Nossos</span>Veículos</h2>
-          <h6><a href="<?php echo esc_url( home_url() ); ?>/veiculos" title="Ver todos">Ver todos</a></h6>
-      </div>
-    </div>    
-    <div id="<?php echo $id_veiculos; ?>" class="owl-carros owl-carousel owl-theme list-products">
+    <?php echo $headerSection; ?>
+
+    <div id="<?php echo $id_veiculos; ?>" class="owl-carros owl-carousel owl-theme <?php echo $class_veiculos; ?> list-products">
       <?php
         $post_type_custom = 'veiculo';
           if( is_tax() ) {
@@ -45,8 +51,20 @@
             $valorDaParcela = get_post_custom_values('wpcf-valor-da-parcela');
             $valorDaParcela = $valorDaParcela[0];
             //$valorDaParcela = number_format($valorDaParcela, 2, ',', '.');
+
+            //Colunas Dinâmicas
+
+            $count = $loop->post_count;
+            if( $count <= 1 ) {
+              $classColls = 'colls-1';
+            } elseif( $count == 2 ) {
+              $classColls = 'colls-2';
+            } elseif( $count >= 3 ) {
+              $classColls = 'colls-3';
+            }
+
       ?> 
-            <?php if ( is_page( 'veiculos' ) || is_tax() ) {  echo '<div class="owl-item">'; } ?>
+            <?php if ( is_page( 'veiculos' ) || is_tax() || is_archive('veiculo') || is_page( 'simulacao' ) ) {  echo '<div class="owl-item ' . $classColls . '">'; } ?>
               <div class="item">
                 <h4><?php echo the_title(); ?></h4>
                   <a class="image" href="<?php echo get_permalink(); ?>" title="<?php echo the_title_attribute( 'echo=0' ); ?>" rel="bookmark">
@@ -62,7 +80,7 @@
                     </div>
                   </a>
               </div>
-            <?php if ( is_page( 'veiculos' ) || is_tax() ) { echo '</div>'; } ?>
+            <?php if ( is_page( 'veiculos' ) || is_tax() || is_archive('veiculo') || is_page( 'simulacao' ) ) { echo '</div>'; } ?>
           <?php endwhile; ?>     
     </div>
   </div>

@@ -37,7 +37,7 @@
         <div class="vantagens__conteudo">
           <h2 class="title"><span>Sobre a</span> Globo Consórcio</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur debitis eaque iusto unde consequuntur repellat, sunt distinctio rem commodi incidunt rerum minima.</p>
-          <button class="wow zoomIn"><i class="glyphicon glyphicon-plus"></i>Saiba mais</button>
+         <a href="<?php echo esc_url( home_url() ); ?>/sobre-a-globo-consorcio/" class="wow zoomIn button"><span><i class="glyphicon glyphicon-plus"></i>Saiba mais</span></a>
         </div>
       </div>
     </div>
