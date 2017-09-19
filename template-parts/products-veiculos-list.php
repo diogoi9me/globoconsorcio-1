@@ -70,7 +70,7 @@
                   <a class="image" href="<?php echo get_permalink(); ?>" title="<?php echo the_title_attribute( 'echo=0' ); ?>" rel="bookmark">
                     <div class="info intraPadding_2-left intraPadding_2-right">
                       <figure class="hvr-grow wow zoomIn">
-                        <?php imagem_destacada('full', 'wow pulse', get_the_title(), '') ?>
+                        <?php imagem_destacada('medium', 'wow pulse', get_the_title(), '') ?>
                           <figcaption>
                             <span>R$ <?php echo $preco ?></span>
                             <strong><?php echo $parcelas . 'X de <strong>R$ ' . $valorDaParcela . '</strong>' ?></strong>
