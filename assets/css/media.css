@@ -1,27 +1,17 @@
 @media screen and (max-width:1203px) {
-    .nossos-planos .bloco-planos li {
-        width: 325px;
-        margin: 0 6px
-    }
+    
 }
 
 @media screen and (max-width:1125px) {
-    .nossos-planos .bloco-planos li {
-        width: 295px;
-        margin: 0 5px
-    }
-    .nossos-planos .bloco-planos li div {
-        padding: 65px 32px
-    }
+    
+   
 }
 
 @media screen and (max-width:1086px) {
     .navbar .tarja .text_center {
         left: 14%
     }
-    .navbar .menu ul li {
-        padding: 35px 19px
-    }
+   
     .scrollOn .navbar .menu ul li {
         padding: 25px 19px
     }
@@ -31,16 +21,9 @@
     .navbar .tarja .text_center {
         left: 10%
     }
-    .navbar .menu ul li {
-        padding: 35px 15px
-    }
-    .scrollOn .navbar .menu ul li {
-        padding: 25px 15px
-    }
-    .nossos-planos .bloco-planos li {
-        width: 290px;
-        margin: 0 1px
-    }
+
+  
+   
     .nossos-planos .bloco-planos li div h5 {
         font-size: 13px
     }
@@ -77,12 +60,19 @@
     .navbar .tarja .text_center {
         left: 9%
     }
-    .navbar .menu ul li {
-        padding: 35px 12px
-    }
+  
     .scrollOn .navbar .menu ul li {
-        padding: 25px 12px
+        padding: 0;
+        
     }
+
+/*     .navbar .menu ul li a{
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    } */
 }
 
 @media screen and (max-width:991px) { /*TABLET*/
@@ -119,9 +109,7 @@
         width: 100%;
         max-width: 100%
     }
-    .nossos-planos .bloco-planos li {
-        width: 261px
-    }
+  
     .vantagens__bottom .vantagens__a .vantagens__blocos li,
     .vantagens__top .vantagens__b .vantagens__blocos li {
         width: 42%
@@ -130,34 +118,28 @@
 
 @media screen and (max-width:963px) {
     .nossos-planos .bloco-planos .btn__nossoplano {
-        width: 70%;
-        margin: 0 29px!important;
-        padding: 0;
+      
         font-size: 12px
     }
-    .nossos-planos .bloco-planos li {
-        width: 29%;
-        margin: 0 5px
-    }
+   
     .nossos-planos .bloco-planos li .info {
         margin: 10px 0;
         display: block;
         text-align: center
     }
     .nossos-planos .bloco-planos li div h5:after,
-    .nossos-planos .bloco-planos li div h5:before,
-    .nossos-planos .bloco-planos li div p {
+    .nossos-planos .bloco-planos li div h5:before{
         display: none
     }
     .nossos-planos .bloco-planos li div {
-        padding: 18px 0;
-        text-align: left
+       /*  padding: 18px 0;
+        text-align: left */
     }
-    .nossos-planos .bloco-planos li div img {
-        float: inherit!important;
+     .nossos-planos .bloco-planos li div img {
+        /* float: inherit!important;
         margin: 2px 5px;
-        display: inline-block
-    }
+        display: inline-block */
+    } 
     .nossos-planos .bloco-planos li div h5 {
         width: 100%!important;
         display: inline-block
@@ -188,10 +170,7 @@
 }
 
 @media screen and (max-width:902px) {
-    .nossos-planos .bloco-planos li {
-        width: 24%;
-        margin: 0 4%
-    }
+   
     .nossos-planos .bloco-planos li div h5 {
         width: 100px
     }
@@ -218,9 +197,6 @@
         padding-top: 0px;
     }
 
-    .container {
-        padding: 0 5%;
-    }
 
     .bloco-banner .container{
         padding: 22px 5% 0 5%; 
@@ -250,7 +226,7 @@
         top: 14px
     }
     .scrollOn .navbar .form_pesquisa_mobile {
-        top: 3px
+        top: 0px
     }
     .navbar .busca {
         right: 0;
@@ -260,16 +236,13 @@
     .navbar .pesquisa {
         top: 50%;
         transform: translateY(-50%);
-        right: 93px;
+        right: 120px;
         font-size: 30px
     }
    
-    .navbar .tarja {
-        padding: 29px 21px 11px!important
-    }
+   
     .navbar .container {
-        height: 59px;
-        top: 68px
+       
     }
     .navbar .tarja span {
         margin-left: 0
@@ -285,7 +258,7 @@
         padding-right: 30px
     }
     .navbar .menu {
-        top: 60px;
+        top: 88px;
         color: #999;
         margin: 0;
         padding: 0;
@@ -295,7 +268,7 @@
         transition: opacity .4s
     }
     .scrollOn .navbar .menu {
-        top: 70px
+        top: 88px
     }
     .navbar .menu li {
         width: 100%;
@@ -314,19 +287,19 @@
         vertical-align: middle
     }
     #toggle {
-        float: right;
+
+        position: absolute;
+        top: 15px;
+        right: 5%;
         display: block!important;
         width: 53px;
         height: 17px;
         margin: 6px 0;
         padding: 24px 13px;
         border-radius: 7px;
-        position: relative;
         z-index: 999;
     }
-    .scrollOn #toggle {
-        margin: 11px 0
-    }
+
     #toggle.on {
         background-color: #003793
     }
@@ -364,19 +337,19 @@
         display: block
     }
     .navbar #menu-menu {
-        width: 100%
+        width: 100%;
+        height: calc(100vh - 70px);
     }
 
     .bloco-banner{
-        margin-top: 140px;
+       
     }
     .nossos-carros .title-carousel span {
         font-size: 13px
     }
     .atendimento h2:before,
     .consorcio h2:before,
-    .nossos-carros .title-carousel h2:after,
-    .nossos-planos h2:before {
+    .nossos-carros .title-carousel h2:after {
         top: 40px
     }
     .atendimento h2,
@@ -405,9 +378,7 @@
     .list-products .owl-nav {
         display: none
     }
-    .nossos-planos .bloco-planos {
-        padding: 30px 0
-    }
+   
     .consorcio h2 {
         font-size: 22px
     }
@@ -512,9 +483,9 @@
 
 @media screen and (max-width:908px) {
         .busca-top {
-        width: calc(100% - 135px);
+        width: calc(100% - 155px);
         margin: 0;
-        top: 0px;
+        top: 15px;
         left: 0;
         padding-left: 5%;
         height: 58px;
@@ -635,12 +606,8 @@
     .nossos-carros .title-carousel h6 {
         font-size: 10px
     }
-    .nossos-planos .bloco-planos {
-        padding: 25px 0
-    }
-    .nossos-planos .bloco-planos li {
-        margin-bottom: 20px
-    }
+    
+   
     .nossos-planos .bloco-planos li div h5 {
         display: block;
         width: 100%;
@@ -652,7 +619,7 @@
     }
     .vantagens__bottom .vantagens__b:before,
     .vantagens__top .vantagens__a:before {
-        display: none
+       /*  display: none */
     }
 }
 
@@ -738,11 +705,80 @@
     }
 }
 
+@media screen and (min-width: 940px) {
+    
+    .bloco__simulacao--single{
+        top: 250px;
+        right: 45px;
+    }
+
+    .scrollOn .bloco__simulacao--single{
+        position: fixed;
+        top: 120px;
+        right: 45px;
+        z-index: 1;
+    }
+
+
+    .leftMain .container-single{
+        width: calc(100% - 350px);
+        position: relative;
+        display: block;
+    }
+    .nav_mobile .menu li a{
+     font-size: 25px  !important;
+    }
+
+}
+
+
+@media screen and (max-width: 939px) {
+    .nav_mobile .menu li{
+    position: relative;
+    display: block;
+}
+
+.nav_mobile .menu li a{
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    line-height: 120%;
+}
+
+}
+
 @media screen and (min-width:768px)  and (max-width:939px) {
+
+
+    .navbar .menu ul li a{
+        font-size: 20px !important;
+    }
+
+    .navbar .menu ul li {
+        margin: 0;
+    }
+    
+
+.page-blog.leftMain .container-single{
+        width: calc(100% - 350px);
+        position: relative;
+        display: block;
+    }
+
+.linkMore{
+    margin: 10px 0;
+}
+
+
     .bloco__simulacao--single {
         position: absolute;
         display: block;
-        top: 80px;
+        top: 210px;
         right: 5%;
         float: none;
         margin-top: inherit;
@@ -750,8 +786,23 @@
     }
 
 
+    .grid .item .title{
+        font-size: 22px;
+        line-height: 120%;
+    }
+
+
+    .list-products .owl-item .item .info .btn__carros,
+.nossos-planos .bloco-planos .btn__nossoplano,
+.ultimasblog .ultimasblog__blocoplanos .btn__nossoblog {
+    padding: 0 15px;
+    letter-spacing: 3px;
+    margin: 15px 0 0 0;
+}
+
+
 section#home {
-    margin-top: 115px;
+    margin-top: 0;
 }
 
 
@@ -886,13 +937,274 @@ MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPaddin
 }
 
 /*----------------------
+ Espaçamentos internos 
+----------------------*/
+
+.intraPadding{
+    padding: 25px;
+}
+
+.intraPadding_2{
+    padding: 15px;
+}
+
+.intraPadding_3{
+    padding: 10px;
+}
+
+.intraPadding_4{
+    padding: 5px;
+}
+
+/*Top*/
+.intraPadding-top{
+    padding-top: 25px;
+}
+
+.intraPadding_2-top{
+    padding-top: 15px;
+}
+
+.intraPadding_3-top{
+    padding-top: 10px;
+}
+
+.intraPadding_4-top{
+    padding-top: 5px;
+}
+
+/*Right*/
+.intraPadding-right{
+    padding-right: 25px;
+}
+
+.intraPadding_2-right{
+    padding-right: 15px;
+}
+
+.intraPadding_3-right{
+    padding-right: 10px;
+}
+
+.intraPadding_4-right{
+    padding-right: 5px;
+}
+
+
+/*Bottom*/
+.intraPadding-bottom{
+    padding-bottom: 25px;
+}
+
+.intraPadding_2-bottom{
+    padding-bottom: 15px;
+}
+
+.intraPadding_3-bottom{
+    padding-bottom: 10px;
+}
+
+.intraPadding_4-bottom{
+    padding-bottom: 5px;
+}
+
+
+/*Left*/
+.intraPadding-left{
+    padding-left: 25px;
+}
+
+.intraPadding_2-left{
+    padding-left: 15px;
+}
+
+.intraPadding_3-left{
+    padding-left: 10px;
+}
+
+.intraPadding_4-left{
+    padding-left: 5px;
+}
+
+
+
+/*----------------------
+ Espaçamentos entre elementos 
+----------------------*/
+
+.intraMargin{
+    margin: 25px;
+}
+
+.intraMargin_2{
+    margin: 15px;
+}
+
+.intraMargin_3{
+    margin: 10px;
+}
+
+.intraMargin_4{
+    margin: 5px;
+}
+
+/*Top*/
+.intraMargin-top{
+    margin-top: 25px;
+}
+
+.intraMargin_2-top{
+    margin-top: 15px;
+}
+
+.intraMargin_3-top{
+    margin-top: 10px;
+}
+
+.intraMargin_4-top{
+    margin-top: 5px;
+}
+
+/*Right*/
+.intraMargin-right{
+    margin-right: 25px;
+}
+
+.intraMargin_2-right{
+    margin-right: 15px;
+}
+
+.intraMargin_3-right{
+    margin-right: 10px;
+}
+
+.intraMargin_4-right{
+    margin-right: 5px;
+}
+
+
+/*Bottom*/
+.intraMargin-bottom{
+    margin-bottom: 25px;
+}
+
+.intraMargin_2-bottom{
+    margin-bottom: 15px;
+}
+
+.intraMargin_3-bottom{
+    margin-bottom: 10px;
+}
+
+.intraMargin_4-bottom{
+    margin-bottom: 5px;
+}
+
+
+/*Left*/
+.intraMargin-left{
+    margin-bottom: 25px;
+}
+
+.intraMargin_2-left{
+    margin-bottom: 15px;
+}
+
+.intraMargin_3-left{
+    margin-bottom: 10px;
+}
+
+.intraMargin_4-left{
+    margin-bottom: 5px;
+}
+/*----------------------
  END 
 ----------------------*/
 
  }   
 
+ @media screen and (min-width: 480px) and (max-width: 767px){
+    .nav_mobile .menu li{
+    position: relative;
+    display: block;
+}
+
+.nav_mobile .menu li a{
+   font-size: 20px !important;
+}
+
+ }
+
+ @media screen and (max-width: 479px){
+    .nav_mobile .menu li{
+    position: relative;
+    display: block;
+}
+
+.nav_mobile .menu li a{
+   font-size: 18px !important;
+}
+
+ }
+
 @media screen and (max-width:767px) {
 
+.nav_mobile .menu li{
+    position: relative;
+    display: block;
+}
+.nav_mobile .menu li a{
+   
+}
+
+.sidebar{
+    position: relative;
+    float: none;
+    border: none;
+    background: #FFF;
+    width: 100%;
+    min-height: auto;
+    right: inherit;
+    top: inherit;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 45px;
+
+     -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.sidebar header .title{
+    font-size: 18px;
+}
+
+
+.linkMore{
+    margin: 10px 0;
+}
+
+.search .filtro .filtro__title{
+    display: none;
+}
+
+.colls-2.grid.border .item:nth-child(2n){
+    margin-left: 0;
+}
+.grid.min-height .item{
+    min-height: auto;
+}    
+
+
+ .list-products .owl-item .item .info .btn__carros,
+.nossos-planos .bloco-planos .btn__nossoplano,
+.ultimasblog .ultimasblog__blocoplanos .btn__nossoblog {
+    padding: 0 15px;
+    letter-spacing: 3px;
+    max-width: 240px;
+    margin: 15px auto 0px auto !important;
+
+}
 
 .internas.page-atendimento.faq .faqList .item .title{
     font-size: 18px;
@@ -909,7 +1221,7 @@ MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPaddin
 
 
 section#home {
-    margin-top: 115px;
+    margin-top: 0;
 }
 
 
@@ -943,16 +1255,22 @@ Novas Customizações Internas
     float: none;
 }
 
-.internas .block form .buttonSend{
+ form .buttonSend{
     height: 58px;
 
 }
-.internas .colls-2.grid.border .item{
+
+
+.colls.grid.border .item{
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
 }
 
-.internas .colls-2.grid.border .item:nth-child(2n){
-    margin-left: 0;
+.colls-3.grid.border .item.intraMargin-right{
+    width: 100% !important;
+    margin: 0 0 25px 0 !important;
 }
 
 .internas .formStyle.colls .coll{
@@ -986,6 +1304,14 @@ Novas Customizações Internas
 /*END*/
 
 
+.bloco__post h2{
+    font-size: 24px;
+}
+.bloco__post h3{
+    font-size: 20px;
+}
+
+
 .colls.colls-2 .coll{
     float: none;
     width: 100%;
@@ -993,6 +1319,35 @@ Novas Customizações Internas
 
 
 
+.intraColls .coll-2{
+    width: 100%;
+    float: none;
+}
+.intraColls .coll-2:nth-child(odd){
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+.lightBox.on{
+    display: block;
+    min-width: 280px;
+}
+
+
+.bloco__post .colls.colls-2.rightMain .coll{
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.bloco__post .colls.colls-2.rightMain .coll.left{
+    float: none;
+    width: 100%;
+}
+
+.bloco__post .colls.colls-2.rightMain .coll.right{
+    float: none;
+    width: 100%;
+}
 
    
 /*=================================================================================
@@ -1201,19 +1556,19 @@ MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPaddin
 
 /*Left*/
 .intraPadding-left{
-    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 .intraPadding_2-left{
-    padding-bottom: 15px;
+    padding-left: 15px;
 }
 
 .intraPadding_3-left{
-    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .intraPadding_4-left{
-    padding-bottom: 5px;
+    padding-left: 5px;
 }
 
 
@@ -1326,7 +1681,7 @@ MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPaddin
 }
 
 
-    .single-veiculo .bloco__title-banner{
+    .leftMain .bloco__title-banner{
         width: 100%;
     }
     .bloco__title-banner .currentTitle.side{
@@ -1479,7 +1834,6 @@ MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPaddin
         height: auto;
         padding-bottom: 22px;
         min-height: auto;
-        margin-top: 128px;
     }
 
     .filtro__ativo:before{
@@ -1751,16 +2105,10 @@ MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPaddin
 }
 
 @media screen and (max-width:745px) {
-    .nossos-planos .bloco-planos li div {
-        text-align: center
-    }
-    .nossos-planos .bloco-planos li {
-        margin-bottom: 5% !important;
-        width: 100%;
-        margin: 0 0 10px
-    }
+   
+    
     .nossos-planos .bloco-planos li div img {
-        margin: 2px 15px
+        /* margin: 2px 15px */
     }
     .nossos-planos .bloco-planos li div h5 {
         margin: 13px 0 6px
@@ -1770,6 +2118,34 @@ MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPaddin
 @media screen and (max-width:640px) {
 
 
+#tarja-header .brands{
+    display: none;
+}
+
+.leftMain .container-single table .date{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50%;
+    border: none;
+}
+
+.leftMain .container-single table .titlePost{
+    width: 100%;
+    margin-top: 48px;
+    position: relative;
+    display: block;
+    border-top: 1px solid #DDD;
+}
+
+.leftMain .container-single table .comments{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
     
     .bloco__filter .colls.colls-2.separator .coll:first-child{
         padding-right: 5%;
@@ -1882,7 +2258,18 @@ MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPaddin
 }
 
 
+
 @media screen and (min-width:480px) and (max-width:959px){
+
+
+    header .brands {
+        left: inherit !important;
+        position: relative;
+        display: block;
+        float: right;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
     
     .bloco-banner{
         min-height: auto;
@@ -1896,7 +2283,7 @@ MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPaddin
         width: 60%;
     }
 
-    .single-veiculo .bloco__title-banner .currentTitle.side {
+    .leftMain .bloco__title-banner .currentTitle.side {
         width: 45%;
         min-height: 130px;
     }
@@ -1925,6 +2312,13 @@ MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPaddin
 
 
 
+
+}
+
+@media screen and (max-width:479px) {
+    .linkMore{
+        display: none;
+    }
 
 }
 

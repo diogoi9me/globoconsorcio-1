@@ -7,7 +7,7 @@
 	<div class="col-md-12">
     	<div class="row">
     		<div class="layer_blue">
-    			<div class="container">
+    			<div class="container vPadding">
     				<div class="col-xs-12 col-sm-1">
 						<div class="row">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="icon-logo-footer"></i></a>
@@ -16,14 +16,14 @@
 					<div class="col-xs-12 col-sm-8">
 						<div class="row">
 							<h6 class="copyright">
-								<p>GLOBO CEARENSE LOCAÇÃO E SERVIÇOS LTDA. <span>© Todos os direitos reservados.</span></p>
-								<p class="cnpj">CNPJ  17.157.277/0001-25    |    Avenida Domingos Olimpio, 1441, Benfica - Fortaleza/CE - CEP: 60040-081</p>
+								<p>GLOBO CONSÓRCIO. <span>© Todos os direitos reservados.</span></p>
+								<p class="cnpj">Avenida Domingos Olimpio, 1441, Benfica - Fortaleza/CE - CEP: 60040-081</p>
 							</h6>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-3">
 						<div class="row logo-i9me">
-							<a class="link-i9me" href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="small-logo pull-right icon-inoveme"></i></a>
+							<a class="link-i9me" href="http://www.i9me.com.br" target="_blank"><i class="small-logo pull-right icon-inoveme"></i></a>
 						</div>
 					</div>
 				</div>

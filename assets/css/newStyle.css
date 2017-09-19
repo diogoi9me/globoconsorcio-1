@@ -1,0 +1,478 @@
+@charset "utf-8";
+
+/*=================================================================================
+MARCADORES
+==================================================================================*/
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+.ogange{
+    background-color: orange;
+}
+.greyscale{
+    background-color: #BBB;
+}
+.pink{
+    background-color: magenta;
+}
+.brown {
+    background-color: brown;
+}
+.aquamarine{
+    background-color: aquamarine;
+}
+
+
+
+
+/*=================================================================================
+FUNDAMENTAIS
+==================================================================================*/
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    color: #555555;
+}
+
+
+/*=================================================================================
+POSICIONANDO OBJETOS
+==================================================================================*/
+
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.fixed{
+    position: fixed;
+}
+
+.table{
+    display: table;
+}
+.block{
+    display: block;
+}
+.float.left{
+    float: left;
+}
+
+.float.right{
+    float: right;
+}
+.absolute.middle{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.absolute.center{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.absolute.middle.center{
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.absolute.left{
+    left: 0;
+}
+.absolute.right{
+    right: 0;
+}
+.absolute.top.center{
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+.absolute.top.left{
+    top: 0;
+    left: 0;
+}
+.absolute.top.right{
+    top: 0;
+    right: 0;
+}
+.absolute.bottom.center{
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+.absolute.bottom.left{
+    bottom: 0;
+    left: 0;
+}
+.absolute.bottom.right{
+    bottom: 0;
+    right: 0;
+}
+
+
+/*=================================================================================
+COLUNAS
+==================================================================================*/
+
+.colls.colls-full >.coll{
+    position: relative;
+    display: block;
+    float: none;
+    width: 100%;
+}
+
+.colls.colls-2 > .coll{
+    position: relative;
+    display: block;
+    float: left;
+    width: 50%;
+}
+.colls.colls-3  .coll{
+    position: relative;
+    display: block;
+    float: left;
+    width: 33.33%;
+}
+.colls.colls-4  .coll{
+    position: relative;
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+
+/*=================================================================================
+MARGINS AND PADDINGS - Margens e Espaçamentos - HMargin hPading vMargin vPadding
+==================================================================================*/
+
+/*----------------------
+ Size 1 
+----------------------*/
+
+/*Valores Horizontais*/
+.hMargin{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.hPadding{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/*Valores Verticais*/
+.vMargin{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.vPadding{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*Valores para o topo*/
+.topMargin{
+    margin-top: 90px;
+}
+
+.topPadding{
+    padding-top: 90px;
+}
+
+/*Valores para o rodapé*/
+.bottomMargin{
+    margin-bottom: 90px;
+}
+
+.bottomPadding{
+    padding-bottom: 90px;
+}
+
+/*Valores para esqueda*/
+.leftMargin{
+    margin-left: 5%;
+}
+
+.leftPadding{
+    padding-left: 5%;
+}
+
+/*Valores para direita*/
+.rightMargin{
+    margin-right: 5%;
+}
+
+.rightPadding{
+    padding-right: 5%;
+}
+
+/*----------------------
+ Size 2 
+----------------------*/
+
+
+/*Valores Horizontais*/
+.hMargin_2{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.hPadding_2{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+/*Valores Verticais*/
+.vMargin_2{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.vPadding_2{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/*Valores para o topo*/
+.topMargin_2{
+    margin-top: 45px;
+}
+
+.topPadding_2{
+    padding-top: 45px;
+}
+
+/*Valores para o rodapé*/
+.bottomMargin_2{
+    margin-bottom: 45px;
+}
+
+.bottomPadding_2{
+    padding-bottom: 45px;
+}
+
+/*Valores para esqueda*/
+.leftMargin_2{
+    margin-left: 3%;
+}
+
+.leftPadding{
+    padding-left: 3%;
+}
+
+/*Valores para direita*/
+.rightMargin_2{
+    margin-right: 3%;
+}
+
+.rightPadding_2{
+    padding-right: 3%;
+}
+
+/*----------------------
+ Espaçamentos internos 
+----------------------*/
+
+.intraPadding{
+    padding: 45px;
+}
+
+.intraPadding_2{
+    padding: 30px;
+}
+
+.intraPadding_3{
+    padding: 15px;
+}
+
+.intraPadding_4{
+    padding: 5px;
+}
+
+/*Top*/
+.intraPadding-top{
+    padding-top: 45px;
+}
+
+.intraPadding_2-top{
+    padding-top: 30px;
+}
+
+.intraPadding_3-top{
+    padding-top: 15px;
+}
+
+.intraPadding_4-top{
+    padding-top: 5px;
+}
+
+/*Right*/
+.intraPadding-right{
+    padding-right: 45px;
+}
+
+.intraPadding_2-right{
+    padding-right: 30px;
+}
+
+.intraPadding_3-right{
+    padding-right: 15px;
+}
+
+.intraPadding_4-right{
+    padding-right: 5px;
+}
+
+
+/*Bottom*/
+.intraPadding-bottom{
+    padding-bottom: 45px;
+}
+
+.intraPadding_2-bottom{
+    padding-bottom: 30px;
+}
+
+.intraPadding_3-bottom{
+    padding-bottom: 15px;
+}
+
+.intraPadding_4-bottom{
+    padding-bottom: 5px;
+}
+
+
+/*Left*/
+.intraPadding-left{
+    padding-left: 45px;
+}
+
+.intraPadding_2-left{
+    padding-left: 30px;
+}
+
+.intraPadding_3-left{
+    padding-left: 15px;
+}
+
+.intraPadding_4-left{
+    padding-left: 5px;
+}
+
+
+
+/*----------------------
+ Espaçamentos entre elementos 
+----------------------*/
+
+.intraMargin{
+    margin: 45px;
+}
+
+.intraMargin_2{
+    margin: 30px;
+}
+
+.intraMargin_3{
+    margin: 15px;
+}
+
+.intraMargin_4{
+    margin: 5px;
+}
+
+/*Top*/
+.intraMargin-top{
+    margin-top: 45px;
+}
+
+.intraMargin_2-top{
+    margin-top: 30px;
+}
+
+.intraMargin_3-top{
+    margin-top: 15px;
+}
+
+.intraMargin_4-top{
+    margin-top: 5px;
+}
+
+/*Right*/
+.intraMargin-right{
+    margin-right: 45px;
+}
+
+.intraMargin_2-right{
+    margin-right: 30px;
+}
+
+.intraMargin_3-right{
+    margin-right: 15px;
+}
+
+.intraMargin_4-right{
+    margin-right: 5px;
+}
+
+
+/*Bottom*/
+.intraMargin-bottom{
+    margin-bottom: 45px;
+}
+
+.intraMargin_2-bottom{
+    margin-bottom: 30px;
+}
+
+.intraMargin_3-bottom{
+    margin-bottom: 15px;
+}
+
+.intraMargin_4-bottom{
+    margin-bottom: 5px;
+}
+
+
+/*Left*/
+.intraMargin-left{
+    margin-bottom: 45px;
+}
+
+.intraMargin_2-left{
+    margin-bottom: 30px;
+}
+
+.intraMargin_3-left{
+    margin-bottom: 15px;
+}
+
+.intraMargin_4-left{
+    margin-bottom: 5px;
+}
+
+/*----------------------
+ END 
+----------------------*/
+
+
+/*=================================================================================
+CUSTOM FREE - Personalização Livre: A partir daqui as gambiarras estão liberadas!
+==================================================================================*/
+
+/*----------------------
+ END 
+----------------------*/

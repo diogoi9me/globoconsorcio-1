@@ -10,17 +10,17 @@
 	$resumoPage = $resumoPage[0];
 ?>
 
-<article class="page-veiculos">
+<article class="page-depoimentos">
 	<div class="bloco-banner animated fadeIn">
-	    <div class="container">
+	    <div class="container vPadding">
 	      <div class="bloco__title-banner">
 		      <div class="line line-1">
 			        <div class="currentTitle side">
 		        		<h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php the_title() ?></h2>
 		        	</div>
-		        	<div class="bloco-banner__texto description animated fadeIn">
-		         		<?php echo $resumoPage; ?>
-		        	</div>
+		        	<!-- <div class="bloco-banner__texto description animated fadeIn">
+		         		<?php // echo $resumoPage; ?>
+		        	</div> -->
 	        	</div>
 	        	<div class="line line-2">
 	        		<?php get_template_part('template-parts/breadcrumb'); ?>
@@ -28,11 +28,24 @@
 	      </div>
 	    </div>  
   	</div>
-	
-	<header class="bloco-header">
+
+
+  	<header class="bloco-header">
 			<h4 class="bloco-header__toptitle">As Opiniões</h4>
 			<h2 class="bloco-header__title">dos Clientes</h2>
+
+			<?php
+    			if( is_page('depoimentos') ) {
+			?>
+
+			<p class="bloco-header__subtitle"><?php echo $resumoPage; ?></p>
+			
+			<?php } ?>
+
 	</header>
+	
+
+
 
 	<div class="template-parts">
 		<?php 
@@ -48,5 +61,5 @@
 	 -->
 	    
 </article>
-
+<?php get_template_part('template-parts/newsletter'); ?> 
 <?php get_footer(); ?>

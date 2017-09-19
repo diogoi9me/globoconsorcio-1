@@ -1,7 +1,17 @@
+
+<section class="nossos-carros effect" id="depoimentos">
+  <div class="containe-owl">
 <?php if ( is_home() || is_front_page() ) {
 
       $id_container = 'owl-opinioes';
       $class_container = '';
+
+      echo '<div class="row">
+        <div class="title-carousel">
+          <h2 class="title"><span>Opniões dos</span>Nossos Clientes</h2>
+          <h6><a href="' . esc_url( home_url() ) . '/depoimentos/" title="Ver Todos">Ver todos</a></h6>
+        </div>
+    </div>';
 
       } else { 
 
@@ -9,17 +19,11 @@
         $class_container = 'grid-carousel';
       }
 ?>
-<section class="nossos-carros effect" id="depoimentos">
-  <div class="containe-owl">
-    <div class="row">
-        <div class="title-carousel">
-          <h2 class="title"><span>Opniões dos</span>Nossos Clientes</h2>
-          <h6><a href="<?php echo esc_url( home_url() ); ?>/depoimentos/" title="Ver Todos">Ver todos</a></h6>
-        </div>
-    </div>
+
+
     <div id="<?php echo $id_container; ?>" class="owl-carousel owl-theme <?php echo $class_container; ?> depoimentos-list">
       <?php
-        $args = array( 'post_type' => 'depoimento', 'posts_per_page' => 20, 'order' => 'ASC' );
+        $args = array( 'post_type' => 'depoimento', 'posts_per_page' => 20, 'order_by' => 'date', 'order' => 'DESC' );
         $loop = new WP_Query( $args );
           while ( $loop->have_posts() ) : $loop->the_post();
           $slug = basename(get_permalink());
@@ -33,12 +37,14 @@
             $prazo = $prazo[0];
 
             $count = $loop->post_count;
-            if( $count <= 1 ) {
+            if( $count == 1 ) {
               $classColls = 'colls-1';
             } elseif( $count == 2 ) {
               $classColls = 'colls-2';
-            } elseif( $count >= 3 ) {
-              $classColls = 'colls-3';
+            } elseif( $count == 3 ) {
+              $classColls = 'colls-3';          
+            } elseif( $count >= 4 ) {
+              $classColls = 'colls-4';
             }
       ?> 
 
@@ -51,7 +57,7 @@
         <h6><?php echo get_the_title(); ?><span><?php echo $atividade; ?></span></h6>
         <div class="info">
           <figure>
-            <?php imagem_destacada('thumbnail', 'wow zoomIn', get_the_title(), ''); ?>
+            <span class="borderImg"><?php imagem_destacada('thumbnail', 'wow zoomIn', get_the_title(), ''); ?></span>
             <figcaption>
               <h6><?php echo $carro; ?></h6>
               <i class="stars"></i><span>Contemplado no <?php echo $prazo; ?>° mês</span>

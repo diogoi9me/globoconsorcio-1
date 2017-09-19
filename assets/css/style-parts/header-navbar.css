@@ -20,16 +20,16 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 70px
+    height: 89px
 }
 
 .scrollOn .navbar .tarja {
-    height: 68px
+    
 }
 
 .navbar .container {
     position: absolute;
-    top: 86px;
+    top: 60px;
     left: 0;
     z-index: 99999999999;
     background: #FFF;
@@ -41,11 +41,9 @@
     background: url(../../images/bkg.png) center;
     width: 100%;
     position: fixed;
-    top: -10px;
     left: 0;
-    height: 94px;
+    height: 60px;
     max-width: 100%;
-    padding: 38px 52px
 }
 
 .navbar .tarja .contato li,
@@ -74,7 +72,12 @@
     font-weight: bold;
 }
 
-.navbar .tarja .contato li a span {
+.navbar .tarja .contato li a.value:hover {
+    color: #06A7C7;
+}
+
+
+.navbar .tarja .contato li .value span {
     margin-left: 5px;
     font-weight:600;
 }
@@ -142,17 +145,7 @@
     vertical-align: middle;
 }
 
-.navbar .tarja span {
-    display: inline-block;
-    z-index: 9999999999;
-    color: #555;
-    
-}
 
-/*.navbar .tarja span img {
-    margin-right: 10px;
-    vertical-align: top
-}*/
 
 .navbar .servico_cliente {
     color: #777;
@@ -209,20 +202,20 @@
     background-color: #fff;
     margin: 0;
     padding: 0;
-    height: 175px;
+    height: 149px;
     position: absolute;
-    z-index: 999999999999;
+    z-index: 99999999;
     width: 100%;
 }
 
 .navbar .navbar-brand {
-    position: relative;
+    /* position: relative;
     top: -1%;
     z-index: 9999;
     margin: 0!important;
     padding: 27px 0;
     height: auto;
-    font-size: 0;
+    font-size: 0; */
 }
 
 .navbar .nav_mobile {
@@ -241,12 +234,9 @@
 
 .navbar .menu ul li {
     display: inline-block;
-    padding: 35px 25px;
 }
 
-.scrollOn .navbar .menu ul li {
-    padding: 25px;
-}
+
 
 .navbar .menu ul a {
     color: #002460;
@@ -261,8 +251,31 @@
 
 .navbar #menu-menu {
     float: inherit;
-    display: inline-block;
+    position: relative;
+    display: block;
+    width: calc(100% - 220px);
+    margin: 0 0 0 140px;
+    text-align: center;
 }
+
+
+.navbar #menu-menu {
+    float: inherit;
+    position: relative;
+    display: block;
+    width: calc(100% - 220px);
+    margin: 0 0 0 140px;
+    text-align: center;
+}
+
+.nav_mobile #menu-menu {
+    margin-left: 0 !important;
+}
+
+.navbar-nav > li {
+    float: none;
+}
+
 
 .nav>li>a:focus,
 .nav>li>a:hover {
@@ -289,9 +302,9 @@
 .form_pesquisa_mobile {
     
     position: relative;
+    display: block;
     width: 100%;
     border-radius: 50px;
-    display: none;
     height: 65%;
     margin-top: 15px;
 
@@ -301,6 +314,10 @@
     -moz-transition: all .2s;
     -o-transition: all .2s;
     transition: all .2s;
+}
+
+.busca-top .form_pesquisa_mobile {
+    display: none;
 }
 
 .scrollOn .form_pesquisa_mobile {

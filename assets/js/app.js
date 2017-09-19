@@ -188,7 +188,7 @@ jQuery(document).ready(function($) {
     var scroll = jQuery(window).scrollTop();
     // Do something
     
-    if ( scroll > 86 ) {
+    if ( scroll > 60 ) {
         jQuery('body').addClass('scrollOn');
         jQuery('body').removeClass('scrollOff');
     //jQuery('.scrollOn header#header').addClass('fixed');
@@ -215,3 +215,31 @@ jQuery(document).ready(function($) {
  
   
 });
+
+
+
+ function call2action(id) {
+                
+                //alert('deu certo!');
+                jQuery('body, .mask').addClass('on');
+                jQuery('#'+id).addClass('on');
+                jQuery('.mask').fadeIn(500);
+                
+                
+                jQuery(document).keydown(function (e) {
+                        if(e.which == 27)
+                        {
+                            jQuery('body, .lightBox, .mask').removeClass('on');
+                            jQuery('.mask').fadeOut(300);
+                            return false;
+                        }
+            });
+    }
+    
+    function closeLightbox() {
+                
+                //alert('deu certo!');
+                jQuery('body, .lightBox, .mask').removeClass('on');
+                 jQuery('.mask').fadeOut(300);
+                                
+    }

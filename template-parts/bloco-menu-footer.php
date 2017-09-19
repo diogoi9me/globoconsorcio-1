@@ -1,44 +1,72 @@
 	<div class="layer_menu">
-	<div class="container">
+	<div class="container vPadding">
 		<div class="row">
 		  	<div class="col-md-4 col-sm-12">
 		    	<div class="row">
 		      		<div class="col-xs-6 col-sm-6">
 		        		<ul class="servicos">
 							<li><h4>Serviços</h4></li>
-							<li><a href="#">Acessar meu Consórcio</a></li>
-							<li><a href="#">2a via de boleto</a></li>
-							<li><a href="#">Datas de assembleias</a></li>
-							<li><a href="#">Valores a devolver</a></li>
-							<li><a href="#">Dúvidas Frequentes (FAQ)</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/servicos/">Acessar meu Consórcio</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/servicos/2-via-boletos/">2a via de boleto</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/servicos/datas-assembleias/">Datas de assembleias</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/servicos/valores-devolver">Valores a devolver</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/servicos/ofertas-lances/">Ofertas de Lances</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/faq/">Dúvidas Frequentes (FAQ)</a></li>
 						</ul>
 		      		</div>
 		      		<div class="col-xs-6 col-sm-6">
 		       			<ul class="institucional">
 							<li><h4>Institucional</h4></li>
-							<li><a href="#">Sobre a globo consórcio</a></li>
-							<li><a href="#">Depoimentos de clientes</a></li>
-							<li><a href="#">Parceiros</a></li>
-							<li><a href="#">Consóricio Chevrolet</a></li>
-							<li><a href="#">Onde estamos</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/sobre-a-globo-consorcio/">Sobre a globo consórcio</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/depoimentos/">Depoimentos de clientes</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/consorcio-chevrolet/">Consóricio Chevrolet</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/veiculos/">Nossos Veículos</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/planos/">Nossos Planos</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/consorcio-chevrolet/consorcio-chevrolet/">Descontos para PCD</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/atendimento/">Onde estamos</a></li>
+
 						</ul>
 		      		</div>
 		       		<div class="col-xs-6 col-sm-6">
 				 		<ul class="blog">
 							<li><h4>Blog</h4></li>
-							<li><a href="#">Dicas</a></li>
-							<li><a href="#">Notícias</a></li>
-							<li><a href="#">Pesquisas</a></li>
-							<li><a href="#">Novidades</a></li>
+							 <?php
+                  $menu_name = 'navBlog';
+
+                  if( wp_get_nav_menu_object($menu_name) != '' ) { 
+
+                  $menu = wp_get_nav_menu_object($menu_name);
+                  $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
+                ?>
+                <?php
+                  foreach( $menuitems as $item ):
+                  // set up title and url
+                  $title = $item->title;
+                  $link = $item->url;
+                  $class = $item->classes[0];
+                ?>  
+                <li class="<?php echo $class; ?>">
+                  <a href="<?php echo $link; ?>" title="<?php echo $title; ?>">
+                    <?php echo $title; ?>
+                  </a>
+                </li>                       
+                <?php  endforeach; ?>
+
+                <?php } ?>
+
+
+							<!-- <li><a href="http://chevrolet.globoconsorcio.com.br/blog/dicas/">Dicas</a></li>
+							<li><a href="http://chevrolet.globoconsorcio.com.br/blog/category/noticias/">Notícias</a></li>
+							<li><a href="http://chevrolet.globoconsorcio.com.br/blog/category/pesquisas/">Pesquisas</a></li>
+							<li><a href="http://chevrolet.globoconsorcio.com.br/blog/category/carros/">Carros</a></li> -->
 						</ul>
 		       		</div>
 		       		<div class="col-xs-6 col-sm-6">
 		       	 		<ul class="comprar">
 							<li><h4>Compre Agora</h4></li>
-							<li><a href="#">Simule seu Consórcio</a></li>
-							<li><a href="#">Solicite uma visita</a></li>
-							<li><a href="#">Solicite uma ligação</a></li>
-							<li><a href="#">Compre Online</a></li>
+							<li><a href="<?php echo esc_url( home_url() ); ?>/simulacao/">Simule seu Consórcio</a></li>
+							<li><a href="javascript:call2action('ligar');">Solicite uma Ligação</a></li>
+							<li><a href="javascript:call2action('visitar');">Solicite uma Visita</a></li>
 				 		</ul>
 		       		</div>
 		    	</div>
@@ -47,7 +75,7 @@
 		    	<div class="row">
 		      		<div class="col-xs-12 col-sm-12 facebook">
 
-		      		<?php echo do_shortcode('[efb_likebox fanpage_url="https://www.facebook.com/globoconsorcio/" fb_appid="" box_width="390" box_height=200"" responsive="1" show_faces="1" show_stream="0" hide_cover="0" small_header="1" hide_cta="1" locale="pt_BR"]'); ?>
+		      		<?php echo do_shortcode('[efb_likebox fanpage_url="https://www.facebook.com/globoconsorcio/" fb_appid="" box_width="390" box_height="390" responsive="1" show_faces="1" show_stream="0" hide_cover="0" small_header="1" hide_cta="1" locale="pt_BR"]'); ?>
 					</div>
 				</div>
 			</div>
@@ -67,8 +95,8 @@
 									</div>
 								</div>
 							</div>
-							<i class="animated zoomIn icon-phone"></i><span>(85) 3031-3511</span><br/>
-							<i class="animated zoomIn icon-whatsapp"></i><span>(85) 9999-9999</span>
+							<i class="animated zoomIn icon-phone"></i><span>(85) 3231-9689</span><br/>
+							<i class="animated zoomIn icon-whatsapp"></i><span>(85) 99124-6989</span>
 						</div>
 		      		</div>
 		    	</div>

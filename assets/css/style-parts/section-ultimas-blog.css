@@ -6,12 +6,14 @@
 }
 
 .ultimasblog h2:before {
-    content: url(../../images/bar-title.png);
+     content: '';
     position: absolute;
-    top: 55px;
-    right: -2px;
-    width: 100%;
-    line-height: 100%;
+    bottom: -25px;
+    left: 50%;
+    width: 75px;
+    background: #337ab7;
+    height: 4px;
+    transform: translateX(-50%);
 }
 
 .ultimasblog h2 {
@@ -34,9 +36,6 @@
 
 .ultimasblog .ultimasblog__blocoplanos li {
     display: inline-block;
-    width: 30%;
-    max-width: 100%;
-    margin: 5px 10px;
 }
 
 .ultimasblog .ultimasblog__blocoplanos li div {

@@ -35,7 +35,7 @@
           }elseif( is_single() ) {
             $args = array( 'post_type' => $post_type_custom, 'posts_per_page' => 8, 'order' => 'ASC', 'post__not_in' => array( $post->ID ) );
           }else{
-            $args = array( 'post_type' => $post_type_custom, 'posts_per_page' => 8, 'order' => 'ASC' );
+            $args = array( 'post_type' => $post_type_custom, 'posts_per_page' => 20, 'order' => 'ASC' );
           }     
         $loop = new WP_Query( $args );
 
@@ -68,7 +68,7 @@
               <div class="item">
                 <h4><?php echo the_title(); ?></h4>
                   <a class="image" href="<?php echo get_permalink(); ?>" title="<?php echo the_title_attribute( 'echo=0' ); ?>" rel="bookmark">
-                    <div class="info">
+                    <div class="info intraPadding_2-left intraPadding_2-right">
                       <figure class="hvr-grow wow zoomIn">
                         <?php imagem_destacada('full', 'wow pulse', get_the_title(), '') ?>
                           <figcaption>
@@ -76,7 +76,12 @@
                             <strong><?php echo $parcelas . 'X de <strong>R$ ' . $valorDaParcela . '</strong>' ?></strong>
                           </figcaption>
                       </figure>
-                      <?php trackButton('link', 'productView_'. get_the_ID(), 'Clicado', get_the_title(), get_post_permalink(), get_the_title(), 'productView_'. get_the_ID(), 'btn btn__carros wow zoomIn hvr-hollow', 'Simule aqui'); ?>
+
+                      <p class="call2action center">
+                        <a href="<?php echo get_post_permalink(); ?>" class="button auto blue border hover">SIMULE AGORA</a>
+                    </p>
+
+                      <?php //trackButton('link', 'productView_'. get_the_ID(), 'Clicado', get_the_title(), get_post_permalink(), get_the_title(), 'productView_'. get_the_ID(), 'btn btn__carros wow zoomIn hvr-hollow', 'Simule aqui'); ?>
                     </div>
                   </a>
               </div>

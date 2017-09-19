@@ -360,6 +360,10 @@ if ( function_exists( 'add_theme_support' ) ) {
 
             $editor = $editor[0];
 
+            $texto = get_post_custom_values('wpcf-texto');
+
+            $texto = nl2br( $texto[0] );
+
 
 
             switch ($tipoSlide) {
@@ -373,7 +377,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 
      <h2>' . get_the_title() . '</h2>
 
-       <p>Were a small team of highly skilled<br/> problem solvers specialized</p>
+       <p>' . $texto . '</p>
 
     </div>
 
@@ -592,3 +596,77 @@ function theme_path_sc(){
 
 }
 add_shortcode( 'theme_path', 'theme_path_sc' );
+
+
+function shapeSpace_filter_search($query) {
+  
+  if (!$query->is_admin && $query->is_search) {
+
+    if( isset( $_GET['post_type'] ) ) {
+
+      $query->set('post_type', array( $_GET['post_type'] ) );
+
+    } else {
+
+
+    $query->set('post_type', array('post', 'page', 'planos', 'veiculo', 'duvida-frequente'));
+
+  }
+  
+  }
+
+  return $query;
+}
+add_filter('pre_get_posts', 'shapeSpace_filter_search');
+
+
+function current_filter_search($value){
+
+  if( isset( $_GET['post_type'] ) ) {
+
+    if( $value == $_GET['post_type'] ) {
+      
+      echo 'filtro__ativo';
+
+    }
+
+} elseif( !isset( $_GET['post_type'] ) && $value == 'todos' ) {
+
+       echo 'filtro__ativo';
+
+  }
+
+}
+
+
+
+
+function is_blog_content(){
+
+
+  
+
+  if( is_page('blog') || is_single() && get_post_type() == 'post' || is_category() || is_tag() ){
+    
+    return true;
+
+  }
+
+}
+
+
+
+
+add_filter( 'body_class','my_body_classes' );
+function my_body_classes( $classes ) {
+ 
+    if( is_blog_content() ) {
+
+    $classes[] = 'is_blog';
+
+  }
+
+  return $classes;
+     
+}
+

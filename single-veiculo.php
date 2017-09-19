@@ -1,31 +1,72 @@
 <?php /*Template Name: veiculo single*/ ?>
 <?php get_header(); ?>
 
-<article class="page-single-veiculos">
+
+<?php 
+
+wp_reset_query();
+
+$slug = basename(get_permalink());
+$classItem = $slug;
+
+	
+if ( has_post_thumbnail() ) {
+			
+		//Imagem Destacada	
+			$image_id = get_post_thumbnail_id();
+			$sizeThumbs = 'full';
+			$urlThumbnail = wp_get_attachment_image_src($image_id, $sizeThumbs);
+			$urlThumbnail = $urlThumbnail[0];
+
+} else {
+			$urlThumbnail	= '';
+}
+		
+//Campos Personalizados
+$preco = get_post_custom_values('wpcf-preco');
+$preco = $preco[0];
+//$preco = number_format($preco, 2, ',', '.');
+
+//Porporção
+$proporcao = get_post_custom_values('wpcf-proporcao');
+$proporcao = $proporcao[0];
+
+//Parcelas
+$parcelas = get_post_custom_values('wpcf-parcelas');
+$parcelas = $parcelas[0];
+
+//Valor de Parcela
+$valorDaParcela = get_post_custom_values('wpcf-valor-da-parcela');
+$valorDaParcela = $valorDaParcela[0];
+//$valorDaParcela = number_format($valorDaParcela, 2, ',', '.');
+
+ ?>
+
+<article class="page-single-veiculos leftMain">
 	<div class="bloco-banner animated fadeIn">
-	    <div class="container">
+	    <div class="container vPadding">
 	      <div class="bloco__title-banner">
 	        
 	       
 	        <div class="line line-1">
 		        <div class="currentTitle side">
 		        	<h4 class="bloco-banner__titletopo">Veículos</h4>
-		        <h2 class="bloco-banner__title bloco-banner__title--veiculo animated fadeIn"><?php the_title() ?></h2>
+		        <h2 class="bloco-banner__title bloco-banner__title--veiculo animated fadeIn"><?php echo get_the_title() ?></h2>
 		        </div>
 
 		        
 			        <div class="bloco-banner__veiculo animated fadeIn">
-		  				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/veiculo.png" alt="">		
+		  				<img src="<?php echo $urlThumbnail; ?>" alt="<?php echo get_the_title() ?>">		
 		  			</div>
 
 			        <div class="bloco-banner__texto--veiculo animated fadeIn">
-			          <p>CARTA DE CRÉDITO EQUIVALENTE A 65% DO VALOR DO VEÍCULO.</p>
+			          <p>CARTA DE CRÉDITO EQUIVALENTE A <?php echo $proporcao . '%'; ?> DO VALOR DO VEÍCULO.</p>
 			        </div>
 			    
 
 		        <div class="price animated fadeIn">
-	  				<p>R$ <strong>25.734,00</strong></p>
-	  				<p>84 X R$ <strong>392,00</strong></p>
+	  				<p><strong>R$ <?php echo $preco; ?></strong></p>
+	  				<p><?php echo $parcelas; ?> X <strong>R$ <?php echo $valorDaParcela; ?></strong></p>
 	  			</div>	
   			</div>
 
@@ -38,12 +79,12 @@
 
 	
 
-  	<div class="bloco__simulacao bloco__simulacao--single animated fadeInUp">
+  	<div class="bloco__simulacao bloco__simulacao--single animated fadeInUp animate">
 			<div class="bloco-header bloco-header--simulacao bloco-header--simulacao-single">
 				<h2 class="bloco-header__title bloco-header__title--simulacao bloco-header__title--single">SOLICITE UMA SIMULAÇÃO JÁ!</h2>
 			</div>
 			<div>
-				<?php echo do_shortcode('[contact-form-7 id="189" title="Pedido de simulação Página Consorcio Chevrolet_copy"] ');?>
+				<?php echo do_shortcode('[contact-form-7 id="363" title="Pedido de simulação - INTERNA - VEÍCULO"] ');?>
 			</div>
 		</div>
 
@@ -94,19 +135,9 @@
 			</div>
 		</div> -->
 		<!-- bloco__filter -->
-		<div class="container">
+		<div class="container vPadding topPadding_2 bottomPadding">
 			<div class="bloco__post">
-				<h2 class="bloco__post-title">Conheça os detalhes do chevrolet onix joy</h2>
-				<p class="bloco__post-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sapiente delectus libero. At facilis quas fuga veritatis unde doloremque aspernatur consequuntur neque distinctio nesciunt adipisci, harum optio dicta aut ducimus.</p>
-				<div class="bloco__post-card">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-post.png" alt="">
-					<div class="bloco__post-card-info">
-						<h2 class="bloco__post-card-info-title">Performace</h2>
-						<h6 class="bloco__post-card-info-subtitle">Desempenho e conforto para os dias de hoje.</h6>
-						<p class="bloco__post-card-info-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repellendus distinctio possimus, rem reprehenderit minus optio quos consectetur deserunt ad quisquam architecto atque natus commodi! Consectetur similique laborum, reiciendis assumenda.</p>
-					
-					</div>
-				</div>
+				<?php echo the_content(); ?>
 			</div>
 		</div>
 	</div>
@@ -114,4 +145,5 @@
 
 
 </article>
+<?php get_template_part('template-parts/newsletter'); ?> 
 <?php get_footer(); ?>

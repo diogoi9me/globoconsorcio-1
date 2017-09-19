@@ -15,7 +15,7 @@ $resumoPage = $resumoPage[0];
 
 <article class="page-veiculos">
 	<div class="bloco-banner animated fadeIn">
-	    <div class="container">
+	    <div class="container vPadding">
 	      <div class="bloco__title-banner">
 	        <div class="line line-1">
 		        <div class="currentTitle side">
@@ -47,5 +47,5 @@ $resumoPage = $resumoPage[0];
 
 	    
 </article>
-
+<?php get_template_part('template-parts/newsletter'); ?> 
 <?php get_footer(); ?>

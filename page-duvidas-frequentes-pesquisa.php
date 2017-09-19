@@ -1,25 +1,13 @@
-<?php /*Template Name: Pesquisa - FAQ */ ?>
 <?php get_header(); ?>
-
-<?php 
-	global $page;
-	$slug_page=$page->post_name;
-
-	//Busca dados no campo personalizado da Página
-	$resumoPage = get_post_custom_values('wpcf-editor-html-texto');
-	$resumoPage = $resumoPage[0];
-?>
-
-
 <article class="page-atendimento faq internas">
 	
 
 	<div class="bloco-banner animated fadeIn">
-	    <div class="container">
+	    <div class="container vPadding">
 	      <div class="bloco__title-banner">
 		      <div class="line line-1">
 			        <div class="currentTitle">
-		        		<h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php the_title() ?></h2>
+		        		<h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn">RESULTADO DA BUSCA</h2>
 		        	</div>
 	        	</div>
 	        	<div class="line line-2">
@@ -30,32 +18,14 @@
   	</div>
 
 
-  	<div class="bloco__filter v2">
-  <div class="container colls colls-2 separator">
-   
-      <div class="filtro coll contato">
-        <a href="<?php echo get_home_url(); ?>/atendimento">
-          <span class="filtro__title ">CONTATOS</span>
-        </a>
-      </div>
-	
-      <div class="filtro coll duvida filtro__ativo">
-        <a href="<?php echo get_home_url(); ?>/faq">
-          <span class="filtro__title ">DÚVIDAS FREQUENTES (FAQ)</span>
-        </a>
-      </div>
-   
-   
-   </div>
-</div>
-
-
-	
-
-
 		<header class="bloco-header">
+		<?php if ( have_posts() ) : ?>
 			<h4 class="bloco-header__toptitle">RESULTADO DA</h4>
-			<h2 class="bloco-header__title">BUSCA NO FAQ</h2>
+			<h2 class="bloco-header__title">BUSCA NO SITE</h2>
+		<?php else : ?>
+			<h4 class="bloco-header__toptitle">A BUSCA RETORNOU</h4>
+			<h2 class="bloco-header__title">SEM RESULTADO</h2>
+		<?php endif; ?>
 		</header>
 
 		
@@ -64,46 +34,49 @@
 
 		<div class="nRow colls colls-full">
 				<div class="coll barra blue hPadding vPadding">
-					<form class="form formStyle intraColls searchFaq intraPadding_3">
+					 <form role="search" method="get" id="form_pesquisa" class="form_pesquisa_mobile" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<fieldset>
 						<p class="coll coll-main">
 							<label>VOCÊ PESQUISOU POR:</label>
-							<input type="text"  name="teste" placeholder="VARIÁVEL DA BUSCA" />
+							<input type="search"  name="s" placeholder="<?php echo $_GET['s']; ?>" />
 						</p>
 						<p class="coll coll-side call2action">
-							<input type="submit" class="buttonSend animate"  name="teste" value="ATUALIZAR" />
+							<input type="submit" class="buttonSend animate" value="ATUALIZAR" />
 						</p>
 					</form>	
 				</div>
 		</div>
 		<ul class="nRow grid items border colls colls-2 vPadding hPadding faqList shadowHover">
 			
-			<li class="coll item intraMargin-bottom animate">
-				<a class="intraPadding_2 animate" href="#">
-					<h5 class="title">EXEMPLO DE UMA DÚVIDA FREQUENTE, ESRITO EM ATÉ DUAS LINHAS E LISTADO EM DUAS COLUNAS</h5>
-				</a>
-			</li>
 
-			<li class="coll item intraMargin-bottom animate">
-				<a class="intraPadding_2 animate" href="#">
-					<h5 class="title">EXEMPLO DE UMA DÚVIDA FREQUENTE, ESRITO EM ATÉ DUAS LINHAS E LISTADO EM DUAS COLUNAS</h5>
-				</a>
-			</li>
+			<?php
+				if ( have_posts() ) :
+			/* Start the Loop */
+			while ( have_posts() ) : the_post();
 
-			<li class="coll item intraMargin-bottom animate">
-				<a class="intraPadding_2 animate" href="#">
-					<h5 class="title">EXEMPLO DE UMA DÚVIDA FREQUENTE, ESRITO EM ATÉ DUAS LINHAS E LISTADO EM DUAS COLUNAS</h5>
-				</a>
-			</li>
+				/**
+				 * Run the loop for the search to output the results.
+				 * If you want to overload this in a child theme then include a file
+				 * called content-search.php and that will be used instead.
+				 */
+				//get_template_part( 'template-parts/post/content', 'excerpt' );
+				get_template_part('template-parts/search', 'global');
 
-			<li class="coll item intraMargin-bottom animate">
-				<a class="intraPadding_2 animate" href="#">
-					<h5 class="title">EXEMPLO DE UMA DÚVIDA FREQUENTE, ESRITO EM ATÉ DUAS LINHAS E LISTADO EM DUAS COLUNAS</h5>
-				</a>
-			</li>
+			endwhile; // End of the loop.
 
-			
-		</ul>
+			// the_posts_pagination( array(
+			// 	'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
+			// 	'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
+			// 	'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+			// ) );
+
+			else : ?>
+
+			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?></p>
+
+			<?php endif; ?>
+
+
 		<div class="nRow colls colls-full">
 				<div class="coll barra greyscale hPadding vPadding">
 				<p class="horario">Você conseguiu <strong>encontrar</strong> o que <strong>procurava?</strong>. Você pode nos enviar as suas dúvidas para <strong>contato@globoconsorcio.com.br</strong>.
@@ -115,5 +88,5 @@
 
 
 </article>
-
+<?php get_template_part('template-parts/newsletter'); ?> 
 <?php get_footer(); ?>

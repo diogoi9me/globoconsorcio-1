@@ -3,7 +3,7 @@
 
 <article class="page-single-veiculos">
 	<div class="bloco-banner animated fadeIn">
-	    <div class="container">
+	    <div class="container vPadding">
 	      <div class="bloco__title-banner">
 	        
 	       
@@ -14,9 +14,9 @@
 		        </div>
 
 		        
-			        <div class="bloco-banner__texto description animated fadeIn">
-                		<?php echo get_the_excerpt(); ?>
-              		</div>
+			        <!-- <div class="bloco-banner__texto description animated fadeIn">
+                		<?php // echo get_the_excerpt(); ?>
+              		</div> -->
 
   			</div>
 
@@ -27,10 +27,10 @@
 	    </div>  
   	</div>
 
-  		<header class="bloco-header">
+  		<header class="bloco-header topPadding">
 			<h4 class="bloco-header__toptitle">CONHEÇA O</h4>
 			<h2 class="bloco-header__title"><?php echo get_the_title(); ?></h2>
-			<p class="bloco-header__subtitle"><?php echo get_the_excerpt(); ?></p>
+			<p class="bloco-header__subtitle"><?php echo nl2br( get_the_excerpt() ); ?></p>
 		</header>
   		
   		<main class="vPadding bottomPadding">
@@ -44,13 +44,13 @@
 					<h2 class="bloco-header__title bloco-header__title--simulacao">Solicite a <strong>simulação</strong> do seu<br/><strong>desconto</strong>, agora! </h2>
 				</div>
 				<div>
-					<?php echo do_shortcode('[contact-form-7 id="180" title="Pedido de simulação_copy"] ');?>
+					<?php echo do_shortcode('[contact-form-7 id="364" title="Pedido de simulação - INTERNA - PLANO"] ');?>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="outros-planos">
+	<div class="outros-planos bottomPadding">
 		<h2 class="outros-planos__title">Conheça outros <strong>Planos</strong></h2>
 
 		  <!--nossos planos-->
@@ -72,4 +72,5 @@
 
 
 </article>
+<?php get_template_part('template-parts/newsletter'); ?> 
 <?php get_footer(); ?>

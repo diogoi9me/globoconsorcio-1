@@ -5,14 +5,19 @@
     padding-bottom: 90px;
 }
 
-.atendimento h2:before {
-    content: url(../../images/bar-title.png);
+
+
+.atendimento h2:after {
+    content: '';
     position: absolute;
-    top: 55px;
-    right: -2px;
-    width: 100%;
-    line-height: 100%;
+    bottom: -25px;
+    left: 50%;
+    width: 75px;
+    background: #337ab7;
+    height: 4px;
+    transform: translateX(-50%);
 }
+
 
 .atendimento h2 {
     color: #000;
@@ -83,6 +88,7 @@
     border-radius: 20px;
     color: #003793;
     border: 2px solid #003793;
+    float: left;
 }
 
 .atendimento .form {

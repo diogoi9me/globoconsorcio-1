@@ -14,7 +14,7 @@
 
 .area_video_banner .content {
     position: absolute;
-    z-index: 999999999;
+    z-index: 999999;
     display: block;
     width: 100%;
     height: auto;
@@ -78,7 +78,7 @@
 }
 
 .area_video_banner .content p {
-    text-transform: none;
+    text-transform: uppercase;
     opacity: 1;
     font-size: 23px;
     display: inline-block;
@@ -93,7 +93,7 @@ nks p {
 .demo {
     height: 100%;
     padding: 0;
-    z-index: 999999;
+    z-index: 99999;
     background-color: rgba(0, 13, 51, .65)
 }
 

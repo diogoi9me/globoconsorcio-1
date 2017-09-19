@@ -1,242 +1,169 @@
-<?php 
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
-
-
-get_header(); ?>
+<?php /*Template Name: BLOG */ ?>
+<?php get_header(); ?>
 
 <?php 
-global $page;
+	global $page;
+	$slug_page=$page->post_name;
 
-$slug_page=$page->post_name;
+	//Busca dados no campo personalizado da Página
+	$resumoPage = get_post_custom_values('wpcf-editor-html-texto');
+	$resumoPage = $resumoPage[0];
+?>
 
-//Busca dados no campo personalizado da Página
-$resumoPage = get_post_custom_values('wpcf-editor-html-texto');
-$resumoPage = $resumoPage[0];
+
+<article class="page-blog internas leftMain blogContainer">
+	
+
+	<div class="bloco-banner animated fadeIn">
+	    <div class="container vPadding">
+	      <div class="bloco__title-banner">
+		      <div class="line line-1">
+			        <div class="currentTitle">
+			        	<h4 class="bloco-banner__titletopo">BLOG / CATEGORIA</h4>
+		        		<h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php single_cat_title(); ?></h2>
+		        	</div>
+	        	</div>
+	        	<div class="line line-2">
+	        		<?php get_template_part('template-parts/breadcrumb'); ?>
+	        	</div>
+	      </div>
+	    </div>  
+  	</div>
+
+		<header class="bloco-header vPadding hPadding_2 container-single">
+			<h4 class="bloco-header__toptitle">CATEGORIA</h4>
+			<h2 class="bloco-header__title"><?php single_cat_title(); ?></h2>
+			<!-- <p class="bloco-header__subtitle"><?php // echo $resumoPage; ?></p> -->
+		</header>	
+
+		<main class="mainContent container-single">
 
 
- ?>
+		<?php //get_template_part('template-parts/servicos', 'list'); ?>
 
-<article class="page-veiculos">
-	<div class="bloco-banner">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-banner.png" alt="">
-		<div class="container">
+
+		    <ul class="nRow grid items border colls colls-1 vPadding bottomPadding">
+
+		    <?php
+			if ( have_posts() ) :
+
+				/* Start the Loop */
+				while ( have_posts() ) : the_post();
+
+			?>
+    
+			      <li class="coll item intraMargin-bottom animate">
+			        
+			        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+						<thead>
+							<tr>
+								<td class="date intraPadding_3"><?php the_date('d/m'); ?></td>
+								<td class="titlePost intraPadding_3">
+									<h5 class="title"><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h5>
+								</td>
+								<td class="comments intraPadding_3"><span><?php comments_number( '0', '1', '%' ); ?></span></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="3" class="intraPadding_2"><?php echo get_the_content(); ?></td>
+							</tr>
+						</tbody>
+			        </table>
+			      </li>
+
+
+			      <?php endwhile; ?>
+
+			      <?php endif; ?> 
+         
+
+    		</ul>
+
+		
 			
-				<h2 class="bloco-banner__title">
-				
+		</main>
+
+		<div class="sidebar">
+			<div class="search intraPadding_2">
+				<header>
+					<h4 class="title">PESQUISAR</h4>
+				</header>
+				<main>
+
+					<form role="search" method="get" id="form_pesquisa" class="form_pesquisa_mobile" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<input type="hidden" name="post_type" value="post">
+						<label class="labelForm" for="s">O QUE VOCÊ ESTÁ BUSCANDO?</label>
+						<input class="keyword" type="search" name="s" placeholder="DIGITE A SUA PESQUISA">
+						<input class="submit" type="submit" value="" />
+					</form>
+
+				</main>
+			</div>
+
+			<div class="category intraPadding_2">
+				<header>
+					<h4 class="title">CATEGORIAS</h4>
+				</header>
+				<main>
+				<ul>
 				<?php 
 
-					if ( is_category() ) {
-
-						echo "CAT: SIM";
+					$categories = get_categories( array(
+					    'orderby' => 'name',
+					    'parent'  => 0
+					) );
+					 
+					foreach ( $categories as $category ) {
+					    printf( '<li><a href="%1$s">%2$s</a></li>',
+					        esc_url( get_category_link( $category->term_id ) ),
+					        esc_html( $category->name )
+					    );
 					}
 
 				 ?>
-
-				<?php the_title() ?>
 					
-				</h2>
-					
-				<div class="bloco-banner__texto">
-					<?php echo $resumoPage; ?>
-				</div>
-			
-		</div>	
-	</div>
-	
-	<div class="container">
+					</ul>
+				</main>
+			</div>
 
-	<div class="col-md-2 col-xs-mobile">
-			<div class="filtro filtro__ativo">
-				<a href="#">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-all.png" alt="">
-					<span class="filtro__title ">Todos</span>
-				</a>
+			<div class="archive intraPadding_2">
+				<header>
+					<h4 class="title">ARQUIVOS</h4>
+				</header>
+				<main>
+
+					<ul>
+						<?php wp_get_archives( array( 'type' => 'monthly', 'limit' => 12 ) ); ?>
+					</ul>
+
+				</main>
+			</div>
+
+			<div class="comments intraPadding_2">
+				<header>
+					<h4 class="title">COMENTÁRIOS</h4>
+				</header>
+				<main>
+					<ul>
+						<?php
+$args = array(
+	//'status' => 'hold',
+	'number' => '5',
+	//'post_id' => 1, // use post_id, not post_ID
+);
+$comments = get_comments($args);
+foreach($comments as $comment) :
+	echo($comment->comment_author . '<br />' . $comment->comment_content);
+endforeach;
+?>
+					</ul>
+				</main>
 			</div>
 		</div>
 
-	<?php 
-	
-	//Organizando o filtro para listagem das categorias
-	$args = array( 'hide_empty' => '0', 'order' => 'ASC' );
-	$terms = get_terms( 'categoria-do-veiculo', $args );
 
 
-//Listando as categorias
-if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
-
-foreach ( $terms as $term ) {
-
-$termLink = esc_url( get_term_link( $term ) );
-
-	 ?>
-		<div class="col-md-1 col-xs-mobile-separador">
-			<div class="bloco-opcoes__divisor"></div>
-		</div>
-		<div class="col-md-2 col-xs-mobile">
-			<div class="filtro filtro">
-				<a href="<?php echo $termLink; ?>">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-all.png" alt="">
-					<span class="filtro__title "><?php echo $term->name; ?></span>
-				</a>
-			</div>
-		</div>
-		
-		<?php } } ?>
-
-		<!-- <div class="col-md-2">
-			<div class="filtro">
-				<a href="#">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-carros.png" alt="">
-					<span class="filtro__title">Carros</span>
-				</a>
-			</div>
-		</div>
-		<div class="col-md-1">
-			<div class="bloco-opcoes__divisor"></div>
-		</div>
-		<div class="col-md-2">
-			<div class="filtro">
-				<a href="#">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-suvs.png" alt="">
-					<span class="filtro__title">Suvs</span>
-				</a>
-			</div>
-		</div>
-		<div class="col-md-1">
-			<div class="bloco-opcoes__divisor"></div>
-		</div>
-		<div class="col-md-2">
-			<div class="filtro">
-				<a href="#">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-picape.png" alt="">
-					<span class="filtro__title">Picapes</span>
-				</a>
-			</div>
-		</div>
-		 -->
-	</div>
-	<!--nossos carros-->
-
-	<section class="nossos-carros effect" id="carros">
-
-	  <div class="containe-owl">
-
-	    <div class="row">
-
-	        <div class="title-carousel">
-
-	          <h2 class="title"><span>Nossos</span>Carros</h2>
-
-	          <h6><a href="#" title="Ver todos">Ver todos</a></h6>
-
-	        </div>
-
-	    </div>
-
-	    <div id="owl-carros" class="owl-carousel owl-theme">
-
-
-
-	      <?php
-
-	        $args = array( 'post_type' => 'oferta', 'posts_per_page' => 8, 'order' => 'ASC' );
-
-	        $loop = new WP_Query( $args );
-
-
-
-	          while ( $loop->have_posts() ) : $loop->the_post();
-
-	    
-
-	          $slug = basename(get_permalink());
-
-	          $classItem = $slug;
-
-	    
-
-	            //Campos Personalizados
-
-	            $preco = get_post_custom_values('wpcf-preco');
-
-	            $preco = $preco[0];
-
-	            $preco = number_format($preco, 2, ',', '.');
-
-
-
-	            $parcelas = get_post_custom_values('wpcf-parcelas');
-
-	            $parcelas = $parcelas[0];
-
-
-
-	            $valorDaParcela = get_post_custom_values('wpcf-valor-da-parcela');
-
-	            $valorDaParcela = $valorDaParcela[0];
-
-	            $valorDaParcela = number_format($valorDaParcela, 2, ',', '.');
-
-	      ?> 
-
-
-
-	      <div class="item">
-
-	        <h4><?php echo the_title(); ?></h4>
-
-	        <a class="image" href="<?php echo get_permalink(); ?>" title="<?php echo the_title_attribute( 'echo=0' ); ?>" rel="bookmark">
-
-	          <div class="info">
-
-	            <figure class="hvr-grow wow zoomIn">
-
-	              <?php 
-
-	                imagem_destacada('full', 'wow pulse', get_the_title(), '')
-
-	              ?>
-
-	              <figcaption>
-
-	                <span><?php echo $preco ?></span>
-
-	                <strong><?php echo $parcelas . 'X de <strong>' . $valorDaParcela . '</strong>' ?></strong>
-
-	              </figcaption>
-
-	            </figure>
-
-
-
-	            <?php trackButton('link', 'productView_'. get_the_ID(), 'Clicado', get_the_title(), get_post_permalink(), get_the_title(), 'productView_'. get_the_ID(), 'btn btn__carros wow zoomIn hvr-hollow', 'Simule aqui'); ?>
-
-	          </div>
-
-	        </a>
-
-	      </div>
-
-	      <?php endwhile; ?>   
-
-	    </div>
-
-	  </div>
-		<div class="col-md-12">
-			<div class="btn-carregar-mais">
-				<a href="#" title="carregar mais">Carregar Mais</a>
-			</div>
-		</div>
-	</section>
 </article>
-
+<?php get_template_part('template-parts/newsletter'); ?> 
 <?php get_footer(); ?>

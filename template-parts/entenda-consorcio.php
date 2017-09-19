@@ -2,8 +2,7 @@
 <section class="consorcio effect" id="consorcio">
   <div class="containe-owl">
      <h2 class="title"><span>Entenda o</span>Consórcio</h2>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in magni veniam fugiat, at eum aliquam assumenda hic doloribus, perferendis quo velit eius, ipsum blanditiis ratione possimus qui!</p>
-
+     <p>O consórcio é uma ótima opção para quem quer adquirir um bem, com parcelas mais baixas que um financiamento bancário e com menos exigências. Se você quer adquirir um carro o mais rápido possível, mas não tem condições de pagá-lo a vista, o consórcio te dá o caminho mais fácil para realizar o seu sonho.</p>
     <div id="owl-consorcio" class="owl-carousel owl-theme">
       <div class="item">
         <i class="icon-pass1"></i>

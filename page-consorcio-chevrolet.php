@@ -3,7 +3,7 @@
 
 <article class="page-consorcio-chevrolet">
 	<div class="bloco-banner animated fadeIn">
-	    <div class="container">
+	    <div class="container vPadding">
 	      <div class="bloco__title-banner">
 	      	<h4 class="bloco-banner__titletopo">Entenda o Consórcio</h4>
 	        <h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php the_title() ?></h2>
@@ -17,7 +17,7 @@
 	  <div class="container colls colls-2 separator">
 	   
 	      <div class="filtro coll vantagem filtro__ativo">
-	        <a href="<?php echo get_home_url(); ?>/consorcio-chevroler/">
+	        <a href="<?php echo get_home_url(); ?>/consorcio-chevrolet/">
 	          <span class="filtro__title ">Vantagens do <br/> Consórcio Chevrolet</span>
 	        </a>
 	      </div>
@@ -40,126 +40,87 @@
 	<div class="col-md-12">
 
 		<div class="bloco-header">
-			<h4 class="bloco-header__toptitle">Consórcio Nacional Chevrolet</h4>
-			<h2 class="bloco-header__title">TÍTULO EXEMPLO EXEMPLO</h2>
+			<h4 class="bloco-header__toptitle">CONHEÇA AS VANTAGENS DO</h4>
+			<h2 class="bloco-header__title">CONSÓRCIO NACIONAL CHEVROLET</h2>
 
-				<p class="bloco-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in magni veniam fugiat, at eum aliquam assumenda hic doloribus, perferendis quo velit eius, ipsum blanditiis ratione possimus qui!</p>
+				<p class="bloco-header__subtitle">O Consórcio Nacional Chevrolet é uma ótima opção para quem quer adquirir um bem, com parcelas mais baixas que um financiamento bancário e com menos exigências. Se você quer adquirir um carro o mais rápido possível, mas não tem condições de pagá-lo a vista, o consórcio te dá o caminho mais fácil para realizar o seu sonho</p>
 		</div>
 
 	</div>
 
 
 
-	<div class="sobre__info sobre__info--consorcio">
+	<div class="sobre__info sobre__info--consorcio hPadding">
 		<div class="container">
 			<i class="icon-aspas-white"></i>
-			<p class="sobre__info--conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam asperiores, accusamus voluptatem amet quo. Sed fugit ipsum aliquam, veniam nam tempore cumque? Dolores nemo, error quae temporibus ipsum eius!</p>
+			<p class="sobre__info--conteudo">O consórcio que oferece o melhor meio de adquirir o seu bem em menos tempo, em até 84 parcelas sem juros!</p>
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="vPadding topMargin_2">
 		
 	
 		<div class="cards">
-			<div class="cards__item cards__item--chevrolet">
+			<div class="cards__item investimento intraPadding">
 				<div class="cards__item-info">
 					<div class="cards__item-imagem">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-investir.png" alt="">
-						<h3 class="cards__item-title">Mais de 20 anos <span>de globo consorcio</span></h3>
+						<i class="icon"></i>
+						<h3 class="cards__item-title">INVESTIMENTO<br />SEGURO</h3>
 					</div>
 					<div class="bloco-cards-info__conteudo">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit sit amet, consectetur adipisicing elit....</p>
-						<br/>
-						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-						</ul>
+						<p>O consórcio é um meio seguro de poupar dinheiro visando uma aquisição futura de um bem ou serviço, garantindo de forma segura e planejada o investimento no seu sonho e ao mesmo tempo possibilitando formas de contemplação imediata do bem, mediante sorteios e ofertas de lance
 					</div>
 				</div>
 			</div>
-			<div class="cards__item cards__item--chevrolet">
+			<div class="cards__item planos intraPadding">
 				<div class="cards__item-info">
 					<div class="cards__item-imagem">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-planos.png" alt="">
-						<h3 class="cards__item-title">Mais de 20 anos<br/> de globo consorcio</h3>
+						<i class="icon"></i>
+						<h3 class="cards__item-title">PLANOS COM ATÉ<br/>84 MESES</h3>
 					</div>
 					<div class="bloco-cards-info__conteudo">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit sit amet, consectetur adipisicing elit....</p>
-						<br/>
-						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-						</ul>
+						<p>No consórcio Chevrolet, você tem a possibilidade de alcançar o seu sonho através de planos com até 84 parcelas sem juros! </p>
+						<p class="call2action center topMargin_3">
+							<a href="<?php echo get_home_url(); ?>/planos/" class="button auto blue border hover">CONHEÇA OS NOSSOS PLANOS</a>
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="cards__item cards__item--chevrolet">
+			<div class="cards__item zero intraPadding">
 				<div class="cards__item-info">
 					<div class="cards__item-imagem">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-zero.png" alt="">
-						<h3 class="cards__item-title">Mais de 20 anos<br/> de globo consorcio</h3>
+						<i class="icon"></i>
+						<h3 class="cards__item-title">ZERO DE JUROS<br/>E ZERO DE ENTRADA</h3>
 					</div>
 					<div class="bloco-cards-info__conteudo">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit sit amet, consectetur adipisicing elit....</p>
-						<br/>
-						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-						</ul>
+						<p>As parcelas do seu bem serão destituídas de juros e não há necessidade de um valor de entrada para ingressar no grupo de consórcio, tornando as suas parcelas mais baixas, facilitando a realização do seu sonho.</p>
+						
+						<p class="call2action center topMargin_3">
+							<a href="<?php echo get_home_url(); ?>/veiculos/" class="button auto blue border hover">CONHEÇA OS NOSSOS VEÍCULOS</a>
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="cards__item cards__item--chevrolet">
+			<div class="cards__item pcd intraPadding">
 				<div class="cards__item-info">
 					<div class="cards__item-imagem">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-pcd.png" alt="">
-						<h3 class="cards__item-title">Mais de 20 anos<br/> de globo consorcio</h3>
+						<i class="icon"></i>
+						<h3 class="cards__item-title">DESCONTOS<br/>PARA PCD</h3>
 					</div>
 					<div class="bloco-cards-info__conteudo">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit sit amet, consectetur adipisicing elit....</p>
-						<br/>
-						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-						</ul>
+						<p>As leis federal e municipal vigentes garantem redução ou até mesmo isenção de impostos para pessoas que apresentam um comprometimento na mobilidade por decorrência de deficiência física. Com esse direito, é possível comprar um veículo com valor menor do que o valor médio do mesmo carro aplicado no varejo...
+						</p>
+						
+						<p class="call2action center topMargin_3">
+							<a href="<?php echo get_home_url(); ?>/consorcio-chevrolet/descontos-para-pcd/" class="button auto blue border hover">SAIBA COMO OBTER O SEU DESCONTO</a>
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-
-
-
-
-
-
-
 </article>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<?php get_template_part('template-parts/newsletter'); ?> 
 <?php get_footer(); ?>

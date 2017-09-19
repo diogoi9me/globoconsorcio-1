@@ -15,15 +15,15 @@
 	
 
 	<div class="bloco-banner animated fadeIn">
-	    <div class="container">
+	    <div class="container vPadding">
 	      <div class="bloco__title-banner">
 		      <div class="line line-1">
-			        <div class="currentTitle side">
+			        <div class="currentTitle">
 		        		<h2 class="bloco-banner__title bloco-banner__title--facil animated fadeIn"><?php the_title() ?></h2>
 		        	</div>
-		        	<div class="bloco-banner__texto description animated fadeIn">
+		        	<!-- <div class="bloco-banner__texto description animated fadeIn">
 		         		<?php echo $resumoPage; ?>
-		        	</div>
+		        	</div> -->
 	        	</div>
 	        	<div class="line line-2">
 	        		<?php get_template_part('template-parts/breadcrumb'); ?>
@@ -53,14 +53,11 @@
 </div>
 
 
-	
-
-
 		<header class="bloco-header">
 			<h4 class="bloco-header__toptitle">Nossos</h4>
 			<h2 class="bloco-header__title">Contatos</h2>
+			<p class="bloco-header__subtitle"><?php echo $resumoPage; ?></p>
 		</header>
-
 		
 
 		<main class="mainContent">
@@ -69,8 +66,8 @@
 				<div class="coll barra blue hPadding vPadding">
 					
 					<ul class="items contacts phones">
-						<li class="item contact phone"><span class="value">(85) 3333-3333</span></li>
-						<li class="item contact wpp"><span class="value">(85) 99999-9999</span></li>
+						<li class="item contact phone"><span class="value">(85) 3231-9689</span></li>
+						<li class="item contact wpp"><span class="value">(85) 99124-6989</span></li>
 					</ul>
 
 				</div>
@@ -78,8 +75,10 @@
 		<div class="nRow blocks colls colls-2">
 			
 			<div class="coll block formMail hPadding vPadding">
+
+			<?php echo do_shortcode( '[contact-form-7 id="414" title="Fale Conosco" html_class="form formStyle intraColls"]' ); ?>
 				
-				<form class="form formStyle intraColls">
+				<!-- <form class="form formStyle intraColls">
 					<fieldset>
 						<legend><span>FALE CONOSCO</span></legend>
 						
@@ -107,7 +106,7 @@
 
 					</fieldset>
 				</form>
-
+ -->
 			</div>
 
 			<div class="coll block map">
@@ -131,5 +130,5 @@
 
 
 </article>
-
+<?php get_template_part('template-parts/newsletter'); ?> 
 <?php get_footer(); ?>

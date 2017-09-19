@@ -15,7 +15,7 @@
 	
 
 	<div class="bloco-banner animated fadeIn">
-	    <div class="container">
+	    <div class="container vPadding">
 	      <div class="bloco__title-banner">
 		      <div class="line line-1">
 			        <div class="currentTitle">
@@ -56,6 +56,7 @@
 		<header class="bloco-header">
 			<h4 class="bloco-header__toptitle">( FAQ )</h4>
 			<h2 class="bloco-header__title">DÚVIDAS FREQUENTES</h2>
+			<p class="bloco-header__subtitle"><?php echo $resumoPage; ?></p>
 		</header>
 
 		
@@ -64,14 +65,15 @@
 
 		<div class="nRow colls colls-full">
 				<div class="coll barra blue hPadding vPadding">
-					<form class="form formStyle intraColls searchFaq intraPadding_3">
+					<form class="form formStyle intraColls searchFaq intraPadding_3" action="<?php echo home_url(); ?>">
 					<fieldset>
 						<p class="coll coll-main">
 							<label>O QUE VOCÊ ESTÁ PROCURANDO?</label>
-							<input type="text"  name="teste" placeholder="CONTEMPLAÇÃO, REGRAS, ..." />
+							<input type="search"  name="s" placeholder="CONTEMPLAÇÃO, REGRAS, ..." />
 						</p>
 						<p class="coll coll-side call2action">
-							<input type="submit" class="buttonSend animate"  name="teste" value="BUSCAR" />
+							<input type="submit" class="buttonSend animate" value="BUSCAR" />
+							<input type="hidden" name="post_type" value="duvida-frequente">
 						</p>
 					</form>	
 				</div>
@@ -118,5 +120,5 @@
 
 
 </article>
-
+<?php get_template_part('template-parts/newsletter'); ?> 
 <?php get_footer(); ?>

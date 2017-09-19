@@ -5,14 +5,19 @@
     padding-bottom: 70px;
 }
 
-.consorcio h2:before {
-    content: url(../../images/bar-title.png);
+
+.consorcio h2:after {
+    content: '';
     position: absolute;
-    top: 55px;
-    right: -2px;
-    width: 100%;
-    line-height: 100%;
+    bottom: -25px;
+    left: 50%;
+    width: 75px;
+    background: #337ab7;
+    height: 4px;
+    transform: translateX(-50%);
 }
+
+
 
 .consorcio h2 {
     color: #000;
@@ -27,18 +32,22 @@
 }
 
 .consorcio p:before {
-    content: url(../../images/bar-paragrafo.png);
+    content: '';
     position: absolute;
-    top: 76px;
-    right: 140px;
+    bottom: -15px;
     z-index: 999;
+    left: 50%;
+    margin: 0 0 0 -35px;
+    width: 70px;
+    height: 1px;
+    background: #CCC;
 }
 
 .consorcio p {
     position: relative;
     display: inline-block;
     width: 360px;
-    text-align: left;
+    text-align: center;
     margin-top: 30px;
     font-size: 16px;
 }

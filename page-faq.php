@@ -116,5 +116,5 @@
 
 </article>
 
-
+<?php get_template_part('template-parts/newsletter'); ?> 
 <?php get_footer(); ?>

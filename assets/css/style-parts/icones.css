@@ -4,14 +4,18 @@
     width: 95px;
 }
 .icon-logo,.icon-logo-footer,.icon-globo,.icon-logo-footer,.icon-inoveme,.icon-aspas,.icon-aspas-white,
-.icon-fiat,.icon-calculadora,.icon-security,.icon-facebook,.icon-instagram-1,.icon-phone,.icon-youtube-play,
+.icon-gm,.icon-calculadora,.icon-security,.icon-facebook,.icon-instagram-1,.icon-phone,.icon-youtube-play,
 .icon--youtube-play,.icon-porcento,.icon-atendimento,.icon-certificada,.icon-colaboradores,.icon-desconto,
 .icon-tempo,.icon,.icon-clientes-ativos,.icon-clientes-contemplados,.icon-consorcio-chevrolet,.icon-pesquisa,
 .icon-pesquisa-mobile,.icon-send, .icon-search-light{
     display: inline-block;
+    text-align: center;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
 }
 
-.icon-logo,.icon-logo-footer{
+.icon-logo-footer{
     background: url(../../images/spritesA.png)no-repeat 53% 0%;
     height: 41px;
     width: 93px;
@@ -40,7 +44,7 @@
     width: 62px;
     height: 53px;
 }
-.icon-fiat{
+.icon-gm{
     background: url(../../images/spritesA.png)no-repeat 64.3% 0%;
     width: 53px;
     height: 15px;
@@ -98,7 +102,7 @@
     width: 85px;
 }
 .icon-passos-3{
-    background: url(../../images/spritesA.png) 21% 0%;
+    background: url('../../images/spritesA.png') -180px 0;
     width: 142px;
 }
 .icon-clientes-ativos {

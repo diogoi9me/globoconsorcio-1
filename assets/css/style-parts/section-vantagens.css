@@ -53,13 +53,16 @@
 
 .vantagens__bottom .vantagens__b .vantagens__conteudo h2:before,
 .vantagens__top .vantagens__a .vantagens__conteudo h2:before {
-    content: url(../../images/bar-title.png);
+    content: '';
     position: absolute;
-    top: 44px;
-    right: -2px;
-    width: 100%;
-    line-height: 100%;
+    bottom: -25px;
+    left: 50%;
+    width: 75px;
+    background: #337ab7;
+    height: 4px;
+    transform: translateX(-50%);
 }
+
 
 .vantagens__bottom .vantagens__b .vantagens__conteudo h2,
 .vantagens__top .vantagens__a .vantagens__conteudo h2 {

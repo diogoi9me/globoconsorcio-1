@@ -1,5 +1,5 @@
 <section class="newsletter">
-	<div class="container">
+	<div class="container vPadding">
 		<div class="row">
 			<div class="col-xs-12 col-sm-3">
 				<div class="mensage animated zoomIn">
@@ -8,7 +8,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-7">
-			<?php echo do_shortcode('[mc4wp_form id="127"]'); ?>
+			<?php echo do_shortcode('[mc4wp_form id="365"]'); ?>
 			</div>
 			<div class="animated zoomIn redes">
 				<a href="https://www.facebook.com/globoconsorcio" title="Facebook"><i class="icon-facebook"></i></a>

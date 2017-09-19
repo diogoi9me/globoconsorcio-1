@@ -6,7 +6,7 @@
           <li class="wow slideInLeft">
             <div>
               <i class="icon-tempo"></i>
-              <h5>Mais de 20 de<br/>Globo Consórcio</h5>
+              <h5>Mais de 20 anos de<br/>Globo Consórcio</h5>
             </div>
           </li>
           <li class="wow slideInLeft">
@@ -36,7 +36,7 @@
       <div class="vantagens__b">
         <div class="vantagens__conteudo">
           <h2 class="title"><span>Sobre a</span> Globo Consórcio</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur debitis eaque iusto unde consequuntur repellat, sunt distinctio rem commodi incidunt rerum minima.</p>
+          <p>A Globo Consórcio é uma autorizada da administradora Chevrolet que está no mercado há mais de 20 anos oferecendo possibilidades mais viáveis para adquirir um bem através de um maior número de parcelas com um valor mais baixo do que um financiamento bancário.</p>
          <a href="<?php echo esc_url( home_url() ); ?>/sobre-a-globo-consorcio/" class="wow zoomIn button"><span><i class="glyphicon glyphicon-plus"></i>Saiba mais</span></a>
         </div>
       </div>

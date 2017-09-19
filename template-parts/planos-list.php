@@ -1,16 +1,23 @@
-    <ul class="bloco-planos">
+    <?php 
+      if( is_page('planos') ) { 
+          $classPage = 'bottomPadding'; 
+        } else { 
+          $classPage = 'hPaddings topPadding_2';
+        }
+     ?>
+    <ul class="bloco-planos nRow grid items border colls colls-3 vPadding <?php echo $classPage; ?> shadowHover">
       <?php
         $post_type_custom = 'plano';
           if( is_tax() ) {
             $tax_slug =  'categoria';
-            $args = array( 'post_type' => $post_type_custom, 'posts_per_page' => 15, 'order' => 'ASC', 'tax_query' => 
+            $args = array( 'post_type' => $post_type_custom, 'posts_per_page' => 15, 'order' => 'ASC', 'orderby' => 'meta_value_num', 'tax_query' => 
             array(  array( 'taxonomy'  => $tax_slug, 'field' => 'slug','terms' => get_queried_object()->slug,),), );
           }elseif( is_home() || is_front_page() ) {
-            $args = array( 'post_type' => $post_type_custom, 'posts_per_page' => 8, 'order' => 'ASC' );
+            $args = array( 'post_type' => $post_type_custom, 'posts_per_page' => 8, 'orderby' => 'meta_value_num', 'order' => 'ASC' );
           }elseif( is_single() ) {
-            $args = array( 'post_type' => $post_type_custom, 'posts_per_page' => 8, 'order' => 'ASC', 'post__not_in' => array( $post->ID ) );
+            $args = array( 'post_type' => $post_type_custom, 'posts_per_page' => 8, 'orderby' => 'meta_value_num', 'order' => 'ASC', 'post__not_in' => array( $post->ID ) );
           }else{
-            $args = array( 'post_type' => $post_type_custom, 'posts_per_page' => 8, 'order' => 'ASC' );
+            $args = array( 'post_type' => $post_type_custom, 'posts_per_page' => 8, 'orderby' => 'meta_value_num', 'order' => 'ASC' );
           }     
         $loop = new WP_Query( $args );
 
@@ -21,8 +28,8 @@
 
       ?> 
    
-       <li class="wow slideInUp">
-        <div class="hvr-grow intraPadding">
+       <li class="coll item intraMargin-right animate wow slideInUp">
+        <div class="intraPadding">
             <span class="info">
             <div class="img">
               <?php 
@@ -32,7 +39,7 @@
                ?>
             </div>
 
-            <h5><?php echo get_the_title(); ?></h5>
+            <h5><span class="value"><?php echo get_the_title(); ?></span></h5>
 
             <span><?php campo_customizado('wpcf-prazo'); ?></span>
             </span>

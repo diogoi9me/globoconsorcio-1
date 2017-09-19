@@ -25,7 +25,7 @@
 
 .footer .layer_gray .a p,
 .footer .layer_gray .b p {
-    letter-spacing: 1px;
+    letter-spacing: 0.35px;
     display: inline-block;
     font-size: 14px;
     max-width: 100%;
